@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "Repository citation only; paper metadata and dataset/model DOIs are pending."
 title: "ACappellaSet"
 type: software
+license: MIT
 authors:
   - name: "ACappellaSet contributors"
 repository-code: "https://github.com/pting126/ACappellaSet"

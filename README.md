@@ -93,7 +93,8 @@ instructions and exact tested dependencies will accompany the model code.
 
 ## License and citation
 
-See [LICENSE](LICENSE) for the current code licensing status and
+Original code and documentation are available under the [MIT license](LICENSE).
+See
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for upstream dependencies.
 Dataset and model-weight terms will be documented separately with their
 artifacts. A code license does not grant rights to the dataset or model weights.
