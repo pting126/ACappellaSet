@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "audited_candidates_not_an_installation_lock",
+  "dependencies": [
+    {
+      "name": "demucs",
+      "repository": "https://github.com/facebookresearch/demucs",
+      "candidate_commit": "e976d93ecc3865e5757426930257e200846a520a",
+      "code_license": "MIT",
+      "fork_required_for_audited_core_paths": false,
+      "note": "Conditioned-model source base. Some MSS runs instead used installed Demucs 4.0.0 helpers. A common release pin requires actual checkpoint validation."
+    },
+    {
+      "name": "Music-Source-Separation-Training",
+      "repository": "https://github.com/ZFTurbo/Music-Source-Separation-Training",
+      "audited_base_commit": "c6a02267a2969b94dc2b261b6701a32ad9b7f118",
+      "code_license": "MIT",
+      "project_modifications_required": true,
+      "release_fork_or_patch": null,
+      "note": "The upstream base alone does not contain the required project training modifications."
+    },
+    {
+      "name": "wespeaker",
+      "repository": "https://github.com/wenet-e2e/wespeaker",
+      "release_commit": null,
+      "code_license": "Apache-2.0",
+      "note": "Exact source and pretrained or fine-tuned encoder artifacts must be pinned per conditioned model."
+    }
+  ]
+}

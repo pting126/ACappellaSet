@@ -1,0 +1,34 @@
+# Generated files and environments
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.env
+.env.*
+
+# Downloaded datasets, weights, and generated outputs
+/downloads/
+/checkpoints/
+/datasets/
+/outputs/
+/runs/
+/wandb/
+*.ckpt
+*.pt
+*.pth
+*.th
+*.safetensors
+*.wav
+*.flac
+*.mp3
+*.m4a
+*.aiff
+*.zip
+*.tar
+*.tar.gz
+*.tgz

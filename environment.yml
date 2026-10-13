@@ -1,0 +1,7 @@
+# Tooling environment only. The tested model runtime is not published yet.
+# Do not use this file as a training or inference dependency specification.
+name: acappellaset-tools
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
