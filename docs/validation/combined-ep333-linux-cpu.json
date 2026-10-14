@@ -1,0 +1,284 @@
+{
+  "status": "PASS",
+  "checkpoint_sha256": "cbfa201798f7e7f4766bacd3aa8622b3ae40321729bd7f0b3555ac4348c57879",
+  "device": "cpu",
+  "platform": "Linux-4.18.0-553.146.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "cases": [
+    {
+      "case": "real-12p6s",
+      "input_sha256": "1cee212b9542918875034fec54bc12d6874d596eade0ec6dc5ecd6661fb6f3e9",
+      "shape": [
+        6,
+        2,
+        555660
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0,
+      "source_order": [
+        "vp",
+        "bass",
+        "soprano",
+        "alto",
+        "tenor",
+        "other"
+      ],
+      "reference": {
+        "details": {
+          "native_sample_rate": 44100,
+          "native_channels": 2,
+          "segment_seconds": 10.0,
+          "hop_seconds": 2.5,
+          "source_order": [
+            "vp",
+            "bass",
+            "soprano",
+            "alto",
+            "tenor",
+            "other"
+          ],
+          "target_source_index": null,
+          "strict_loading": true,
+          "checkpoint_epoch": 333,
+          "inference_amp": false
+        },
+        "torch": "2.10.0+cu128",
+        "elapsed_seconds": 50.86787995323539
+      },
+      "release": {
+        "model": "combined-ep333",
+        "checkpoint_sha256": "cbfa201798f7e7f4766bacd3aa8622b3ae40321729bd7f0b3555ac4348c57879",
+        "config_sha256": "55bd3b4080fb20bfe445647bef934c991e475b92b64401c339f9610f34eb2244",
+        "input_sha256": "1cee212b9542918875034fec54bc12d6874d596eade0ec6dc5ecd6661fb6f3e9",
+        "input": {
+          "original_sample_rate": 44100,
+          "original_channels": 2,
+          "mono_duplicated": false,
+          "resampled": false,
+          "resampling": "scipy.signal.resample_poly, default Kaiser window"
+        },
+        "source_order": [
+          "vp",
+          "bass",
+          "soprano",
+          "alto",
+          "tenor",
+          "other"
+        ],
+        "sample_rate": 44100,
+        "channels": 2,
+        "frames": 555660,
+        "output_subtype": "FLOAT",
+        "gain": 1.0,
+        "outputs": [
+          {
+            "stem": "vp",
+            "file": "vp.wav",
+            "sha256": "9f751056a8a0becd0efb70dcfaf1f0972b1ea6b3b2001bcb6f076b10a68f44a8"
+          },
+          {
+            "stem": "bass",
+            "file": "bass.wav",
+            "sha256": "8a598016d3ebd1115f42986eb988a32c25c2022e4bf7efb2ea015d80e5279428"
+          },
+          {
+            "stem": "soprano",
+            "file": "soprano.wav",
+            "sha256": "50526a69a4ba0f57101adcca9f844eebcf7b91c79996182240551e5278d177b9"
+          },
+          {
+            "stem": "alto",
+            "file": "alto.wav",
+            "sha256": "53b636ae5cecc2ed67f1fc3b74aaf1e994f94e13bcd56b6c57f5dd2009629457"
+          },
+          {
+            "stem": "tenor",
+            "file": "tenor.wav",
+            "sha256": "0d7a1b5c5058813130057119d85189e756abea414920b19418c6b6ea19be000e"
+          },
+          {
+            "stem": "other",
+            "file": "other.wav",
+            "sha256": "dbae32840b4939be4883431b1f77fc9457ae93fb355650e1dcaa54cb2000b4c9"
+          }
+        ],
+        "device": "cpu",
+        "threads": 2,
+        "seed": 1337,
+        "inference": {
+          "segment_seconds": 10,
+          "num_overlap": 4,
+          "hop_seconds": 2.5,
+          "batch_size": 4,
+          "cuda_amp": true,
+          "cpu_amp": false,
+          "normalization": "model internal only",
+          "overlap_add": "uniform",
+          "right_padding": "zeros",
+          "amp_used": false
+        },
+        "python": "3.10.19",
+        "packages": {
+          "torch": "2.10.0+cpu",
+          "torchaudio": "2.10.0+cpu",
+          "demucs": "4.0.0",
+          "numpy": "2.2.6",
+          "scipy": "1.15.3",
+          "soundfile": "0.13.1",
+          "omegaconf": "2.3.0"
+        },
+        "elapsed_seconds": 48.33029281813651
+      }
+    },
+    {
+      "case": "synthetic-short",
+      "input_sha256": "d11986578440c305c92572900f9d542a6552d8923aae1b5210af4d9ffebee011",
+      "shape": [
+        6,
+        2,
+        13230
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0,
+      "source_order": [
+        "vp",
+        "bass",
+        "soprano",
+        "alto",
+        "tenor",
+        "other"
+      ],
+      "reference": {
+        "details": {
+          "native_sample_rate": 44100,
+          "native_channels": 2,
+          "segment_seconds": 10.0,
+          "hop_seconds": 2.5,
+          "source_order": [
+            "vp",
+            "bass",
+            "soprano",
+            "alto",
+            "tenor",
+            "other"
+          ],
+          "target_source_index": null,
+          "strict_loading": true,
+          "checkpoint_epoch": 333,
+          "inference_amp": false
+        },
+        "torch": "2.10.0+cu128",
+        "elapsed_seconds": 15.253282305784523
+      },
+      "release": {
+        "model": "combined-ep333",
+        "checkpoint_sha256": "cbfa201798f7e7f4766bacd3aa8622b3ae40321729bd7f0b3555ac4348c57879",
+        "config_sha256": "55bd3b4080fb20bfe445647bef934c991e475b92b64401c339f9610f34eb2244",
+        "input_sha256": "d11986578440c305c92572900f9d542a6552d8923aae1b5210af4d9ffebee011",
+        "input": {
+          "original_sample_rate": 44100,
+          "original_channels": 2,
+          "mono_duplicated": false,
+          "resampled": false,
+          "resampling": "scipy.signal.resample_poly, default Kaiser window"
+        },
+        "source_order": [
+          "vp",
+          "bass",
+          "soprano",
+          "alto",
+          "tenor",
+          "other"
+        ],
+        "sample_rate": 44100,
+        "channels": 2,
+        "frames": 13230,
+        "output_subtype": "FLOAT",
+        "gain": 1.0,
+        "outputs": [
+          {
+            "stem": "vp",
+            "file": "vp.wav",
+            "sha256": "3f4c904305f451fbdcb37990bf7948cf2b80327facc908dc4768909606b75c33"
+          },
+          {
+            "stem": "bass",
+            "file": "bass.wav",
+            "sha256": "e9dd4d994131e9bc8e215a5635f63e8efc42f275ba8578e0705cdc8f05d9be90"
+          },
+          {
+            "stem": "soprano",
+            "file": "soprano.wav",
+            "sha256": "1bbade2d89382279da55d6358e1e563887f9d6e599ad65f4c3744b68963aaaa6"
+          },
+          {
+            "stem": "alto",
+            "file": "alto.wav",
+            "sha256": "38e73f7a9070af59c0f14e3d6eafeff460d50496af8db303af6e6fa624397032"
+          },
+          {
+            "stem": "tenor",
+            "file": "tenor.wav",
+            "sha256": "47cc84f5866414f8298877f351e2ec83249ba3a61a378c10ef4eeac3c4c70224"
+          },
+          {
+            "stem": "other",
+            "file": "other.wav",
+            "sha256": "07ae29ce8ed1a8da8bac0aef5d4a0a6027e03b790950bff2d5a123e8a655fa9e"
+          }
+        ],
+        "device": "cpu",
+        "threads": 2,
+        "seed": 1337,
+        "inference": {
+          "segment_seconds": 10,
+          "num_overlap": 4,
+          "hop_seconds": 2.5,
+          "batch_size": 4,
+          "cuda_amp": true,
+          "cpu_amp": false,
+          "normalization": "model internal only",
+          "overlap_add": "uniform",
+          "right_padding": "zeros",
+          "amp_used": false
+        },
+        "python": "3.10.19",
+        "packages": {
+          "torch": "2.10.0+cpu",
+          "torchaudio": "2.10.0+cpu",
+          "demucs": "4.0.0",
+          "numpy": "2.2.6",
+          "scipy": "1.15.3",
+          "soundfile": "0.13.1",
+          "omegaconf": "2.3.0"
+        },
+        "elapsed_seconds": 13.816252123564482
+      }
+    }
+  ],
+  "tolerances": {
+    "maximum_absolute_difference": 1e-05,
+    "rms_difference": 1e-06
+  },
+  "elapsed_seconds": 171.82611826062202,
+  "limitations": [
+    "Two input clips, not a full-song evaluation or separation quality score",
+    "CUDA and macOS not validated",
+    "Training and other checkpoints not validated"
+  ],
+  "validation_date": "2026-10-13",
+  "behavioral_tests_passed": 5,
+  "environment_isolation": {
+    "fresh_venv": true,
+    "include_system_site_packages": false,
+    "python": "3.10.19",
+    "research_packages_inherited": false
+  },
+  "implementation_sha256": {
+    "inference.py": "36f431fd3a984beaa5e3b98d5555f2edda62103ed75a26f71e6b7d049b366227",
+    "models/fixed.py": "774663d62ae6b11c803f988017a371bd234d08cba88f35838f03ab068e323499",
+    "models/demucs4ht.py": "d0d20967cbab2b1eef93dbec2720c2753dfb7b9727f140f29c0d5900dc22f436",
+    "configs/fixed/combined_ep333.yaml": "55bd3b4080fb20bfe445647bef934c991e475b92b64401c339f9610f34eb2244"
+  }
+}

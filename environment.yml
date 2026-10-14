@@ -1,7 +1,8 @@
-# Tooling environment only. The tested model runtime is not published yet.
-# Do not use this file as a training or inference dependency specification.
-name: acappellaset-tools
+# Optional interpreter bootstrap; finish installation using docs/inference.md.
+# The validated runtime uses a venv and requirements-linux-cpu-lock.txt.
+name: acappellaset-inference
 channels:
   - conda-forge
 dependencies:
   - python=3.10
+  - pip=25.2

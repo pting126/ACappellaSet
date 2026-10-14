@@ -1,0 +1,572 @@
+{
+  "status": "audited_paper_snapshot_candidates_not_final_release",
+  "project_checkpoint_count": 29,
+  "external_checkpoint_count": 1,
+  "checkpoints": [
+    {
+      "model": "JC_ep321",
+      "family": "fixed",
+      "role": "",
+      "epoch": 321,
+      "step": null,
+      "filename": "model_htdemucs_ep_321_sdr_7.9284_si_sdr_6.9219_k_sdr_94.9111.ckpt",
+      "sha256": "1d65d49aaa7fc52745e4c476d14d90d7bddb942765c169e92bf045ea33d4ab6b",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta.",
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta. PC01 excluded here."
+      ]
+    },
+    {
+      "model": "SK_ep279",
+      "family": "fixed",
+      "role": "",
+      "epoch": 279,
+      "step": null,
+      "filename": "model_htdemucs_ep_279_sdr_-7.7538_si_sdr_-5.3812_k_sdr_81.6959.ckpt",
+      "sha256": "51c1a71b22d82c34e31f41e314fc9a84055d9f55f5d77c8c36b4280a59a19f0b",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta.",
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta. PC01 excluded here."
+      ]
+    },
+    {
+      "model": "Combined_ep333",
+      "family": "fixed",
+      "role": "",
+      "epoch": 333,
+      "step": null,
+      "filename": "model_htdemucs_ep_333_sdr_-1.2322_si_sdr_-0.3075_k_sdr_87.1730.ckpt",
+      "sha256": "cbfa201798f7e7f4766bacd3aa8622b3ae40321729bd7f0b3555ac4348c57879",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "SHA-256 and strict load verified 2026-10-13; Linux CPU inference matches research implementation bit-for-bit on two clips.",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta.",
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta. PC01 excluded here."
+      ]
+    },
+    {
+      "model": "JC historical specialists (MSS inference)",
+      "family": "specialist",
+      "role": "A",
+      "epoch": 223,
+      "step": null,
+      "filename": "model_htdemucs_ep_223_si_sdr_6.0926.ckpt",
+      "sha256": "5c8118424cbe5264b953f37d8336194b66089bac0aa18c1a32d1c41b386e7e1e",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
+      ]
+    },
+    {
+      "model": "JC historical specialists (MSS inference)",
+      "family": "specialist",
+      "role": "B",
+      "epoch": 110,
+      "step": null,
+      "filename": "model_htdemucs_ep_110_si_sdr_16.6663.ckpt",
+      "sha256": "23d152aa2ae0250fe852ac5e31ae68f2d70736acd4cb2a5f9515a9b10302a810",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
+      ]
+    },
+    {
+      "model": "JC historical specialists (MSS inference)",
+      "family": "specialist",
+      "role": "Lead",
+      "epoch": 149,
+      "step": null,
+      "filename": "model_htdemucs_ep_149_si_sdr_9.6743.ckpt",
+      "sha256": "0a37e456852527fd2d0c7d983ba086f1ebb15064a39633f99c06cbbb37914c28",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
+      ]
+    },
+    {
+      "model": "JC historical specialists (MSS inference)",
+      "family": "specialist",
+      "role": "S",
+      "epoch": 162,
+      "step": null,
+      "filename": "model_htdemucs_ep_162_si_sdr_6.1072.ckpt",
+      "sha256": "9346b2508aa4e9def57598c282d6063e70eac35e5061c6c7440e765c9455472e",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
+      ]
+    },
+    {
+      "model": "JC historical specialists (MSS inference)",
+      "family": "specialist",
+      "role": "T",
+      "epoch": 119,
+      "step": null,
+      "filename": "model_htdemucs_ep_119_si_sdr_11.1179.ckpt",
+      "sha256": "1c20f2a931c8def9e8622190984de3ed599c5913566441cea491c691e4a7f70a",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
+      ]
+    },
+    {
+      "model": "JC historical specialists (MSS inference)",
+      "family": "specialist",
+      "role": "VP",
+      "epoch": 45,
+      "step": null,
+      "filename": "model_htdemucs_ep_45_si_sdr_15.9240.ckpt",
+      "sha256": "931aae478a2aaceb0572dff59a7877987b67a58f78f07621e195cf696fff6dff",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
+      ]
+    },
+    {
+      "model": "SK historical specialists (MSS inference)",
+      "family": "specialist",
+      "role": "A",
+      "epoch": 237,
+      "step": null,
+      "filename": "model_htdemucs_ep_237_si_sdr_12.8485.ckpt",
+      "sha256": "133008dc46d3ebe3ef660c52c65e1252f9ff243a048f97a95d68b04a123ca6a4",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
+      ]
+    },
+    {
+      "model": "SK historical specialists (MSS inference)",
+      "family": "specialist",
+      "role": "B",
+      "epoch": 182,
+      "step": null,
+      "filename": "model_htdemucs_ep_182_si_sdr_13.8862.ckpt",
+      "sha256": "9b24ac03c73f79810228f0dde23f430b5221f019c5dea7f30500708f4dfd5ac6",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
+      ]
+    },
+    {
+      "model": "SK historical specialists (MSS inference)",
+      "family": "specialist",
+      "role": "Bar",
+      "epoch": 43,
+      "step": null,
+      "filename": "model_htdemucs_ep_43_si_sdr_11.1058.ckpt",
+      "sha256": "ffe9dafeff2c96595f479a406e327172c95355bed401d233410e9565c806d2ee",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
+      ]
+    },
+    {
+      "model": "SK historical specialists (MSS inference)",
+      "family": "specialist",
+      "role": "S",
+      "epoch": 220,
+      "step": null,
+      "filename": "model_htdemucs_ep_220_si_sdr_12.3675.ckpt",
+      "sha256": "b9e4c1f9476f13ce673ea007756aec990318ccb4d571c8060355e9f1eccfab60",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
+      ]
+    },
+    {
+      "model": "SK historical specialists (MSS inference)",
+      "family": "specialist",
+      "role": "T",
+      "epoch": 214,
+      "step": null,
+      "filename": "model_htdemucs_ep_214_si_sdr_12.0113.ckpt",
+      "sha256": "2f3e5de523bb4bf8eb8fb77e25ce2d2962ac4b00e56b85b2e89614e049878005",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
+      ]
+    },
+    {
+      "model": "SK historical specialists (MSS inference)",
+      "family": "specialist",
+      "role": "VP",
+      "epoch": 205,
+      "step": null,
+      "filename": "model_htdemucs_ep_205_si_sdr_13.7446.ckpt",
+      "sha256": "924efa1dd19fc793c0c8ffb32d0bd736a9791f01bc77f18d2f1eeedf06b7411d",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
+      ]
+    },
+    {
+      "model": "SepACap_JC",
+      "family": "external",
+      "role": "",
+      "epoch": null,
+      "step": null,
+      "filename": "SepACap.pth",
+      "sha256": "423b2c7225dfe7b14e7370a651959c09aaa3301f60483b5548686341b2eacc43",
+      "selection_labels": [],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "upstream_link_only",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta.",
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta. Bar is not a native JC-trained output; check historical output mapping.",
+        "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta. PC01 excluded here. Bar is not a native JC-trained output; check historical output mapping."
+      ]
+    },
+    {
+      "model": "K1",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 184000,
+      "filename": "best_step0184000.pt",
+      "sha256": "261daa7899501229143136c46a501097caba9ac903650bc9c475c3ee049407b0",
+      "selection_labels": [
+        "sk_shared"
+      ],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": []
+    },
+    {
+      "model": "L1",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 141000,
+      "filename": "best_step0141000.pt",
+      "sha256": "92e19968bef2ce84d3800141afc50cc47141bd016adfcc07b70e705df7408004",
+      "selection_labels": [
+        "jc_shared"
+      ],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": []
+    },
+    {
+      "model": "K1",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 4000,
+      "filename": "best_step0004000.pt",
+      "sha256": "979ba17521f398fb1b2a3e0ccad29615999b50e87d76347b2682212a61b49427",
+      "selection_labels": [
+        "jc_inclusive"
+      ],
+      "tables": [
+        "target_conditioning"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": []
+    },
+    {
+      "model": "K5",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 12000,
+      "filename": "best_step0012000.pt",
+      "sha256": "6f8e199008a542904330495dab28d7f56d8c380a6959ea4e460b22450c56ca43",
+      "selection_labels": [
+        "JC",
+        "jc_inclusive"
+      ],
+      "tables": [
+        "development_a",
+        "target_conditioning"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Historical draft snapshot; M3 evaluated through179k. K6_no_aug means single-clone, not no waveform augmentation."
+      ]
+    },
+    {
+      "model": "K7",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 7000,
+      "filename": "best_step0007000.pt",
+      "sha256": "0646527189b1221552c01c918cff01173e98077dc515a6fe9f795ffab00c24ee",
+      "selection_labels": [
+        "jc_inclusive"
+      ],
+      "tables": [
+        "target_conditioning"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": []
+    },
+    {
+      "model": "L1",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 119000,
+      "filename": "best_step0119000.pt",
+      "sha256": "5de579abaf11546eab1fcfa29566cf4934ece6c5fe7b23df56b6af27c3be3723",
+      "selection_labels": [
+        "sk_inclusive"
+      ],
+      "tables": [
+        "target_conditioning"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": []
+    },
+    {
+      "model": "L3",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 184000,
+      "filename": "best_step0184000.pt",
+      "sha256": "9f49b7d59575658dcfb9667395d998e8fc34a935b3995b099593e99ee1de5226",
+      "selection_labels": [
+        "sk_inclusive"
+      ],
+      "tables": [
+        "target_conditioning"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": []
+    },
+    {
+      "model": "L4",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 188000,
+      "filename": "best_step0188000.pt",
+      "sha256": "724af8d2906fc08de54b7484df69143a3a7b2c62c412e6e473b979bc34cd74d0",
+      "selection_labels": [
+        "sk_inclusive"
+      ],
+      "tables": [
+        "target_conditioning"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": []
+    },
+    {
+      "model": "K5",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 179000,
+      "filename": "best_step0179000.pt",
+      "sha256": "eeeac981bacdd063207a0258fb60625edd2b60e94bc544852a1c2459223a04d3",
+      "selection_labels": [
+        "SK"
+      ],
+      "tables": [
+        "development_a"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Historical draft snapshot; M3 evaluated through179k. K6_no_aug means single-clone, not no waveform augmentation."
+      ]
+    },
+    {
+      "model": "K5",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 106000,
+      "filename": "best_step0106000.pt",
+      "sha256": "df846b039ddd5e032f221adcf3de33a9a3f546f21b47f0bc3d30df891ab4ca93",
+      "selection_labels": [
+        "Pooled",
+        "combined_inclusive"
+      ],
+      "tables": [
+        "development_a",
+        "development_b"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Historical draft snapshot; M3 evaluated through179k. K6_no_aug means single-clone, not no waveform augmentation."
+      ]
+    },
+    {
+      "model": "M3",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 159000,
+      "filename": "best_step0159000.pt",
+      "sha256": "03e74a6ae7f56d647c66e582f368f714b5504f8c657e78fb7f6c2142d0ae8ab1",
+      "selection_labels": [
+        "SK"
+      ],
+      "tables": [
+        "development_a"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Historical draft snapshot; M3 evaluated through179k. K6_no_aug means single-clone, not no waveform augmentation."
+      ]
+    },
+    {
+      "model": "M3",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 173000,
+      "filename": "best_step0173000.pt",
+      "sha256": "f99b7ee04a026c2c628bcfaac3ddbe7a5ffabc95bb96e9d0889e3079e8db1b06",
+      "selection_labels": [
+        "JC",
+        "Pooled"
+      ],
+      "tables": [
+        "development_a"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Historical draft snapshot; M3 evaluated through179k. K6_no_aug means single-clone, not no waveform augmentation."
+      ]
+    },
+    {
+      "model": "K6",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 131000,
+      "filename": "best_step0131000.pt",
+      "sha256": "ff74b497341edcfe6a6357749ed3e6bff795f1740ef022f4003f1241f198e517",
+      "selection_labels": [
+        "combined_inclusive"
+      ],
+      "tables": [
+        "development_b"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Historical draft snapshot; M3 evaluated through179k. K6_no_aug means single-clone, not no waveform augmentation."
+      ]
+    },
+    {
+      "model": "K6_no_aug",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 48000,
+      "filename": "best_step0048000.pt",
+      "sha256": "79ee3dd239925ea2c075641eadc0e13c001a81f9f367f8ee6881c5e8a3881901",
+      "selection_labels": [
+        "combined_inclusive"
+      ],
+      "tables": [
+        "development_b"
+      ],
+      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "verification": "Recorded hash; live rehash pending",
+      "notes": [
+        "Historical draft snapshot; M3 evaluated through179k. K6_no_aug means single-clone, not no waveform augmentation."
+      ],
+      "public_name": "SK single-clone singer-conditioned (waveform augmentation remains enabled)"
+    }
+  ]
+}

@@ -1,103 +1,97 @@
 # ACappellaSet
 
 Dataset resources, model weights, and code for a cappella source separation.
-This repository will provide inference and training support for fixed-output,
-part-specific, and conditioned separation models.
 
-## Release status
+**Combined-model inference is available and validated on Linux CPU.** Dataset
+and checkpoint downloads are being prepared for Zenodo. Running inference
+currently requires an existing copy of the registered Combined ep333 checkpoint.
+Training, specialist, and conditioned-model workflows are still being packaged.
 
-The public release is being prepared. This initial repository contains the
-project layout, release documentation, and dependency and artifact manifests.
-Inference and training implementations, tested model environments, checkpoints,
-and dataset downloads are not yet available here.
+## Availability
 
-| Resource | Location | Availability |
-| --- | --- | --- |
-| Model implementations and scripts | This repository | Being prepared |
-| Training and inference configurations | `configs/` | Being prepared |
-| Dataset, annotations, and splits | Zenodo; linked from this repository | Record pending |
-| Model checkpoints | Separate Zenodo model record; linked from `manifests/models.json` | Record pending |
-| Tested inference and training environment | This repository | Pending checkpoint validation |
+| Resource | Status |
+| --- | --- |
+| Combined ep333 inference | Implemented; actual-checkpoint Linux CPU validation passed |
+| Checkpoint inventory | 29 project candidates and one external baseline documented |
+| Public checkpoint downloads | Zenodo model record pending |
+| Dataset and annotations | Zenodo dataset record pending |
+| Training scripts | Being prepared |
+| Specialist and conditioned inference | Being prepared |
 
-## Models
+## Run inference
 
-The planned release covers:
+Follow the [installation and inference guide](docs/inference.md) to create the
+tested Python 3.10 environment. With the registered checkpoint available locally:
 
-- **Fixed-output separation:** models trained on JC, SK, and their combination.
-- **Part-specific extraction:** a bank of specialist models for individual parts.
-- **Conditioned extraction:** part-, singer-, and dual-conditioned models. Singer
-  conditioning requires enrollment audio and the matching encoder weights.
+```bash
+python inference.py --model combined-ep333 --checkpoint checkpoints/combined-ep333.ckpt --input /path/to/mixture.wav --output outputs/my-mixture --device cpu
+```
 
-The checkpoint registry will identify each released model's configuration,
-training corpus, output order, dependencies, and SHA-256 checksum. Final model
-selections and download links will be added when the artifacts are published.
-See [model documentation](docs/models.md).
+The command writes stereo 44.1 kHz Float32 WAVs named `vp`, `bass`, `soprano`,
+`alto`, `tenor`, and `other`, plus an inference receipt. The sixth output retains
+the combined model's JC Lead / SK Baritone semantics. No output peak
+normalization is applied. Checkpoint and configuration hashes are verified
+before strict loading, and existing output directories are not overwritten.
+
+On two validation inputs, all six outputs matched the research implementation
+**bit-for-bit** in a fresh Linux CPU environment. Five behavioral tests passed.
+See the [validation report](docs/validation/combined-ep333-linux-cpu.json).
+CUDA and macOS have not been validated, and these tests are not quality scores.
+
+## Models and weights
+
+The planned model families are fixed-output separation trained on JC, SK, and
+their combination; per-part specialist banks; and part-, singer-, and
+dual-conditioned extraction. Singer conditioning requires enrollment audio and
+the matching encoder parameters.
+
+The [checkpoint checklist](docs/checkpoints.md) lists all 29 project candidates
+from the audited paper snapshot, including epoch/step choices. Exact hashes are
+in [the candidate manifest](manifests/checkpoint_candidates.json). These are
+release candidates; final paper selections and weight terms remain pending.
+The [inference registry](manifests/models.json) separately records models the
+public code can load. See [model documentation](docs/models.md).
+
+Weights will be hosted in a separate Zenodo model record, with verified
+checksums and applicable licenses. Large checkpoints are not committed to Git.
+
+## Dataset and training
+
+Audio, annotations, splits, format documentation, and applicable terms will be
+published in a Zenodo dataset record linked from this repository. See the
+[dataset guide](docs/dataset.md). Dataset preparation and training scripts will
+follow the published schema and fixed splits; see the [training guide](docs/training.md).
 
 ## Repository layout
 
 ```text
 ACappellaSet/
-├── README.md
-├── LICENSE
-├── THIRD_PARTY_NOTICES.md
-├── CITATION.cff
-├── environment.yml              # Repository tooling only, initially
-├── models/                      # Custom architectures and adapters
-├── configs/
-│   ├── fixed/
-│   ├── specialists/
-│   └── conditioned/
-├── data/                        # Dataset loaders and preprocessing
-├── scripts/                     # Artifact and dataset utilities
-├── manifests/
-│   ├── models.json
-│   ├── dataset.json
-│   └── splits/
-├── third_party/
-│   ├── sources.json
-│   └── patches/
-├── examples/
-├── tests/
-└── docs/
-    ├── dataset.md
-    ├── models.md
-    ├── inference.md
-    ├── training.md
-    └── evaluation.md
+├── inference.py                  # Working fixed-model CLI
+├── models/                       # Architecture and inference adapter
+├── configs/                      # Fixed, specialist, conditioned configs
+├── requirements-inference.txt    # Direct dependencies
+├── requirements-linux-cpu-lock.txt
+├── environment.yml               # Optional interpreter bootstrap
+├── data/                         # Dataset loaders: pending
+├── scripts/                      # Download/preparation tools: pending
+├── manifests/                    # Models, dataset, candidate checkpoints, splits
+├── third_party/                  # Source provenance and retained licenses
+├── examples/                     # Public audio example: pending
+├── tests/                        # Inference behavioral tests
+└── docs/                         # Guides, checkpoint checklist, validation report
 ```
 
-The planned top-level entry points are `inference.py`, `train.py`, and
-`evaluate.py`. They will be added with their working implementations; this
-initial structure does not provide those commands.
-
-## Dataset and weights
-
-Dataset audio will be hosted on Zenodo with annotations, split manifests,
-documentation, and its applicable license. Model weights will use a separate
-record so that models can be versioned independently of the dataset.
-
-Large audio files and checkpoints are not stored in Git history. Download
-instructions will link to specific artifact versions and verified checksums.
-See [dataset documentation](docs/dataset.md).
-
-## Inference and training
-
-The release will include a tested inference example and instructions for
-starting training with the published data and configurations. See the
-[inference guide](docs/inference.md) and [training guide](docs/training.md)
-for their current availability and required artifacts.
-
-`environment.yml` currently provides Python for repository tooling. It is not
-the model runtime, and does not install PyTorch, Demucs, or MSS. Model runtime
-instructions and exact tested dependencies will accompany the model code.
+`train.py` and `evaluate.py` will be added with their working implementations.
+No Demucs fork or full MSS checkout is required for the current fixed-model
+inference package. Required MSS training modifications will be released separately.
 
 ## License and citation
 
-Original code and documentation are available under the [MIT license](LICENSE).
-See
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for upstream dependencies.
-Dataset and model-weight terms will be documented separately with their
-artifacts. A code license does not grant rights to the dataset or model weights.
+Original code and documentation use the [MIT license](LICENSE). Vendored and
+adapted code retains its upstream notices; see
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Dataset and model-weight terms are separate. A code license does not grant
+rights to the dataset or model weights.
 
 [CITATION.cff](CITATION.cff) currently describes this repository. Paper metadata
 and Zenodo DOIs will be added when available.

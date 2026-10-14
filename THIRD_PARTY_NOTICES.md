@@ -1,8 +1,12 @@
 # Third-party dependencies
 
-No upstream implementation or model weights are bundled in this initial
-repository. The intended dependencies and audited source revisions are recorded
-in [third_party/sources.json](third_party/sources.json).
+`models/demucs4ht.py` is vendored unchanged from the audited MSS checkout.
+The HTDemucs inference branch in `models/fixed.py` is adapted from MSS.
+MSS and Demucs license texts are retained in `third_party/licenses/`.
+Exact source hashes and modifications are recorded in
+[fixed inference provenance](third_party/fixed_inference_provenance.json).
+No model weights are bundled. Other dependency references are recorded in
+[third_party/sources.json](third_party/sources.json).
 
 | Project | Role | Upstream code license |
 | --- | --- | --- |

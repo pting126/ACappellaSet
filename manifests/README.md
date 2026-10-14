@@ -1,7 +1,13 @@
 # Artifact manifests
 
-`models.json` and `dataset.json` are empty release registries. Their null
-locations indicate unpublished artifacts, not valid download endpoints.
+`models.json` contains the registered Combined ep333 checkpoint identity and
+inference contract. Its null download URL means the weight is not publicly
+hosted yet. `dataset.json` remains a pending dataset registry.
+
+`checkpoint_candidates.json` lists the 29 deduplicated project candidates and
+one external baseline in the audited paper snapshot. It is a release-planning
+inventory, not a download registry or a finalized checkpoint selection.
+See [the readable checklist](../docs/checkpoints.md).
 
 Before a model entry is added, record a stable ID, model family, training
 corpus, configuration path, dependency revisions, checkpoint URL and SHA-256,

@@ -1,0 +1,2 @@
+# Preserve the exact audited vendor bytes, including its existing EOF blanks.
+models/demucs4ht.py whitespace=-blank-at-eof

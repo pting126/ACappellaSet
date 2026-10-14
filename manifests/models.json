@@ -3,5 +3,44 @@
   "status": "release_in_preparation",
   "hosting": "Zenodo model record (pending)",
   "record_url": null,
-  "models": []
+  "models": [
+    {
+      "id": "combined-ep333",
+      "family": "fixed-htdemucs",
+      "training_corpus": "JC+SK",
+      "epoch": 333,
+      "status": "linux_cpu_validated_download_pending",
+      "checkpoint_filename": "model_htdemucs_ep_333_sdr_-1.2322_si_sdr_-0.3075_k_sdr_87.1730.ckpt",
+      "checkpoint_sha256": "cbfa201798f7e7f4766bacd3aa8622b3ae40321729bd7f0b3555ac4348c57879",
+      "checkpoint_bytes": 333986969,
+      "config": "configs/fixed/combined_ep333.yaml",
+      "config_sha256": "55bd3b4080fb20bfe445647bef934c991e475b92b64401c339f9610f34eb2244",
+      "sample_rate": 44100,
+      "channels": 2,
+      "source_order": [
+        "vp",
+        "bass",
+        "soprano",
+        "alto",
+        "tenor",
+        "other"
+      ],
+      "inference": {
+        "segment_seconds": 10,
+        "num_overlap": 4,
+        "hop_seconds": 2.5,
+        "batch_size": 4,
+        "cuda_amp": true,
+        "cpu_amp": false,
+        "normalization": "model internal only",
+        "overlap_add": "uniform",
+        "right_padding": "zeros"
+      },
+      "url": null,
+      "weight_license": null,
+      "selection_note": "Historical combined checkpoint; final paper release selection remains pending.",
+      "sixth_output_note": "other combines JC Lead and SK Baritone training semantics; not separate Lead and Baritone outputs.",
+      "validation_report": "docs/validation/combined-ep333-linux-cpu.json"
+    }
+  ]
 }

@@ -1,0 +1,26 @@
+{
+  "architecture": {
+    "path": "models/demucs4ht.py",
+    "sha256": "d0d20967cbab2b1eef93dbec2720c2753dfb7b9727f140f29c0d5900dc22f436",
+    "source_repository": "https://github.com/ZFTurbo/Music-Source-Separation-Training",
+    "audited_base_commit": "c6a02267a2969b94dc2b261b6701a32ad9b7f118",
+    "source_path": "models/demucs4ht.py",
+    "modifications": "none; byte-identical audited architecture"
+  },
+  "inference": {
+    "path": "models/fixed.py",
+    "adapted_from": "utils/model_utils.py:demix (HTDemucs branch)",
+    "reference_file_sha256": "75e83006b428e64e07095acefa4df56f495714b15c1b92be4e34d09f8ecf7eec",
+    "changes": [
+      "Extract only HTDemucs overlap-add branch",
+      "Explicit shape and non-finite validation instead of nan_to_num",
+      "Modern CUDA autocast API; CPU autocast disabled",
+      "Registered checkpoint and configuration hash checks before strict load"
+    ]
+  },
+  "config": {
+    "path": "configs/fixed/combined_ep333.yaml",
+    "sha256": "55bd3b4080fb20bfe445647bef934c991e475b92b64401c339f9610f34eb2244",
+    "modifications": "none; runtime inference batch size overridden to 4 as in reference backend"
+  }
+}

@@ -8,7 +8,8 @@
       "candidate_commit": "e976d93ecc3865e5757426930257e200846a520a",
       "code_license": "MIT",
       "fork_required_for_audited_core_paths": false,
-      "note": "Conditioned-model source base. Some MSS runs instead used installed Demucs 4.0.0 helpers. A common release pin requires actual checkpoint validation."
+      "note": "Fixed-output inference retains the installed Demucs 4.0.0 helper dependency. e976d93 is the conditioned-model source base, not a universal historical pin.",
+      "fixed_inference_version": "4.0.0"
     },
     {
       "name": "Music-Source-Separation-Training",
@@ -17,7 +18,8 @@
       "code_license": "MIT",
       "project_modifications_required": true,
       "release_fork_or_patch": null,
-      "note": "The upstream base alone does not contain the required project training modifications."
+      "note": "The upstream base alone does not contain the required project training modifications.",
+      "fixed_inference": "Architecture vendored byte-identically; HTDemucs inference branch extracted with attribution. Full modified MSS checkout is not needed for this inference path; training modifications remain pending."
     },
     {
       "name": "wespeaker",

@@ -1,11 +1,11 @@
 # Model implementations
 
-This directory is reserved for the custom architectures and adapters in the
-public release. Implementations have not yet been migrated here.
+`demucs4ht.py` contains the unchanged audited MSS HTDemucs architecture.
+`fixed.py` provides strict registered-checkpoint loading and the fixed-model
+overlap-add implementation. The first supported configuration is Combined ep333.
 
-The planned families are fixed-output HTDemucs, part-specific HTDemucs, and
-part-, singer-, and dual-conditioned HTDemucs. Custom conditioning belongs in
-this repository; upstream Demucs is a dependency rather than a copied checkout.
+Specialist and conditioned adapters are still pending. Upstream Demucs is a
+dependency rather than a copied checkout; see the retained third-party notices.
 
 Each implementation must be paired with its configuration, strict checkpoint
 loader, and explicit input/output contract. See [model documentation](../docs/models.md).

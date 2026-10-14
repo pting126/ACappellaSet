@@ -1,8 +1,10 @@
 # Models and checkpoints
 
 The release registry is [`manifests/models.json`](../manifests/models.json).
-It currently contains no released checkpoints. Weights are planned for a
-separate Zenodo record linked from that registry.
+It contains the exact Combined ep333 checkpoint identity and inference settings.
+Weights are not downloadable yet; they are planned for a separate Zenodo record.
+The [checkpoint checklist](checkpoints.md) covers all candidates identified in
+the audited paper snapshot.
 
 | Family | Planned support | Required artifact contract |
 | --- | --- | --- |
