@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "status": "release_in_preparation",
-  "hosting": "Zenodo model record (pending)",
-  "record_url": null,
+  "hosting": "Hugging Face",
+  "record_url": "https://huggingface.co/pting126/ACappellaSet-models",
   "models": [
     {
       "id": "combined-ep333",
@@ -38,9 +38,10 @@
       },
       "url": null,
       "weight_license": null,
-      "selection_note": "Historical combined checkpoint; final paper release selection remains pending.",
+      "selection_note": "Historical combined checkpoint confirmed for release inclusion on 2026-10-14; weight publication and terms pending.",
       "sixth_output_note": "other combines JC Lead and SK Baritone training semantics; not separate Lead and Baritone outputs.",
       "validation_report": "docs/validation/combined-ep333-linux-cpu.json"
     }
-  ]
+  ],
+  "repository_id": "pting126/ACappellaSet-models"
 }

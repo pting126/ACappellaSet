@@ -15,7 +15,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
       "verification": "Recorded hash; live rehash pending",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta.",
@@ -34,7 +34,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
       "verification": "Recorded hash; live rehash pending",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta.",
@@ -53,7 +53,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
       "verification": "SHA-256 and strict load verified 2026-10-13; Linux CPU inference matches research implementation bit-for-bit on two clips.",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta.",
@@ -72,7 +72,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
       "verification": "Recorded hash; live rehash pending",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -90,7 +90,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
       "verification": "Recorded hash; live rehash pending",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -108,7 +108,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
       "verification": "Recorded hash; live rehash pending",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -126,7 +126,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
       "verification": "Recorded hash; live rehash pending",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -144,7 +144,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
       "verification": "Recorded hash; live rehash pending",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -162,7 +162,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
       "verification": "Recorded hash; live rehash pending",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -180,7 +180,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
       "verification": "Recorded hash; live rehash pending",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -198,7 +198,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
       "verification": "Recorded hash; live rehash pending",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -216,7 +216,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
       "verification": "Recorded hash; live rehash pending",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -234,7 +234,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
       "verification": "Recorded hash; live rehash pending",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -252,7 +252,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
       "verification": "Recorded hash; live rehash pending",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -270,7 +270,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
+      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
       "verification": "Recorded hash; live rehash pending",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -312,7 +312,9 @@
       ],
       "distribution": "candidate_pending_final_selection_and_weight_terms",
       "verification": "Recorded hash; live rehash pending",
-      "notes": []
+      "notes": [
+        "Historical snapshot winner; completed-200k SK shared/inclusive selection later changed to 198000. Retained here as historical provenance, not a final-200k release choice."
+      ]
     },
     {
       "model": "L1",
@@ -568,5 +570,6 @@
       ],
       "public_name": "SK single-clone singer-conditioned (waveform augmentation remains enabled)"
     }
-  ]
+  ],
+  "confirmed_historical_release_count": 15
 }

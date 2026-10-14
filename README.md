@@ -2,8 +2,9 @@
 
 Dataset resources, model weights, and code for a cappella source separation.
 
-**Combined-model inference is available and validated on Linux CPU.** Dataset
-and checkpoint downloads are being prepared for Zenodo. Running inference
+**Combined-model inference is available and validated on Linux CPU.** The dataset
+is being prepared for Zenodo, and weights will be published on
+[Hugging Face](https://huggingface.co/pting126/ACappellaSet-models). Running inference
 currently requires an existing copy of the registered Combined ep333 checkpoint.
 Training, specialist, and conditioned-model workflows are still being packaged.
 
@@ -13,7 +14,7 @@ Training, specialist, and conditioned-model workflows are still being packaged.
 | --- | --- |
 | Combined ep333 inference | Implemented; actual-checkpoint Linux CPU validation passed |
 | Checkpoint inventory | 29 project candidates and one external baseline documented |
-| Public checkpoint downloads | Zenodo model record pending |
+| Public checkpoint downloads | [Hugging Face repository](https://huggingface.co/pting126/ACappellaSet-models) created; weights pending |
 | Dataset and annotations | Zenodo dataset record pending |
 | Training scripts | Being prepared |
 | Specialist and conditioned inference | Being prepared |
@@ -47,13 +48,17 @@ the matching encoder parameters.
 
 The [checkpoint checklist](docs/checkpoints.md) lists all 29 project candidates
 from the audited paper snapshot, including epoch/step choices. Exact hashes are
-in [the candidate manifest](manifests/checkpoint_candidates.json). These are
-release candidates; final paper selections and weight terms remain pending.
+in [the candidate manifest](manifests/checkpoint_candidates.json), which records
+the snapshot inventory. The three historical fixed models and 12 historical
+specialists are confirmed for release inclusion; newer-model selections and
+weight terms remain pending.
 The [inference registry](manifests/models.json) separately records models the
 public code can load. See [model documentation](docs/models.md).
 
-Weights will be hosted in a separate Zenodo model record, with verified
-checksums and applicable licenses. Large checkpoints are not committed to Git.
+Weights will be hosted in the [Hugging Face model repository](https://huggingface.co/pting126/ACappellaSet-models),
+with verified checksums and applicable licenses. It currently contains metadata
+and a configuration, with no weights uploaded. A final paper snapshot may also
+be archived on Zenodo. Large checkpoints are not committed to this GitHub repository.
 
 ## Dataset and training
 

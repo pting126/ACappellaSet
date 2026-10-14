@@ -9,4 +9,5 @@ Planned utilities:
 
 These utilities will be added with the corresponding artifact registry and
 dataset schema. There are no download or preparation commands in this initial
-structure. No Zenodo record IDs or download URLs have been assigned here.
+structure. The [Hugging Face model repository](https://huggingface.co/pting126/ACappellaSet-models)
+exists, but checkpoint download URLs and the Zenodo dataset record remain pending.

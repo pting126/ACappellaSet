@@ -3,7 +3,9 @@
 The Combined ep333 model has a working inference entry point. Its architecture
 and configuration match the archived research model. **Weights are not yet
 publicly hosted**; these instructions require an existing copy of the registered
-checkpoint. Zenodo download instructions will follow publication.
+checkpoint. [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models)
+currently contains release metadata only; download instructions will follow
+checkpoint publication.
 
 ## Installation: tested Linux CPU environment
 

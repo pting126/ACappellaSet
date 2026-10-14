@@ -2,7 +2,8 @@
 
 The release registry is [`manifests/models.json`](../manifests/models.json).
 It contains the exact Combined ep333 checkpoint identity and inference settings.
-Weights are not downloadable yet; they are planned for a separate Zenodo record.
+Weights are not downloadable yet. The [Hugging Face model repository](https://huggingface.co/pting126/ACappellaSet-models)
+contains release metadata and will host the prepared checkpoints.
 The [checkpoint checklist](checkpoints.md) covers all candidates identified in
 the audited paper snapshot.
 
@@ -27,4 +28,5 @@ does not reproduce the checkpoint.
 
 Model cards will record training data, initialization, selection criterion,
 source order, preprocessing, inference settings, limitations, and applicable
-weight terms. Public checkpoint choices have not yet been finalized here.
+weight terms. The three historical fixed models and 12 historical specialists are confirmed
+for release inclusion. Newer-model selections remain pending.
