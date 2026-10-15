@@ -50,8 +50,9 @@ The [checkpoint checklist](docs/checkpoints.md) lists all 29 project candidates
 from the audited paper snapshot, including epoch/step choices. Exact hashes are
 in [the candidate manifest](manifests/checkpoint_candidates.json), which records
 the snapshot inventory. The three historical fixed models and 12 historical
-specialists are confirmed for release inclusion; newer-model selections and
-weight terms remain pending.
+specialists are confirmed for release inclusion. Later singer-enrollment
+specialists are excluded from this release. Newer fixed-model and shared
+conditioned-model selections, and weight terms, remain pending.
 The [inference registry](manifests/models.json) separately records models the
 public code can load. See [model documentation](docs/models.md).
 

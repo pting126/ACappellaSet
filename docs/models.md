@@ -29,4 +29,14 @@ does not reproduce the checkpoint.
 Model cards will record training data, initialization, selection criterion,
 source order, preprocessing, inference settings, limitations, and applicable
 weight terms. The three historical fixed models and 12 historical specialists are confirmed
-for release inclusion. Newer-model selections remain pending.
+for release inclusion. The later singer-enrollment specialist experiments are
+excluded from this release; the original specialist banks are mixture-only.
+Newer fixed-model and shared conditioned-model selections remain pending.
+
+## Public inference support
+
+Only Combined ep333 is currently registered and validated by the public CLI.
+JC ep321, SK ep279, and the original part-specific specialist banks still need
+their model-specific registration/adapters and validation. Shared part-, singer-,
+and dual-conditioned adapters are also pending. A model listed for release is
+not necessarily supported by the current inference command.
