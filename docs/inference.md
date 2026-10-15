@@ -106,7 +106,7 @@ This establishes the tested Linux CPU path, not separation quality or a replay
 of historical GPU paper results. The CLI retains a CUDA option and original
 CUDA AMP behavior, but CUDA, macOS, and MPS were not validated in this release.
 The CPU lock is not a CUDA installation guide. The additional original fixed/specialist adapters and training smoke checks
-have separate reports; shared conditioned adapters remain pending.
+have separate reports; see [conditioned inference](conditioned-inference.md) for the shared query adapters.
 
 The portable export was additionally tested on 2026-10-14 against fresh
 original-checkpoint inference and the frozen research outputs. All six stems

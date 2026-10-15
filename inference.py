@@ -47,8 +47,14 @@ def main(argv=None):
     parser.add_argument("--output", type=Path, help="New output directory (must not exist)")
     parser.add_argument("--device", choices=("cpu", "cuda"), default="cpu")
     parser.add_argument("--threads", type=int, default=2, help="CPU thread count (default: 2)")
+    parser.add_argument("--selection", help="Validation criterion; required when multiple selections are released")
+    parser.add_argument("--role", help="Part or dual query: S/A/T/B/VP/Lead/Bar")
+    parser.add_argument("--enrollment", type=Path, help="Recording of the desired singer")
+    parser.add_argument("--enrollment-start", type=float, default=0.0, help="Start time in enrollment recording, seconds")
+    parser.add_argument("--allow-untrained-role", action="store_true",
+                        help="Explicitly reproduce the historical zero-role diagnostic")
     args = parser.parse_args(argv)
-    from models.registry import print_models, resolve
+    from models.registry import print_models, resolve, select_checkpoint
     if args.list_models:
         print_models()
         return
@@ -59,13 +65,24 @@ def main(argv=None):
     if args.output.exists():
         parser.error("--output already exists; choose a new directory")
     try:
-        spec = resolve(args.model)
+        spec = select_checkpoint(resolve(args.model), args.selection)
+        conditioned = spec['family'] == 'conditioned-htdemucs'
+        if conditioned:
+            from models.query import validate_query
+            query = validate_query(spec, args.role, args.enrollment, args.enrollment_start,
+                                   args.allow_untrained_role)
+        elif args.role is not None or args.enrollment is not None or args.enrollment_start != 0 or args.allow_untrained_role:
+            raise ValueError('Fixed and specialist models do not accept conditioned queries')
     except ValueError as exc:
         parser.error(str(exc))
     args.model = spec["id"]
     import torch
     import soundfile as sf
-    from models.fixed import load_model, separate, sha256
+    from models.fixed import sha256
+    if conditioned:
+        from models.conditioned import load_model, separate
+    else:
+        from models.fixed import load_model, separate
 
     torch.set_num_threads(args.threads)
     torch.set_num_interop_threads(args.threads)
@@ -77,7 +94,19 @@ def main(argv=None):
     config_path = ROOT / spec["config"]
     model, config = load_model(args.checkpoint, config_path, spec, device)
     mixture, input_details = read_audio(args.input, spec["sample_rate"])
-    estimates = separate(model, config, mixture, device)
+    query_details = None
+    if conditioned:
+        enrollment = None
+        query_details = dict(query, selection=spec['selection'], step=spec['step'])
+        if args.enrollment is not None:
+            enrollment, enrollment_details = read_enrollment(
+                args.enrollment, spec['sample_rate'], args.enrollment_start, config['enroll_seconds'])
+            query_details.update(enrollment=enrollment_details, enrollment_sha256=sha256(args.enrollment))
+        estimates = separate(model, config, mixture, device, enrollment, query['role_index'])
+        amp_used = False
+    else:
+        estimates = separate(model, config, mixture, device)
+        amp_used = bool(config.training.use_amp)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     # Publish a complete directory only after all stems and the receipt exist.
     with tempfile.TemporaryDirectory(prefix=".acappellaset-", dir=args.output.parent) as scratch:
@@ -98,7 +127,8 @@ def main(argv=None):
             "sample_rate": spec["sample_rate"], "channels": 2, "frames": mixture.shape[-1],
             "output_subtype": "FLOAT", "gain": 1.0, "outputs": outputs,
             "device": str(device), "threads": args.threads, "seed": 1337,
-            "inference": dict(spec["inference"], amp_used=bool(config.training.use_amp)),
+            "inference": dict(spec["inference"], amp_used=amp_used),
+            "query": query_details,
             "python": platform.python_version(),
             "packages": {name: version(name) for name in
                          ("torch", "torchaudio", "demucs", "numpy", "scipy", "soundfile", "omegaconf")},
@@ -109,6 +139,41 @@ def main(argv=None):
             raise FileExistsError("Output directory appeared during inference; refusing to replace it.")
         staging.rename(args.output)
     print(f"Saved {len(outputs)} stems and inference.json to {args.output}")
+
+
+def read_enrollment(path, sample_rate, start, seconds):
+    """Crop before resampling; preserve the native zero-padding/peak-scale contract."""
+    import numpy as np
+    import soundfile as sf
+    from scipy.signal import resample_poly
+
+    if not math.isfinite(start) or start < 0:
+        raise ValueError('Enrollment start must be finite and nonnegative')
+    info = sf.info(path)
+    offset = round(start * info.samplerate)
+    count = round(seconds * info.samplerate)
+    if offset >= info.frames:
+        raise ValueError('Enrollment start is beyond the available audio')
+    audio, rate = sf.read(path, start=offset, frames=count, dtype='float32', always_2d=True)
+    if audio.shape[1] not in (1, 2) or not np.isfinite(audio).all():
+        raise ValueError('Enrollment must contain finite mono or stereo audio')
+    actual = len(audio)
+    audio = np.pad(audio, ((0, count - actual), (0, 0)))
+    if audio.shape[1] == 1:
+        audio = np.repeat(audio, 2, axis=1)
+    if rate != sample_rate:
+        divisor = math.gcd(rate, sample_rate)
+        audio = resample_poly(audio, sample_rate // divisor, rate // divisor, axis=0)
+    wanted = round(seconds * sample_rate)
+    audio = audio[:wanted]
+    if len(audio) < wanted:
+        audio = np.pad(audio, ((0, wanted - len(audio)), (0, 0)))
+    return np.ascontiguousarray(audio.T), {
+        'start_seconds': start, 'duration_seconds': seconds, 'original_sample_rate': rate,
+        'original_channels': info.channels, 'source_frames_read': actual,
+        'zero_padded_frames_at_original_rate': count - actual,
+        'normalization': 'peak after crop and resampling, as applied by conditioned adapter',
+    }
 
 
 if __name__ == "__main__":

@@ -1,0 +1,31 @@
+{
+  "conditioning": "role",
+  "source_mode": "target_residual",
+  "channels": "stereo",
+  "seconds": 10.0,
+  "enroll_seconds": 10.0,
+  "emb_dim": 192,
+  "role_embedding_dim": 16,
+  "embedding_backend": "wespeaker_redimnet2",
+  "freeze_external_embedding": true,
+  "ht_channels": 48,
+  "ht_depth": 4,
+  "ht_growth": 2,
+  "ht_bottom_channels": 0,
+  "ht_dconv_mode": 3,
+  "ht_t_layers": 5,
+  "ht_nfft": 4096,
+  "sample_rate": 44100,
+  "hop_seconds": 4.0,
+  "training_roles": [
+    "A",
+    "B",
+    "Lead",
+    "S",
+    "T",
+    "VP"
+  ],
+  "untrained_zero_role": "Bar",
+  "encoder_config": "configs/conditioned/redimnet2.yaml",
+  "encoder_config_sha256": "57a348c24d56f7bf26794f8bcca2765984726ab56363b2d3e5ef3a27b56524fc"
+}

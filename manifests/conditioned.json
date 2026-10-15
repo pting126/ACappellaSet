@@ -1,0 +1,337 @@
+{
+  "models": [
+    {
+      "id": "Part_conditioned_htdemucs_SK",
+      "aliases": [
+        "K1"
+      ],
+      "family": "conditioned-htdemucs",
+      "research_id": "K1",
+      "config": "configs/conditioned/K1.json",
+      "config_sha256": "a2c358f669574dafa25403b5d6e4a0ee0fc3cf237e03399886761f95fd7c0fbd",
+      "sample_rate": 44100,
+      "source_order": [
+        "target",
+        "residual"
+      ],
+      "selections": [
+        {
+          "step": 198000,
+          "checkpoint_sha256": "fbd19ff91075877839bb76b022d1b5ad018a980a26603ea9cb4cca7aac0feb6a",
+          "selection_labels": [
+            "sk_shared"
+          ]
+        },
+        {
+          "step": 4000,
+          "checkpoint_sha256": "979ba17521f398fb1b2a3e0ccad29615999b50e87d76347b2682212a61b49427",
+          "selection_labels": [
+            "jc_inclusive"
+          ]
+        }
+      ],
+      "status": "local_checkpoint_linux_cpu_and_cuda_validated_weights_unpublished",
+      "conditioning": "role",
+      "training_roles": [
+        "A",
+        "B",
+        "Bar",
+        "S",
+        "T",
+        "VP"
+      ],
+      "untrained_zero_role": "Lead",
+      "inference": {
+        "window_seconds": 10,
+        "hop_seconds": 4,
+        "precision": "float32",
+        "window_normalization": "peak",
+        "overlap_add": "hann_clamped_0.001"
+      }
+    },
+    {
+      "id": "Singer_conditioned_htdemucs_SK",
+      "aliases": [
+        "K5"
+      ],
+      "family": "conditioned-htdemucs",
+      "research_id": "K5",
+      "config": "configs/conditioned/K5.json",
+      "config_sha256": "fb94dcf47cd96b4ee07b0975996a300d9c0938e3a24b855cfbc273fe60f58c8a",
+      "sample_rate": 44100,
+      "source_order": [
+        "target",
+        "residual"
+      ],
+      "selections": [
+        {
+          "step": 12000,
+          "checkpoint_sha256": "6f8e199008a542904330495dab28d7f56d8c380a6959ea4e460b22450c56ca43",
+          "selection_labels": [
+            "jc_shared",
+            "jc_inclusive"
+          ]
+        },
+        {
+          "step": 179000,
+          "checkpoint_sha256": "eeeac981bacdd063207a0258fb60625edd2b60e94bc544852a1c2459223a04d3",
+          "selection_labels": [
+            "sk_shared"
+          ]
+        },
+        {
+          "step": 106000,
+          "checkpoint_sha256": "df846b039ddd5e032f221adcf3de33a9a3f546f21b47f0bc3d30df891ab4ca93",
+          "selection_labels": [
+            "combined_shared",
+            "combined_inclusive"
+          ]
+        }
+      ],
+      "status": "local_checkpoint_linux_cpu_and_cuda_validated_weights_unpublished",
+      "conditioning": "enrollment",
+      "training_roles": [
+        "A",
+        "B",
+        "Bar",
+        "S",
+        "T",
+        "VP"
+      ],
+      "untrained_zero_role": "Lead",
+      "inference": {
+        "window_seconds": 10,
+        "hop_seconds": 4,
+        "precision": "float32",
+        "window_normalization": "peak",
+        "overlap_add": "hann_clamped_0.001"
+      }
+    },
+    {
+      "id": "Dual_conditioned_htdemucs_SK",
+      "aliases": [
+        "K7"
+      ],
+      "family": "conditioned-htdemucs",
+      "research_id": "K7",
+      "config": "configs/conditioned/K7.json",
+      "config_sha256": "5cbc1736ca73762cd34603e55cc3850e2cbf2872388898f710a4ff3e66b117dc",
+      "sample_rate": 44100,
+      "source_order": [
+        "target",
+        "residual"
+      ],
+      "selections": [
+        {
+          "step": 7000,
+          "checkpoint_sha256": "0646527189b1221552c01c918cff01173e98077dc515a6fe9f795ffab00c24ee",
+          "selection_labels": [
+            "jc_inclusive"
+          ]
+        }
+      ],
+      "status": "local_checkpoint_linux_cpu_and_cuda_validated_weights_unpublished",
+      "conditioning": "dual",
+      "training_roles": [
+        "A",
+        "B",
+        "Bar",
+        "S",
+        "T",
+        "VP"
+      ],
+      "untrained_zero_role": "Lead",
+      "inference": {
+        "window_seconds": 10,
+        "hop_seconds": 4,
+        "precision": "float32",
+        "window_normalization": "peak",
+        "overlap_add": "hann_clamped_0.001"
+      }
+    },
+    {
+      "id": "Part_conditioned_htdemucs_JC",
+      "aliases": [
+        "L1"
+      ],
+      "family": "conditioned-htdemucs",
+      "research_id": "L1",
+      "config": "configs/conditioned/L1.json",
+      "config_sha256": "45fca96de4f1849d076368538dd789f97e5e0a4ab4443c6c0922e4505c2ac08a",
+      "sample_rate": 44100,
+      "source_order": [
+        "target",
+        "residual"
+      ],
+      "selections": [
+        {
+          "step": 141000,
+          "checkpoint_sha256": "92e19968bef2ce84d3800141afc50cc47141bd016adfcc07b70e705df7408004",
+          "selection_labels": [
+            "jc_shared"
+          ]
+        },
+        {
+          "step": 119000,
+          "checkpoint_sha256": "5de579abaf11546eab1fcfa29566cf4934ece6c5fe7b23df56b6af27c3be3723",
+          "selection_labels": [
+            "sk_inclusive"
+          ]
+        }
+      ],
+      "status": "local_checkpoint_linux_cpu_and_cuda_validated_weights_unpublished",
+      "conditioning": "role",
+      "training_roles": [
+        "A",
+        "B",
+        "Lead",
+        "S",
+        "T",
+        "VP"
+      ],
+      "untrained_zero_role": "Bar",
+      "inference": {
+        "window_seconds": 10,
+        "hop_seconds": 4,
+        "precision": "float32",
+        "window_normalization": "peak",
+        "overlap_add": "hann_clamped_0.001"
+      }
+    },
+    {
+      "id": "Singer_conditioned_htdemucs_JC",
+      "aliases": [
+        "L3"
+      ],
+      "family": "conditioned-htdemucs",
+      "research_id": "L3",
+      "config": "configs/conditioned/L3.json",
+      "config_sha256": "a0bab6c22d17b9b23eca07c5cd3f2f41ffcb01d807ea78a19f3c131eccd91438",
+      "sample_rate": 44100,
+      "source_order": [
+        "target",
+        "residual"
+      ],
+      "selections": [
+        {
+          "step": 184000,
+          "checkpoint_sha256": "9f49b7d59575658dcfb9667395d998e8fc34a935b3995b099593e99ee1de5226",
+          "selection_labels": [
+            "sk_inclusive"
+          ]
+        }
+      ],
+      "status": "local_checkpoint_linux_cpu_and_cuda_validated_weights_unpublished",
+      "conditioning": "enrollment",
+      "training_roles": [
+        "A",
+        "B",
+        "Lead",
+        "S",
+        "T",
+        "VP"
+      ],
+      "untrained_zero_role": "Bar",
+      "inference": {
+        "window_seconds": 10,
+        "hop_seconds": 4,
+        "precision": "float32",
+        "window_normalization": "peak",
+        "overlap_add": "hann_clamped_0.001"
+      }
+    },
+    {
+      "id": "Dual_conditioned_htdemucs_JC",
+      "aliases": [
+        "L4"
+      ],
+      "family": "conditioned-htdemucs",
+      "research_id": "L4",
+      "config": "configs/conditioned/L4.json",
+      "config_sha256": "7c46503ca0ddc32623e184e801fe411184ff3a3d42dcddaf34106fb33d45f2cf",
+      "sample_rate": 44100,
+      "source_order": [
+        "target",
+        "residual"
+      ],
+      "selections": [
+        {
+          "step": 188000,
+          "checkpoint_sha256": "724af8d2906fc08de54b7484df69143a3a7b2c62c412e6e473b979bc34cd74d0",
+          "selection_labels": [
+            "sk_inclusive"
+          ]
+        }
+      ],
+      "status": "local_checkpoint_linux_cpu_and_cuda_validated_weights_unpublished",
+      "conditioning": "dual",
+      "training_roles": [
+        "A",
+        "B",
+        "Lead",
+        "S",
+        "T",
+        "VP"
+      ],
+      "untrained_zero_role": "Bar",
+      "inference": {
+        "window_seconds": 10,
+        "hop_seconds": 4,
+        "precision": "float32",
+        "window_normalization": "peak",
+        "overlap_add": "hann_clamped_0.001"
+      }
+    },
+    {
+      "id": "Singer_conditioned_htdemucs_SKnJC",
+      "aliases": [
+        "M3"
+      ],
+      "family": "conditioned-htdemucs",
+      "research_id": "M3",
+      "config": "configs/conditioned/M3.json",
+      "config_sha256": "fee6def3080111793b362b2b9fda724720ddd13f28b2596f2a3eeb95fb8168d0",
+      "sample_rate": 44100,
+      "source_order": [
+        "target",
+        "residual"
+      ],
+      "selections": [
+        {
+          "step": 198000,
+          "checkpoint_sha256": "6997e980ed2dded55ba1db2d5e88b71ad7024782125b2bd8dcf41df71189d6b4",
+          "selection_labels": [
+            "sk_shared"
+          ]
+        },
+        {
+          "step": 195000,
+          "checkpoint_sha256": "badc60d5bb2f2cf0cca92b11dc98c5a4de51fcd41312fff43607f7664ba5f9df",
+          "selection_labels": [
+            "jc_shared",
+            "combined_shared"
+          ]
+        }
+      ],
+      "status": "local_checkpoint_linux_cpu_and_cuda_validated_weights_unpublished",
+      "conditioning": "enrollment",
+      "training_roles": [
+        "A",
+        "B",
+        "Bar",
+        "Lead",
+        "S",
+        "T",
+        "VP"
+      ],
+      "untrained_zero_role": null,
+      "inference": {
+        "window_seconds": 10,
+        "hop_seconds": 4,
+        "precision": "float32",
+        "window_normalization": "peak",
+        "overlap_add": "hann_clamped_0.001"
+      }
+    }
+  ]
+}

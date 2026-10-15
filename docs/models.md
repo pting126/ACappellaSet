@@ -1,7 +1,8 @@
 # Models and checkpoints
 
 The release registry is [`manifests/models.json`](../manifests/models.json).
-It contains the exact Fixed_6stem_htdemucs_SKnJC checkpoint identity and inference settings.
+It contains fixed and original specialist identities and inference settings.
+The [conditioned registry](../manifests/conditioned.json) adds seven recipes covering 12 active selections.
 Combined portable weights are available. The [Hugging Face model repository](https://huggingface.co/pting126/ACappellaSet-models)
 contains the Combined checkpoint and metadata for the remaining planned weights.
 The [checkpoint checklist](checkpoints.md) covers all candidates identified in
@@ -45,7 +46,8 @@ availability. The same strict loader verifies each model's checkpoint/config
 hashes. Specialists additionally enforce residual index 0 and target index 1.
 Only the Combined portable checkpoint is published; the other adapters require
 the exact original local checkpoint. Their original filenames/hashes remain in
-the registry. Shared part-, singer-, and dual-conditioned adapters are pending.
+the registry. Shared part-, singer-, and dual-conditioned adapters are also available
+with verified local checkpoints; see [conditioned inference](conditioned-inference.md).
 
 The active release plan has 27 checkpoints; K6 and K6_no_aug are deferred.
 Natural SK-only weight licensing is Apache-2.0; JC-trained weight terms need

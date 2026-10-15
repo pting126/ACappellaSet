@@ -23,14 +23,15 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", default="Fixed_6stem_htdemucs_SKnJC")
     parser.add_argument("--list-models", action="store_true")
+    parser.add_argument("--selection", help="Registered validation criterion for a conditioned model")
     parser.add_argument("--output", type=Path, default=Path("checkpoints"), help="Destination directory")
     args = parser.parse_args()
-    from models.registry import print_models, resolve
+    from models.registry import print_models, resolve, select_checkpoint
     if args.list_models:
         print_models()
         return
     try:
-        model = resolve(args.model)
+        model = select_checkpoint(resolve(args.model), args.selection)
     except ValueError as exc:
         parser.error(str(exc))
     artifact = model.get("portable_checkpoint", {})

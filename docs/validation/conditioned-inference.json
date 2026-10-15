@@ -1,0 +1,238 @@
+{
+  "status": "PASS",
+  "cpu_checkpoint_comparisons": {
+    "status": "PASS",
+    "mode": "cpu",
+    "torch": "2.10.0+cpu",
+    "device": "cpu",
+    "tests": [
+      {
+        "model": "K1",
+        "step": 198000,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "L1",
+        "step": 141000,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "K1",
+        "step": 4000,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "K5",
+        "step": 12000,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "K7",
+        "step": 7000,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "L1",
+        "step": 119000,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "L3",
+        "step": 184000,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "L4",
+        "step": 188000,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "K5",
+        "step": 179000,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "K5",
+        "step": 106000,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "M3",
+        "step": 198000,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "M3",
+        "step": 195000,
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      }
+    ],
+    "tolerances": {
+      "max_abs": 1e-05,
+      "rms": 1e-06
+    }
+  },
+  "cuda_full_song_target_comparisons": {
+    "status": "PASS",
+    "mode": "gpu",
+    "torch": "2.10.0+cu128",
+    "device": "cuda",
+    "tests": [
+      {
+        "model": "K1",
+        "step": 198000,
+        "frames": 6272000,
+        "mixture_sha256": "881965779db6e74c92115cedc759c0c2487309030bdd6b3962f2198486bc9b26",
+        "enrollment_sha256": "561efd807fdb5659e208ae51f8cb6408aeb3ac8dd2638d723886d555f6787671",
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "L1",
+        "step": 141000,
+        "frames": 2528930,
+        "mixture_sha256": "f5ced9ab4cf98c1524f1a2b0118c6913b17c81bcbb1c79f4b2a95ebe86c3dd7f",
+        "enrollment_sha256": "b6ca0296588c689d9f62f41b6a8cf255b24364caf14876dca835f003ec2027bb",
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "K5",
+        "step": 12000,
+        "frames": 6272000,
+        "mixture_sha256": "881965779db6e74c92115cedc759c0c2487309030bdd6b3962f2198486bc9b26",
+        "enrollment_sha256": "561efd807fdb5659e208ae51f8cb6408aeb3ac8dd2638d723886d555f6787671",
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "K7",
+        "step": 7000,
+        "frames": 6272000,
+        "mixture_sha256": "881965779db6e74c92115cedc759c0c2487309030bdd6b3962f2198486bc9b26",
+        "enrollment_sha256": "561efd807fdb5659e208ae51f8cb6408aeb3ac8dd2638d723886d555f6787671",
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "L3",
+        "step": 184000,
+        "frames": 2528930,
+        "mixture_sha256": "f5ced9ab4cf98c1524f1a2b0118c6913b17c81bcbb1c79f4b2a95ebe86c3dd7f",
+        "enrollment_sha256": "b6ca0296588c689d9f62f41b6a8cf255b24364caf14876dca835f003ec2027bb",
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "L4",
+        "step": 188000,
+        "frames": 2528930,
+        "mixture_sha256": "f5ced9ab4cf98c1524f1a2b0118c6913b17c81bcbb1c79f4b2a95ebe86c3dd7f",
+        "enrollment_sha256": "b6ca0296588c689d9f62f41b6a8cf255b24364caf14876dca835f003ec2027bb",
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      },
+      {
+        "model": "M3",
+        "step": 198000,
+        "frames": 6272000,
+        "mixture_sha256": "881965779db6e74c92115cedc759c0c2487309030bdd6b3962f2198486bc9b26",
+        "enrollment_sha256": "561efd807fdb5659e208ae51f8cb6408aeb3ac8dd2638d723886d555f6787671",
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "bit_identical": true
+      }
+    ],
+    "tolerances": {
+      "max_abs": 1e-05,
+      "rms": 1e-06
+    }
+  },
+  "cli_query_checks": {
+    "status": "PASS",
+    "tests": [
+      {
+        "model": "K1",
+        "role": "S",
+        "status": "PASS",
+        "max_abs_by_output": [
+          4.656612873077393e-10,
+          1.862645149230957e-09
+        ],
+        "mechanism": "trained_role_token"
+      },
+      {
+        "model": "K5",
+        "role": null,
+        "status": "PASS",
+        "max_abs_by_output": [
+          9.313225746154785e-10,
+          9.313225746154785e-10
+        ],
+        "mechanism": "matching_target_enrollment"
+      },
+      {
+        "model": "K7",
+        "role": "Lead",
+        "status": "PASS",
+        "max_abs_by_output": [
+          9.313225746154785e-10,
+          1.862645149230957e-09
+        ],
+        "mechanism": "enrollment_plus_existing_zero_role"
+      },
+      {
+        "model": "L4",
+        "role": "Bar",
+        "status": "PASS",
+        "max_abs_by_output": [
+          9.313225746154785e-10,
+          1.862645149230957e-09
+        ],
+        "mechanism": "enrollment_plus_existing_zero_role"
+      }
+    ]
+  },
+  "behavioral_tests": 7,
+  "jobs": {
+    "cpu": 64073756,
+    "gpu": 64073757,
+    "cli": 64076681
+  },
+  "limitations": [
+    "CPU comparisons use one 0.3-second synthetic mixture and ten-second enrollment per checkpoint",
+    "Full-song CUDA comparison checks target output for one song per recipe; direct CPU checks and CLI cases cover both output heads",
+    "Parity on tested inputs is not a separation-quality result or a claim of cross-device bitwise equality",
+    "Weights remain local-only and training validation is separate"
+  ]
+}

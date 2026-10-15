@@ -13,7 +13,7 @@ from prepare_specialists import prepare, STEMS, SPLITS
 
 class RegistryTests(unittest.TestCase):
     def test_config_hashes_aliases_and_contracts(self):
-        self.assertEqual(len(entries()),15)
+        self.assertEqual(len([s for s in entries() if s['family']!='conditioned-htdemucs']),15)
         names=set()
         for spec in entries():
             self.assertEqual(hashlib.sha256((ROOT/spec['config']).read_bytes()).hexdigest(),spec['config_sha256'])

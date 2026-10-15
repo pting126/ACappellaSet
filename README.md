@@ -6,7 +6,7 @@ Dataset resources, model weights, and code for a cappella source separation.
 110 MB portable checkpoint from [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models)
 using the verified download command below. The dataset is being prepared for
 Zenodo. Original fixed/specialist scripts, data preparation, and canonical scoring are included.
-Shared conditioned-model scripts and a clean training environment lock remain in preparation.
+Conditioned inference is included; portable training and dataset reproduction are being completed in validated stages.
 
 ## Availability
 
@@ -20,7 +20,8 @@ Shared conditioned-model scripts and a clean training environment lock remain in
 | Fixed/specialist training | Pinned MSS patch and portable launcher; see validation limits in the training guide |
 | Specialist data preparation | Runnable; preserves the different JC and SK residual recipes |
 | Canonical scoring | Runnable on explicitly paired full-song WAVs |
-| Shared conditioned models | Adapter and training packaging pending |
+| Shared conditioned inference | Seven recipes / 12 selections; CPU checkpoint and CUDA full-song parity passed; weights supplied locally |
+| Shared conditioned training | Packaging and clean-environment validation in progress |
 
 ## Run inference
 
@@ -58,6 +59,7 @@ python evaluate.py --manifest /path/to/pairs.csv --output outputs/scores
 
 See [specialist preparation](docs/preparation.md), [evaluation](docs/evaluation.md),
 and [training](docs/training.md) for input formats and supported recipes.
+For part-, singer-, and dual-conditioned queries, see [conditioned inference](docs/conditioned-inference.md).
 `train.py --dry-run` verifies the original fixed/specialist training setup before
 launching it. These scripts do not provide missing checkpoint downloads or dataset audio.
 

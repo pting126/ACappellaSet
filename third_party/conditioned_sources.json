@@ -1,0 +1,200 @@
+{
+  "repositories": {
+    "wespeaker": {
+      "commit": "dfa741957e5c11f477623b6e583d67d0af25ee88"
+    },
+    "demucs": {
+      "commit": "e976d93ecc3865e5757426930257e200846a520a"
+    }
+  },
+  "files": [
+    {
+      "file": "models/vendor/demucs/htdemucs.py",
+      "source": "demucs/demucs/htdemucs.py",
+      "source_sha256": "3404ed68d35b946f9c54b54201851bb4171dd7861a498945ce53b1df1144b034",
+      "sha256": "3404ed68d35b946f9c54b54201851bb4171dd7861a498945ce53b1df1144b034",
+      "changes": []
+    },
+    {
+      "file": "models/vendor/demucs/hdemucs.py",
+      "source": "demucs/demucs/hdemucs.py",
+      "source_sha256": "5b98a5ee262bf6b872a0db23eeb60d024debc4be1ed237c551284af305343864",
+      "sha256": "5b98a5ee262bf6b872a0db23eeb60d024debc4be1ed237c551284af305343864",
+      "changes": []
+    },
+    {
+      "file": "models/vendor/demucs/demucs.py",
+      "source": "demucs/demucs/demucs.py",
+      "source_sha256": "4ab138b111d98f0a6ad6ed0c8b8c2f42578fd187c6890104b2251089a74f0d2d",
+      "sha256": "4ab138b111d98f0a6ad6ed0c8b8c2f42578fd187c6890104b2251089a74f0d2d",
+      "changes": []
+    },
+    {
+      "file": "models/vendor/demucs/transformer.py",
+      "source": "demucs/demucs/transformer.py",
+      "source_sha256": "d99b3706f590397382abed1da384c539805c8fc3a0abb6f6ac79e711649c6f8d",
+      "sha256": "d99b3706f590397382abed1da384c539805c8fc3a0abb6f6ac79e711649c6f8d",
+      "changes": []
+    },
+    {
+      "file": "models/vendor/demucs/spec.py",
+      "source": "demucs/demucs/spec.py",
+      "source_sha256": "8a63153a012703fd5ed2e3d012e91ad624597c7296e9d82f40a26c4249f2bff7",
+      "sha256": "8a63153a012703fd5ed2e3d012e91ad624597c7296e9d82f40a26c4249f2bff7",
+      "changes": []
+    },
+    {
+      "file": "models/vendor/demucs/states.py",
+      "source": "demucs/demucs/states.py",
+      "source_sha256": "37375543dad61a7dc549caf6f165c0500d903313159c70cf893d47718194b865",
+      "sha256": "37375543dad61a7dc549caf6f165c0500d903313159c70cf893d47718194b865",
+      "changes": []
+    },
+    {
+      "file": "models/vendor/demucs/utils.py",
+      "source": "demucs/demucs/utils.py",
+      "source_sha256": "d60e8c3e8a6b74c069d69068a56f587687204abe0f40399f853893089a076699",
+      "sha256": "d60e8c3e8a6b74c069d69068a56f587687204abe0f40399f853893089a076699",
+      "changes": []
+    },
+    {
+      "file": "models/vendor/demucs/LICENSE",
+      "source": "demucs/LICENSE",
+      "source_sha256": "cf9b17822d1fcd4ff32ccbe14183386fb3adf6f2ff92dc184130823f7fc28173",
+      "sha256": "cf9b17822d1fcd4ff32ccbe14183386fb3adf6f2ff92dc184130823f7fc28173",
+      "changes": []
+    },
+    {
+      "file": "models/vendor/wespeaker/redimnet2.py",
+      "source": "research/.vendor/wespeaker/wespeaker/models/redimnet2.py",
+      "source_sha256": "9ae943666bd1bf4cf02d7f440278037be16e68539508dab8e4349c5440f9ce02",
+      "sha256": "d8f02d304217992c5a2574fa4ca15284d45ab3f9a5bd78952ad4875c96af5c48",
+      "changes": [
+        "Package-relative imports only"
+      ]
+    },
+    {
+      "file": "models/vendor/wespeaker/pooling_layers.py",
+      "source": "research/.vendor/wespeaker/wespeaker/models/pooling_layers.py",
+      "source_sha256": "3874eb8b382bd7ed824ca6b3822ede02344a6b8cada20230502031a00bf5d72d",
+      "sha256": "3874eb8b382bd7ed824ca6b3822ede02344a6b8cada20230502031a00bf5d72d",
+      "changes": [
+        "Package-relative imports only"
+      ]
+    },
+    {
+      "file": "models/vendor/wespeaker/tfmel.py",
+      "source": "research/.vendor/wespeaker/wespeaker/frontend/tfmel.py",
+      "source_sha256": "cafa5bddd17a94bf7b866993e0ba22dd343f7258a477e0610c724ec2d3a5272f",
+      "sha256": "cafa5bddd17a94bf7b866993e0ba22dd343f7258a477e0610c724ec2d3a5272f",
+      "changes": [
+        "Package-relative imports only"
+      ]
+    },
+    {
+      "file": "models/vendor/wespeaker/LICENSE",
+      "source": "research/.vendor/wespeaker/LICENSE",
+      "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "changes": []
+    },
+    {
+      "file": "configs/conditioned/redimnet2.yaml",
+      "source": "research/checkpoints/pretrained_download/wespeaker/wespeaker-voxceleb-redimnet2-B6-LM/config.yaml",
+      "source_sha256": "57a348c24d56f7bf26794f8bcca2765984726ab56363b2d3e5ef3a27b56524fc",
+      "sha256": "57a348c24d56f7bf26794f8bcca2765984726ab56363b2d3e5ef3a27b56524fc",
+      "changes": []
+    },
+    {
+      "file": "models/conditioned_core.py",
+      "source": "research/experiments/seagullk_singer_conditioned/train_htdemucs_v2a.py",
+      "source_sha256": "86c19b14c730ddcee9a0c96d5b459b033583fdf91c7e683f31f6f7c7f83f6503",
+      "sha256": "ffe7b983e36393cd2d2dcd93dfb06350e2466673618d65cbf2573a8e8bbed0cc",
+      "changes": [
+        "Extract DualConditionedHTDemucs; package imports; only released WeSpeaker backend is exposed"
+      ]
+    },
+    {
+      "file": "models/windowing.py",
+      "source": "research/evaluation_portal/full_song_utils.py",
+      "source_sha256": "07997f575b009cc9216d9feac65269f8a30141c06b2e77dc48679c538ddc0a85",
+      "sha256": "b434790664f92bc9a0287b9367a7b6b6d932e7e79a9a6849494d708e2bda7ea7",
+      "changes": [
+        "Extract window_starts unchanged"
+      ]
+    },
+    {
+      "file": "configs/conditioned/K1.json",
+      "source": "research/experiments/k_corrected_singer_enrollment_v1/configs/K1.json",
+      "source_sha256": "e6afbcfd8ac4279517b070640fb5b109e6b2c766e5854e7232358d0be841a317",
+      "sha256": "a2c358f669574dafa25403b5d6e4a0ee0fc3cf237e03399886761f95fd7c0fbd",
+      "changes": [
+        "Retain architecture and inference arguments; remove runtime paths"
+      ]
+    },
+    {
+      "file": "configs/conditioned/K5.json",
+      "source": "research/experiments/k_corrected_singer_enrollment_v1/configs/K5.json",
+      "source_sha256": "21f8467dfc456964a8a8cea1c1bb0fb4d8c84c0607101a2c933f22f79f948a90",
+      "sha256": "fb94dcf47cd96b4ee07b0975996a300d9c0938e3a24b855cfbc273fe60f58c8a",
+      "changes": [
+        "Retain architecture and inference arguments; remove runtime paths"
+      ]
+    },
+    {
+      "file": "configs/conditioned/K7.json",
+      "source": "research/experiments/k_corrected_singer_enrollment_v1/configs/K7.json",
+      "source_sha256": "ccad6c6ae0e86bef34711f964d0cfd0418395688ec1bb971e923fdf2ad183c46",
+      "sha256": "5cbc1736ca73762cd34603e55cc3850e2cbf2872388898f710a4ff3e66b117dc",
+      "changes": [
+        "Retain architecture and inference arguments; remove runtime paths"
+      ]
+    },
+    {
+      "file": "configs/conditioned/L1.json",
+      "source": "research/experiments/l_jc_kmatched_v1/configs/L1.json",
+      "source_sha256": "2046ab5a1f6b421d35c3a78d98a35c0bbb46bf6268ee2c5fd3ba66c966e79b4e",
+      "sha256": "45fca96de4f1849d076368538dd789f97e5e0a4ab4443c6c0922e4505c2ac08a",
+      "changes": [
+        "Retain architecture and inference arguments; remove runtime paths"
+      ]
+    },
+    {
+      "file": "configs/conditioned/L3.json",
+      "source": "research/experiments/l_jc_kmatched_v1/configs/L3.json",
+      "source_sha256": "c63a19b6bac6b29f3bed072074075efb97a2d2e2cb35c5b35c1f7bce633e31e1",
+      "sha256": "a0bab6c22d17b9b23eca07c5cd3f2f41ffcb01d807ea78a19f3c131eccd91438",
+      "changes": [
+        "Retain architecture and inference arguments; remove runtime paths"
+      ]
+    },
+    {
+      "file": "configs/conditioned/L4.json",
+      "source": "research/experiments/l_jc_kmatched_v1/configs/L4.json",
+      "source_sha256": "e8cf6f1e0453dd03b382f33723f39196a1702161b2c6868b5fda998a45e37128",
+      "sha256": "7c46503ca0ddc32623e184e801fe411184ff3a3d42dcddaf34106fb33d45f2cf",
+      "changes": [
+        "Retain architecture and inference arguments; remove runtime paths"
+      ]
+    },
+    {
+      "file": "configs/conditioned/M3.json",
+      "source": "research/experiments/m_combined_lighthouse_20260918/configs/M3.json",
+      "source_sha256": "8872aab17df52466525ccbd13ae61ffaf92e2d7fc848cd9c8a726bf9ce3b2b16",
+      "sha256": "fee6def3080111793b362b2b9fda724720ddd13f28b2596f2a3eeb95fb8168d0",
+      "changes": [
+        "Retain architecture and inference arguments; remove runtime paths"
+      ]
+    },
+    {
+      "file": "models/conditioned_encoder.py",
+      "source": "research/experiments/seagullk_singer_conditioned/wespeaker_embedding.py",
+      "source_sha256": "0754fc8718cefb6870aa573519d460da68bf4fa4199cc88a123e71cf715a936e",
+      "sha256": "5209d4a63b0100be347f9c032be0de5dcfe939b055c82156575db63ed0070ad7",
+      "changes": [
+        "Construct pinned ReDimNet2 directly without pretrained download; separation checkpoint strictly supplies complete state",
+        "Embedding method AST identical to audited wrapper"
+      ]
+    }
+  ]
+}

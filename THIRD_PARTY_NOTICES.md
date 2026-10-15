@@ -24,3 +24,16 @@ also derives from the MIT-licensed MSS project at the pinned base commit.
 Its manifest records upstream and modified source hashes; the patch retains
 original author notices. The canonical metric and preparation provenance
 manifests identify extracts/adaptations from this project's research scripts.
+
+# Conditioned model dependencies
+
+Conditioned inference includes the required Demucs modules at commit
+`e976d93ecc3865e5757426930257e200846a520a` under MIT, and the ReDimNet2,
+pooling, and tfmel modules from WeSpeaker commit
+`dfa741957e5c11f477623b6e583d67d0af25ee88` under Apache-2.0. Their copyright
+headers and licenses are retained under `models/vendor/`. WeSpeaker imports
+were changed to package-relative imports; the computations are unchanged.
+The conditioned forward pass adapts Demucs internals and retains that upstream
+attribution. Exact sources and transformations are recorded in
+`third_party/conditioned_sources.json`. These code licenses do not assign terms
+to separately distributed model weights or audio.

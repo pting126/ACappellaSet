@@ -6,7 +6,7 @@ three historical fixed models and 12 historical specialists were confirmed
 for release inclusion. The ICASSP release excludes newer fixed-six training
 runs and later singer-enrollment specialists. The conditioned candidates below
 cover the paper experiments with updated K1 and M3 evaluations. Public loader
-validation remains pending for the conditioned models.
+validation has passed for the 12 active conditioned selections; their weight downloads remain pending.
 
 Exact filenames, hashes, and recorded selection labels are in [`manifests/checkpoint_candidates.json`](../manifests/checkpoint_candidates.json). Repeated table uses of the same checkpoint are deduplicated by SHA-256. Epochs below are the stored checkpoint epoch numbers.
 
