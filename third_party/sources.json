@@ -17,8 +17,8 @@
       "audited_base_commit": "c6a02267a2969b94dc2b261b6701a32ad9b7f118",
       "code_license": "MIT",
       "project_modifications_required": true,
-      "release_fork_or_patch": null,
-      "note": "The upstream base alone does not contain the required project training modifications.",
+      "release_fork_or_patch": "third_party/patches/mss-training.patch",
+      "note": "Pinned patch and portable launcher for original fixed/specialist training; conditioned recipes and clean training environment lock remain pending.",
       "fixed_inference": "Architecture vendored byte-identically; HTDemucs inference branch extracted with attribution. Full modified MSS checkout is not needed for this inference path; training modifications remain pending."
     },
     {

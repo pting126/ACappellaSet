@@ -1,6 +1,6 @@
-# Part-specific models
+# Original mixture-only specialist configs
 
-Reserved for specialist configurations and bank definitions. A bank contains
-multiple checkpoints, one per target part. The historical MSS two-output
-contract is residual at index 0 and target at index 1; verify this contract
-against every released checkpoint.
+JC and SK directories contain the original byte-identical MSS configurations.
+Every config orders the residual first and target second. These are not the
+later singer-enrollment specialist models. Checkpoint identities and config
+hashes are registered in `manifests/models.json`.

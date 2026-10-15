@@ -1,0 +1,26 @@
+{
+  "snapshot": "paper_canonical_metric_20260909",
+  "functions": [
+    {
+      "function": "neg_si_sdr",
+      "source_file": "train_htdemucs_v2a.py",
+      "source_sha256": "baa2a1a31fac2832080a577c753452a4f8797e87d62f268879f3a4548df20f81",
+      "function_sha256": "0f33ef72ae83609e1d15ade4b1bd574d55cf2df190736e32f0943ea9b6ee96b6",
+      "modifications": "none"
+    },
+    {
+      "function": "si_sdr_value",
+      "source_file": "train_htdemucs_v2a.py",
+      "source_sha256": "baa2a1a31fac2832080a577c753452a4f8797e87d62f268879f3a4548df20f81",
+      "function_sha256": "228186cb2ad01396e4c3d0305bb2c660d2cec37539fad8aa3290557dbcd9999f",
+      "modifications": "none"
+    },
+    {
+      "function": "dbfs",
+      "source_file": "evaluate_htdemucs_v2a_full_song.py",
+      "source_sha256": "5516d7f37f171ed8e6afd19014334ce441110789fbdb574815805bf874b22d04",
+      "function_sha256": "386822e1bf742f450034c70da389e0dec888c2d1806359d1ef7feb101112f770",
+      "modifications": "none"
+    }
+  ]
+}

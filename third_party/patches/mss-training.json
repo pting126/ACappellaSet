@@ -1,0 +1,49 @@
+{
+  "upstream_repository": "https://github.com/ZFTurbo/Music-Source-Separation-Training",
+  "base_commit": "c6a02267a2969b94dc2b261b6701a32ad9b7f118",
+  "patch_sha256": "76e3906b5df0ccbf8873548ffa79c7f61e3aad164920dd7af0cbb1409dd023d1",
+  "files": [
+    {
+      "path": "train.py",
+      "upstream_sha256": "7e62898d11d797c4b7280f0049baeeb721e170411d648ddc20e827ca6842ab6e",
+      "audited_source_sha256": "67d7d01f9989021deaf9c01c15321c7de4c87ab05eb2252063a98ae10b8efdc6",
+      "patched_sha256": "313ba017847a0e73f62e985fcc3017de2c8d08ddeb3574868390480b05f0f06a"
+    },
+    {
+      "path": "train_ddp.py",
+      "upstream_sha256": "6306bcb50a6924104b256a9dc4a7d7140bbd66c918837f0068e9f6d0a2c2c2a9",
+      "audited_source_sha256": "ed2aafa4efbc868e516fa1c0c1a794515d8eccfe29120f1ffb324907a827316e",
+      "patched_sha256": "ed2aafa4efbc868e516fa1c0c1a794515d8eccfe29120f1ffb324907a827316e"
+    },
+    {
+      "path": "valid.py",
+      "upstream_sha256": "4abd17bcb5f93af7d968f51dd23c163cead8eac2a0ab8060626710775b51b9c0",
+      "audited_source_sha256": "6542aa63dc82f4c50eefc2f5b8ef5829c7e139fb3c2a1706f8b796576685bf08",
+      "patched_sha256": "6542aa63dc82f4c50eefc2f5b8ef5829c7e139fb3c2a1706f8b796576685bf08"
+    },
+    {
+      "path": "utils/losses.py",
+      "upstream_sha256": "e0f246b12ca913fe7fd986b450ffd84680166ee736f5756f744023df0f4013a0",
+      "audited_source_sha256": "11455dadad6467a4a1a19ac1ea72b070fb8c090b9fa432a722327e7f83edd552",
+      "patched_sha256": "11455dadad6467a4a1a19ac1ea72b070fb8c090b9fa432a722327e7f83edd552"
+    },
+    {
+      "path": "utils/model_utils.py",
+      "upstream_sha256": "30a13907e88e99526c02eddfed618867811b6108cf7daa9486a226872cd58130",
+      "audited_source_sha256": "75e83006b428e64e07095acefa4df56f495714b15c1b92be4e34d09f8ecf7eec",
+      "patched_sha256": "75e83006b428e64e07095acefa4df56f495714b15c1b92be4e34d09f8ecf7eec"
+    },
+    {
+      "path": "utils/settings.py",
+      "upstream_sha256": "d75fb123256c25ae0689a177d6090a00ed243f56b75b6c162dd0b83c737e4866",
+      "audited_source_sha256": "03307c3774f214813e96d1e29d833f88698f0b4fe0357541f65bc075d667359b",
+      "patched_sha256": "d7e569db07703ec5e4930121cc048eb0acee17fe502e78fdd15a3ef26e7a563a"
+    }
+  ],
+  "curation": [
+    "Removed private portal path injection and later opt-in multi-corpus validation bridge",
+    "Normalized line endings to LF; scientific loss and head initialization functions unchanged"
+  ],
+  "scope": "Original MSS fixed and mixture-only specialist training; not conditioned K/L/M recipes",
+  "validation": "Exact-base patch application and synthetic fixed/specialist optimizer steps PASS; see docs/validation/mss-training-smoke.json"
+}

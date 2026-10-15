@@ -1,8 +1,11 @@
 # Artifact manifests
 
-`models.json` contains the registered Fixed_6stem_htdemucs_SKnJC checkpoint identity and
-inference contract. Its null download URL means the weight is not publicly
-hosted yet. `dataset.json` remains a pending dataset registry.
+`models.json` registers the three original fixed models and 12 original
+specialists, including exact checkpoint/config hashes and output contracts.
+Only the Combined model has a published `portable_checkpoint.download_url`;
+the other adapters accept the registered local original checkpoint. A null
+legacy `url` does not override a populated portable download URL.
+`dataset.json` remains a pending dataset registry.
 
 `checkpoint_candidates.json` lists the 29 deduplicated project candidates and
 one external baseline in the audited paper snapshot. It is a release-planning

@@ -1,11 +1,8 @@
-# Model implementations
+# Model implementation
 
-`demucs4ht.py` contains the unchanged audited MSS HTDemucs architecture.
-`fixed.py` provides strict registered-checkpoint loading and the fixed-model
-overlap-add implementation. The first supported configuration is Fixed_6stem_htdemucs_SKnJC.
+`fixed.py` loads registered fixed-output and original part-specific HTDemucs
+checkpoints and uses native MSS overlap-add. `registry.py` provides discovery
+without importing Torch. `demucs4ht.py` retains its original upstream source.
 
-Specialist and conditioned adapters are still pending. Upstream Demucs is a
-dependency rather than a copied checkout; see the retained third-party notices.
-
-Each implementation must be paired with its configuration, strict checkpoint
-loader, and explicit input/output contract. See [model documentation](../docs/models.md).
+Shared conditioned-model implementations remain in preparation. Inference
+support and published-weight availability are separate; use `--list-models`.

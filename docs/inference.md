@@ -105,10 +105,30 @@ input using the actual checkpoint. Five behavioral tests passed. See the
 This establishes the tested Linux CPU path, not separation quality or a replay
 of historical GPU paper results. The CLI retains a CUDA option and original
 CUDA AMP behavior, but CUDA, macOS, and MPS were not validated in this release.
-The CPU lock is not a CUDA installation guide. Training and other model families
-are still pending.
+The CPU lock is not a CUDA installation guide. The additional original fixed/specialist adapters and training smoke checks
+have separate reports; shared conditioned adapters remain pending.
 
 The portable export was additionally tested on 2026-10-14 against fresh
 original-checkpoint inference and the frozen research outputs. All six stems
 were bit-identical on both clips; six behavioral tests passed. See the
 [portable validation report](validation/combined-ep333-portable-linux-cpu.json).
+
+## Original fixed and part-specific models
+
+```bash
+python inference.py --list-models
+python inference.py --model Fixed_6stem_htdemucs_SK --checkpoint /path/to/original-sk.ckpt --input mixture.wav --output outputs/sk --device cpu
+python inference.py --model specialists-jc-alto-ep223 --checkpoint /path/to/original-alto.ckpt --input mixture.wav --output outputs/alto --device cpu
+```
+
+Each command requires the exact registered checkpoint hash. Downloading SK/JC
+or specialist weights is still pending. No custom or arbitrary pickle checkpoint
+is accepted. The specialist command writes `nonalto.wav` and `alto.wav`;
+`nonalto` is the residual head, and `alto` is the extracted target. Neither
+requires an enrollment recording. The same rule applies to each bank member.
+All outputs preserve model gain. Do not interpret a specialist's residual as
+another named vocal part.
+
+The added adapters have a separate CPU parity report in
+[additional-model validation](validation/additional-models-linux-cpu.json).
+It uses a short synthetic clip and is not a separation-quality evaluation.

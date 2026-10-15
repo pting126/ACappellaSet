@@ -41,22 +41,27 @@ def read_audio(path, sample_rate):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", default="Fixed_6stem_htdemucs_SKnJC", help="Registered model ID")
-    parser.add_argument("--checkpoint", type=Path, required=True, help="Local checkpoint; SHA-256 is checked")
-    parser.add_argument("--input", type=Path, required=True, help="Input audio file")
-    parser.add_argument("--output", type=Path, required=True, help="New output directory (must not exist)")
+    parser.add_argument("--list-models", action="store_true", help="List supported models without loading weights")
+    parser.add_argument("--checkpoint", type=Path, help="Local checkpoint; SHA-256 is checked")
+    parser.add_argument("--input", type=Path, help="Input audio file")
+    parser.add_argument("--output", type=Path, help="New output directory (must not exist)")
     parser.add_argument("--device", choices=("cpu", "cuda"), default="cpu")
     parser.add_argument("--threads", type=int, default=2, help="CPU thread count (default: 2)")
     args = parser.parse_args(argv)
+    from models.registry import print_models, resolve
+    if args.list_models:
+        print_models()
+        return
+    if any(value is None for value in (args.checkpoint, args.input, args.output)):
+        parser.error("--checkpoint, --input, and --output are required for inference")
     if args.threads < 1:
         parser.error("--threads must be positive")
     if args.output.exists():
         parser.error("--output already exists; choose a new directory")
-    registry = json.loads((ROOT / "manifests/models.json").read_text())
-    specs = {name: entry for entry in registry["models"]
-             for name in [entry["id"], *entry.get("aliases", [])]}
-    if args.model not in specs:
-        parser.error(f"Unknown model {args.model!r}. Available: {', '.join(specs)}")
-    spec = specs[args.model]
+    try:
+        spec = resolve(args.model)
+    except ValueError as exc:
+        parser.error(str(exc))
     args.model = spec["id"]
     import torch
     import soundfile as sf
@@ -85,6 +90,8 @@ def main(argv=None):
             outputs.append({"stem": stem, "file": path.name, "sha256": sha256(path)})
         receipt = {
             "model": args.model, "checkpoint_sha256": sha256(args.checkpoint),
+            "family": spec["family"], "target_role": spec.get("target_role"),
+            "output_contract": spec.get("output_contract"),
             "original_checkpoint_sha256": spec["checkpoint_sha256"],
             "config_sha256": spec["config_sha256"], "input_sha256": sha256(args.input),
             "input": input_details, "source_order": spec["source_order"],

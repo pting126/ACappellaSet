@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "config": "configs/fixed/JC.yaml",
+      "loss": 0.11141393333673477,
+      "optimizer_steps": 1,
+      "head_changed": true,
+      "parameters_finite": true,
+      "specialist_head_mapping_checked": false
+    },
+    {
+      "config": "configs/specialists/JC/alto.yaml",
+      "loss": 0.23302021622657776,
+      "optimizer_steps": 1,
+      "head_changed": true,
+      "parameters_finite": true,
+      "specialist_head_mapping_checked": true
+    }
+  ],
+  "runtime": "existing research environment, CPU",
+  "torch": "2.10.0+cu128",
+  "limitations": [
+    "Two synthetic examples per family, 0.3 seconds each",
+    "Not a full training reproduction, dataset loader or resume test",
+    "Clean training environment and conditioned recipes remain pending"
+  ],
+  "patch_application": "PASS: exact upstream commit and all six input/output file hashes",
+  "launcher_dry_run": "PASS: original JC alto recipe, no training launched by wrapper",
+  "job_id": 64026561
+}

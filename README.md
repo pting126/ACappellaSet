@@ -5,7 +5,8 @@ Dataset resources, model weights, and code for a cappella source separation.
 **Fixed_6stem_htdemucs_SKnJC weights and Linux CPU inference are available.** Download the
 110 MB portable checkpoint from [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models)
 using the verified download command below. The dataset is being prepared for
-Zenodo. Other model adapters and training workflows remain in preparation.
+Zenodo. Original fixed/specialist scripts, data preparation, and canonical scoring are included.
+Shared conditioned-model scripts and a clean training environment lock remain in preparation.
 
 ## Availability
 
@@ -15,8 +16,11 @@ Zenodo. Other model adapters and training workflows remain in preparation.
 | Checkpoint inventory | 27 active checkpoints, 2 deferred AI-augmented checkpoints; external baseline linked |
 | Public checkpoint downloads | Fixed_6stem_htdemucs_SKnJC available on [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models) |
 | Dataset and annotations | Zenodo dataset record pending |
-| Training scripts | Being prepared |
-| Specialist and conditioned inference | Being prepared |
+| Fixed/specialist inference code | All 3 fixed models and 12 original specialists registered; unpublished weights must be supplied locally |
+| Fixed/specialist training | Pinned MSS patch and portable launcher; see validation limits in the training guide |
+| Specialist data preparation | Runnable; preserves the different JC and SK residual recipes |
+| Canonical scoring | Runnable on explicitly paired full-song WAVs |
+| Shared conditioned models | Adapter and training packaging pending |
 
 ## Run inference
 
@@ -38,6 +42,24 @@ On two validation inputs, all six outputs matched the research implementation
 **bit-for-bit** in a fresh Linux CPU environment. Six behavioral tests passed; the portable export also matches exactly.
 See the [validation report](docs/validation/combined-ep333-portable-linux-cpu.json).
 CUDA and macOS have not been validated, and these tests are not quality scores.
+
+## Other script workflows
+
+```bash
+# Discover adapters without loading Torch or downloading weights.
+python inference.py --list-models
+
+# Prepare already split, 44.1 kHz stereo six-stem inputs for original specialists.
+python prepare_specialists.py --corpus JC --input /path/to/jc/6stem --output datasets/jc-specialists
+
+# Score saved estimates, with shared/inclusive pair-weighted summaries.
+python evaluate.py --manifest /path/to/pairs.csv --output outputs/scores
+```
+
+See [specialist preparation](docs/preparation.md), [evaluation](docs/evaluation.md),
+and [training](docs/training.md) for input formats and supported recipes.
+`train.py --dry-run` verifies the original fixed/specialist training setup before
+launching it. These scripts do not provide missing checkpoint downloads or dataset audio.
 
 ## Models and weights
 
@@ -66,22 +88,27 @@ be archived on Zenodo. Large checkpoints are not committed to this GitHub reposi
 
 Audio, annotations, splits, format documentation, and applicable terms will be
 published in a Zenodo dataset record linked from this repository. See the
-[dataset guide](docs/dataset.md). Dataset preparation and training scripts will
-follow the published schema and fixed splits; see the [training guide](docs/training.md).
+[dataset guide](docs/dataset.md). The current specialist preparation script consumes the historical pre-split
+six-stem layout; it does not create the forthcoming Zenodo release or its splits.
+See the [training guide](docs/training.md).
 
 ## Repository layout
 
 ```text
 ACappellaSet/
 ├── download.py                   # Revision-pinned download with SHA-256 verification
-├── inference.py                  # Working fixed-model CLI
+├── inference.py                  # Fixed and original specialist inference
+├── train.py                      # Verified MSS recipe launcher
+├── prepare_specialists.py        # Corpus-specific two-stem preparation
+├── evaluate.py                   # Canonical scoring of saved estimates
+├── evaluation/                   # Metrics and pair-weighted reporting
 ├── models/                       # Architecture and inference adapter
 ├── configs/                      # Fixed, specialist, conditioned configs
 ├── requirements-inference.txt    # Direct dependencies
 ├── requirements-linux-cpu-lock.txt
 ├── environment.yml               # Optional interpreter bootstrap
 ├── data/                         # Dataset loaders: pending
-├── scripts/                      # Download/preparation tools: pending
+├── scripts/                      # Verified MSS patch installer
 ├── manifests/                    # Models, dataset, candidate checkpoints, splits
 ├── third_party/                  # Source provenance and retained licenses
 ├── examples/                     # Public audio example: pending
@@ -89,9 +116,10 @@ ACappellaSet/
 └── docs/                         # Guides, checkpoint checklist, validation report
 ```
 
-`train.py` and `evaluate.py` will be added with their working implementations.
-No Demucs fork or full MSS checkout is required for the current fixed-model
-inference package. Required MSS training modifications will be released separately.
+Inference does not require a Demucs fork or a full MSS checkout. Original
+fixed/specialist training uses a separate checkout at the exact documented
+MSS commit plus the included reviewed patch. Shared conditioned training
+requires different recipes and is not supported by this launcher.
 
 ## License and citation
 

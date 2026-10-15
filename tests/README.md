@@ -1,14 +1,16 @@
-# Inference validation
+# Tests
 
-Run `python -m unittest discover -s tests -v` in the documented environment.
-The five tests cover short/overlapping/partial-tail chunk reconstruction,
-invalid input, non-finite predictions, checkpoint hash rejection before
-deserialization, and mono/resampling/multichannel handling.
+`test_release_tools.py` covers model discovery, config hashes, specialist output
+contracts, corpus-specific residual preparation, movable output links, and
+pair-weighted reporting/exclusions. `test_evaluate.py` scores synthetic WAVs
+with analytically known SI-SDRi and exercises silence/PC01 handling.
+`test_fixed_inference.py` covers overlap-add, audio conversion, and strict loading.
 
-The full Fixed_6stem_htdemucs_SKnJC checkpoint was separately compared with the archived
-MSS inference implementation on two inputs in a fresh Linux CPU environment.
-All six outputs matched bit-for-bit. The
-[validation report](../docs/validation/combined-ep333-linux-cpu.json) includes
-settings, package versions, output hashes, and tested source hashes.
+Run from the repository root in the inference environment:
 
-CUDA, other checkpoints, training, and resume are not covered by these results.
+```bash
+python -m unittest discover -s tests -v
+```
+
+Actual-checkpoint comparisons and their limits are recorded in `docs/validation`.
+Training smoke checks are separate from a clean-environment full training run.

@@ -1,2 +1,2 @@
-# Preserve the exact audited vendor bytes, including its existing EOF blanks.
-models/demucs4ht.py whitespace=-blank-at-eof
+# Unified patches preserve upstream whitespace in context lines.
+third_party/patches/*.patch -whitespace

@@ -22,14 +22,18 @@ def sha256(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", default="Fixed_6stem_htdemucs_SKnJC")
+    parser.add_argument("--list-models", action="store_true")
     parser.add_argument("--output", type=Path, default=Path("checkpoints"), help="Destination directory")
     args = parser.parse_args()
-    registry = json.loads((ROOT / "manifests/models.json").read_text())
-    models = {name: model for model in registry["models"]
-              for name in [model["id"], *model.get("aliases", [])]}
-    if args.model not in models:
-        parser.error(f"Unknown model {args.model!r}. Available: {', '.join(models)}")
-    artifact = models[args.model].get("portable_checkpoint", {})
+    from models.registry import print_models, resolve
+    if args.list_models:
+        print_models()
+        return
+    try:
+        model = resolve(args.model)
+    except ValueError as exc:
+        parser.error(str(exc))
+    artifact = model.get("portable_checkpoint", {})
     url = artifact.get("download_url")
     if not url:
         parser.error("This model has no published portable checkpoint yet.")

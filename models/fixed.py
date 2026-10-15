@@ -38,6 +38,12 @@ def load_model(checkpoint, config_path, spec, device):
     sources = list(config.training.instruments)
     if sources != spec["source_order"]:
         raise ValueError("Configuration source order differs from the registry.")
+    if spec.get("family") == "part-specific-htdemucs":
+        target = spec["target_role"]
+        if sources != ["non" + target, target] or spec.get("output_contract") != {
+            "residual_index": 0, "target_index": 1
+        }:
+            raise ValueError("Specialists require residual index 0 and target index 1.")
     if (config.training.samplerate, config.training.channels) != (44100, 2):
         raise ValueError("This adapter requires the registered 44.1 kHz stereo model.")
     model = get_model(config)

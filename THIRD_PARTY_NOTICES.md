@@ -18,3 +18,9 @@ Original license notices must accompany any code copied or adapted from these
 projects. Dependency code licenses do not automatically establish permission
 to redistribute pretrained weights or training data. Exact encoder revisions,
 weight provenance, and applicable weight terms will be recorded before release.
+
+The reviewed MSS training patch in `third_party/patches/mss-training.patch`
+also derives from the MIT-licensed MSS project at the pinned base commit.
+Its manifest records upstream and modified source hashes; the patch retains
+original author notices. The canonical metric and preparation provenance
+manifests identify extracts/adaptations from this project's research scripts.

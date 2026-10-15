@@ -58,6 +58,540 @@
         "fixed-combined-ep333"
       ],
       "display_name": "Fixed_6stem_htdemucs_SKnJC"
+    },
+    {
+      "id": "Fixed_6stem_htdemucs_JC",
+      "family": "fixed-htdemucs",
+      "training_corpus": "JC",
+      "epoch": 321,
+      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "checkpoint_filename": "model_htdemucs_ep_321_sdr_7.9284_si_sdr_6.9219_k_sdr_94.9111.ckpt",
+      "checkpoint_sha256": "1d65d49aaa7fc52745e4c476d14d90d7bddb942765c169e92bf045ea33d4ab6b",
+      "checkpoint_bytes": 331450277,
+      "config": "configs/fixed/JC.yaml",
+      "config_sha256": "b3e5ff56161510e5abd8236eabb0b020446b990bc013a311ef10e640c01bad1e",
+      "sample_rate": 44100,
+      "channels": 2,
+      "source_order": [
+        "vp",
+        "bass",
+        "soprano",
+        "alto",
+        "tenor",
+        "lead_vocal"
+      ],
+      "inference": {
+        "segment_seconds": 10,
+        "num_overlap": 4,
+        "hop_seconds": 2.5,
+        "batch_size": 4,
+        "cuda_amp": true,
+        "cpu_amp": false,
+        "normalization": "model internal only",
+        "overlap_add": "uniform",
+        "right_padding": "zeros"
+      },
+      "url": null,
+      "weight_license": null,
+      "aliases": [
+        "fixed-jc-ep321"
+      ],
+      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+    },
+    {
+      "id": "Fixed_6stem_htdemucs_SK",
+      "family": "fixed-htdemucs",
+      "training_corpus": "SK",
+      "epoch": 279,
+      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "checkpoint_filename": "model_htdemucs_ep_279_sdr_-7.7538_si_sdr_-5.3812_k_sdr_81.6959.ckpt",
+      "checkpoint_sha256": "51c1a71b22d82c34e31f41e314fc9a84055d9f55f5d77c8c36b4280a59a19f0b",
+      "checkpoint_bytes": 331613145,
+      "config": "configs/fixed/SK.yaml",
+      "config_sha256": "2210240362436d809e4f9a037cf1e40146206b906b8e95b9f28144d1da84e81d",
+      "sample_rate": 44100,
+      "channels": 2,
+      "source_order": [
+        "vp",
+        "bass",
+        "soprano",
+        "alto",
+        "tenor",
+        "baritone"
+      ],
+      "inference": {
+        "segment_seconds": 10,
+        "num_overlap": 4,
+        "hop_seconds": 2.5,
+        "batch_size": 4,
+        "cuda_amp": true,
+        "cpu_amp": false,
+        "normalization": "model internal only",
+        "overlap_add": "uniform",
+        "right_padding": "zeros"
+      },
+      "url": null,
+      "weight_license": "Apache-2.0",
+      "aliases": [
+        "fixed-sk-ep279"
+      ],
+      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+    },
+    {
+      "id": "specialists-jc-alto-ep223",
+      "family": "part-specific-htdemucs",
+      "training_corpus": "JC",
+      "epoch": 223,
+      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "checkpoint_filename": "model_htdemucs_ep_223_si_sdr_6.0926.ckpt",
+      "checkpoint_sha256": "5c8118424cbe5264b953f37d8336194b66089bac0aa18c1a32d1c41b386e7e1e",
+      "checkpoint_bytes": 331733371,
+      "config": "configs/specialists/JC/alto.yaml",
+      "config_sha256": "a0206c56e8078c7c3443eee4ba343f35baae36975ec403052bb99d0345c1e8b4",
+      "sample_rate": 44100,
+      "channels": 2,
+      "source_order": [
+        "nonalto",
+        "alto"
+      ],
+      "inference": {
+        "segment_seconds": 10,
+        "num_overlap": 4,
+        "hop_seconds": 2.5,
+        "batch_size": 4,
+        "cuda_amp": true,
+        "cpu_amp": false,
+        "normalization": "model internal only",
+        "overlap_add": "uniform",
+        "right_padding": "zeros"
+      },
+      "url": null,
+      "weight_license": null,
+      "aliases": [],
+      "target_role": "alto",
+      "output_contract": {
+        "residual_index": 0,
+        "target_index": 1
+      },
+      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+    },
+    {
+      "id": "specialists-jc-bass-ep110",
+      "family": "part-specific-htdemucs",
+      "training_corpus": "JC",
+      "epoch": 110,
+      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "checkpoint_filename": "model_htdemucs_ep_110_si_sdr_16.6663.ckpt",
+      "checkpoint_sha256": "23d152aa2ae0250fe852ac5e31ae68f2d70736acd4cb2a5f9515a9b10302a810",
+      "checkpoint_bytes": 330638133,
+      "config": "configs/specialists/JC/bass.yaml",
+      "config_sha256": "4f0a1834931f5e2309e28b1d74059b1a77fff3d018037ddfdab7dcd09328c698",
+      "sample_rate": 44100,
+      "channels": 2,
+      "source_order": [
+        "nonbass",
+        "bass"
+      ],
+      "inference": {
+        "segment_seconds": 10,
+        "num_overlap": 4,
+        "hop_seconds": 2.5,
+        "batch_size": 4,
+        "cuda_amp": true,
+        "cpu_amp": false,
+        "normalization": "model internal only",
+        "overlap_add": "uniform",
+        "right_padding": "zeros"
+      },
+      "url": null,
+      "weight_license": null,
+      "aliases": [],
+      "target_role": "bass",
+      "output_contract": {
+        "residual_index": 0,
+        "target_index": 1
+      },
+      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+    },
+    {
+      "id": "specialists-jc-lead-ep149",
+      "family": "part-specific-htdemucs",
+      "training_corpus": "JC",
+      "epoch": 149,
+      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "checkpoint_filename": "model_htdemucs_ep_149_si_sdr_9.6743.ckpt",
+      "checkpoint_sha256": "0a37e456852527fd2d0c7d983ba086f1ebb15064a39633f99c06cbbb37914c28",
+      "checkpoint_bytes": 331014779,
+      "config": "configs/specialists/JC/lead_vocal.yaml",
+      "config_sha256": "dcb7bb687bad3a7f00d03491b3fba10fa12a2b5777025cc04c2a68fcfda311e0",
+      "sample_rate": 44100,
+      "channels": 2,
+      "source_order": [
+        "nonlead_vocal",
+        "lead_vocal"
+      ],
+      "inference": {
+        "segment_seconds": 10,
+        "num_overlap": 4,
+        "hop_seconds": 2.5,
+        "batch_size": 4,
+        "cuda_amp": true,
+        "cpu_amp": false,
+        "normalization": "model internal only",
+        "overlap_add": "uniform",
+        "right_padding": "zeros"
+      },
+      "url": null,
+      "weight_license": null,
+      "aliases": [],
+      "target_role": "lead_vocal",
+      "output_contract": {
+        "residual_index": 0,
+        "target_index": 1
+      },
+      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+    },
+    {
+      "id": "specialists-jc-soprano-ep162",
+      "family": "part-specific-htdemucs",
+      "training_corpus": "JC",
+      "epoch": 162,
+      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "checkpoint_filename": "model_htdemucs_ep_162_si_sdr_6.1072.ckpt",
+      "checkpoint_sha256": "9346b2508aa4e9def57598c282d6063e70eac35e5061c6c7440e765c9455472e",
+      "checkpoint_bytes": 331141051,
+      "config": "configs/specialists/JC/soprano.yaml",
+      "config_sha256": "be1905d757d50bfbdd0b2bea965c8b000c96e4995e1b5aafcd710a24f25048eb",
+      "sample_rate": 44100,
+      "channels": 2,
+      "source_order": [
+        "nonsoprano",
+        "soprano"
+      ],
+      "inference": {
+        "segment_seconds": 10,
+        "num_overlap": 4,
+        "hop_seconds": 2.5,
+        "batch_size": 4,
+        "cuda_amp": true,
+        "cpu_amp": false,
+        "normalization": "model internal only",
+        "overlap_add": "uniform",
+        "right_padding": "zeros"
+      },
+      "url": null,
+      "weight_license": null,
+      "aliases": [],
+      "target_role": "soprano",
+      "output_contract": {
+        "residual_index": 0,
+        "target_index": 1
+      },
+      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+    },
+    {
+      "id": "specialists-jc-tenor-ep119",
+      "family": "part-specific-htdemucs",
+      "training_corpus": "JC",
+      "epoch": 119,
+      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "checkpoint_filename": "model_htdemucs_ep_119_si_sdr_11.1179.ckpt",
+      "checkpoint_sha256": "1c20f2a931c8def9e8622190984de3ed599c5913566441cea491c691e4a7f70a",
+      "checkpoint_bytes": 330725557,
+      "config": "configs/specialists/JC/tenor.yaml",
+      "config_sha256": "762562c7e9d24d51e5816bf722edad5aa7bdb0cd45901419077a1c68347951f3",
+      "sample_rate": 44100,
+      "channels": 2,
+      "source_order": [
+        "nontenor",
+        "tenor"
+      ],
+      "inference": {
+        "segment_seconds": 10,
+        "num_overlap": 4,
+        "hop_seconds": 2.5,
+        "batch_size": 4,
+        "cuda_amp": true,
+        "cpu_amp": false,
+        "normalization": "model internal only",
+        "overlap_add": "uniform",
+        "right_padding": "zeros"
+      },
+      "url": null,
+      "weight_license": null,
+      "aliases": [],
+      "target_role": "tenor",
+      "output_contract": {
+        "residual_index": 0,
+        "target_index": 1
+      },
+      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+    },
+    {
+      "id": "specialists-jc-vp-ep45",
+      "family": "part-specific-htdemucs",
+      "training_corpus": "JC",
+      "epoch": 45,
+      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "checkpoint_filename": "model_htdemucs_ep_45_si_sdr_15.9240.ckpt",
+      "checkpoint_sha256": "931aae478a2aaceb0572dff59a7877987b67a58f78f07621e195cf696fff6dff",
+      "checkpoint_bytes": 330004859,
+      "config": "configs/specialists/JC/vp.yaml",
+      "config_sha256": "8a95fc90f7f87c354b3e3c2017c8631e088dd223ee15603697f1a3a85ae60ef4",
+      "sample_rate": 44100,
+      "channels": 2,
+      "source_order": [
+        "nonvp",
+        "vp"
+      ],
+      "inference": {
+        "segment_seconds": 10,
+        "num_overlap": 4,
+        "hop_seconds": 2.5,
+        "batch_size": 4,
+        "cuda_amp": true,
+        "cpu_amp": false,
+        "normalization": "model internal only",
+        "overlap_add": "uniform",
+        "right_padding": "zeros"
+      },
+      "url": null,
+      "weight_license": null,
+      "aliases": [],
+      "target_role": "vp",
+      "output_contract": {
+        "residual_index": 0,
+        "target_index": 1
+      },
+      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+    },
+    {
+      "id": "specialists-sk-alto-ep237",
+      "family": "part-specific-htdemucs",
+      "training_corpus": "SK",
+      "epoch": 237,
+      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "checkpoint_filename": "model_htdemucs_ep_237_si_sdr_12.8485.ckpt",
+      "checkpoint_sha256": "133008dc46d3ebe3ef660c52c65e1252f9ff243a048f97a95d68b04a123ca6a4",
+      "checkpoint_bytes": 331884213,
+      "config": "configs/specialists/SK/alto.yaml",
+      "config_sha256": "a0206c56e8078c7c3443eee4ba343f35baae36975ec403052bb99d0345c1e8b4",
+      "sample_rate": 44100,
+      "channels": 2,
+      "source_order": [
+        "nonalto",
+        "alto"
+      ],
+      "inference": {
+        "segment_seconds": 10,
+        "num_overlap": 4,
+        "hop_seconds": 2.5,
+        "batch_size": 4,
+        "cuda_amp": true,
+        "cpu_amp": false,
+        "normalization": "model internal only",
+        "overlap_add": "uniform",
+        "right_padding": "zeros"
+      },
+      "url": null,
+      "weight_license": "Apache-2.0",
+      "aliases": [],
+      "target_role": "alto",
+      "output_contract": {
+        "residual_index": 0,
+        "target_index": 1
+      },
+      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+    },
+    {
+      "id": "specialists-sk-baritone-ep43",
+      "family": "part-specific-htdemucs",
+      "training_corpus": "SK",
+      "epoch": 43,
+      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "checkpoint_filename": "model_htdemucs_ep_43_si_sdr_11.1058.ckpt",
+      "checkpoint_sha256": "ffe9dafeff2c96595f479a406e327172c95355bed401d233410e9565c806d2ee",
+      "checkpoint_bytes": 329966459,
+      "config": "configs/specialists/SK/baritone.yaml",
+      "config_sha256": "96464a49ea78eab9975e08392065b35e6da838a568d29c91dd15796bd39d03fe",
+      "sample_rate": 44100,
+      "channels": 2,
+      "source_order": [
+        "nonbaritone",
+        "baritone"
+      ],
+      "inference": {
+        "segment_seconds": 10,
+        "num_overlap": 4,
+        "hop_seconds": 2.5,
+        "batch_size": 4,
+        "cuda_amp": true,
+        "cpu_amp": false,
+        "normalization": "model internal only",
+        "overlap_add": "uniform",
+        "right_padding": "zeros"
+      },
+      "url": null,
+      "weight_license": "Apache-2.0",
+      "aliases": [],
+      "target_role": "baritone",
+      "output_contract": {
+        "residual_index": 0,
+        "target_index": 1
+      },
+      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+    },
+    {
+      "id": "specialists-sk-bass-ep182",
+      "family": "part-specific-htdemucs",
+      "training_corpus": "SK",
+      "epoch": 182,
+      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "checkpoint_filename": "model_htdemucs_ep_182_si_sdr_13.8862.ckpt",
+      "checkpoint_sha256": "9b24ac03c73f79810228f0dde23f430b5221f019c5dea7f30500708f4dfd5ac6",
+      "checkpoint_bytes": 331347189,
+      "config": "configs/specialists/SK/bass.yaml",
+      "config_sha256": "4f0a1834931f5e2309e28b1d74059b1a77fff3d018037ddfdab7dcd09328c698",
+      "sample_rate": 44100,
+      "channels": 2,
+      "source_order": [
+        "nonbass",
+        "bass"
+      ],
+      "inference": {
+        "segment_seconds": 10,
+        "num_overlap": 4,
+        "hop_seconds": 2.5,
+        "batch_size": 4,
+        "cuda_amp": true,
+        "cpu_amp": false,
+        "normalization": "model internal only",
+        "overlap_add": "uniform",
+        "right_padding": "zeros"
+      },
+      "url": null,
+      "weight_license": "Apache-2.0",
+      "aliases": [],
+      "target_role": "bass",
+      "output_contract": {
+        "residual_index": 0,
+        "target_index": 1
+      },
+      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+    },
+    {
+      "id": "specialists-sk-soprano-ep220",
+      "family": "part-specific-htdemucs",
+      "training_corpus": "SK",
+      "epoch": 220,
+      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "checkpoint_filename": "model_htdemucs_ep_220_si_sdr_12.3675.ckpt",
+      "checkpoint_sha256": "b9e4c1f9476f13ce673ea007756aec990318ccb4d571c8060355e9f1eccfab60",
+      "checkpoint_bytes": 331694389,
+      "config": "configs/specialists/SK/soprano.yaml",
+      "config_sha256": "be1905d757d50bfbdd0b2bea965c8b000c96e4995e1b5aafcd710a24f25048eb",
+      "sample_rate": 44100,
+      "channels": 2,
+      "source_order": [
+        "nonsoprano",
+        "soprano"
+      ],
+      "inference": {
+        "segment_seconds": 10,
+        "num_overlap": 4,
+        "hop_seconds": 2.5,
+        "batch_size": 4,
+        "cuda_amp": true,
+        "cpu_amp": false,
+        "normalization": "model internal only",
+        "overlap_add": "uniform",
+        "right_padding": "zeros"
+      },
+      "url": null,
+      "weight_license": "Apache-2.0",
+      "aliases": [],
+      "target_role": "soprano",
+      "output_contract": {
+        "residual_index": 0,
+        "target_index": 1
+      },
+      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+    },
+    {
+      "id": "specialists-sk-tenor-ep214",
+      "family": "part-specific-htdemucs",
+      "training_corpus": "SK",
+      "epoch": 214,
+      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "checkpoint_filename": "model_htdemucs_ep_214_si_sdr_12.0113.ckpt",
+      "checkpoint_sha256": "2f3e5de523bb4bf8eb8fb77e25ce2d2962ac4b00e56b85b2e89614e049878005",
+      "checkpoint_bytes": 331659637,
+      "config": "configs/specialists/SK/tenor.yaml",
+      "config_sha256": "762562c7e9d24d51e5816bf722edad5aa7bdb0cd45901419077a1c68347951f3",
+      "sample_rate": 44100,
+      "channels": 2,
+      "source_order": [
+        "nontenor",
+        "tenor"
+      ],
+      "inference": {
+        "segment_seconds": 10,
+        "num_overlap": 4,
+        "hop_seconds": 2.5,
+        "batch_size": 4,
+        "cuda_amp": true,
+        "cpu_amp": false,
+        "normalization": "model internal only",
+        "overlap_add": "uniform",
+        "right_padding": "zeros"
+      },
+      "url": null,
+      "weight_license": "Apache-2.0",
+      "aliases": [],
+      "target_role": "tenor",
+      "output_contract": {
+        "residual_index": 0,
+        "target_index": 1
+      },
+      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+    },
+    {
+      "id": "specialists-sk-vp-ep205",
+      "family": "part-specific-htdemucs",
+      "training_corpus": "SK",
+      "epoch": 205,
+      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "checkpoint_filename": "model_htdemucs_ep_205_si_sdr_13.7446.ckpt",
+      "checkpoint_sha256": "924efa1dd19fc793c0c8ffb32d0bd736a9791f01bc77f18d2f1eeedf06b7411d",
+      "checkpoint_bytes": 331571765,
+      "config": "configs/specialists/SK/vp.yaml",
+      "config_sha256": "8a95fc90f7f87c354b3e3c2017c8631e088dd223ee15603697f1a3a85ae60ef4",
+      "sample_rate": 44100,
+      "channels": 2,
+      "source_order": [
+        "nonvp",
+        "vp"
+      ],
+      "inference": {
+        "segment_seconds": 10,
+        "num_overlap": 4,
+        "hop_seconds": 2.5,
+        "batch_size": 4,
+        "cuda_amp": true,
+        "cpu_amp": false,
+        "normalization": "model internal only",
+        "overlap_add": "uniform",
+        "right_padding": "zeros"
+      },
+      "url": null,
+      "weight_license": "Apache-2.0",
+      "aliases": [],
+      "target_role": "vp",
+      "output_contract": {
+        "residual_index": 0,
+        "target_index": 1
+      },
+      "validation_report": "docs/validation/additional-models-linux-cpu.json"
     }
   ],
   "repository_id": "pting126/ACappellaSet-models"

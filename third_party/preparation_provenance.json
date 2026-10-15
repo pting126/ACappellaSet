@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "source_file": "prepare_jacappella44k_2stem_all.py",
+      "source_sha256": "fefba335319766ac4bada6dfd385c0df419e2320a7ed6b12ea894508ce23f387"
+    },
+    {
+      "source_file": "prepare_seagullk_2stem_satb_vp.py",
+      "source_sha256": "97fffe30830d581ffeae028de31cad26b890b15856d2730deea0706e94707059"
+    }
+  ],
+  "public_implementation": "prepare_specialists.py",
+  "changes": [
+    "Explicit input/output arguments",
+    "New output directory only; staged writes",
+    "Finite/audio alignment checks and source/output hashes",
+    "Self-contained output symlinks",
+    "Optional selected targets and explicitly labeled subset mode"
+  ],
+  "preserved": [
+    "Corpus-specific mixture and residual semantics",
+    "Float32 summation order and 262144-frame blocks",
+    "Historical expected split counts"
+  ]
+}

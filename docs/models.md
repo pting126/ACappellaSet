@@ -39,11 +39,13 @@ identities remain recorded.
 
 ## Public inference support
 
-Only Fixed_6stem_htdemucs_SKnJC is currently registered and validated by the public CLI.
-Fixed_6stem_htdemucs_JC, Fixed_6stem_htdemucs_SK, and the original part-specific specialist banks still need
-their model-specific registration/adapters and validation. Shared part-, singer-,
-and dual-conditioned adapters are also pending. A model listed for release is
-not necessarily supported by the current inference command.
+All three fixed models and the 12 original mixture-only specialists are registered.
+Use `python inference.py --list-models` to see IDs, ordered outputs, and download
+availability. The same strict loader verifies each model's checkpoint/config
+hashes. Specialists additionally enforce residual index 0 and target index 1.
+Only the Combined portable checkpoint is published; the other adapters require
+the exact original local checkpoint. Their original filenames/hashes remain in
+the registry. Shared part-, singer-, and dual-conditioned adapters are pending.
 
 The active release plan has 27 checkpoints; K6 and K6_no_aug are deferred.
 Natural SK-only weight licensing is Apache-2.0; JC-trained weight terms need

@@ -1,0 +1,102 @@
+{
+  "configs": [
+    {
+      "destination": "configs/fixed/JC.yaml",
+      "source_repository": "ZFTurbo/Music-Source-Separation-Training",
+      "source_path": "configs/config_htdemucs_6stems_jaca44k.yaml",
+      "source_sha256": "b3e5ff56161510e5abd8236eabb0b020446b990bc013a311ef10e640c01bad1e",
+      "modifications": "none"
+    },
+    {
+      "destination": "configs/fixed/SK.yaml",
+      "source_repository": "ZFTurbo/Music-Source-Separation-Training",
+      "source_path": "configs/config_htdemucs_6stems_seagullk.yaml",
+      "source_sha256": "2210240362436d809e4f9a037cf1e40146206b906b8e95b9f28144d1da84e81d",
+      "modifications": "none"
+    },
+    {
+      "destination": "configs/specialists/JC/alto.yaml",
+      "source_repository": "ZFTurbo/Music-Source-Separation-Training",
+      "source_path": "configs/config_htdemucs_2stems_jaca44k_alto.yaml",
+      "source_sha256": "a0206c56e8078c7c3443eee4ba343f35baae36975ec403052bb99d0345c1e8b4",
+      "modifications": "none"
+    },
+    {
+      "destination": "configs/specialists/JC/bass.yaml",
+      "source_repository": "ZFTurbo/Music-Source-Separation-Training",
+      "source_path": "configs/config_htdemucs_2stems_jaca44k_bass.yaml",
+      "source_sha256": "4f0a1834931f5e2309e28b1d74059b1a77fff3d018037ddfdab7dcd09328c698",
+      "modifications": "none"
+    },
+    {
+      "destination": "configs/specialists/JC/lead_vocal.yaml",
+      "source_repository": "ZFTurbo/Music-Source-Separation-Training",
+      "source_path": "configs/config_htdemucs_2stems_jaca44k_lead_vocal.yaml",
+      "source_sha256": "dcb7bb687bad3a7f00d03491b3fba10fa12a2b5777025cc04c2a68fcfda311e0",
+      "modifications": "none"
+    },
+    {
+      "destination": "configs/specialists/JC/soprano.yaml",
+      "source_repository": "ZFTurbo/Music-Source-Separation-Training",
+      "source_path": "configs/config_htdemucs_2stems_jaca44k_soprano.yaml",
+      "source_sha256": "be1905d757d50bfbdd0b2bea965c8b000c96e4995e1b5aafcd710a24f25048eb",
+      "modifications": "none"
+    },
+    {
+      "destination": "configs/specialists/JC/tenor.yaml",
+      "source_repository": "ZFTurbo/Music-Source-Separation-Training",
+      "source_path": "configs/config_htdemucs_2stems_jaca44k_tenor.yaml",
+      "source_sha256": "762562c7e9d24d51e5816bf722edad5aa7bdb0cd45901419077a1c68347951f3",
+      "modifications": "none"
+    },
+    {
+      "destination": "configs/specialists/JC/vp.yaml",
+      "source_repository": "ZFTurbo/Music-Source-Separation-Training",
+      "source_path": "configs/config_htdemucs_2stems_jaca44k_vp.yaml",
+      "source_sha256": "8a95fc90f7f87c354b3e3c2017c8631e088dd223ee15603697f1a3a85ae60ef4",
+      "modifications": "none"
+    },
+    {
+      "destination": "configs/specialists/SK/alto.yaml",
+      "source_repository": "ZFTurbo/Music-Source-Separation-Training",
+      "source_path": "configs/config_htdemucs_2stems_seagullk_alto.yaml",
+      "source_sha256": "a0206c56e8078c7c3443eee4ba343f35baae36975ec403052bb99d0345c1e8b4",
+      "modifications": "none"
+    },
+    {
+      "destination": "configs/specialists/SK/baritone.yaml",
+      "source_repository": "ZFTurbo/Music-Source-Separation-Training",
+      "source_path": "configs/config_htdemucs_2stems_seagullk_baritone.yaml",
+      "source_sha256": "96464a49ea78eab9975e08392065b35e6da838a568d29c91dd15796bd39d03fe",
+      "modifications": "none"
+    },
+    {
+      "destination": "configs/specialists/SK/bass.yaml",
+      "source_repository": "ZFTurbo/Music-Source-Separation-Training",
+      "source_path": "configs/config_htdemucs_2stems_seagullk_bass.yaml",
+      "source_sha256": "4f0a1834931f5e2309e28b1d74059b1a77fff3d018037ddfdab7dcd09328c698",
+      "modifications": "none"
+    },
+    {
+      "destination": "configs/specialists/SK/soprano.yaml",
+      "source_repository": "ZFTurbo/Music-Source-Separation-Training",
+      "source_path": "configs/config_htdemucs_2stems_seagullk_soprano.yaml",
+      "source_sha256": "be1905d757d50bfbdd0b2bea965c8b000c96e4995e1b5aafcd710a24f25048eb",
+      "modifications": "none"
+    },
+    {
+      "destination": "configs/specialists/SK/tenor.yaml",
+      "source_repository": "ZFTurbo/Music-Source-Separation-Training",
+      "source_path": "configs/config_htdemucs_2stems_seagullk_tenor.yaml",
+      "source_sha256": "762562c7e9d24d51e5816bf722edad5aa7bdb0cd45901419077a1c68347951f3",
+      "modifications": "none"
+    },
+    {
+      "destination": "configs/specialists/SK/vp.yaml",
+      "source_repository": "ZFTurbo/Music-Source-Separation-Training",
+      "source_path": "configs/config_htdemucs_2stems_seagullk_vp.yaml",
+      "source_sha256": "8a95fc90f7f87c354b3e3c2017c8631e088dd223ee15603697f1a3a85ae60ef4",
+      "modifications": "none"
+    }
+  ]
+}

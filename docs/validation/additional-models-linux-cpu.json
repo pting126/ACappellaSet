@@ -1,0 +1,266 @@
+{
+  "status": "PASS",
+  "models": [
+    {
+      "model": "Fixed_6stem_htdemucs_JC",
+      "checkpoint_sha256": "1d65d49aaa7fc52745e4c476d14d90d7bddb942765c169e92bf045ea33d4ab6b",
+      "config_sha256": "b3e5ff56161510e5abd8236eabb0b020446b990bc013a311ef10e640c01bad1e",
+      "source_order": [
+        "vp",
+        "bass",
+        "soprano",
+        "alto",
+        "tenor",
+        "lead_vocal"
+      ],
+      "shape": [
+        6,
+        2,
+        13230
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0
+    },
+    {
+      "model": "Fixed_6stem_htdemucs_SK",
+      "checkpoint_sha256": "51c1a71b22d82c34e31f41e314fc9a84055d9f55f5d77c8c36b4280a59a19f0b",
+      "config_sha256": "2210240362436d809e4f9a037cf1e40146206b906b8e95b9f28144d1da84e81d",
+      "source_order": [
+        "vp",
+        "bass",
+        "soprano",
+        "alto",
+        "tenor",
+        "baritone"
+      ],
+      "shape": [
+        6,
+        2,
+        13230
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0
+    },
+    {
+      "model": "specialists-jc-alto-ep223",
+      "checkpoint_sha256": "5c8118424cbe5264b953f37d8336194b66089bac0aa18c1a32d1c41b386e7e1e",
+      "config_sha256": "a0206c56e8078c7c3443eee4ba343f35baae36975ec403052bb99d0345c1e8b4",
+      "source_order": [
+        "nonalto",
+        "alto"
+      ],
+      "shape": [
+        2,
+        2,
+        13230
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0
+    },
+    {
+      "model": "specialists-jc-bass-ep110",
+      "checkpoint_sha256": "23d152aa2ae0250fe852ac5e31ae68f2d70736acd4cb2a5f9515a9b10302a810",
+      "config_sha256": "4f0a1834931f5e2309e28b1d74059b1a77fff3d018037ddfdab7dcd09328c698",
+      "source_order": [
+        "nonbass",
+        "bass"
+      ],
+      "shape": [
+        2,
+        2,
+        13230
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0
+    },
+    {
+      "model": "specialists-jc-lead-ep149",
+      "checkpoint_sha256": "0a37e456852527fd2d0c7d983ba086f1ebb15064a39633f99c06cbbb37914c28",
+      "config_sha256": "dcb7bb687bad3a7f00d03491b3fba10fa12a2b5777025cc04c2a68fcfda311e0",
+      "source_order": [
+        "nonlead_vocal",
+        "lead_vocal"
+      ],
+      "shape": [
+        2,
+        2,
+        13230
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0
+    },
+    {
+      "model": "specialists-jc-soprano-ep162",
+      "checkpoint_sha256": "9346b2508aa4e9def57598c282d6063e70eac35e5061c6c7440e765c9455472e",
+      "config_sha256": "be1905d757d50bfbdd0b2bea965c8b000c96e4995e1b5aafcd710a24f25048eb",
+      "source_order": [
+        "nonsoprano",
+        "soprano"
+      ],
+      "shape": [
+        2,
+        2,
+        13230
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0
+    },
+    {
+      "model": "specialists-jc-tenor-ep119",
+      "checkpoint_sha256": "1c20f2a931c8def9e8622190984de3ed599c5913566441cea491c691e4a7f70a",
+      "config_sha256": "762562c7e9d24d51e5816bf722edad5aa7bdb0cd45901419077a1c68347951f3",
+      "source_order": [
+        "nontenor",
+        "tenor"
+      ],
+      "shape": [
+        2,
+        2,
+        13230
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0
+    },
+    {
+      "model": "specialists-jc-vp-ep45",
+      "checkpoint_sha256": "931aae478a2aaceb0572dff59a7877987b67a58f78f07621e195cf696fff6dff",
+      "config_sha256": "8a95fc90f7f87c354b3e3c2017c8631e088dd223ee15603697f1a3a85ae60ef4",
+      "source_order": [
+        "nonvp",
+        "vp"
+      ],
+      "shape": [
+        2,
+        2,
+        13230
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0
+    },
+    {
+      "model": "specialists-sk-alto-ep237",
+      "checkpoint_sha256": "133008dc46d3ebe3ef660c52c65e1252f9ff243a048f97a95d68b04a123ca6a4",
+      "config_sha256": "a0206c56e8078c7c3443eee4ba343f35baae36975ec403052bb99d0345c1e8b4",
+      "source_order": [
+        "nonalto",
+        "alto"
+      ],
+      "shape": [
+        2,
+        2,
+        13230
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0
+    },
+    {
+      "model": "specialists-sk-baritone-ep43",
+      "checkpoint_sha256": "ffe9dafeff2c96595f479a406e327172c95355bed401d233410e9565c806d2ee",
+      "config_sha256": "96464a49ea78eab9975e08392065b35e6da838a568d29c91dd15796bd39d03fe",
+      "source_order": [
+        "nonbaritone",
+        "baritone"
+      ],
+      "shape": [
+        2,
+        2,
+        13230
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0
+    },
+    {
+      "model": "specialists-sk-bass-ep182",
+      "checkpoint_sha256": "9b24ac03c73f79810228f0dde23f430b5221f019c5dea7f30500708f4dfd5ac6",
+      "config_sha256": "4f0a1834931f5e2309e28b1d74059b1a77fff3d018037ddfdab7dcd09328c698",
+      "source_order": [
+        "nonbass",
+        "bass"
+      ],
+      "shape": [
+        2,
+        2,
+        13230
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0
+    },
+    {
+      "model": "specialists-sk-soprano-ep220",
+      "checkpoint_sha256": "b9e4c1f9476f13ce673ea007756aec990318ccb4d571c8060355e9f1eccfab60",
+      "config_sha256": "be1905d757d50bfbdd0b2bea965c8b000c96e4995e1b5aafcd710a24f25048eb",
+      "source_order": [
+        "nonsoprano",
+        "soprano"
+      ],
+      "shape": [
+        2,
+        2,
+        13230
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0
+    },
+    {
+      "model": "specialists-sk-tenor-ep214",
+      "checkpoint_sha256": "2f3e5de523bb4bf8eb8fb77e25ce2d2962ac4b00e56b85b2e89614e049878005",
+      "config_sha256": "762562c7e9d24d51e5816bf722edad5aa7bdb0cd45901419077a1c68347951f3",
+      "source_order": [
+        "nontenor",
+        "tenor"
+      ],
+      "shape": [
+        2,
+        2,
+        13230
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0
+    },
+    {
+      "model": "specialists-sk-vp-ep205",
+      "checkpoint_sha256": "924efa1dd19fc793c0c8ffb32d0bd736a9791f01bc77f18d2f1eeedf06b7411d",
+      "config_sha256": "8a95fc90f7f87c354b3e3c2017c8631e088dd223ee15603697f1a3a85ae60ef4",
+      "source_order": [
+        "nonvp",
+        "vp"
+      ],
+      "shape": [
+        2,
+        2,
+        13230
+      ],
+      "bit_identical": true,
+      "maximum_absolute_difference": 0.0,
+      "rms_difference": 0.0
+    }
+  ],
+  "device": "cpu",
+  "input": "0.3-second stereo Gaussian noise, numpy default_rng seed 1337, std 0.01",
+  "input_sha256": "e26fc238c546dc9d28fd2ad939f054bac0d56392769335a1f64b274fa59d5e7f",
+  "tolerances": {
+    "maximum_absolute_difference": 1e-05,
+    "rms_difference": 1e-06
+  },
+  "limitations": [
+    "Short synthetic input only; not separation quality evaluation",
+    "No CUDA or macOS validation",
+    "Weights remain unpublished except the existing Combined release"
+  ],
+  "validation_date": "2026-10-15",
+  "cluster": "Great Lakes",
+  "job_id": 64026561
+}
