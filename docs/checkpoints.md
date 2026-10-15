@@ -3,7 +3,10 @@
 This inventory covers the audited paper snapshot: **29 project checkpoints**, plus one external baseline to link to. It is a proposed release set, not a claim that weights are already downloadable or that every final paper selection is frozen. The [Hugging Face repository](https://huggingface.co/pting126/ACappellaSet-models)
 is created, but weights and their terms remain pending. On 2026-10-14, the
 three historical fixed models and 12 historical specialists were confirmed
-for release inclusion. Newer-model release selections remain under review.
+for release inclusion. The ICASSP release excludes newer fixed-six training
+runs and later singer-enrollment specialists. The conditioned candidates below
+cover the supplied paper's experiments; final table-to-artifact reconciliation
+and public loader validation remain pending.
 
 Exact filenames, hashes, and recorded selection labels are in [`manifests/checkpoint_candidates.json`](../manifests/checkpoint_candidates.json). Repeated table uses of the same checkpoint are deduplicated by SHA-256. Epochs below are the stored checkpoint epoch numbers.
 
@@ -45,9 +48,17 @@ Each bank contains six distinct checkpoints. The source order is residual index 
 
 K1 at 184k is an earlier snapshot selection: the completed-200k SK shared/inclusive
 winner is 198k. The listed K1 4k JC-inclusive selection remained unchanged.
-This inventory retains the original snapshot selections.
+The supplied paper reports the older 184k result, so paper reproduction retains
+that checkpoint. Do not substitute 198k without updating the corresponding
+evaluation and reported numbers.
 
 Different steps correspond to different validation scopes; they are not interchangeable “best” checkpoints. The registry preserves the recorded labels. M3 is the audited snapshot through 179,000 updates, not a final 200,000-update selection. `K6_no_aug` is a historical identifier for **single-clone** training; ordinary waveform augmentation remains enabled.
+
+M3 training subsequently completed 200k, but the supplied paper's 159k/173k
+results still refer to the earlier selection snapshot. Keep those weights for
+paper reproduction. Final-200k selections are different artifacts and must not
+inherit the older test scores. Record training completion, selection cutoff,
+selected step, validation corpus and role scope as separate metadata fields.
 
 Singer-conditioned and dual models require their matching encoder state. The public export must retain fine-tuned encoder tensors or supply a verified companion artifact. Raw training checkpoints may include optimizer state and private configuration paths; prepare a portable model-only export and validate it before uploading. Exported files receive new hashes.
 
@@ -56,7 +67,7 @@ Singer-conditioned and dual models require their matching encoder state. The pub
 - **SepACap JC:** link to the authors’ checkpoint and code; it is not one of the 29 project weights to redistribute. Permission to redistribute was not established.
 - **Training initialization:** document and link the exact HTDemucs initialization (including the PT6S checkpoint where used) and speaker-encoder initialization. These are additional dependencies, not substitutes for the fine-tuned release weights. Their final public artifact references still need to be pinned.
 - **Historical fixed baselines:** JC epoch 199 and SK epoch 178 are distinct from JC321/SK279. Add them if their corresponding comparisons remain in the public scope; do not silently substitute one pair for the other.
-- Frozen-encoder, additional K/L/M variants, later fixed-model selections, and matched specialist studies are optional extensions unless retained in the final paper. This snapshot inventory does not claim to cover every experiment.
+- Newer fixed-six and singer-enrollment specialist experiments are excluded from this ICASSP release. Frozen-encoder and additional K/L/M variants remain outside the paper-focused inventory unless needed by a reported experiment. This inventory does not cover every research experiment.
 
 ## Distribution
 

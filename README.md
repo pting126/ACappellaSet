@@ -51,8 +51,9 @@ from the audited paper snapshot, including epoch/step choices. Exact hashes are
 in [the candidate manifest](manifests/checkpoint_candidates.json), which records
 the snapshot inventory. The three historical fixed models and 12 historical
 specialists are confirmed for release inclusion. Later singer-enrollment
-specialists are excluded from this release. Newer fixed-model and shared
-conditioned-model selections, and weight terms, remain pending.
+specialists and newer fixed-six training runs are excluded from the ICASSP
+release. Shared conditioned checkpoints are being mapped to the reported paper
+experiments; final registry verification and weight terms remain pending.
 The [inference registry](manifests/models.json) separately records models the
 public code can load. See [model documentation](docs/models.md).
 

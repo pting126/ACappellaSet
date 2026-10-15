@@ -31,7 +31,11 @@ source order, preprocessing, inference settings, limitations, and applicable
 weight terms. The three historical fixed models and 12 historical specialists are confirmed
 for release inclusion. The later singer-enrollment specialist experiments are
 excluded from this release; the original specialist banks are mixture-only.
-Newer fixed-model and shared conditioned-model selections remain pending.
+Newer fixed-six training runs are also excluded from the ICASSP release. Shared
+conditioned checkpoints, including singer-conditioned AI augmentation, are
+being mapped to the reported paper experiments. Their exact checkpoint and
+selection snapshot must match the reported result, rather than automatically
+using the latest final-training winner.
 
 ## Public inference support
 
