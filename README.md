@@ -2,7 +2,7 @@
 
 Dataset resources, model weights, and code for a cappella source separation.
 
-**Combined ep333 weights and Linux CPU inference are available.** Download the
+**Fixed_6stem_htdemucs_SKnJC weights and Linux CPU inference are available.** Download the
 110 MB portable checkpoint from [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models)
 using the verified download command below. The dataset is being prepared for
 Zenodo. Other model adapters and training workflows remain in preparation.
@@ -11,9 +11,9 @@ Zenodo. Other model adapters and training workflows remain in preparation.
 
 | Resource | Status |
 | --- | --- |
-| Combined ep333 inference | Implemented; actual-checkpoint Linux CPU validation passed |
+| Fixed_6stem_htdemucs_SKnJC inference | Implemented; actual-checkpoint Linux CPU validation passed |
 | Checkpoint inventory | 27 active checkpoints, 2 deferred AI-augmented checkpoints; external baseline linked |
-| Public checkpoint downloads | Combined ep333 available on [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models) |
+| Public checkpoint downloads | Fixed_6stem_htdemucs_SKnJC available on [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models) |
 | Dataset and annotations | Zenodo dataset record pending |
 | Training scripts | Being prepared |
 | Specialist and conditioned inference | Being prepared |
@@ -24,8 +24,8 @@ Follow the [installation and inference guide](docs/inference.md) to create the
 tested Python 3.10 environment. Download and verify the registered checkpoint:
 
 ```bash
-python download.py --model combined-ep333
-python inference.py --model combined-ep333 --checkpoint checkpoints/epoch_0333.pt --input /path/to/mixture.wav --output outputs/my-mixture --device cpu
+python download.py --model Fixed_6stem_htdemucs_SKnJC
+python inference.py --model Fixed_6stem_htdemucs_SKnJC --checkpoint checkpoints/Fixed_6stem_htdemucs_SKnJC.pt --input /path/to/mixture.wav --output outputs/my-mixture --device cpu
 ```
 
 The command writes stereo 44.1 kHz Float32 WAVs named `vp`, `bass`, `soprano`,
@@ -58,7 +58,7 @@ The [inference registry](manifests/models.json) separately records models the
 public code can load. See [model documentation](docs/models.md).
 
 Weights are hosted in the [Hugging Face model repository](https://huggingface.co/pting126/ACappellaSet-models),
-with verified checksums and applicable licenses. Combined ep333 is available;
+with verified checksums and applicable licenses. Fixed_6stem_htdemucs_SKnJC is available;
 other checkpoints remain in preparation. A final paper snapshot may also
 be archived on Zenodo. Large checkpoints are not committed to this GitHub repository.
 
@@ -98,7 +98,7 @@ inference package. Required MSS training modifications will be released separate
 Original code and documentation use the [MIT license](LICENSE). Vendored and
 adapted code retains its upstream notices; see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-Combined ep333 weights use Apache-2.0; see the [weight license](https://huggingface.co/pting126/ACappellaSet-models/blob/main/fixed/Combined/legacy/LICENSE).
+Fixed_6stem_htdemucs_SKnJC weights use Apache-2.0; see the [weight license](https://huggingface.co/pting126/ACappellaSet-models/blob/main/fixed/SKnJC/legacy/LICENSE).
 The 13 natural SK-only weights are assigned Apache-2.0. JC-trained weight
 terms require clarification; the existing Combined release retains its published
 license. Dataset audio and third-party rights are separate from project licensing.

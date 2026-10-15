@@ -5,7 +5,7 @@
   "record_url": "https://huggingface.co/pting126/ACappellaSet-models",
   "models": [
     {
-      "id": "combined-ep333",
+      "id": "Fixed_6stem_htdemucs_SKnJC",
       "family": "fixed-htdemucs",
       "training_corpus": "JC+SK",
       "epoch": 333,
@@ -42,16 +42,22 @@
       "sixth_output_note": "other combines JC Lead and SK Baritone training semantics; not separate Lead and Baritone outputs.",
       "validation_report": "docs/validation/combined-ep333-linux-cpu.json",
       "portable_checkpoint": {
-        "filename": "epoch_0333.pt",
+        "filename": "Fixed_6stem_htdemucs_SKnJC.pt",
         "sha256": "8f87f3a1224de680085fea0c186600edc7cfbb91b8f56f8862da4772565e0cda",
         "bytes": 109822110,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/pting126/ACappellaSet-models/resolve/d05b4ab71c5c28c92dffb9e3128e82c20f07f48e/fixed/Combined/legacy/epoch_0333.pt",
+        "download_url": "https://huggingface.co/pting126/ACappellaSet-models/resolve/f1e747c20f8fe8df2271944f995f5fdcd0a10cce/fixed/SKnJC/legacy/Fixed_6stem_htdemucs_SKnJC.pt",
         "status": "published_linux_cpu_validated",
         "validation_report": "docs/validation/combined-ep333-portable-linux-cpu.json",
-        "revision": "d05b4ab71c5c28c92dffb9e3128e82c20f07f48e"
-      }
+        "revision": "f1e747c20f8fe8df2271944f995f5fdcd0a10cce",
+        "previous_filename": "epoch_0333.pt"
+      },
+      "aliases": [
+        "combined-ep333",
+        "fixed-combined-ep333"
+      ],
+      "display_name": "Fixed_6stem_htdemucs_SKnJC"
     }
   ],
   "repository_id": "pting126/ACappellaSet-models"

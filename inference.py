@@ -40,7 +40,7 @@ def read_audio(path, sample_rate):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--model", default="combined-ep333", help="Registered model ID")
+    parser.add_argument("--model", default="Fixed_6stem_htdemucs_SKnJC", help="Registered model ID")
     parser.add_argument("--checkpoint", type=Path, required=True, help="Local checkpoint; SHA-256 is checked")
     parser.add_argument("--input", type=Path, required=True, help="Input audio file")
     parser.add_argument("--output", type=Path, required=True, help="New output directory (must not exist)")
@@ -52,10 +52,12 @@ def main(argv=None):
     if args.output.exists():
         parser.error("--output already exists; choose a new directory")
     registry = json.loads((ROOT / "manifests/models.json").read_text())
-    specs = {entry["id"]: entry for entry in registry["models"]}
+    specs = {name: entry for entry in registry["models"]
+             for name in [entry["id"], *entry.get("aliases", [])]}
     if args.model not in specs:
         parser.error(f"Unknown model {args.model!r}. Available: {', '.join(specs)}")
     spec = specs[args.model]
+    args.model = spec["id"]
     import torch
     import soundfile as sf
     from models.fixed import load_model, separate, sha256

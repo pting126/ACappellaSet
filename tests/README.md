@@ -5,7 +5,7 @@ The five tests cover short/overlapping/partial-tail chunk reconstruction,
 invalid input, non-finite predictions, checkpoint hash rejection before
 deserialization, and mono/resampling/multichannel handling.
 
-The full Combined ep333 checkpoint was separately compared with the archived
+The full Fixed_6stem_htdemucs_SKnJC checkpoint was separately compared with the archived
 MSS inference implementation on two inputs in a fresh Linux CPU environment.
 All six outputs matched bit-for-bit. The
 [validation report](../docs/validation/combined-ep333-linux-cpu.json) includes

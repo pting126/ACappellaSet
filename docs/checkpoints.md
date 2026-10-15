@@ -14,9 +14,9 @@ Exact filenames, hashes, and recorded selection labels are in [`manifests/checkp
 
 | Training corpus | Epoch | Status |
 | --- | ---: | --- |
-| JC_ep321 | 321 | Confirmed for release inclusion |
-| SK_ep279 | 279 | Confirmed for release inclusion |
-| Combined_ep333 | 333 | Confirmed for release inclusion |
+| Fixed_6stem_htdemucs_JC | 321 | Confirmed for release inclusion |
+| Fixed_6stem_htdemucs_SK | 279 | Confirmed for release inclusion |
+| Fixed_6stem_htdemucs_SKnJC | 333 | Confirmed for release inclusion |
 
 ## Specialists (12)
 
@@ -74,7 +74,7 @@ Singer-conditioned and dual models require their matching encoder state. The pub
 
 ## Distribution
 
-Host project weights on [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models). An optional final paper model archive may be deposited on Zenodo. Keep configurations, model code, registry entries, and download utilities in GitHub. Before publishing each weight, freeze its intended use, verify loading and inference, and record applicable weight/data terms. Combined ep333 is published under Apache-2.0. The 13 natural SK-only checkpoints
+Host project weights on [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models). An optional final paper model archive may be deposited on Zenodo. Keep configurations, model code, registry entries, and download utilities in GitHub. Before publishing each weight, freeze its intended use, verify loading and inference, and record applicable weight/data terms. Fixed_6stem_htdemucs_SKnJC is published under Apache-2.0. The 13 natural SK-only checkpoints
 are assigned Apache-2.0 following upstream review and project rights-holder
 authorization. JC-trained weight terms require clarification; this does not
 retroactively change the existing Combined license. K6 and K6_no_aug are

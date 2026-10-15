@@ -4,7 +4,7 @@
   "external_checkpoint_count": 1,
   "checkpoints": [
     {
-      "model": "JC_ep321",
+      "model": "Fixed_6stem_htdemucs_JC",
       "family": "fixed",
       "role": "",
       "epoch": 321,
@@ -24,10 +24,12 @@
       "selection_horizon_updates": null,
       "intended_weight_license": "Apache-2.0",
       "weight_license": null,
-      "license_review_status": "jc_training_clarification_needed"
+      "license_review_status": "jc_training_clarification_needed",
+      "research_id": "JC_ep321",
+      "public_name": "Fixed_6stem_htdemucs_JC"
     },
     {
-      "model": "SK_ep279",
+      "model": "Fixed_6stem_htdemucs_SK",
       "family": "fixed",
       "role": "",
       "epoch": 279,
@@ -47,10 +49,12 @@
       "selection_horizon_updates": null,
       "intended_weight_license": "Apache-2.0",
       "weight_license": "Apache-2.0",
-      "license_review_status": "sk_natural_authorized"
+      "license_review_status": "sk_natural_authorized",
+      "research_id": "SK_ep279",
+      "public_name": "Fixed_6stem_htdemucs_SK"
     },
     {
-      "model": "Combined_ep333",
+      "model": "Fixed_6stem_htdemucs_SKnJC",
       "family": "fixed",
       "role": "",
       "epoch": 333,
@@ -70,7 +74,9 @@
       "selection_horizon_updates": null,
       "intended_weight_license": "Apache-2.0",
       "weight_license": "Apache-2.0",
-      "license_review_status": "jc_training_clarification_needed"
+      "license_review_status": "jc_training_clarification_needed",
+      "research_id": "Combined_ep333",
+      "public_name": "Fixed_6stem_htdemucs_SKnJC"
     },
     {
       "model": "JC historical specialists (MSS inference)",

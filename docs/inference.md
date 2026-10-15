@@ -1,6 +1,6 @@
 # Fixed-output inference
 
-The Combined ep333 model has a working inference entry point and a published
+The Fixed_6stem_htdemucs_SKnJC model has a working inference entry point and a published
 110 MB portable checkpoint on [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models).
 The checkpoint is licensed under Apache-2.0. Training-data terms and third-party
 rights are separate from the rights granted by the project; see [checkpoints](checkpoints.md).
@@ -38,7 +38,7 @@ Size: 333986969 bytes
 The published model-only portable export is:
 
 ```text
-epoch_0333.pt
+Fixed_6stem_htdemucs_SKnJC.pt
 SHA-256: 8f87f3a1224de680085fea0c186600edc7cfbb91b8f56f8862da4772565e0cda
 Size: 109822110 bytes
 ```
@@ -56,7 +56,7 @@ not accept arbitrary checkpoints or change output heads automatically.
 ## Download the checkpoint
 
 ```bash
-python download.py --model combined-ep333
+python download.py --model Fixed_6stem_htdemucs_SKnJC
 ```
 
 No Hugging Face account or token is needed. The standard-library downloader uses
@@ -66,7 +66,7 @@ the local file. Existing files are reused only if their hash matches.
 ## Separate an audio file
 
 ```bash
-python inference.py --model combined-ep333 --checkpoint checkpoints/epoch_0333.pt --input /path/to/mixture.wav --output outputs/my-mixture --device cpu
+python inference.py --model Fixed_6stem_htdemucs_SKnJC --checkpoint checkpoints/Fixed_6stem_htdemucs_SKnJC.pt --input /path/to/mixture.wav --output outputs/my-mixture --device cpu
 ```
 
 The output directory must not already exist. It contains:

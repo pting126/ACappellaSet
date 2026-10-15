@@ -1,6 +1,6 @@
 # Artifact manifests
 
-`models.json` contains the registered Combined ep333 checkpoint identity and
+`models.json` contains the registered Fixed_6stem_htdemucs_SKnJC checkpoint identity and
 inference contract. Its null download URL means the weight is not publicly
 hosted yet. `dataset.json` remains a pending dataset registry.
 

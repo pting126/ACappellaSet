@@ -1,7 +1,7 @@
 # Models and checkpoints
 
 The release registry is [`manifests/models.json`](../manifests/models.json).
-It contains the exact Combined ep333 checkpoint identity and inference settings.
+It contains the exact Fixed_6stem_htdemucs_SKnJC checkpoint identity and inference settings.
 Combined portable weights are available. The [Hugging Face model repository](https://huggingface.co/pting126/ACappellaSet-models)
 contains the Combined checkpoint and metadata for the remaining planned weights.
 The [checkpoint checklist](checkpoints.md) covers all candidates identified in
@@ -39,8 +39,8 @@ identities remain recorded.
 
 ## Public inference support
 
-Only Combined ep333 is currently registered and validated by the public CLI.
-JC ep321, SK ep279, and the original part-specific specialist banks still need
+Only Fixed_6stem_htdemucs_SKnJC is currently registered and validated by the public CLI.
+Fixed_6stem_htdemucs_JC, Fixed_6stem_htdemucs_SK, and the original part-specific specialist banks still need
 their model-specific registration/adapters and validation. Shared part-, singer-,
 and dual-conditioned adapters are also pending. A model listed for release is
 not necessarily supported by the current inference command.
@@ -48,3 +48,8 @@ not necessarily supported by the current inference command.
 The active release plan has 27 checkpoints; K6 and K6_no_aug are deferred.
 Natural SK-only weight licensing is Apache-2.0; JC-trained weight terms need
 clarification. The existing Combined Apache release remains recorded.
+
+Public fixed-model names are `Fixed_6stem_htdemucs_SK`,
+`Fixed_6stem_htdemucs_JC`, and `Fixed_6stem_htdemucs_SKnJC`.
+`SKnJC` means joint SK+JC training. Epochs remain in provenance metadata,
+not in the public names. The legacy `combined-ep333` CLI alias still works.
