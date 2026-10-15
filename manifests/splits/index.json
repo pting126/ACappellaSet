@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "status": "historical_layout_before_zenodo",
+  "sets": {
+    "train_sk": {
+      "files": {
+        "enrollment_index.csv": {
+          "file": "manifests/splits/train_sk/enrollment_index.csv.gz",
+          "sha256": "ddf78af351d10c43aeb130220784b5ecee145a1d755a4c0f4ddadd00787aa512",
+          "content_sha256": "e8adb7d434b95df1efd6e5b689283f2c99dddef3d015dc479dc4213050814a94",
+          "historical_sha256": "4ad703e2e3eb3a1b9afb595906ac9110c717ea0662eca46468720b398544569a",
+          "rows": 13628
+        },
+        "target_examples.csv": {
+          "file": "manifests/splits/train_sk/target_examples.csv.gz",
+          "sha256": "947c895e96eae0279991ac63d8ac50fa6c9d5aaea9114680796ebbd3d1c98853",
+          "content_sha256": "751f15d33a9547870e9ed65693209664a498a20a7959b8dd57e4f608de957981",
+          "historical_sha256": "da6b4cf5beee72ac83839822640aac08bc6c52fc9068464a195683822befb2af",
+          "rows": 13357
+        },
+        "DATA_PROTOCOL.json": {
+          "file": "manifests/splits/train_sk/DATA_PROTOCOL.json",
+          "sha256": "f91efc1b284792ad2e8644bdd22da1a1a8cccc8c5bd0c018f53cb026d30b763a",
+          "historical_sha256": "1dbb5a469dd566388164ed2b02f3dbb8d9843eb0db4f0c2130afcdfc805925fa"
+        }
+      }
+    },
+    "valid_jc": {
+      "files": {
+        "enrollment_index.csv": {
+          "file": "manifests/splits/valid_jc/enrollment_index.csv.gz",
+          "sha256": "1290ffbf76118d1076ab9cc8b47ed93a475a25ed3d3bb17c9bbb9ffe88b5b5a7",
+          "content_sha256": "c4aae38088a206fac07f4cf04da016e7125af2941fb6edc17656d231d6cb3152",
+          "historical_sha256": "a9813baa93153c7e379f4a5e766831f01940477a4b9f6b1c9b9ab7cb78dd9910",
+          "rows": 20
+        },
+        "target_examples.csv": {
+          "file": "manifests/splits/valid_jc/target_examples.csv.gz",
+          "sha256": "38f7f0ecc380e27c6f669c7503a92d3e8007c10355fb7de58df6c6e19663712d",
+          "content_sha256": "f28df6c200e400902ef8e61796447bd918f08194edea5c00082386a8ee234d60",
+          "historical_sha256": "6679a2ffa22d386a30644f71c4be0417bee380cc6f2fa80b8e8fed34e1c305aa",
+          "rows": 60
+        },
+        "eval_pairs_valid_correct.csv": {
+          "file": "manifests/splits/valid_jc/eval_pairs_valid_correct.csv.gz",
+          "sha256": "38f7f0ecc380e27c6f669c7503a92d3e8007c10355fb7de58df6c6e19663712d",
+          "content_sha256": "f28df6c200e400902ef8e61796447bd918f08194edea5c00082386a8ee234d60",
+          "historical_sha256": "6679a2ffa22d386a30644f71c4be0417bee380cc6f2fa80b8e8fed34e1c305aa",
+          "rows": 60
+        }
+      }
+    },
+    "valid_sk": {
+      "files": {
+        "enrollment_index.csv": {
+          "file": "manifests/splits/valid_sk/enrollment_index.csv.gz",
+          "sha256": "672d3c5393b562d92bd01896589b341ee5841a6443f68dad4cb57664b4cc97be",
+          "content_sha256": "3ee4eecf2f069f2796c7aa9e65a7de9b55eea728efe14d93fc4ac28c94e9ed1d",
+          "historical_sha256": "77e21f13bda216d68d249ec778dcdf8e21c701acc2e2775067d453753e3aa731",
+          "rows": 13628
+        },
+        "target_examples.csv": {
+          "file": "manifests/splits/valid_sk/target_examples.csv.gz",
+          "sha256": "23f5b0ddb2ded6287ed06574c08b118156b41ac880f77fc041b8aabfb520f829",
+          "content_sha256": "d11d338659add32039a2d9abded4420b711328c8ec7800a5304c43d83dd01a81",
+          "historical_sha256": "ffa6f13ded1f1460861c12029b839dce1873bb21f24b92b789bd2a8ea36d5eb0",
+          "rows": 1737
+        },
+        "eval_pairs_valid_correct.csv": {
+          "file": "manifests/splits/valid_sk/eval_pairs_valid_correct.csv.gz",
+          "sha256": "d77bf87c77219f628c1c8a477214278ffd1cd891198121863e4384266a5541d4",
+          "content_sha256": "40f28979321c429cb117d9e17e3c93c5e521e3dca190603844f58f1d290d4709",
+          "historical_sha256": "5102724d0647c80154221e5dae67b7408cba0a9cedfc6a1c6cf772e94579b7d1",
+          "rows": 52
+        }
+      }
+    },
+    "train_jc": {
+      "files": {
+        "enrollment_index.csv": {
+          "file": "manifests/splits/train_jc/enrollment_index.csv.gz",
+          "sha256": "7fa29456705ac9e433ca7f4156dd65f9351420056e3435b32cebf2e2ffa182f7",
+          "content_sha256": "af5fb9c3b96b55e0516584a1fce002f9bf2905b06cb3bfe73e27d4cd7e2fc8a2",
+          "historical_sha256": "5ab0b307c2d897335dcbc25c77eeb2881db6236bcdadb591daccd0b68acd9e4c",
+          "rows": 2603
+        },
+        "target_examples.csv": {
+          "file": "manifests/splits/train_jc/target_examples.csv.gz",
+          "sha256": "d90b8eeb75f34779725a39191b770f4ee9508806c58dea7d69be4ef4a4476d8b",
+          "content_sha256": "a01d823f8e76575cd9ab346ceecf362676fb3984ae855e10e052a948ae59e2c6",
+          "historical_sha256": "dd84a84f73d571b836a9985e1823e16f53f16a243508eb70c709a22c3d40cf0b",
+          "rows": 2603
+        },
+        "DATA_PROTOCOL.json": {
+          "file": "manifests/splits/train_jc/DATA_PROTOCOL.json",
+          "sha256": "864b537b73c3929bab3085a7bf81d616d74379ad087e5902aa3b47cfb0301e79",
+          "historical_sha256": "9433ea9793eb685658d157480c542af61452274e42f4380b36760ce919fea5b0"
+        }
+      }
+    },
+    "train_sknjc": {
+      "files": {
+        "enrollment_index.csv": {
+          "file": "manifests/splits/train_sknjc/enrollment_index.csv.gz",
+          "sha256": "48cb1776cada48b71692fe16a34de7ed9f7265fcf67d2185ac2307f11616ce8a",
+          "content_sha256": "7d6f553034578ae743ef4c781a1add9abd2b239f080919d9cafab289252f4fa7",
+          "historical_sha256": "8918c68571c7f0e0d0718e4bdab743044f27e91d69abf48cfad511523e705dbc",
+          "rows": 16231
+        },
+        "target_examples.csv": {
+          "file": "manifests/splits/train_sknjc/target_examples.csv.gz",
+          "sha256": "1dd90d4c57ef37605a645639c4a72fbef7c1cac43ccc47d7f84ae8147f73e90f",
+          "content_sha256": "4a6974cc0611fd00a4fc1ff91e6af58ce766ea82de2565cc32d4cea0f95722d4",
+          "historical_sha256": "d68a88294cf86d62c5d28b124f2df2cce8ccb26537f7966c95abe4f815420449",
+          "rows": 15960
+        },
+        "DATA_PROTOCOL.json": {
+          "file": "manifests/splits/train_sknjc/DATA_PROTOCOL.json",
+          "sha256": "aad17e34ec86800c8fda2771b9762f3991f35992cc5726ca05475b08ee9e6044",
+          "historical_sha256": "5455fa3e63863f1216df3fe4a0081ff0853d90cf173b09e8dbcfc4ee3ce7dce0"
+        }
+      }
+    },
+    "valid_m_jc": {
+      "files": {
+        "enrollment_index.csv": {
+          "file": "manifests/splits/valid_m_jc/enrollment_index.csv.gz",
+          "sha256": "1290ffbf76118d1076ab9cc8b47ed93a475a25ed3d3bb17c9bbb9ffe88b5b5a7",
+          "content_sha256": "c4aae38088a206fac07f4cf04da016e7125af2941fb6edc17656d231d6cb3152",
+          "historical_sha256": "c9745fc3e5241372ae63aff70833aa8324d62bcf8b20a4b64a93701d2f46ea35",
+          "rows": 20
+        },
+        "target_examples.csv": {
+          "file": "manifests/splits/valid_m_jc/target_examples.csv.gz",
+          "sha256": "38f7f0ecc380e27c6f669c7503a92d3e8007c10355fb7de58df6c6e19663712d",
+          "content_sha256": "f28df6c200e400902ef8e61796447bd918f08194edea5c00082386a8ee234d60",
+          "historical_sha256": "c634e1006ee0f7b13043743ca37644464cacf87243278a983a96c97cc8e1a9a8",
+          "rows": 60
+        },
+        "eval_pairs_valid_correct.csv": {
+          "file": "manifests/splits/valid_m_jc/eval_pairs_valid_correct.csv.gz",
+          "sha256": "38f7f0ecc380e27c6f669c7503a92d3e8007c10355fb7de58df6c6e19663712d",
+          "content_sha256": "f28df6c200e400902ef8e61796447bd918f08194edea5c00082386a8ee234d60",
+          "historical_sha256": "c634e1006ee0f7b13043743ca37644464cacf87243278a983a96c97cc8e1a9a8",
+          "rows": 60
+        }
+      }
+    },
+    "valid_m_sk": {
+      "files": {
+        "enrollment_index.csv": {
+          "file": "manifests/splits/valid_m_sk/enrollment_index.csv.gz",
+          "sha256": "672d3c5393b562d92bd01896589b341ee5841a6443f68dad4cb57664b4cc97be",
+          "content_sha256": "3ee4eecf2f069f2796c7aa9e65a7de9b55eea728efe14d93fc4ac28c94e9ed1d",
+          "historical_sha256": "27be996ff2471aa00024c67ed0403e213d1a6117d93fb6c20db0077e547ec97f",
+          "rows": 13628
+        },
+        "target_examples.csv": {
+          "file": "manifests/splits/valid_m_sk/target_examples.csv.gz",
+          "sha256": "23f5b0ddb2ded6287ed06574c08b118156b41ac880f77fc041b8aabfb520f829",
+          "content_sha256": "d11d338659add32039a2d9abded4420b711328c8ec7800a5304c43d83dd01a81",
+          "historical_sha256": "3c42f2b5941332b6b25e62c9933ae7d2ed58ee269c8ad7c685f7927c439f6ae7",
+          "rows": 1737
+        },
+        "eval_pairs_valid_correct.csv": {
+          "file": "manifests/splits/valid_m_sk/eval_pairs_valid_correct.csv.gz",
+          "sha256": "d77bf87c77219f628c1c8a477214278ffd1cd891198121863e4384266a5541d4",
+          "content_sha256": "40f28979321c429cb117d9e17e3c93c5e521e3dca190603844f58f1d290d4709",
+          "historical_sha256": "87220d57ef29f35ae64ec927ba071f4370d175d12710f839c9c9eb806250fc08",
+          "rows": 52
+        }
+      }
+    },
+    "test_jc": {
+      "files": {
+        "eval_pairs_test_correct.csv": {
+          "file": "manifests/splits/test_jc/eval_pairs_test_correct.csv.gz",
+          "sha256": "34cc37aee41553a1b55bd8bf6f9f18706d18838422075f99982531a26dee1d3b",
+          "content_sha256": "a695dbe497280d42ab4e6bbde40d81d70af5f45457556656b15b0d18d7cf0bab",
+          "historical_sha256": "4901b1bc2b1b45a3c78288570030ddf5f1365058316198945236894b433d8ce8",
+          "rows": 60
+        },
+        "enrollment_index.csv": {
+          "file": "manifests/splits/test_jc/enrollment_index.csv.gz",
+          "sha256": "1290ffbf76118d1076ab9cc8b47ed93a475a25ed3d3bb17c9bbb9ffe88b5b5a7",
+          "content_sha256": "c4aae38088a206fac07f4cf04da016e7125af2941fb6edc17656d231d6cb3152",
+          "historical_sha256": "a9813baa93153c7e379f4a5e766831f01940477a4b9f6b1c9b9ab7cb78dd9910",
+          "rows": 20
+        }
+      }
+    },
+    "test_sk": {
+      "files": {
+        "eval_pairs_test_correct.csv": {
+          "file": "manifests/splits/test_sk/eval_pairs_test_correct.csv.gz",
+          "sha256": "9aef04b18b946e970f1d82629c61bc5b1da3003a9c9aef5a7ddeaa3626610eff",
+          "content_sha256": "378358e010728ef92f0db5a97b128acade96bc8017677bc2b343239582f1e3f8",
+          "historical_sha256": "b80ed7b713dfadd6fa172bfe1f59cfa804922b1f1c6205695c574136cbb62f62",
+          "rows": 100
+        },
+        "enrollment_index.csv": {
+          "file": "manifests/splits/test_sk/enrollment_index.csv.gz",
+          "sha256": "7f296a1a3eba7888c5540df1612574ab06ee8520bfbe7447ffd7407f2addf3f4",
+          "content_sha256": "142263778766a16ba9218e0eb907efa9cf473c7135691c0d2ce02f1773208484",
+          "historical_sha256": "2e4f392c7f90d8dbacc2a954d107172867e1fc245ccec8dc109241cf2622ea5d",
+          "rows": 7
+        }
+      }
+    },
+    "test_ab": {
+      "files": {
+        "eval_pairs_test_correct.csv": {
+          "file": "manifests/splits/test_ab/eval_pairs_test_correct.csv.gz",
+          "sha256": "8ebe0d61b2f414f533234d4a6d860149f025b8274e2599d9cc42acef774e180c",
+          "content_sha256": "2f68ab57c2020b832594da14fd875002d720d24994a239c8a89f40f5b72d0c9a",
+          "historical_sha256": "13f9e0299e533922ebb3ec28897589eb75513ad46a83674a935f608f883603a8",
+          "rows": 25
+        },
+        "enrollment_index.csv": {
+          "file": "manifests/splits/test_ab/enrollment_index.csv.gz",
+          "sha256": "d59c5ce59f9a3043405b216a86525738bc08ae61a287d833b6296f8c4c7b4f70",
+          "content_sha256": "4c5881cfcc52090c9af7ff0ae2b6276dbd05c94095c83f61bec240d8fa491253",
+          "historical_sha256": "0cc69934244a91f9ef727656e4bf5c03898c71157f0a03648f6b9233391faa2b",
+          "rows": 22
+        },
+        "excluded_pairs.csv": {
+          "file": "manifests/splits/test_ab/excluded_pairs.csv.gz",
+          "sha256": "216467320b54370837b9dd3725af45a017894f83da0bc57b7ef64dff458d132a",
+          "content_sha256": "21cd1927fea8d306445c14b56e06e15207ef205bbe18c757c088386aa941cfde",
+          "historical_sha256": "1e20f0b0d9e8cd80f73d698eed51365ad4be0a118b2acae529b1cb89d6ce3f86",
+          "rows": 3
+        }
+      }
+    }
+  },
+  "roots": {
+    "SK": "Historical 6_stem directory (train_flat/valid_flat/test_flat)",
+    "JC": "Historical Jacappella44k/6stem directory (train/valid/test)",
+    "AB": "Historical AB test/6stem directory"
+  },
+  "notes": [
+    "ARCHIVED_AUG_LINK values are unused historical prepared_link metadata, not active training/enrollment audio.",
+    "These are preserved historical populations, not new splits or a final Zenodo schema."
+  ]
+}

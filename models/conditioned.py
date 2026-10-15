@@ -37,7 +37,8 @@ def load_model(checkpoint, config_path, spec, device):
     if config['source_mode'] != 'target_residual' or spec['source_order'] != ['target', 'residual']:
         raise ValueError('Unexpected conditioned output order')
     # Only exact, registered research checkpoints reach this legacy loader.
-    payload = torch.load(checkpoint, map_location='cpu', weights_only=False)
+    payload = torch.load(checkpoint, map_location='cpu',
+                         weights_only=spec.get('safe_training_export', False))
     if payload['step'] != spec['step']:
         raise ValueError('Checkpoint step does not match its registered selection')
     model = build_model(config, device)

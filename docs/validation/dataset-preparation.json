@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "sets": [
+    {
+      "set": "train_sk",
+      "audio_files": 412,
+      "receipt_sha256": "b8c0f3c8a1f11de3aadaf2cf1592903146d183f80a6b47da96765213ecf44cdc"
+    },
+    {
+      "set": "valid_jc",
+      "audio_files": 90,
+      "receipt_sha256": "a9b141ea2d8691941fc19ae5a8561f65f7841614d71872bcff6ccf416b0e683c"
+    },
+    {
+      "set": "valid_sk",
+      "audio_files": 406,
+      "receipt_sha256": "cd8ec867636266d5b326f0e82bd55f5af7c93007318b9b1005505d68279fbcb7"
+    },
+    {
+      "set": "train_jc",
+      "audio_files": 210,
+      "receipt_sha256": "ed2dd8d2e7ccc26f7a592ac4d7fc4aa4474064c86ee1ec55a507b49aba02bb62"
+    },
+    {
+      "set": "train_sknjc",
+      "audio_files": 622,
+      "receipt_sha256": "c8fe83b22556ade654e070135d44f60ee9f7d4700cb7afc4790c8e5724aefa9b"
+    },
+    {
+      "set": "valid_m_jc",
+      "audio_files": 90,
+      "receipt_sha256": "5a1fb300f5212e1c07a5a333e7cf042ac8654643928170baede10aaad7bab196"
+    },
+    {
+      "set": "valid_m_sk",
+      "audio_files": 406,
+      "receipt_sha256": "ff95358335ba6c78d0cfc9dc6b288398bf32d6ecb09eb2b690ba66551fa3a525"
+    },
+    {
+      "set": "test_jc",
+      "audio_files": 90,
+      "receipt_sha256": "4b09ae380dc6a04d242c84938089777a3216aa942cec9397affd7d5906569942"
+    },
+    {
+      "set": "test_sk",
+      "audio_files": 127,
+      "receipt_sha256": "6a6cde45d78d8a92644f5fc840557d1d976479a0077e1cde255754612e9a39d2"
+    },
+    {
+      "set": "test_ab",
+      "audio_files": 32,
+      "receipt_sha256": "5463067d4d9c4bc0ca63002e5a8bd42585c2e9265db0e26508e2d7b7507e2742"
+    }
+  ],
+  "limitations": [
+    "Historical layout, not the forthcoming Zenodo archive schema.",
+    "Audio verified on shared research storage; no audio distributed in this repository."
+  ],
+  "job": 64080156
+}

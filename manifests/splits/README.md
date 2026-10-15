@@ -1,9 +1,11 @@
-# Dataset splits
+# Historical dataset splits
 
-Exact public training, validation, and test manifests will be placed here with
-their dataset version and checksums. They have not yet been published.
+`index.json` identifies ten exact historical CSV sets and their checksums.
+CSV files are compressed with gzip; row order, identities, and scientific
+fields are preserved. Only filesystem prefixes are portable. `track_inventory.json`
+records the original six-stem memberships and SK Soprano/Baritone real-target filters.
 
-Splits must preserve composition identity across alternate recordings and
-derived versions. Singer enrollment policies must be documented separately
-from target-song eligibility. Do not infer splits from filenames or silently
-regenerate a new random partition.
+Use `prepare_data.py` to resolve local audio roots and verify the audio.
+See [preparation](../../docs/preparation.md) for layouts and enrollment policies.
+The final Zenodo version and archive mapping remain pending the dataset release.
+Do not regenerate random splits or infer enrollment eligibility from filenames.

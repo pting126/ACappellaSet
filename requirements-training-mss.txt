@@ -1,0 +1,14 @@
+# Fixed-output and original specialist training. Install CUDA/CPU Torch first.
+-r requirements-training-conditioned.txt
+ml_collections==1.1.0
+wandb==0.28.1
+loralib==0.1.2
+librosa==0.9.2
+audiomentations==0.24.0
+pedalboard==0.8.9
+auraloss==0.4.0
+torch-log-wmse==0.3.0
+matplotlib==3.10.8
+numba==0.63.1
+llvmlite==0.46.0
+scikit-learn==1.7.2

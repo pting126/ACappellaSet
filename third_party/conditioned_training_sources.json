@@ -1,0 +1,162 @@
+{
+  "files": [
+    {
+      "file": "training/conditioned_math.py",
+      "source": "experiments/seagullk_singer_conditioned/train_htdemucs_v2a.py",
+      "source_sha256": "86c19b14c730ddcee9a0c96d5b459b033583fdf91c7e683f31f6f7c7f83f6503",
+      "sha256": "d4998fd9315754644a2a3c76ccb51b88e8a9459b7516f88050b4398c50e7da88",
+      "changes": [
+        "Extract listed functions without changing their computation"
+      ]
+    },
+    {
+      "file": "data/audio.py",
+      "source": "experiments/seagullk_singer_conditioned/seagullk_manifest_dataset.py",
+      "source_sha256": "406a8c9c9cbcb69c8848aa24feb29172c692c8b16d8405a6507da1cc07c62661",
+      "sha256": "6b8c1e2ffe04c1630d11afbbb4addcb03befdab87699ee53fb9505d00cefdab5",
+      "changes": [
+        "Extract helpers unchanged; callers validate sample rates and channel counts"
+      ]
+    },
+    {
+      "file": "data/present.py",
+      "source": "experiments/seagullk_singer_conditioned/v2a_present_dataset.py",
+      "source_sha256": "4255308bfaa8e3a99593e7c55e85546f1d88c27be7fb4aa3477a629706c8d321",
+      "sha256": "585d3475ec8e2c8ebb228f959d0c1d43575cc3092abb3c074f50ddebf9288aaa",
+      "changes": [
+        "Package-relative audio import only"
+      ]
+    },
+    {
+      "file": "data/strict_k.py",
+      "source": "experiments/k_corrected_singer_enrollment_v1/strict_dataset.py",
+      "source_sha256": "6cc94c5852a3455febcda7927c776514150bcd8095a7b54fc64c7de4397c0807",
+      "sha256": "8f4994ef60ba55add085ca6955a871990677e162b3fe1b3a4153a7ee0e6e6e68",
+      "changes": [
+        "Package-relative imports only"
+      ]
+    },
+    {
+      "file": "data/policy_k.py",
+      "source": "experiments/k_corrected_singer_enrollment_v1/data_policy.py",
+      "source_sha256": "16f600dbec0a7f9b1338768a10d76a53e065009ef7443b142dd9731a1c4b759d",
+      "sha256": "16f600dbec0a7f9b1338768a10d76a53e065009ef7443b142dd9731a1c4b759d",
+      "changes": [
+        "Retain exact enrollment eligibility rules"
+      ]
+    },
+    {
+      "file": "data/strict_l.py",
+      "source": "experiments/l_jc_kmatched_v1/strict_dataset.py",
+      "source_sha256": "84dde9085fd3494c2556822b746fa3e60a79af61ce3d63564e0a0a5aa9cea64a",
+      "sha256": "24eae4c5150ff5ccab48427ea476993e9e7a67fd3d965cbcb6d931fecbeb10cb",
+      "changes": [
+        "Package-relative imports only"
+      ]
+    },
+    {
+      "file": "data/policy_l.py",
+      "source": "experiments/l_jc_kmatched_v1/common.py",
+      "source_sha256": "37eacc9eeb2062472ece5dc4e0d8562bfcb9dc299481130c87ded8629cb4bec0",
+      "sha256": "5684a89e93db359451e449c6e12cc55b96b6f28583a9a1fe4a24e80aab2994b9",
+      "changes": [
+        "Retain exact enrollment eligibility rules"
+      ]
+    },
+    {
+      "file": "data/strict_m.py",
+      "source": "experiments/m_combined_lighthouse_20260918/strict_dataset.py",
+      "source_sha256": "2d99dac4f3233b23bf3f80414c405b7cacfc3008980f23305239379e443acd7e",
+      "sha256": "c049f10693899be4385bd5574b203780c5b7f14a7e7a094488e2a551b59943d2",
+      "changes": [
+        "Package-relative imports only"
+      ]
+    },
+    {
+      "file": "data/policy_m.py",
+      "source": "experiments/m_combined_lighthouse_20260918/common.py",
+      "source_sha256": "2ca346749c9b5987c04c642d92f87eadada3e60593cc64cf65301c3878f02920",
+      "sha256": "163ac9fa2da098ba044b0b2fecc784d1eaca6b532eb75419765744a31650f220",
+      "changes": [
+        "Retain exact enrollment eligibility rules"
+      ]
+    },
+    {
+      "file": "data/residual_policy.py",
+      "source": "experiments/k_corrected_singer_enrollment_v1/residual_policy.py",
+      "source_sha256": "10ae3b5a718a40b6aa0f0471e82f86c0ea8a614506f7c7fb41315ea9cb79f19a",
+      "sha256": "10ae3b5a718a40b6aa0f0471e82f86c0ea8a614506f7c7fb41315ea9cb79f19a",
+      "changes": []
+    },
+    {
+      "file": "configs/training/K1.json",
+      "source": "experiments/k_corrected_singer_enrollment_v1/configs/K1.json",
+      "source_sha256": "e6afbcfd8ac4279517b070640fb5b109e6b2c766e5854e7232358d0be841a317",
+      "sha256": "8a7423ff09af505cce5291b96d9ee685a4af82cdd5d578de80714243bc84b64c",
+      "changes": [
+        "Retain the supported scientific recipe; paths and logging supplied by the public launcher"
+      ]
+    },
+    {
+      "file": "configs/training/K5.json",
+      "source": "experiments/k_corrected_singer_enrollment_v1/configs/K5.json",
+      "source_sha256": "21f8467dfc456964a8a8cea1c1bb0fb4d8c84c0607101a2c933f22f79f948a90",
+      "sha256": "97106b61c79e9f690130eeeadbb36a0759474e46dbf9c8b24f3e3b6d7b8bad82",
+      "changes": [
+        "Retain the supported scientific recipe; paths and logging supplied by the public launcher"
+      ]
+    },
+    {
+      "file": "configs/training/K7.json",
+      "source": "experiments/k_corrected_singer_enrollment_v1/configs/K7.json",
+      "source_sha256": "ccad6c6ae0e86bef34711f964d0cfd0418395688ec1bb971e923fdf2ad183c46",
+      "sha256": "23e21e586351a3a7c13b69c5a78905d690efc2be33ff1880509782658aaf01cd",
+      "changes": [
+        "Retain the supported scientific recipe; paths and logging supplied by the public launcher"
+      ]
+    },
+    {
+      "file": "configs/training/L1.json",
+      "source": "experiments/l_jc_kmatched_v1/configs/L1.json",
+      "source_sha256": "2046ab5a1f6b421d35c3a78d98a35c0bbb46bf6268ee2c5fd3ba66c966e79b4e",
+      "sha256": "6ca0467ac6edfda8890a7ea1e467437ff53ef7de6493ed2164a3aa54d9533ece",
+      "changes": [
+        "Retain the supported scientific recipe; paths and logging supplied by the public launcher"
+      ]
+    },
+    {
+      "file": "configs/training/L3.json",
+      "source": "experiments/l_jc_kmatched_v1/configs/L3.json",
+      "source_sha256": "c63a19b6bac6b29f3bed072074075efb97a2d2e2cb35c5b35c1f7bce633e31e1",
+      "sha256": "a593e17fc06019365d368a847562a0e860bfe0baeab704f719d29d7a06403459",
+      "changes": [
+        "Retain the supported scientific recipe; paths and logging supplied by the public launcher"
+      ]
+    },
+    {
+      "file": "configs/training/L4.json",
+      "source": "experiments/l_jc_kmatched_v1/configs/L4.json",
+      "source_sha256": "e8cf6f1e0453dd03b382f33723f39196a1702161b2c6868b5fda998a45e37128",
+      "sha256": "e8bee986aec5c504f12b19ececcf2ea6735ae667eacc8ab187a866ce94eaacb9",
+      "changes": [
+        "Retain the supported scientific recipe; paths and logging supplied by the public launcher"
+      ]
+    },
+    {
+      "file": "configs/training/M3.json",
+      "source": "experiments/m_combined_lighthouse_20260918/configs/M3.json",
+      "source_sha256": "8872aab17df52466525ccbd13ae61ffaf92e2d7fc848cd9c8a726bf9ce3b2b16",
+      "sha256": "d3e9aee6a4aa9386fa91c56c80f3c4a0368f3d5a292152e449d27c732a31bb09",
+      "changes": [
+        "Retain the supported scientific recipe; paths and logging supplied by the public launcher"
+      ]
+    },
+    {
+      "file": "evaluation/enrollment.py",
+      "source": "evaluation_portal/enrollment_selection.py",
+      "source_sha256": "d824bd06d3b793974bd137ed53ec59230467676e135e9fc68c24521b85c99a74",
+      "sha256": "d824bd06d3b793974bd137ed53ec59230467676e135e9fc68c24521b85c99a74",
+      "changes": []
+    }
+  ]
+}

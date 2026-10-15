@@ -6,7 +6,7 @@ Dataset resources, model weights, and code for a cappella source separation.
 110 MB portable checkpoint from [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models)
 using the verified download command below. The dataset is being prepared for
 Zenodo. Original fixed/specialist scripts, data preparation, and canonical scoring are included.
-Conditioned inference is included; portable training and dataset reproduction are being completed in validated stages.
+Conditioned inference, portable training recipes, and exact historical split manifests are included.
 
 ## Availability
 
@@ -21,7 +21,8 @@ Conditioned inference is included; portable training and dataset reproduction ar
 | Specialist data preparation | Runnable; preserves the different JC and SK residual recipes |
 | Canonical scoring | Runnable on explicitly paired full-song WAVs |
 | Shared conditioned inference | Seven recipes / 12 selections; CPU checkpoint and CUDA full-song parity passed; weights supplied locally |
-| Shared conditioned training | Packaging and clean-environment validation in progress |
+| Shared conditioned training | Seven recipes; clean CUDA environment, native initialization/data parity, and deterministic resume verified |
+| Exact historical splits | Ten manifest sets and original SK specialist filters; audio verified on research storage |
 
 ## Run inference
 
@@ -92,15 +93,16 @@ Audio, annotations, splits, format documentation, and applicable terms will be
 published in a Zenodo dataset record linked from this repository. See the
 [dataset guide](docs/dataset.md). The current specialist preparation script consumes the historical pre-split
 six-stem layout; it does not create the forthcoming Zenodo release or its splits.
-See the [training guide](docs/training.md).
+See the [training guide](docs/training.md) and [runtime validation report](docs/validation/training-runtime.json).
 
 ## Repository layout
 
 ```text
 ACappellaSet/
 ├── download.py                   # Revision-pinned download with SHA-256 verification
-├── inference.py                  # Fixed and original specialist inference
-├── train.py                      # Verified MSS recipe launcher
+├── inference.py                  # Fixed, specialist, and conditioned inference
+├── train.py                      # MSS and conditioned training recipes
+├── prepare_data.py               # Exact historical manifests against local audio
 ├── prepare_specialists.py        # Corpus-specific two-stem preparation
 ├── evaluate.py                   # Canonical scoring of saved estimates
 ├── evaluation/                   # Metrics and pair-weighted reporting
@@ -109,7 +111,8 @@ ACappellaSet/
 ├── requirements-inference.txt    # Direct dependencies
 ├── requirements-linux-cpu-lock.txt
 ├── environment.yml               # Optional interpreter bootstrap
-├── data/                         # Dataset loaders: pending
+├── data/                         # Audited K/L/M training loaders
+├── training/                     # Conditioned training, validation, resume
 ├── scripts/                      # Verified MSS patch installer
 ├── manifests/                    # Models, dataset, candidate checkpoints, splits
 ├── third_party/                  # Source provenance and retained licenses
@@ -120,8 +123,8 @@ ACappellaSet/
 
 Inference does not require a Demucs fork or a full MSS checkout. Original
 fixed/specialist training uses a separate checkout at the exact documented
-MSS commit plus the included reviewed patch. Shared conditioned training
-requires different recipes and is not supported by this launcher.
+MSS commit plus the included reviewed patch. Shared conditioned training uses
+the included [K/L/M recipes](docs/conditioned-training.md) and vendored architecture.
 
 ## License and citation
 

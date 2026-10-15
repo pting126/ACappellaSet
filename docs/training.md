@@ -1,23 +1,22 @@
 # Training
 
 `train.py` launches the original MSS fixed-output or mixture-only part-specific
-recipe using a dedicated, patched MSS checkout. It does not train the shared
-part-, singer-, or dual-conditioned models; those recipes are still being packaged.
+recipe using a dedicated, patched MSS checkout. For shared part-, singer-, and
+dual-conditioned models, see [conditioned training](conditioned-training.md).
 
 ## Prepare the training implementation
 
-Use a separate environment and checkout for training. The inference environment
-is not a complete training environment. Start with Python 3.10 and the pinned
-MSS checkout's requirements; a clean training environment lock is still pending.
-The short training smoke test uses the existing research environment, not a new
-installation or a full training reproduction.
+Use Python 3.10 and the clean CUDA installation steps in
+[conditioned training](conditioned-training.md), then install
+`python -m pip install -r requirements-training-mss.txt` and run
+`python -m pip check`. This adds the pinned MSS dependencies. Use a dedicated
+patched MSS checkout:
 
 ```bash
 git clone https://github.com/ZFTurbo/Music-Source-Separation-Training.git /path/to/mss
 git -C /path/to/mss checkout c6a02267a2969b94dc2b261b6701a32ad9b7f118
 python scripts/prepare_mss.py --checkout /path/to/mss --check-only
 python scripts/prepare_mss.py --checkout /path/to/mss
-python -m pip install -r /path/to/mss/requirements.txt
 ```
 
 The installer requires a clean checkout, verifies the upstream commit and six
@@ -37,9 +36,8 @@ the same split. This launcher does not create or certify dataset splits.
 
 For specialists, see [data preparation](preparation.md). Historical SK Soprano
 and Baritone training used additional real-target filtering. The general
-preparation script does not reproduce those filtered inventories; use the
-verified role-specific inventories when reproducing those models. Their public
-split/eligibility manifests are still pending.
+preparation script supports those exact inventories with
+`--historical-role-filter`; membership is published in `manifests/splits/track_inventory.json`.
 
 Use the original Demucs `htdemucs_6s` initializer, not a trained ACappellaSet
 checkpoint. Both the official file and the tensor-equivalent research copy are
@@ -85,5 +83,8 @@ the canonical paper scorer in [evaluation.md](evaluation.md).
 The [training smoke report](validation/mss-training-smoke.json) records exact-base
 patch application, a training-launcher dry run, verified specialist head mapping,
 and one finite optimizer update for each of the fixed and specialist families
-on two short synthetic examples. This does not validate a fresh training
-environment, complete dataset loading, resume, or convergence to paper scores.
+on two short synthetic examples. The subsequent clean-environment runtime check also covers real JC fixed and
+specialist loading, a GPU update, full-song validation, and exact saved
+model/optimizer/scheduler state. Native MSS checkpoints do not capture all RNG
+and data-loader state; their restoration is not a claim of exact stochastic
+continuation. Neither check establishes convergence to paper scores.

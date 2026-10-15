@@ -32,7 +32,61 @@ the output tree. Moving the entire output directory preserves those links.
 The output must be a new directory outside the input tree.
 
 Historical SK Soprano and Baritone specialist runs used **real-target filtered
-subsets** after this preparation. Those eligibility manifests are not yet
-published. Do not describe the unfiltered six-stem preparation as an exact
-reproduction of their training populations. Track counts alone also do not
-verify composition-level split integrity.
+subsets**. Use the explicit filtering option described below for those recipes.
+
+## Exact conditioned populations and splits
+
+The compressed CSVs in [`manifests/splits`](../manifests/splits/index.json)
+retain the historical rows, order, singer identities, composition IDs, source
+hashes, and enrollment candidates. Audio is not included. Filesystem prefixes
+are portable; they do not depend on a research server checkout.
+
+Provide the historical 44.1 kHz stereo layout:
+
+```text
+SK/  train_flat/<track>/{mixture,soprano,alto,tenor,baritone,bass,vp}.wav
+     valid_flat/<track>/...  test_flat/<track>/...
+JC/  train/<song>/{mixture,soprano,alto,tenor,bass,vp,lead_vocal}.wav
+     valid/<song>/...  test/<song>/...
+AB/  <track>/... (the historical test/6stem root)
+```
+
+For example:
+
+```bash
+python prepare_data.py --set train_sk --root SK=/data/SK --output datasets/manifests/train_sk
+python prepare_data.py --set valid_jc --root JC=/data/JC --output datasets/manifests/valid_jc
+python prepare_data.py --set valid_sk --root SK=/data/SK --output datasets/manifests/valid_sk
+```
+
+| Recipe | Training set | Validation sets |
+| --- | --- | --- |
+| K1 / K5 / K7 | `train_sk` | `valid_jc`, `valid_sk` |
+| L1 / L3 / L4 | `train_jc` | `valid_jc`, `valid_sk` |
+| M3 | `train_sknjc` | `valid_m_jc`, `valid_m_sk` |
+
+Combined preparation needs both `--root JC=...` and `--root SK=...`.
+`test_jc`, `test_sk`, and `test_ab` preserve the held-out evaluation cohorts.
+SK's test manifest has 100 candidate pairs; the scorer removes two silent
+references. AB excludes PC01 as a target. Enrollment galleries retain the
+historical independent-song rules and explicit fallback metadata.
+
+Preparation verifies input hashes where historical hashes exist, verifies audio
+rate/channels/alignment, and records every referenced audio hash. It writes a new
+`preparation.json` and never overwrites an existing output. `--metadata-only`
+is useful for inspecting paths but does not qualify a manifest for training.
+Do not modify the audio after preparation; regenerate the manifest receipt if
+files are replaced. `ARCHIVED_AUG_LINK` appears only in unused historical
+`prepared_link` metadata; these natural-data recipes do not read that audio.
+
+The exact six-stem memberships and SK specialist filters are recorded in
+[`track_inventory.json`](../manifests/splits/track_inventory.json). To reproduce
+the original SK specialist populations, add `--historical-role-filter` to
+`prepare_specialists.py`: Soprano retains 50/9/14 and Baritone 22/2/6 tracks
+across train/validation/test; other roles retain the full inventory.
+Without `--allow-subset`, preparation now checks exact membership as well as
+counts. Composition IDs are disjoint across train, validation, and test.
+
+These manifests describe the historical experiments. A final Zenodo archive
+identifier and mapping from its published layout remain pending the dataset
+release; the scripts do not assume that an unpublished archive is available.

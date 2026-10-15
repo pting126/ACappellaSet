@@ -1,0 +1,41 @@
+{
+  "version": "k_common_clean_v1",
+  "dataset": "sk_singer_enrollment_strict_v1",
+  "split": "train",
+  "target_seconds": 10,
+  "enrollment_seconds": 10,
+  "hop_seconds": 4,
+  "target_sha256": "751f15d33a9547870e9ed65693209664a498a20a7959b8dd57e4f608de957981",
+  "enrollment_sha256": "e8adb7d434b95df1efd6e5b689283f2c99dddef3d015dc479dc4213050814a94",
+  "permitted_conditioning": [
+    "role",
+    "enrollment",
+    "dual"
+  ],
+  "no_fallback": true,
+  "same_singer_multi_active_target_exclusion": true,
+  "source_mixup": false,
+  "distinct_compositions_with_shared_recordings": [
+    "O008",
+    "O009"
+  ],
+  "same_source_recording_enrollment": false,
+  "zero_residual_policy": "exclude both zero-centered residual channels; same SK/SK+ rule",
+  "residual_policy_version": "sk_zero_residual_v1",
+  "residual_centered_energy_threshold": 1e-20,
+  "residual_policy_sha256": "10ae3b5a718a40b6aa0f0471e82f86c0ea8a614506f7c7fb41315ea9cb79f19a",
+  "augmentation_args_sha256": "84f9bcf824e7e0873085a1a7cc42804a847c57c340d42df762993acc2d28ca27",
+  "status": "DATA_GO_PENDING_GPU_PREFLIGHT",
+  "target_count": 13357,
+  "source_activity": "max(p75(active 10s window RMS dBFS)-35,-80); exact silence excluded",
+  "training_roles": [
+    "A",
+    "B",
+    "Bar",
+    "S",
+    "T",
+    "VP"
+  ],
+  "waveform_paths_unchanged_except_new_mixture_cache": true,
+  "historical_protocol_sha256": "1dbb5a469dd566388164ed2b02f3dbb8d9843eb0db4f0c2130afcdfc805925fa"
+}

@@ -1,4 +1,4 @@
-"""Launch the original MSS fixed/specialist recipe from a verified patched checkout."""
+"""Train a registered fixed, original specialist, or conditioned model recipe."""
 
 import argparse
 import hashlib
@@ -21,20 +21,38 @@ def sha256(path):
 
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--model',required=True,help='Fixed or original specialist model ID; selects its recipe, not its trained weights')
-    parser.add_argument('--mss-root',type=Path,required=True)
+    parser.add_argument('--model',required=True,help='Registered model ID or K/L/M alias; selects the recipe, not trained weights')
+    parser.add_argument('--mss-root',type=Path,help='Verified patched MSS checkout for fixed/specialist training')
     parser.add_argument('--initialization',type=Path,required=True,help='Verified original pt_6s.th or official htdemucs_6s initializer')
-    parser.add_argument('--train-data',type=Path,required=True,help='Prepared mixture/stem training directory')
-    parser.add_argument('--valid-data',type=Path,required=True)
+    parser.add_argument('--train-data',type=Path,help='Prepared mixture/stem training directory')
+    parser.add_argument('--valid-data',type=Path)
     parser.add_argument('--output',type=Path,required=True,help='New run directory; existing directories are rejected')
     parser.add_argument('--device',type=int,default=0,help='CUDA device index')
     parser.add_argument('--workers',type=int,default=4)
     parser.add_argument('--dry-run',action='store_true',help='Verify inputs and print command without starting training')
+    parser.add_argument('--manifest',type=Path,help='Prepared conditioned training manifest')
+    parser.add_argument('--valid-jc',type=Path,help='Prepared canonical JC validation manifest')
+    parser.add_argument('--valid-sk',type=Path,help='Prepared canonical SK validation manifest')
+    parser.add_argument('--speaker-initialization',type=Path,help='Original verified ReDimNet2 initializer for singer/dual training')
+    parser.add_argument('--resume',type=Path,help='Verified latest checkpoint from this portable conditioned run')
+    parser.add_argument('--max-updates',type=int,help='Stop a conditioned diagnostic run early; recipe budget remains recorded')
+    parser.add_argument('--cpu',action='store_true',help='Conditioned CPU diagnostics')
+    parser.add_argument('--deterministic',action='store_true',help='Require deterministic conditioned training kernels; may be slower')
     args=parser.parse_args(argv)
     spec=resolve(args.model)
     if args.device<0 or args.workers<0:parser.error('Device and workers must be nonnegative')
+    if spec['family']=='conditioned-htdemucs':
+        if any(value is not None for value in (args.mss_root,args.train_data,args.valid_data)):
+            parser.error('Use --manifest/--valid-jc/--valid-sk for conditioned training')
+        from training.conditioned import run
+        run(args,spec)
+        return
     if spec['family'] not in ('fixed-htdemucs','part-specific-htdemucs'):
         parser.error('Conditioned training is not supported by this MSS entry point')
+    if any(value is None for value in (args.mss_root,args.train_data,args.valid_data)):
+        parser.error('Fixed/specialist training requires --mss-root, --train-data, and --valid-data')
+    if args.resume or args.max_updates is not None or args.cpu or args.deterministic or args.manifest or args.valid_jc or args.valid_sk:
+        parser.error('These diagnostic/resume options apply only to conditioned training')
     root=args.mss_root.resolve();output=args.output.absolute()
     if output.exists() or output.is_symlink():parser.error('Output must be a new directory')
     patch=json.loads((ROOT/'third_party/patches/mss-training.json').read_text())

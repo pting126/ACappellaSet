@@ -14,3 +14,10 @@ python -m unittest discover -s tests -v
 
 Actual-checkpoint comparisons and their limits are recorded in `docs/validation`.
 Training smoke checks are separate from a clean-environment full training run.
+
+`test_data_protocol.py` checks exact scientific CSV preservation, composition split
+integrity, PC01 target exclusion, and original specialist-filter membership.
+`test_training.py` checks pair-weighted selection, tie handling, restricted new-run
+exports, and manifest validation. Real-data CUDA training, native initialization
+and sample parity, and exact deterministic resume are recorded in
+`docs/validation/training-runtime.json`.

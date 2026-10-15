@@ -20,3 +20,5 @@ jobs:
           python -m unittest discover -s tests -p test_evaluate.py -v
           python -m unittest discover -s tests -p test_conditioned.py -v
           python -m unittest discover -s tests -p test_conditioned_runtime.py -v
+          python -m unittest discover -s tests -p test_data_protocol.py -v
+          python -m unittest discover -s tests -p test_training.py -v

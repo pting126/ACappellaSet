@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "platform": "Linux x86_64, Python 3.10.19, torch 2.10.0+cu128, A40 GPU",
+  "clean_environment": {
+    "fresh_venv": true,
+    "pip_check": "PASS",
+    "lock": "requirements-training-linux-cu128-lock.txt"
+  },
+  "native_parity": [
+    {
+      "model": "K1",
+      "initialization_tensors_exact": 528,
+      "sampled_examples_exact": 6,
+      "training_population": 13357
+    },
+    {
+      "model": "K5",
+      "initialization_tensors_exact": 1336,
+      "sampled_examples_exact": 6,
+      "training_population": 13357
+    },
+    {
+      "model": "K7",
+      "initialization_tensors_exact": 1339,
+      "sampled_examples_exact": 6,
+      "training_population": 13357
+    },
+    {
+      "model": "L1",
+      "initialization_tensors_exact": 528,
+      "sampled_examples_exact": 6,
+      "training_population": 2603
+    },
+    {
+      "model": "L3",
+      "initialization_tensors_exact": 1336,
+      "sampled_examples_exact": 6,
+      "training_population": 2603
+    },
+    {
+      "model": "L4",
+      "initialization_tensors_exact": 1339,
+      "sampled_examples_exact": 6,
+      "training_population": 2603
+    },
+    {
+      "model": "M3",
+      "initialization_tensors_exact": 1336,
+      "sampled_examples_exact": 6,
+      "training_population": 15960
+    }
+  ],
+  "real_audio_optimizer_checks": {
+    "models": [
+      "K1",
+      "K5",
+      "K7",
+      "L1",
+      "L3",
+      "L4",
+      "M3"
+    ],
+    "microbatch_size": 2,
+    "accumulation": 4,
+    "updates_per_recipe_minimum": 1
+  },
+  "resume": {
+    "status": "PASS",
+    "steps": 4,
+    "interrupted_after": 2,
+    "model_optimizer_rng_cursor_exact": true,
+    "loss_history_exact": true
+  },
+  "validation_and_new_export": {
+    "status": "PASS",
+    "safe_training_export_cli": "PASS",
+    "selection_streams": {
+      "jc_shared": 50,
+      "jc_inclusive": 60,
+      "sk_shared": 50,
+      "sk_inclusive": 52,
+      "combined_shared": 100,
+      "combined_inclusive": 112
+    },
+    "new_training_step": 1,
+    "limitations": "One validation event; not convergence or reproduction of trained paper scores"
+  },
+  "mss_runtime": {
+    "status": "PASS",
+    "tests": [
+      {
+        "family": "fixed",
+        "status": "PASS",
+        "real_training_tracks": 30,
+        "batch_shape": [
+          2,
+          6,
+          2,
+          441000
+        ],
+        "optimizer_updates": 1,
+        "loss": 0.04502512514591217,
+        "validation_track": "akaiboushishiroiboushi",
+        "validation_seconds": 66.0,
+        "validation_si_sdr": -20.66097068786621,
+        "model_optimizer_scheduler_serialization_exact": true,
+        "limitations": "Diagnostic batch size 2; optimizer/scheduler restoration, not full stochastic replay or convergence"
+      },
+      {
+        "family": "specialist",
+        "status": "PASS",
+        "real_training_tracks": 30,
+        "batch_shape": [
+          2,
+          2,
+          2,
+          441000
+        ],
+        "optimizer_updates": 1,
+        "loss": 0.06079557538032532,
+        "validation_track": "akaiboushishiroiboushi",
+        "validation_seconds": 66.0,
+        "validation_si_sdr": -9.65444278717041,
+        "model_optimizer_scheduler_serialization_exact": true,
+        "limitations": "Diagnostic batch size 2; optimizer/scheduler restoration, not full stochastic replay or convergence"
+      }
+    ],
+    "torch": "2.10.0+cu128"
+  },
+  "limitations": [
+    "Short runtime checks, not full 200k convergence or paper-score reproduction.",
+    "Exact conditioned resume is tested with deterministic kernels on the same runtime/device.",
+    "MSS restore verifies model/optimizer/scheduler serialization, not all stochastic state."
+  ],
+  "jobs": {
+    "source_parity": 64080564,
+    "initial_training": 64078028,
+    "deterministic_training": 64078601,
+    "resume_comparison": 64080690,
+    "mss": 64080157,
+    "validation_export": 64080842
+  }
+}

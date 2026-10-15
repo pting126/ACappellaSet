@@ -58,13 +58,17 @@ def write_residual(paths, destination, subtract=False):
             writer.write(total)
 
 
-def prepare(corpus, source, output, targets=None, allow_subset=False):
+def prepare(corpus, source, output, targets=None, allow_subset=False, historical_role_filter=False):
     source, output = Path(source).resolve(), Path(output).absolute()
     if output.exists() or output.is_symlink():
         raise FileExistsError(f"Output must be a new directory: {output}")
     if output.resolve().is_relative_to(source):
         raise ValueError("Output must be outside the input tree")
     stems = STEMS[corpus]
+    inventory = json.loads((Path(__file__).parent/'manifests/splits/track_inventory.json').read_text())
+    if historical_role_filter and (corpus != 'SK' or allow_subset):
+        raise ValueError('Historical role filtering requires the complete SK input inventory')
+    filters = inventory['specialist_filters'].get(corpus, {}) if historical_role_filter else {}
     targets = list(stems if targets is None else targets)
     if not targets or len(set(targets)) != len(targets) or any(t not in stems for t in targets):
         raise ValueError(f"Targets must be distinct members of {stems}")
@@ -75,6 +79,8 @@ def prepare(corpus, source, output, targets=None, allow_subset=False):
         entries = sorted(p for p in split_root.iterdir() if p.is_dir())
         if not allow_subset and len(entries) != count:
             raise ValueError(f"{split}: expected {count} tracks, found {len(entries)}")
+        if not allow_subset and [p.name for p in entries] != inventory['corpora'][corpus][split]:
+            raise ValueError(f'{split}: historical track membership changed')
         for track in entries:
             if track.name in identities:
                 raise ValueError(f"Track appears in multiple splits: {track.name}")
@@ -93,6 +99,7 @@ def prepare(corpus, source, output, targets=None, allow_subset=False):
         staging = Path(scratch) / 'result'
         staging.mkdir()
         receipt = {'corpus': corpus, 'targets': targets, 'historical_counts_enforced': not allow_subset,
+                   'historical_role_filter': historical_role_filter,
                    'source_root': str(source), 'sample_rate': 44100, 'channels': 2,
                    'recipe': 'sum_other_stems' if corpus == 'JC' else 'additive_mixture_minus_target',
                    'summation_order': list(stems), 'gain': 1.0, 'tracks': []}
@@ -117,6 +124,8 @@ def prepare(corpus, source, output, targets=None, allow_subset=False):
                             raise ValueError(f"Non-finite mixture: {track}")
             outputs = {'mixture': sha256(mixture)}
             for target in targets:
+                if target in filters and track.name not in filters[target][split]:
+                    continue
                 dest = staging / target / split / track.name
                 dest.mkdir(parents=True)
                 # All symlinks stay inside this output tree and survive moving it.
@@ -145,8 +154,11 @@ def main():
     parser.add_argument('--output', type=Path, required=True, help='New destination directory')
     parser.add_argument('--targets', nargs='+', help='Native stem filenames without .wav; default: all six')
     parser.add_argument('--allow-subset', action='store_true', help='Skip historical track counts for custom data or smoke tests')
+    parser.add_argument('--historical-role-filter', action='store_true',
+                        help='Use the exact original SK Soprano/Baritone real-target inventories')
     args = parser.parse_args()
-    receipt = prepare(args.corpus, args.input, args.output, args.targets, args.allow_subset)
+    receipt = prepare(args.corpus, args.input, args.output, args.targets, args.allow_subset,
+                      args.historical_role_filter)
     print(f"Prepared {len(receipt['tracks'])} tracks for {len(receipt['targets'])} specialists in {args.output}")
 
 

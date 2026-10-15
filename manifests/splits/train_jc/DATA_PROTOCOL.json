@@ -1,0 +1,25 @@
+{
+  "version": "l_jc_kmatched_v1",
+  "status": "DATA_GO_PENDING_GPU_PREFLIGHT",
+  "target_count": 2603,
+  "target_sha256": "a01d823f8e76575cd9ab346ceecf362676fb3984ae855e10e052a948ae59e2c6",
+  "enrollment_sha256": "af5fb9c3b96b55e0516584a1fce002f9bf2905b06cb3bfe73e27d4cd7e2fc8a2",
+  "training_roles": [
+    "A",
+    "B",
+    "Lead",
+    "S",
+    "T",
+    "VP"
+  ],
+  "permitted_conditioning": [
+    "role",
+    "dual",
+    "enrollment"
+  ],
+  "source_mixup": false,
+  "target_seconds": 10,
+  "enrollment_seconds": 10,
+  "hop_seconds": 4,
+  "historical_protocol_sha256": "9433ea9793eb685658d157480c542af61452274e42f4380b36760ce919fea5b0"
+}

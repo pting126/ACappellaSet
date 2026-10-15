@@ -43,6 +43,7 @@ def main(argv=None):
     parser.add_argument("--model", default="Fixed_6stem_htdemucs_SKnJC", help="Registered model ID")
     parser.add_argument("--list-models", action="store_true", help="List supported models without loading weights")
     parser.add_argument("--checkpoint", type=Path, help="Local checkpoint; SHA-256 is checked")
+    parser.add_argument('--run-manifest', type=Path, help='inference.json from a new conditioned training run')
     parser.add_argument("--input", type=Path, help="Input audio file")
     parser.add_argument("--output", type=Path, help="New output directory (must not exist)")
     parser.add_argument("--device", choices=("cpu", "cuda"), default="cpu")
@@ -65,7 +66,11 @@ def main(argv=None):
     if args.output.exists():
         parser.error("--output already exists; choose a new directory")
     try:
-        spec = select_checkpoint(resolve(args.model), args.selection)
+        if args.run_manifest:
+            from models.trained import resolve_export
+            spec = resolve_export(args.run_manifest, args.checkpoint, args.selection)
+        else:
+            spec = select_checkpoint(resolve(args.model), args.selection)
         conditioned = spec['family'] == 'conditioned-htdemucs'
         if conditioned:
             from models.query import validate_query

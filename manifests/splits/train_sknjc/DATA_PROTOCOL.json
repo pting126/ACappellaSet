@@ -1,0 +1,61 @@
+{
+  "version": "m_combined_klmatched_v1",
+  "status": "DATA_GO_PENDING_GPU_PREFLIGHT",
+  "target_count": 15960,
+  "target_sha256": "4a6974cc0611fd00a4fc1ff91e6af58ce766ea82de2565cc32d4cea0f95722d4",
+  "enrollment_sha256": "7d6f553034578ae743ef4c781a1add9abd2b239f080919d9cafab289252f4fa7",
+  "training_roles": [
+    "A",
+    "B",
+    "Bar",
+    "Lead",
+    "S",
+    "T",
+    "VP"
+  ],
+  "permitted_conditioning": [
+    "role",
+    "dual",
+    "enrollment"
+  ],
+  "source_mixup": false,
+  "sampling": "uniform over pooled rows",
+  "target_seconds": 10,
+  "enrollment_seconds": 10,
+  "hop_seconds": 4,
+  "sources": {
+    "SK": {
+      "rows": 13357,
+      "tracks": 69,
+      "compositions": 34,
+      "roles": {
+        "S": 1948,
+        "A": 2689,
+        "T": 2682,
+        "B": 2721,
+        "VP": 2621,
+        "Bar": 696
+      },
+      "source": "historical-research/singer-separation-paper/metadata/sk_singer_enrollment_strict_v1",
+      "target_sha256": "da6b4cf5beee72ac83839822640aac08bc6c52fc9068464a195683822befb2af",
+      "enrollment_sha256": "4ad703e2e3eb3a1b9afb595906ac9110c717ea0662eca46468720b398544569a"
+    },
+    "JC": {
+      "rows": 2603,
+      "tracks": 30,
+      "compositions": 30,
+      "roles": {
+        "Lead": 428,
+        "S": 435,
+        "A": 437,
+        "T": 438,
+        "B": 439,
+        "VP": 426
+      },
+      "source": "historical-research/singer-separation-paper/metadata/jc_singer_enrollment_kmatched_v1",
+      "target_sha256": "dd84a84f73d571b836a9985e1823e16f53f16a243508eb70c709a22c3d40cf0b",
+      "enrollment_sha256": "5ab0b307c2d897335dcbc25c77eeb2881db6236bcdadb591daccd0b68acd9e4c"
+    }
+  },
+  "historical_protocol_sha256": "5455fa3e63863f1216df3fe4a0081ff0853d90cf173b09e8dbcfc4ee3ce7dce0"
+}
