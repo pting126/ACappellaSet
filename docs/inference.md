@@ -1,11 +1,9 @@
 # Fixed-output inference
 
-The Combined ep333 model has a working inference entry point. Its architecture
-and configuration match the archived research model. **Weights are not yet
-publicly hosted**; these instructions require an existing copy of the registered
-checkpoint. [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models)
-currently contains release metadata only; download instructions will follow
-checkpoint publication.
+The Combined ep333 model has a working inference entry point and a published
+110 MB portable checkpoint on [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models).
+The checkpoint is licensed under Apache-2.0. Training-data terms and third-party
+rights are separate from the rights granted by the project; see [checkpoints](checkpoints.md).
 
 ## Installation: tested Linux CPU environment
 
@@ -37,15 +35,38 @@ SHA-256: cbfa201798f7e7f4766bacd3aa8622b3ae40321729bd7f0b3555ac4348c57879
 Size: 333986969 bytes
 ```
 
-You may rename the local file; the loader checks its content hash and the
+The published model-only portable export is:
+
+```text
+epoch_0333.pt
+SHA-256: 8f87f3a1224de680085fea0c186600edc7cfbb91b8f56f8862da4772565e0cda
+Size: 109822110 bytes
+```
+
+It contains all 525 model tensors with their original dtype and values, and
+omits optimizer state. The loader uses `torch.load(weights_only=True)` for this
+format. The receipt records the hash of the actual file used and its original
+research-checkpoint identity separately.
+
+You may rename either local file; the loader checks its content hash and the
 configuration hash before deserializing the legacy checkpoint, then loads all
-model weights strictly. Other checkpoint hashes are rejected. This version does
+model weights strictly. Both registered formats load strictly; other checkpoint hashes are rejected. This version does
 not accept arbitrary checkpoints or change output heads automatically.
+
+## Download the checkpoint
+
+```bash
+python download.py --model combined-ep333
+```
+
+No Hugging Face account or token is needed. The standard-library downloader uses
+an immutable release revision and verifies size and SHA-256 before publishing
+the local file. Existing files are reused only if their hash matches.
 
 ## Separate an audio file
 
 ```bash
-python inference.py --model combined-ep333 --checkpoint checkpoints/combined-ep333.ckpt --input /path/to/mixture.wav --output outputs/my-mixture --device cpu
+python inference.py --model combined-ep333 --checkpoint checkpoints/epoch_0333.pt --input /path/to/mixture.wav --output outputs/my-mixture --device cpu
 ```
 
 The output directory must not already exist. It contains:
@@ -86,3 +107,8 @@ of historical GPU paper results. The CLI retains a CUDA option and original
 CUDA AMP behavior, but CUDA, macOS, and MPS were not validated in this release.
 The CPU lock is not a CUDA installation guide. Training and other model families
 are still pending.
+
+The portable export was additionally tested on 2026-10-14 against fresh
+original-checkpoint inference and the frozen research outputs. All six stems
+were bit-identical on both clips; six behavioral tests passed. See the
+[portable validation report](validation/combined-ep333-portable-linux-cpu.json).

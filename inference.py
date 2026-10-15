@@ -82,7 +82,8 @@ def main(argv=None):
             sf.write(path, estimate.T, spec["sample_rate"], subtype="FLOAT")
             outputs.append({"stem": stem, "file": path.name, "sha256": sha256(path)})
         receipt = {
-            "model": args.model, "checkpoint_sha256": spec["checkpoint_sha256"],
+            "model": args.model, "checkpoint_sha256": sha256(args.checkpoint),
+            "original_checkpoint_sha256": spec["checkpoint_sha256"],
             "config_sha256": spec["config_sha256"], "input_sha256": sha256(args.input),
             "input": input_details, "source_order": spec["source_order"],
             "sample_rate": spec["sample_rate"], "channels": 2, "frames": mixture.shape[-1],

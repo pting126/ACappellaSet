@@ -27,7 +27,10 @@ def sha256(path):
 
 def load_model(checkpoint, config_path, spec, device):
     """Require the registered checkpoint/config identity before deserialization."""
-    if sha256(checkpoint) != spec["checkpoint_sha256"]:
+    checkpoint_hash = sha256(checkpoint)
+    portable = spec.get("portable_checkpoint")
+    is_portable = portable is not None and checkpoint_hash == portable["sha256"]
+    if not is_portable and checkpoint_hash != spec["checkpoint_sha256"]:
         raise ValueError("Checkpoint SHA-256 differs from the registered model.")
     if sha256(config_path) != spec["config_sha256"]:
         raise ValueError("Configuration SHA-256 differs from the registered model.")
@@ -41,16 +44,23 @@ def load_model(checkpoint, config_path, spec, device):
     # Legacy training containers may contain objects beyond tensors. Only the
     # exact, maintainer-registered SHA-256 is accepted above; never silently
     # deserialize an arbitrary checkpoint or download unverified weights.
-    payload = torch.load(checkpoint, map_location="cpu", weights_only=False)
+    if is_portable and portable["format"] != "pytorch_state_dict":
+        raise ValueError("Unsupported portable checkpoint format.")
+    payload = torch.load(checkpoint, map_location="cpu", weights_only=is_portable)
     state = payload
-    if isinstance(payload, dict):
+    if not is_portable and isinstance(payload, dict):
         for key in ("state", "state_dict", "model_state_dict"):
             if key in payload:
                 state = payload[key]
                 break
+    if not isinstance(state, dict) or not all(
+        isinstance(key, str) and isinstance(value, torch.Tensor)
+        for key, value in state.items()
+    ):
+        raise ValueError("Expected a tensor-only model state dictionary.")
     torch.nn.modules.utils.consume_prefix_in_state_dict_if_present(state, "module.")
     model.load_state_dict(state, strict=True)
-    epoch = payload.get("epoch") if isinstance(payload, dict) else None
+    epoch = payload.get("epoch") if not is_portable and isinstance(payload, dict) else None
     if epoch is not None and int(epoch) != spec["epoch"]:
         raise ValueError("Checkpoint epoch differs from the registry.")
     config.inference.batch_size = spec["inference"]["batch_size"]

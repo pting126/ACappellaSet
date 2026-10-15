@@ -2,10 +2,10 @@
 
 The release registry is [`manifests/models.json`](../manifests/models.json).
 It contains the exact Combined ep333 checkpoint identity and inference settings.
-Weights are not downloadable yet. The [Hugging Face model repository](https://huggingface.co/pting126/ACappellaSet-models)
-contains release metadata and will host the prepared checkpoints.
+Combined portable weights are available. The [Hugging Face model repository](https://huggingface.co/pting126/ACappellaSet-models)
+contains the Combined checkpoint and metadata for the remaining planned weights.
 The [checkpoint checklist](checkpoints.md) covers all candidates identified in
-the audited paper snapshot.
+the updated release plan.
 
 | Family | Planned support | Required artifact contract |
 | --- | --- | --- |
@@ -33,9 +33,9 @@ for release inclusion. The later singer-enrollment specialist experiments are
 excluded from this release; the original specialist banks are mixture-only.
 Newer fixed-six training runs are also excluded from the ICASSP release. Shared
 conditioned checkpoints, including singer-conditioned AI augmentation, are
-being mapped to the reported paper experiments. Their exact checkpoint and
-selection snapshot must match the reported result, rather than automatically
-using the latest final-training winner.
+listed with their validation selectors in the registry. K1 and M3 now use
+final-200k selections with matching updated evaluations; historical checkpoint
+identities remain recorded.
 
 ## Public inference support
 
@@ -44,3 +44,7 @@ JC ep321, SK ep279, and the original part-specific specialist banks still need
 their model-specific registration/adapters and validation. Shared part-, singer-,
 and dual-conditioned adapters are also pending. A model listed for release is
 not necessarily supported by the current inference command.
+
+The active release plan has 27 checkpoints; K6 and K6_no_aug are deferred.
+Natural SK-only weight licensing is Apache-2.0; JC-trained weight terms need
+clarification. The existing Combined Apache release remains recorded.

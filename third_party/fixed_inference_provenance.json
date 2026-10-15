@@ -15,7 +15,8 @@
       "Extract only HTDemucs overlap-add branch",
       "Explicit shape and non-finite validation instead of nan_to_num",
       "Modern CUDA autocast API; CPU autocast disabled",
-      "Registered checkpoint and configuration hash checks before strict load"
+      "Registered checkpoint and configuration hash checks before strict load",
+      "Accept separately hash-registered tensor-only portable exports using torch.load(weights_only=True)"
     ]
   },
   "config": {

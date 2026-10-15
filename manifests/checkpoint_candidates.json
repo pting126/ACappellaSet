@@ -1,5 +1,5 @@
 {
-  "status": "audited_paper_snapshot_candidates_not_final_release",
+  "status": "release_plan_final_200k_selections_2026_10_14",
   "project_checkpoint_count": 29,
   "external_checkpoint_count": 1,
   "checkpoints": [
@@ -15,12 +15,16 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
-      "verification": "Recorded hash; live rehash pending",
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta.",
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta. PC01 excluded here."
-      ]
+      ],
+      "selection_horizon_updates": null,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": null,
+      "license_review_status": "jc_training_clarification_needed"
     },
     {
       "model": "SK_ep279",
@@ -34,12 +38,16 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
-      "verification": "Recorded hash; live rehash pending",
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta.",
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta. PC01 excluded here."
-      ]
+      ],
+      "selection_horizon_updates": null,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": "Apache-2.0",
+      "license_review_status": "sk_natural_authorized"
     },
     {
       "model": "Combined_ep333",
@@ -53,12 +61,16 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
-      "verification": "SHA-256 and strict load verified 2026-10-13; Linux CPU inference matches research implementation bit-for-bit on two clips.",
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta.",
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta. PC01 excluded here."
-      ]
+      ],
+      "selection_horizon_updates": null,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": "Apache-2.0",
+      "license_review_status": "jc_training_clarification_needed"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -72,11 +84,15 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
-      "verification": "Recorded hash; live rehash pending",
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
-      ]
+      ],
+      "selection_horizon_updates": null,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": null,
+      "license_review_status": "jc_training_clarification_needed"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -90,11 +106,15 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
-      "verification": "Recorded hash; live rehash pending",
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
-      ]
+      ],
+      "selection_horizon_updates": null,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": null,
+      "license_review_status": "jc_training_clarification_needed"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -108,11 +128,15 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
-      "verification": "Recorded hash; live rehash pending",
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
-      ]
+      ],
+      "selection_horizon_updates": null,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": null,
+      "license_review_status": "jc_training_clarification_needed"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -126,11 +150,15 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
-      "verification": "Recorded hash; live rehash pending",
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
-      ]
+      ],
+      "selection_horizon_updates": null,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": null,
+      "license_review_status": "jc_training_clarification_needed"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -144,11 +172,15 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
-      "verification": "Recorded hash; live rehash pending",
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
-      ]
+      ],
+      "selection_horizon_updates": null,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": null,
+      "license_review_status": "jc_training_clarification_needed"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -162,11 +194,15 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
-      "verification": "Recorded hash; live rehash pending",
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
-      ]
+      ],
+      "selection_horizon_updates": null,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": null,
+      "license_review_status": "jc_training_clarification_needed"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -180,11 +216,15 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
-      "verification": "Recorded hash; live rehash pending",
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
-      ]
+      ],
+      "selection_horizon_updates": null,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": "Apache-2.0",
+      "license_review_status": "sk_natural_authorized"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -198,11 +238,15 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
-      "verification": "Recorded hash; live rehash pending",
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
-      ]
+      ],
+      "selection_horizon_updates": null,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": "Apache-2.0",
+      "license_review_status": "sk_natural_authorized"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -216,11 +260,15 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
-      "verification": "Recorded hash; live rehash pending",
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
-      ]
+      ],
+      "selection_horizon_updates": null,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": "Apache-2.0",
+      "license_review_status": "sk_natural_authorized"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -234,11 +282,15 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
-      "verification": "Recorded hash; live rehash pending",
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
-      ]
+      ],
+      "selection_horizon_updates": null,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": "Apache-2.0",
+      "license_review_status": "sk_natural_authorized"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -252,11 +304,15 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
-      "verification": "Recorded hash; live rehash pending",
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
-      ]
+      ],
+      "selection_horizon_updates": null,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": "Apache-2.0",
+      "license_review_status": "sk_natural_authorized"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -270,11 +326,372 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "confirmed_for_release_inclusion_weight_terms_and_upload_pending",
-      "verification": "Recorded hash; live rehash pending",
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
-      ]
+      ],
+      "selection_horizon_updates": null,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": "Apache-2.0",
+      "license_review_status": "sk_natural_authorized"
+    },
+    {
+      "model": "K1",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 198000,
+      "filename": "best_step0198000.pt",
+      "sha256": "fbd19ff91075877839bb76b022d1b5ad018a980a26603ea9cb4cca7aac0feb6a",
+      "selection_labels": [
+        "sk_shared"
+      ],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
+      "notes": [
+        "Selection checked through 200,000 updates. Public adapter validation pending."
+      ],
+      "selection_horizon_updates": 200000,
+      "supersedes": {
+        "step": 184000,
+        "sha256": "261daa7899501229143136c46a501097caba9ac903650bc9c475c3ee049407b0",
+        "preserve_historical": true
+      },
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": "Apache-2.0",
+      "license_review_status": "sk_natural_authorized"
+    },
+    {
+      "model": "L1",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 141000,
+      "filename": "best_step0141000.pt",
+      "sha256": "92e19968bef2ce84d3800141afc50cc47141bd016adfcc07b70e705df7408004",
+      "selection_labels": [
+        "jc_shared"
+      ],
+      "tables": [
+        "cross_corpus"
+      ],
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
+      "notes": [
+        "Selection checked through 200,000 updates. Public adapter validation pending."
+      ],
+      "selection_horizon_updates": 200000,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": null,
+      "license_review_status": "jc_training_clarification_needed"
+    },
+    {
+      "model": "K1",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 4000,
+      "filename": "best_step0004000.pt",
+      "sha256": "979ba17521f398fb1b2a3e0ccad29615999b50e87d76347b2682212a61b49427",
+      "selection_labels": [
+        "jc_inclusive"
+      ],
+      "tables": [
+        "target_conditioning"
+      ],
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
+      "notes": [
+        "Selection checked through 200,000 updates. Public adapter validation pending."
+      ],
+      "selection_horizon_updates": 200000,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": "Apache-2.0",
+      "license_review_status": "sk_natural_authorized"
+    },
+    {
+      "model": "K5",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 12000,
+      "filename": "best_step0012000.pt",
+      "sha256": "6f8e199008a542904330495dab28d7f56d8c380a6959ea4e460b22450c56ca43",
+      "selection_labels": [
+        "jc_shared",
+        "jc_inclusive"
+      ],
+      "tables": [
+        "development_a",
+        "target_conditioning"
+      ],
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
+      "notes": [
+        "Selection checked through 200,000 updates. Public adapter validation pending."
+      ],
+      "selection_horizon_updates": 200000,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": "Apache-2.0",
+      "license_review_status": "sk_natural_authorized"
+    },
+    {
+      "model": "K7",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 7000,
+      "filename": "best_step0007000.pt",
+      "sha256": "0646527189b1221552c01c918cff01173e98077dc515a6fe9f795ffab00c24ee",
+      "selection_labels": [
+        "jc_inclusive"
+      ],
+      "tables": [
+        "target_conditioning"
+      ],
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
+      "notes": [
+        "Selection checked through 200,000 updates. Public adapter validation pending."
+      ],
+      "selection_horizon_updates": 200000,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": "Apache-2.0",
+      "license_review_status": "sk_natural_authorized"
+    },
+    {
+      "model": "L1",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 119000,
+      "filename": "best_step0119000.pt",
+      "sha256": "5de579abaf11546eab1fcfa29566cf4934ece6c5fe7b23df56b6af27c3be3723",
+      "selection_labels": [
+        "sk_inclusive"
+      ],
+      "tables": [
+        "target_conditioning"
+      ],
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
+      "notes": [
+        "Selection checked through 200,000 updates. Public adapter validation pending."
+      ],
+      "selection_horizon_updates": 200000,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": null,
+      "license_review_status": "jc_training_clarification_needed"
+    },
+    {
+      "model": "L3",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 184000,
+      "filename": "best_step0184000.pt",
+      "sha256": "9f49b7d59575658dcfb9667395d998e8fc34a935b3995b099593e99ee1de5226",
+      "selection_labels": [
+        "sk_inclusive"
+      ],
+      "tables": [
+        "target_conditioning"
+      ],
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
+      "notes": [
+        "Selection checked through 200,000 updates. Public adapter validation pending."
+      ],
+      "selection_horizon_updates": 200000,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": null,
+      "license_review_status": "jc_training_clarification_needed"
+    },
+    {
+      "model": "L4",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 188000,
+      "filename": "best_step0188000.pt",
+      "sha256": "724af8d2906fc08de54b7484df69143a3a7b2c62c412e6e473b979bc34cd74d0",
+      "selection_labels": [
+        "sk_inclusive"
+      ],
+      "tables": [
+        "target_conditioning"
+      ],
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
+      "notes": [
+        "Selection checked through 200,000 updates. Public adapter validation pending."
+      ],
+      "selection_horizon_updates": 200000,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": null,
+      "license_review_status": "jc_training_clarification_needed"
+    },
+    {
+      "model": "K5",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 179000,
+      "filename": "best_step0179000.pt",
+      "sha256": "eeeac981bacdd063207a0258fb60625edd2b60e94bc544852a1c2459223a04d3",
+      "selection_labels": [
+        "sk_shared"
+      ],
+      "tables": [
+        "development_a"
+      ],
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
+      "notes": [
+        "Selection checked through 200,000 updates. Public adapter validation pending."
+      ],
+      "selection_horizon_updates": 200000,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": "Apache-2.0",
+      "license_review_status": "sk_natural_authorized"
+    },
+    {
+      "model": "K5",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 106000,
+      "filename": "best_step0106000.pt",
+      "sha256": "df846b039ddd5e032f221adcf3de33a9a3f546f21b47f0bc3d30df891ab4ca93",
+      "selection_labels": [
+        "combined_shared",
+        "combined_inclusive"
+      ],
+      "tables": [
+        "development_a",
+        "development_b"
+      ],
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
+      "notes": [
+        "Selection checked through 200,000 updates. Public adapter validation pending."
+      ],
+      "selection_horizon_updates": 200000,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": "Apache-2.0",
+      "license_review_status": "sk_natural_authorized"
+    },
+    {
+      "model": "M3",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 198000,
+      "filename": "best_step0198000.pt",
+      "sha256": "6997e980ed2dded55ba1db2d5e88b71ad7024782125b2bd8dcf41df71189d6b4",
+      "selection_labels": [
+        "sk_shared"
+      ],
+      "tables": [
+        "development_a"
+      ],
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
+      "notes": [
+        "Selection checked through 200,000 updates. Public adapter validation pending."
+      ],
+      "selection_horizon_updates": 200000,
+      "supersedes": {
+        "step": 159000,
+        "sha256": "03e74a6ae7f56d647c66e582f368f714b5504f8c657e78fb7f6c2142d0ae8ab1",
+        "preserve_historical": true
+      },
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": null,
+      "license_review_status": "jc_training_clarification_needed"
+    },
+    {
+      "model": "M3",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 195000,
+      "filename": "best_step0195000.pt",
+      "sha256": "badc60d5bb2f2cf0cca92b11dc98c5a4de51fcd41312fff43607f7664ba5f9df",
+      "selection_labels": [
+        "jc_shared",
+        "combined_shared"
+      ],
+      "tables": [
+        "development_a"
+      ],
+      "distribution": "selected_for_release_export_validation_and_weight_terms_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
+      "notes": [
+        "Selection checked through 200,000 updates. Public adapter validation pending."
+      ],
+      "selection_horizon_updates": 200000,
+      "supersedes": {
+        "step": 173000,
+        "sha256": "f99b7ee04a026c2c628bcfaac3ddbe7a5ffabc95bb96e9d0889e3079e8db1b06",
+        "preserve_historical": true
+      },
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": null,
+      "license_review_status": "jc_training_clarification_needed"
+    },
+    {
+      "model": "K6",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 131000,
+      "filename": "best_step0131000.pt",
+      "sha256": "ff74b497341edcfe6a6357749ed3e6bff795f1740ef022f4003f1241f198e517",
+      "selection_labels": [
+        "combined_inclusive"
+      ],
+      "tables": [
+        "development_b"
+      ],
+      "distribution": "deferred_by_project_owner_augmentation_terms_review_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
+      "notes": [
+        "Selection checked through 200,000 updates. Public adapter validation pending."
+      ],
+      "selection_horizon_updates": 200000,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": null,
+      "license_review_status": "ai_augmentation_deferred"
+    },
+    {
+      "model": "K6_no_aug",
+      "family": "conditioned",
+      "role": "",
+      "epoch": null,
+      "step": 48000,
+      "filename": "best_step0048000.pt",
+      "sha256": "79ee3dd239925ea2c075641eadc0e13c001a81f9f367f8ee6881c5e8a3881901",
+      "selection_labels": [
+        "combined_inclusive"
+      ],
+      "tables": [
+        "development_b"
+      ],
+      "distribution": "deferred_by_project_owner_augmentation_terms_review_pending",
+      "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
+      "notes": [
+        "Selection checked through 200,000 updates. Public adapter validation pending."
+      ],
+      "public_name": "SK single-clone singer-conditioned (waveform augmentation remains enabled)",
+      "selection_horizon_updates": 200000,
+      "intended_weight_license": "Apache-2.0",
+      "weight_license": null,
+      "license_review_status": "ai_augmentation_deferred"
     },
     {
       "model": "SepACap_JC",
@@ -295,281 +712,10 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta. Bar is not a native JC-trained output; check historical output mapping.",
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta. PC01 excluded here. Bar is not a native JC-trained output; check historical output mapping."
       ]
-    },
-    {
-      "model": "K1",
-      "family": "conditioned",
-      "role": "",
-      "epoch": null,
-      "step": 184000,
-      "filename": "best_step0184000.pt",
-      "sha256": "261daa7899501229143136c46a501097caba9ac903650bc9c475c3ee049407b0",
-      "selection_labels": [
-        "sk_shared"
-      ],
-      "tables": [
-        "cross_corpus"
-      ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
-      "verification": "Recorded hash; live rehash pending",
-      "notes": [
-        "Historical snapshot winner; completed-200k SK shared/inclusive selection later changed to 198000. Retained here as historical provenance, not a final-200k release choice."
-      ]
-    },
-    {
-      "model": "L1",
-      "family": "conditioned",
-      "role": "",
-      "epoch": null,
-      "step": 141000,
-      "filename": "best_step0141000.pt",
-      "sha256": "92e19968bef2ce84d3800141afc50cc47141bd016adfcc07b70e705df7408004",
-      "selection_labels": [
-        "jc_shared"
-      ],
-      "tables": [
-        "cross_corpus"
-      ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
-      "verification": "Recorded hash; live rehash pending",
-      "notes": []
-    },
-    {
-      "model": "K1",
-      "family": "conditioned",
-      "role": "",
-      "epoch": null,
-      "step": 4000,
-      "filename": "best_step0004000.pt",
-      "sha256": "979ba17521f398fb1b2a3e0ccad29615999b50e87d76347b2682212a61b49427",
-      "selection_labels": [
-        "jc_inclusive"
-      ],
-      "tables": [
-        "target_conditioning"
-      ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
-      "verification": "Recorded hash; live rehash pending",
-      "notes": []
-    },
-    {
-      "model": "K5",
-      "family": "conditioned",
-      "role": "",
-      "epoch": null,
-      "step": 12000,
-      "filename": "best_step0012000.pt",
-      "sha256": "6f8e199008a542904330495dab28d7f56d8c380a6959ea4e460b22450c56ca43",
-      "selection_labels": [
-        "JC",
-        "jc_inclusive"
-      ],
-      "tables": [
-        "development_a",
-        "target_conditioning"
-      ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
-      "verification": "Recorded hash; live rehash pending",
-      "notes": [
-        "Historical draft snapshot; M3 evaluated through179k. K6_no_aug means single-clone, not no waveform augmentation."
-      ]
-    },
-    {
-      "model": "K7",
-      "family": "conditioned",
-      "role": "",
-      "epoch": null,
-      "step": 7000,
-      "filename": "best_step0007000.pt",
-      "sha256": "0646527189b1221552c01c918cff01173e98077dc515a6fe9f795ffab00c24ee",
-      "selection_labels": [
-        "jc_inclusive"
-      ],
-      "tables": [
-        "target_conditioning"
-      ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
-      "verification": "Recorded hash; live rehash pending",
-      "notes": []
-    },
-    {
-      "model": "L1",
-      "family": "conditioned",
-      "role": "",
-      "epoch": null,
-      "step": 119000,
-      "filename": "best_step0119000.pt",
-      "sha256": "5de579abaf11546eab1fcfa29566cf4934ece6c5fe7b23df56b6af27c3be3723",
-      "selection_labels": [
-        "sk_inclusive"
-      ],
-      "tables": [
-        "target_conditioning"
-      ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
-      "verification": "Recorded hash; live rehash pending",
-      "notes": []
-    },
-    {
-      "model": "L3",
-      "family": "conditioned",
-      "role": "",
-      "epoch": null,
-      "step": 184000,
-      "filename": "best_step0184000.pt",
-      "sha256": "9f49b7d59575658dcfb9667395d998e8fc34a935b3995b099593e99ee1de5226",
-      "selection_labels": [
-        "sk_inclusive"
-      ],
-      "tables": [
-        "target_conditioning"
-      ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
-      "verification": "Recorded hash; live rehash pending",
-      "notes": []
-    },
-    {
-      "model": "L4",
-      "family": "conditioned",
-      "role": "",
-      "epoch": null,
-      "step": 188000,
-      "filename": "best_step0188000.pt",
-      "sha256": "724af8d2906fc08de54b7484df69143a3a7b2c62c412e6e473b979bc34cd74d0",
-      "selection_labels": [
-        "sk_inclusive"
-      ],
-      "tables": [
-        "target_conditioning"
-      ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
-      "verification": "Recorded hash; live rehash pending",
-      "notes": []
-    },
-    {
-      "model": "K5",
-      "family": "conditioned",
-      "role": "",
-      "epoch": null,
-      "step": 179000,
-      "filename": "best_step0179000.pt",
-      "sha256": "eeeac981bacdd063207a0258fb60625edd2b60e94bc544852a1c2459223a04d3",
-      "selection_labels": [
-        "SK"
-      ],
-      "tables": [
-        "development_a"
-      ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
-      "verification": "Recorded hash; live rehash pending",
-      "notes": [
-        "Historical draft snapshot; M3 evaluated through179k. K6_no_aug means single-clone, not no waveform augmentation."
-      ]
-    },
-    {
-      "model": "K5",
-      "family": "conditioned",
-      "role": "",
-      "epoch": null,
-      "step": 106000,
-      "filename": "best_step0106000.pt",
-      "sha256": "df846b039ddd5e032f221adcf3de33a9a3f546f21b47f0bc3d30df891ab4ca93",
-      "selection_labels": [
-        "Pooled",
-        "combined_inclusive"
-      ],
-      "tables": [
-        "development_a",
-        "development_b"
-      ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
-      "verification": "Recorded hash; live rehash pending",
-      "notes": [
-        "Historical draft snapshot; M3 evaluated through179k. K6_no_aug means single-clone, not no waveform augmentation."
-      ]
-    },
-    {
-      "model": "M3",
-      "family": "conditioned",
-      "role": "",
-      "epoch": null,
-      "step": 159000,
-      "filename": "best_step0159000.pt",
-      "sha256": "03e74a6ae7f56d647c66e582f368f714b5504f8c657e78fb7f6c2142d0ae8ab1",
-      "selection_labels": [
-        "SK"
-      ],
-      "tables": [
-        "development_a"
-      ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
-      "verification": "Recorded hash; live rehash pending",
-      "notes": [
-        "Historical draft snapshot; M3 evaluated through179k. K6_no_aug means single-clone, not no waveform augmentation."
-      ]
-    },
-    {
-      "model": "M3",
-      "family": "conditioned",
-      "role": "",
-      "epoch": null,
-      "step": 173000,
-      "filename": "best_step0173000.pt",
-      "sha256": "f99b7ee04a026c2c628bcfaac3ddbe7a5ffabc95bb96e9d0889e3079e8db1b06",
-      "selection_labels": [
-        "JC",
-        "Pooled"
-      ],
-      "tables": [
-        "development_a"
-      ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
-      "verification": "Recorded hash; live rehash pending",
-      "notes": [
-        "Historical draft snapshot; M3 evaluated through179k. K6_no_aug means single-clone, not no waveform augmentation."
-      ]
-    },
-    {
-      "model": "K6",
-      "family": "conditioned",
-      "role": "",
-      "epoch": null,
-      "step": 131000,
-      "filename": "best_step0131000.pt",
-      "sha256": "ff74b497341edcfe6a6357749ed3e6bff795f1740ef022f4003f1241f198e517",
-      "selection_labels": [
-        "combined_inclusive"
-      ],
-      "tables": [
-        "development_b"
-      ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
-      "verification": "Recorded hash; live rehash pending",
-      "notes": [
-        "Historical draft snapshot; M3 evaluated through179k. K6_no_aug means single-clone, not no waveform augmentation."
-      ]
-    },
-    {
-      "model": "K6_no_aug",
-      "family": "conditioned",
-      "role": "",
-      "epoch": null,
-      "step": 48000,
-      "filename": "best_step0048000.pt",
-      "sha256": "79ee3dd239925ea2c075641eadc0e13c001a81f9f367f8ee6881c5e8a3881901",
-      "selection_labels": [
-        "combined_inclusive"
-      ],
-      "tables": [
-        "development_b"
-      ],
-      "distribution": "candidate_pending_final_selection_and_weight_terms",
-      "verification": "Recorded hash; live rehash pending",
-      "notes": [
-        "Historical draft snapshot; M3 evaluated through179k. K6_no_aug means single-clone, not no waveform augmentation."
-      ],
-      "public_name": "SK single-clone singer-conditioned (waveform augmentation remains enabled)"
     }
   ],
-  "confirmed_historical_release_count": 15
+  "confirmed_historical_release_count": 15,
+  "active_release_checkpoint_count": 27,
+  "deferred_checkpoint_count": 2,
+  "preferred_weight_license": "Apache-2.0"
 }

@@ -9,7 +9,7 @@
       "family": "fixed-htdemucs",
       "training_corpus": "JC+SK",
       "epoch": 333,
-      "status": "linux_cpu_validated_download_pending",
+      "status": "published_linux_cpu_validated_data_terms_review_pending",
       "checkpoint_filename": "model_htdemucs_ep_333_sdr_-1.2322_si_sdr_-0.3075_k_sdr_87.1730.ckpt",
       "checkpoint_sha256": "cbfa201798f7e7f4766bacd3aa8622b3ae40321729bd7f0b3555ac4348c57879",
       "checkpoint_bytes": 333986969,
@@ -37,10 +37,21 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
-      "selection_note": "Historical combined checkpoint confirmed for release inclusion on 2026-10-14; weight publication and terms pending.",
+      "weight_license": "Apache-2.0",
+      "selection_note": "Historical combined checkpoint; portable weights published under Apache-2.0. Training-data terms require separate review.",
       "sixth_output_note": "other combines JC Lead and SK Baritone training semantics; not separate Lead and Baritone outputs.",
-      "validation_report": "docs/validation/combined-ep333-linux-cpu.json"
+      "validation_report": "docs/validation/combined-ep333-linux-cpu.json",
+      "portable_checkpoint": {
+        "filename": "epoch_0333.pt",
+        "sha256": "8f87f3a1224de680085fea0c186600edc7cfbb91b8f56f8862da4772565e0cda",
+        "bytes": 109822110,
+        "format": "pytorch_state_dict",
+        "weights_only": true,
+        "download_url": "https://huggingface.co/pting126/ACappellaSet-models/resolve/d05b4ab71c5c28c92dffb9e3128e82c20f07f48e/fixed/Combined/legacy/epoch_0333.pt",
+        "status": "published_linux_cpu_validated",
+        "validation_report": "docs/validation/combined-ep333-portable-linux-cpu.json",
+        "revision": "d05b4ab71c5c28c92dffb9e3128e82c20f07f48e"
+      }
     }
   ],
   "repository_id": "pting126/ACappellaSet-models"

@@ -1,12 +1,12 @@
 # Checkpoints proposed for release
 
-This inventory covers the audited paper snapshot: **29 project checkpoints**, plus one external baseline to link to. It is a proposed release set, not a claim that weights are already downloadable or that every final paper selection is frozen. The [Hugging Face repository](https://huggingface.co/pting126/ACappellaSet-models)
-is created, but weights and their terms remain pending. On 2026-10-14, the
+This inventory covers the updated release plan: **29 project checkpoints (27 active, 2 deferred)**, plus one external baseline to link to. It is a proposed release set, not a claim that weights are already downloadable or that every final paper selection is frozen. The [Hugging Face repository](https://huggingface.co/pting126/ACappellaSet-models)
+is created, but Combined portable weights are published; other artifacts remain in preparation. On 2026-10-14, the
 three historical fixed models and 12 historical specialists were confirmed
 for release inclusion. The ICASSP release excludes newer fixed-six training
 runs and later singer-enrollment specialists. The conditioned candidates below
-cover the supplied paper's experiments; final table-to-artifact reconciliation
-and public loader validation remain pending.
+cover the paper experiments with updated K1 and M3 evaluations. Public loader
+validation remains pending for the conditioned models.
 
 Exact filenames, hashes, and recorded selection labels are in [`manifests/checkpoint_candidates.json`](../manifests/checkpoint_candidates.json). Repeated table uses of the same checkpoint are deduplicated by SHA-256. Epochs below are the stored checkpoint epoch numbers.
 
@@ -32,33 +32,36 @@ Each bank contains six distinct checkpoints. The source order is residual index 
 | Lead | 149 | — |
 | Bar | — | 43 |
 
-## Conditioned and augmentation models (14)
+## Conditioned models (12 active, 2 deferred)
 
 | Model | Description | Selected steps |
 | --- | --- | --- |
-| K1 | SK part-conditioned | 4,000, 184,000 |
+| K1 | SK part-conditioned | 4,000, 198,000 |
 | K5 | SK singer-conditioned | 12,000, 106,000, 179,000 |
 | K7 | SK dual-conditioned | 7,000 |
 | L1 | JC part-conditioned | 119,000, 141,000 |
 | L3 | JC singer-conditioned | 184,000 |
 | L4 | JC dual-conditioned | 188,000 |
-| M3 | JC+SK singer-conditioned | 159,000, 173,000 |
-| K6 | SK full-remix singer-conditioned | 131,000 |
-| K6_no_aug | SK single-clone singer-conditioned | 48,000 |
+| M3 | JC+SK singer-conditioned | 195,000, 198,000 |
+| K6 | SK full-remix singer-conditioned — deferred | 131,000 |
+| K6_no_aug | SK single-clone singer-conditioned — deferred | 48,000 |
 
-K1 at 184k is an earlier snapshot selection: the completed-200k SK shared/inclusive
-winner is 198k. The listed K1 4k JC-inclusive selection remained unchanged.
-The supplied paper reports the older 184k result, so paper reproduction retains
-that checkpoint. Do not substitute 198k without updating the corresponding
-evaluation and reported numbers.
+K1 uses 198k for SK-shared selection in the cross-corpus table; its 4k
+JC-inclusive selection in the target-conditioning table is unchanged. M3 uses
+195k for JC/pooled-shared selection and 198k for SK-shared selection in
+Table 4(a). These selections were checked through 200,000 updates and have
+matching updated test evaluations. The registry retains superseded identities;
+older scores must not be attached to the replacement checkpoints.
 
-Different steps correspond to different validation scopes; they are not interchangeable “best” checkpoints. The registry preserves the recorded labels. M3 is the audited snapshot through 179,000 updates, not a final 200,000-update selection. `K6_no_aug` is a historical identifier for **single-clone** training; ordinary waveform augmentation remains enabled.
+Table 4(a) uses shared selection and shared evaluation. Table 4(b) uses
+pooled-inclusive selection and inclusive evaluation. Shared scores pool all
+retained S/A/T/B/VP pairs; they are pair-weighted, not part-macro averages.
+Inclusive additionally retains JC Lead or SK Bar. Registry labels beginning
+with `combined_` mean pooled JC+SK validation, not combined training.
 
-M3 training subsequently completed 200k, but the supplied paper's 159k/173k
-results still refer to the earlier selection snapshot. Keep those weights for
-paper reproduction. Final-200k selections are different artifacts and must not
-inherit the older test scores. Record training completion, selection cutoff,
-selected step, validation corpus and role scope as separate metadata fields.
+`K6_no_aug` is a historical identifier for **single-clone** training; ordinary
+waveform augmentation remains enabled. Selection corpus, scope, candidate
+cutoff, and selected step are separate metadata fields.
 
 Singer-conditioned and dual models require their matching encoder state. The public export must retain fine-tuned encoder tensors or supply a verified companion artifact. Raw training checkpoints may include optimizer state and private configuration paths; prepare a portable model-only export and validate it before uploading. Exported files receive new hashes.
 
@@ -71,4 +74,9 @@ Singer-conditioned and dual models require their matching encoder state. The pub
 
 ## Distribution
 
-Host project weights on [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models). An optional final paper model archive may be deposited on Zenodo. Keep configurations, model code, registry entries, and download utilities in GitHub. Before publishing each weight, freeze its intended use, verify loading and inference, and record applicable weight/data terms. No checkpoint has been uploaded by this code-packaging change.
+Host project weights on [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models). An optional final paper model archive may be deposited on Zenodo. Keep configurations, model code, registry entries, and download utilities in GitHub. Before publishing each weight, freeze its intended use, verify loading and inference, and record applicable weight/data terms. Combined ep333 is published under Apache-2.0. The 13 natural SK-only checkpoints
+are assigned Apache-2.0 following upstream review and project rights-holder
+authorization. JC-trained weight terms require clarification; this does not
+retroactively change the existing Combined license. K6 and K6_no_aug are
+deferred while augmentation terms are reviewed. Technical validation and
+training-data rights are separate checks.

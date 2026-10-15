@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "export": {
+    "status": "PASS",
+    "original_checkpoint_sha256": "cbfa201798f7e7f4766bacd3aa8622b3ae40321729bd7f0b3555ac4348c57879",
+    "original_bytes": 333986969,
+    "export_filename": "epoch_0333.pt",
+    "export_sha256": "8f87f3a1224de680085fea0c186600edc7cfbb91b8f56f8862da4772565e0cda",
+    "export_bytes": 109822110,
+    "format": "pytorch_state_dict",
+    "weights_only": true,
+    "epoch": 333,
+    "tensor_count": 525,
+    "tensor_values_bit_identical": true,
+    "optimizer_included": false,
+    "torch_version": "2.10.0+cpu"
+  },
+  "behavioral_tests": 6,
+  "elapsed_seconds": 108.8894057655707,
+  "limitations": [
+    "Two clips; no separation quality metric or full-song evaluation",
+    "CUDA and macOS not validated",
+    "Other checkpoints not validated"
+  ],
+  "cases": [
+    {
+      "case": "real-12p6s",
+      "input_sha256": "1cee212b9542918875034fec54bc12d6874d596eade0ec6dc5ecd6661fb6f3e9",
+      "shape": [
+        6,
+        2,
+        555660
+      ],
+      "portable_vs_legacy_bit_identical": true,
+      "portable_vs_research_reference_bit_identical": true,
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "case": "synthetic-short",
+      "input_sha256": "d11986578440c305c92572900f9d542a6552d8923aae1b5210af4d9ffebee011",
+      "shape": [
+        6,
+        2,
+        13230
+      ],
+      "portable_vs_legacy_bit_identical": true,
+      "portable_vs_research_reference_bit_identical": true,
+      "maximum_absolute_difference": 0.0
+    }
+  ],
+  "code_sha256": {
+    "models/fixed.py": "968c7df6c2ab07c603c9137d4c519e9442bde8b4f89d732dfd46c3f3958afb97",
+    "models/demucs4ht.py": "d0d20967cbab2b1eef93dbec2720c2753dfb7b9727f140f29c0d5900dc22f436",
+    "inference.py": "b5e8f8536d37660e8525c492f7a4bb7e3b4924817fde3f658a37b0cbc5f13e8b",
+    "tests/test_fixed_inference.py": "530dea0e2d079539382800ce95193f378b20f89c8525255457fcfa4c2e015704"
+  },
+  "packages": {
+    "torch": "2.10.0+cpu",
+    "torchaudio": "2.10.0+cpu",
+    "demucs": "4.0.0",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "soundfile": "0.13.1",
+    "omegaconf": "2.3.0"
+  },
+  "python": "3.10.19",
+  "original_validation": "combined-ep333-linux-cpu.json"
+}

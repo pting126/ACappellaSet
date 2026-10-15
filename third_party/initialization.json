@@ -1,0 +1,27 @@
+{
+  "model": "Demucs htdemucs_6s",
+  "official_signature": "5c90dfd2",
+  "official_url": "https://dl.fbaipublicfiles.com/demucs/hybrid_transformer/5c90dfd2-34c22ccb.th",
+  "official_sha256": "34c22ccb381c6f9fdbf324f04e1e2fe21aaaf293f5ded163a162697ff9a02ddd",
+  "research_initializer_filename": "pt_6s.th",
+  "research_initializer_sha256": "02c5787342e62e4c433fdf676ac6df21b710a5c2ca952a0abee58ab33c9f8f50",
+  "verification_date": "2026-10-14",
+  "verification": {
+    "status": "PASS",
+    "same_keys": true,
+    "upstream_tensors": 525,
+    "local_tensors": 525,
+    "mismatches": [],
+    "comparison": "Official state tensors converted to local dtype; exact equality",
+    "upstream_dtype": "torch.float16",
+    "local_dtype": "torch.float32",
+    "upstream_sha256": "34c22ccb381c6f9fdbf324f04e1e2fe21aaaf293f5ded163a162697ff9a02ddd",
+    "local_sha256": "02c5787342e62e4c433fdf676ac6df21b710a5c2ca952a0abee58ab33c9f8f50",
+    "local_best_state_equals_state": true
+  },
+  "upstream_model_registry": "https://github.com/facebookresearch/demucs/blob/main/demucs/remote/htdemucs_6s.yaml",
+  "upstream_license": "https://github.com/facebookresearch/demucs/blob/main/LICENSE",
+  "upstream_repository_license": "MIT",
+  "project_weight_license": "Apache-2.0 (Combined ep333 only)",
+  "note": "Initializer identity is verified independently of the project model-weight license decision. The exported ACappellaSet model contains fine-tuned tensors, not this original initializer."
+}

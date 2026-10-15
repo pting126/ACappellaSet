@@ -2,19 +2,18 @@
 
 Dataset resources, model weights, and code for a cappella source separation.
 
-**Combined-model inference is available and validated on Linux CPU.** The dataset
-is being prepared for Zenodo, and weights will be published on
-[Hugging Face](https://huggingface.co/pting126/ACappellaSet-models). Running inference
-currently requires an existing copy of the registered Combined ep333 checkpoint.
-Training, specialist, and conditioned-model workflows are still being packaged.
+**Combined ep333 weights and Linux CPU inference are available.** Download the
+110 MB portable checkpoint from [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models)
+using the verified download command below. The dataset is being prepared for
+Zenodo. Other model adapters and training workflows remain in preparation.
 
 ## Availability
 
 | Resource | Status |
 | --- | --- |
 | Combined ep333 inference | Implemented; actual-checkpoint Linux CPU validation passed |
-| Checkpoint inventory | 29 project candidates and one external baseline documented |
-| Public checkpoint downloads | [Hugging Face repository](https://huggingface.co/pting126/ACappellaSet-models) created; weights pending |
+| Checkpoint inventory | 27 active checkpoints, 2 deferred AI-augmented checkpoints; external baseline linked |
+| Public checkpoint downloads | Combined ep333 available on [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models) |
 | Dataset and annotations | Zenodo dataset record pending |
 | Training scripts | Being prepared |
 | Specialist and conditioned inference | Being prepared |
@@ -22,10 +21,11 @@ Training, specialist, and conditioned-model workflows are still being packaged.
 ## Run inference
 
 Follow the [installation and inference guide](docs/inference.md) to create the
-tested Python 3.10 environment. With the registered checkpoint available locally:
+tested Python 3.10 environment. Download and verify the registered checkpoint:
 
 ```bash
-python inference.py --model combined-ep333 --checkpoint checkpoints/combined-ep333.ckpt --input /path/to/mixture.wav --output outputs/my-mixture --device cpu
+python download.py --model combined-ep333
+python inference.py --model combined-ep333 --checkpoint checkpoints/epoch_0333.pt --input /path/to/mixture.wav --output outputs/my-mixture --device cpu
 ```
 
 The command writes stereo 44.1 kHz Float32 WAVs named `vp`, `bass`, `soprano`,
@@ -35,8 +35,8 @@ normalization is applied. Checkpoint and configuration hashes are verified
 before strict loading, and existing output directories are not overwritten.
 
 On two validation inputs, all six outputs matched the research implementation
-**bit-for-bit** in a fresh Linux CPU environment. Five behavioral tests passed.
-See the [validation report](docs/validation/combined-ep333-linux-cpu.json).
+**bit-for-bit** in a fresh Linux CPU environment. Six behavioral tests passed; the portable export also matches exactly.
+See the [validation report](docs/validation/combined-ep333-portable-linux-cpu.json).
 CUDA and macOS have not been validated, and these tests are not quality scores.
 
 ## Models and weights
@@ -46,20 +46,20 @@ their combination; per-part specialist banks; and part-, singer-, and
 dual-conditioned extraction. Singer conditioning requires enrollment audio and
 the matching encoder parameters.
 
-The [checkpoint checklist](docs/checkpoints.md) lists all 29 project candidates
-from the audited paper snapshot, including epoch/step choices. Exact hashes are
+The [checkpoint checklist](docs/checkpoints.md) lists 29 checkpoint identities
+(27 active, 2 deferred), including updated K1/M3 epoch/step choices. Exact hashes are
 in [the candidate manifest](manifests/checkpoint_candidates.json), which records
-the snapshot inventory. The three historical fixed models and 12 historical
+the current release inventory. The three historical fixed models and 12 historical
 specialists are confirmed for release inclusion. Later singer-enrollment
 specialists and newer fixed-six training runs are excluded from the ICASSP
-release. Shared conditioned checkpoints are being mapped to the reported paper
-experiments; final registry verification and weight terms remain pending.
+release. Shared conditioned checkpoints are listed with their validation criteria.
+The AI-augmented K6 and K6_no_aug releases are deferred.
 The [inference registry](manifests/models.json) separately records models the
 public code can load. See [model documentation](docs/models.md).
 
-Weights will be hosted in the [Hugging Face model repository](https://huggingface.co/pting126/ACappellaSet-models),
-with verified checksums and applicable licenses. It currently contains metadata
-and a configuration, with no weights uploaded. A final paper snapshot may also
+Weights are hosted in the [Hugging Face model repository](https://huggingface.co/pting126/ACappellaSet-models),
+with verified checksums and applicable licenses. Combined ep333 is available;
+other checkpoints remain in preparation. A final paper snapshot may also
 be archived on Zenodo. Large checkpoints are not committed to this GitHub repository.
 
 ## Dataset and training
@@ -73,6 +73,7 @@ follow the published schema and fixed splits; see the [training guide](docs/trai
 
 ```text
 ACappellaSet/
+├── download.py                   # Revision-pinned download with SHA-256 verification
 ├── inference.py                  # Working fixed-model CLI
 ├── models/                       # Architecture and inference adapter
 ├── configs/                      # Fixed, specialist, conditioned configs
@@ -97,8 +98,10 @@ inference package. Required MSS training modifications will be released separate
 Original code and documentation use the [MIT license](LICENSE). Vendored and
 adapted code retains its upstream notices; see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-Dataset and model-weight terms are separate. A code license does not grant
-rights to the dataset or model weights.
+Combined ep333 weights use Apache-2.0; see the [weight license](https://huggingface.co/pting126/ACappellaSet-models/blob/main/fixed/Combined/legacy/LICENSE).
+The 13 natural SK-only weights are assigned Apache-2.0. JC-trained weight
+terms require clarification; the existing Combined release retains its published
+license. Dataset audio and third-party rights are separate from project licensing.
 
 [CITATION.cff](CITATION.cff) currently describes this repository. Paper metadata
 and Zenodo DOIs will be added when available.
