@@ -1,11 +1,16 @@
 # Configurations
 
-Release configurations are grouped by model family. The first inference
-configuration is `fixed/combined_ep333.yaml`. Each configuration must match the
-weights, architecture, source order, preprocessing, and inference protocol.
+`fixed/` and `specialists/` contain the exact original MSS configurations.
+`conditioned/` contains K/L/M architecture and inference settings plus the exact
+ReDimNet2 encoder configuration. `training/` contains the seven natural-data
+conditioned recipes, including initialization, loss, augmentation, optimizer,
+seed, update budget, and validation cadence.
 
-The archived combined YAML retains its original training fields for provenance;
-this does not provide a runnable public training workflow yet.
-Public training configurations must record the initialization, data/split version,
-objective, augmentation, seed, validation criterion, and required encoder.
-Use repository-relative paths or explicit user-supplied paths.
+Configuration hashes are checked by the loaders and launchers. Output order is
+part of the contract: original specialists use residual/target; conditioned
+models use target/residual. Do not exchange configurations across families.
+
+Use [MSS training](../docs/training.md) or
+[conditioned training](../docs/conditioned-training.md), with the exact prepared
+split manifests. Archived epochs/steps identify research checkpoints; a fresh
+training run is not a guarantee of recreating their exact scores.

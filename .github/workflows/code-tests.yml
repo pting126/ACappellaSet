@@ -22,3 +22,11 @@ jobs:
           python -m unittest discover -s tests -p test_conditioned_runtime.py -v
           python -m unittest discover -s tests -p test_data_protocol.py -v
           python -m unittest discover -s tests -p test_training.py -v
+          python -m unittest discover -s tests -p test_reproduction.py -v
+          python -m unittest discover -s tests -p test_benchmark.py -v
+      - name: Verify release metadata and examples
+        run: |
+          python scripts/check_release.py
+          python examples/make_demo_audio.py --output outputs/demo-input
+          python reproduce.py --output outputs/paper-tables
+          python benchmark.py --help

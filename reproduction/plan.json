@@ -1,0 +1,887 @@
+{
+  "schema_version": 1,
+  "status": "artifact_reproduction_with_explicit_manuscript_discrepancies",
+  "source_file": "per_pair.csv.gz",
+  "source_sha256": "a98155e0bc19ac9518343bb83d9cde5371489f08336968bc3842fc337fc9915e",
+  "artifacts": {
+    "K1_4000_JC": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "6f6ba8f8e88d5069d15d3d6b7d9708311fceb7c4589b4e1c28c9ddd123f2d732",
+      "step": 4000,
+      "selection_criteria": [
+        "jc_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "registered",
+      "n_pairs": 60
+    },
+    "K1_4000_SK": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "ad6af82544c5d2acc6650b324a7f7d06903edc15b326e63cd1bf4f99e6fa1113",
+      "step": 4000,
+      "selection_criteria": [
+        "jc_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "registered",
+      "n_pairs": 98
+    },
+    "K1_198000_JC": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "8c7170bfd4e9b6bccd50a0d5c4607ecb7ae7e82cd5a17aa3b057f8cdb05408e8",
+      "step": 198000,
+      "selection_criteria": [
+        "sk_shared",
+        "sk_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "registered",
+      "n_pairs": 60
+    },
+    "K1_198000_SK": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "fd7dbeac3acdff19bb89a59fbfe4d9e4a2ecd1315cf95fb39a982ba659298ce2",
+      "step": 198000,
+      "selection_criteria": [
+        "sk_shared",
+        "sk_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "registered",
+      "n_pairs": 98
+    },
+    "K5_12000_JC": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "666c8e6844fc3b66bff02e984e62c89a342b42e0a378362a3116432c39da32c2",
+      "step": 12000,
+      "selection_criteria": [
+        "jc_shared",
+        "jc_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "registered",
+      "n_pairs": 60
+    },
+    "K5_12000_SK": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "ea499f3e97244ed3fde1bbd5c22c7bf0534f7aa4c0635816552649a5df8027a1",
+      "step": 12000,
+      "selection_criteria": [
+        "jc_shared",
+        "jc_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "registered",
+      "n_pairs": 98
+    },
+    "K5_179000_JC": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "08181453bd51fcaec3ee0aac5e78c717ac8c9f838fff36ff3e977f49422d2e0c",
+      "step": 179000,
+      "selection_criteria": [
+        "sk_shared",
+        "sk_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "registered",
+      "n_pairs": 60
+    },
+    "K5_179000_SK": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "e74264e7c92c397035f10e20af30e8d71b06776689cc648159f442f151779ffb",
+      "step": 179000,
+      "selection_criteria": [
+        "sk_shared",
+        "sk_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "registered",
+      "n_pairs": 98
+    },
+    "K5_106000_JC": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "e36231ae6ce9a97b2f7399edad8c69f58d81a94a2815706096c22d8b1e1fedec",
+      "step": 106000,
+      "selection_criteria": [
+        "combined_shared",
+        "combined_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "registered",
+      "n_pairs": 60
+    },
+    "K5_106000_SK": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "0de98c35e2864ce7573cd32ad0bc7e1c1be7280e316763419f8130b399a81d0a",
+      "step": 106000,
+      "selection_criteria": [
+        "combined_shared",
+        "combined_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "registered",
+      "n_pairs": 98
+    },
+    "K5_106000_AB": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "d981a3723e53a96515314abc0b4421a66cf5486ac88c6edeca6c841afc300c04",
+      "step": 106000,
+      "selection_criteria": [
+        "combined_shared",
+        "combined_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "registered",
+      "n_pairs": 25
+    },
+    "K6_131000_JC": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "376531e2014f62e07429bb361e1aa19317f9ec5002574a6d57a5b4f37b07dfcb",
+      "step": 131000,
+      "selection_criteria": [
+        "combined_shared",
+        "combined_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "deferred",
+      "n_pairs": 60
+    },
+    "K6_131000_SK": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "80149944ae289395a4ba0a73fc8b9eb0941be14819bc2876c1570d0e2706f9c4",
+      "step": 131000,
+      "selection_criteria": [
+        "combined_shared",
+        "combined_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "deferred",
+      "n_pairs": 98
+    },
+    "K6_131000_AB": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "1edce09512b91650ca5d1f3e6753a338dce775fbc758ffa6fe30e6bb638c62eb",
+      "step": 131000,
+      "selection_criteria": [
+        "combined_shared",
+        "combined_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "deferred",
+      "n_pairs": 25
+    },
+    "K7_7000_JC": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "b7aeb8c21883bac98700324d8166e86cd2f2e071d0e05c5639fd78241021b757",
+      "step": 7000,
+      "selection_criteria": [
+        "jc_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "registered",
+      "n_pairs": 60
+    },
+    "K7_7000_SK": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "88862cca77d4fd54abd8b22b5c54acd54f02a2e0d356cbc78909dbe6b1d0dc2c",
+      "step": 7000,
+      "selection_criteria": [
+        "jc_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "registered",
+      "n_pairs": 98
+    },
+    "K6_no_aug_48000_JC": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "170c6e59d1d1faaa60101c3a2ee2a05791983e7b08a631150196d900a36be3cd",
+      "step": 48000,
+      "selection_criteria": [
+        "combined_shared",
+        "combined_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "deferred",
+      "n_pairs": 60
+    },
+    "K6_no_aug_48000_SK": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "94421aebb8f3f62ce7f694ec6166305a66384b4a0537ddabd51c56581c91db41",
+      "step": 48000,
+      "selection_criteria": [
+        "combined_shared",
+        "combined_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "deferred",
+      "n_pairs": 98
+    },
+    "K6_no_aug_48000_AB": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "c4b174deb1731280f40549b0d198e1ee5afc38936a0344ec0537a394cc74e128",
+      "step": 48000,
+      "selection_criteria": [
+        "combined_shared",
+        "combined_inclusive"
+      ],
+      "plan_sha256": "a362954518b93bf0e596b15f0f6005f1766358ecf04f341f4568ab1d39ad2ca7",
+      "weights_status": "deferred",
+      "n_pairs": 25
+    },
+    "L1_119000_JC": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "872404087bce99c08b3a21f8ef6737441515ce426be53cf778c64137e769193a",
+      "step": 119000,
+      "selection_criteria": [
+        "sk_shared",
+        "sk_inclusive",
+        "combined_shared"
+      ],
+      "plan_sha256": "f62568db6d3f464b547fca40481a8b8720b0cdc770b7bd9cc3cebab0bc0c8cc5",
+      "weights_status": "registered",
+      "n_pairs": 60
+    },
+    "L1_119000_SK": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "56a7fac17756ea1f26f52636d2fd6e1186a54be608277942919a2fb2557b7db5",
+      "step": 119000,
+      "selection_criteria": [
+        "sk_shared",
+        "sk_inclusive",
+        "combined_shared"
+      ],
+      "plan_sha256": "f62568db6d3f464b547fca40481a8b8720b0cdc770b7bd9cc3cebab0bc0c8cc5",
+      "weights_status": "registered",
+      "n_pairs": 98
+    },
+    "L1_141000_JC": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "e4c5c558d485042e14bfe94f3e2ad84a0f87dc7e21a6332b795de0f62c03d124",
+      "step": 141000,
+      "selection_criteria": [
+        "jc_shared",
+        "jc_inclusive"
+      ],
+      "plan_sha256": "f62568db6d3f464b547fca40481a8b8720b0cdc770b7bd9cc3cebab0bc0c8cc5",
+      "weights_status": "registered",
+      "n_pairs": 60
+    },
+    "L1_141000_SK": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "2bc50df90d736bbebc2b526a2d57b622137c7765d7c4757f51b9653b7c001338",
+      "step": 141000,
+      "selection_criteria": [
+        "jc_shared",
+        "jc_inclusive"
+      ],
+      "plan_sha256": "f62568db6d3f464b547fca40481a8b8720b0cdc770b7bd9cc3cebab0bc0c8cc5",
+      "weights_status": "registered",
+      "n_pairs": 98
+    },
+    "L3_184000_JC": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "b606617cf2e029ea055c4e89256c76e286747f7f56817112adb3845f0bb58847",
+      "step": 184000,
+      "selection_criteria": [
+        "sk_shared",
+        "sk_inclusive",
+        "combined_shared",
+        "combined_inclusive"
+      ],
+      "plan_sha256": "f62568db6d3f464b547fca40481a8b8720b0cdc770b7bd9cc3cebab0bc0c8cc5",
+      "weights_status": "registered",
+      "n_pairs": 60
+    },
+    "L3_184000_SK": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "88dc56bc6f8d6baeff88b5636fcf103fd15838e5d10973fa59391f164db6b4a0",
+      "step": 184000,
+      "selection_criteria": [
+        "sk_shared",
+        "sk_inclusive",
+        "combined_shared",
+        "combined_inclusive"
+      ],
+      "plan_sha256": "f62568db6d3f464b547fca40481a8b8720b0cdc770b7bd9cc3cebab0bc0c8cc5",
+      "weights_status": "registered",
+      "n_pairs": 98
+    },
+    "L4_188000_JC": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "015e7f516994ab6807d8ecd16891fb9634c1157a99dc41fc93b81e4348ec2a4b",
+      "step": 188000,
+      "selection_criteria": [
+        "sk_shared",
+        "sk_inclusive",
+        "combined_shared",
+        "combined_inclusive"
+      ],
+      "plan_sha256": "f62568db6d3f464b547fca40481a8b8720b0cdc770b7bd9cc3cebab0bc0c8cc5",
+      "weights_status": "registered",
+      "n_pairs": 60
+    },
+    "L4_188000_SK": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "843413c316272c94391cc74598a1376c68ab939d77c4918dfe40d8f54d1333cd",
+      "step": 188000,
+      "selection_criteria": [
+        "sk_shared",
+        "sk_inclusive",
+        "combined_shared",
+        "combined_inclusive"
+      ],
+      "plan_sha256": "f62568db6d3f464b547fca40481a8b8720b0cdc770b7bd9cc3cebab0bc0c8cc5",
+      "weights_status": "registered",
+      "n_pairs": 98
+    },
+    "M3_195000_JC": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "65fbe39608a25b1bca0a2b4a56706df52c9f93cd22b8de6161e68a396c010b95",
+      "step": 195000,
+      "selection_criteria": [
+        "jc_shared",
+        "combined_shared"
+      ],
+      "weights_status": "registered",
+      "n_pairs": 60
+    },
+    "M3_195000_SK": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "65fbe39608a25b1bca0a2b4a56706df52c9f93cd22b8de6161e68a396c010b95",
+      "step": 195000,
+      "selection_criteria": [
+        "jc_shared",
+        "combined_shared"
+      ],
+      "weights_status": "registered",
+      "n_pairs": 98
+    },
+    "M3_198000_JC": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "65fbe39608a25b1bca0a2b4a56706df52c9f93cd22b8de6161e68a396c010b95",
+      "step": 198000,
+      "selection_criteria": [
+        "sk_shared"
+      ],
+      "weights_status": "registered",
+      "n_pairs": 60
+    },
+    "M3_198000_SK": {
+      "source_kind": "completed_full_song_evaluation",
+      "source_artifact_sha256": "65fbe39608a25b1bca0a2b4a56706df52c9f93cd22b8de6161e68a396c010b95",
+      "step": 198000,
+      "selection_criteria": [
+        "sk_shared"
+      ],
+      "weights_status": "registered",
+      "n_pairs": 98
+    },
+    "Fixed_6stem_htdemucs_JC_JC": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "JC_ep321",
+      "inference_provenance": [
+        "metric-only rescore"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 60
+    },
+    "Fixed_6stem_htdemucs_JC_SK": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "JC_ep321",
+      "inference_provenance": [
+        "metric-only rescore"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 92
+    },
+    "Fixed_6stem_htdemucs_JC_AB": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "JC_ep321",
+      "inference_provenance": [
+        "fresh canonical inference + canonical scoring"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 23
+    },
+    "Fixed_6stem_htdemucs_SK_JC": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "SK_ep279",
+      "inference_provenance": [
+        "metric-only rescore"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 50
+    },
+    "Fixed_6stem_htdemucs_SK_SK": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "SK_ep279",
+      "inference_provenance": [
+        "metric-only rescore"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 98
+    },
+    "Fixed_6stem_htdemucs_SK_AB": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "SK_ep279",
+      "inference_provenance": [
+        "fresh canonical inference + canonical scoring"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 25
+    },
+    "Fixed_6stem_htdemucs_SKnJC_JC": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "Combined_ep333",
+      "inference_provenance": [
+        "metric-only rescore of archived estimates"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 60
+    },
+    "Fixed_6stem_htdemucs_SKnJC_SK": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "Combined_ep333",
+      "inference_provenance": [
+        "metric-only rescore of archived estimates"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 98
+    },
+    "Fixed_6stem_htdemucs_SKnJC_AB": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "Combined_ep333",
+      "inference_provenance": [
+        "metric-only rescore of archived estimates"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 25
+    },
+    "Part_specific_htdemucs_JC_bank_JC": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "JC historical specialists (MSS inference)",
+      "inference_provenance": [
+        "fresh canonical inference + canonical scoring"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 60
+    },
+    "Part_specific_htdemucs_JC_bank_SK": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "JC historical specialists (MSS inference)",
+      "inference_provenance": [
+        "fresh canonical inference + canonical scoring"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 92
+    },
+    "Part_specific_htdemucs_SK_bank_JC": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "SK historical specialists (MSS inference)",
+      "inference_provenance": [
+        "fresh canonical inference + canonical scoring"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 50
+    },
+    "Part_specific_htdemucs_SK_bank_SK": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "SK historical specialists (MSS inference)",
+      "inference_provenance": [
+        "fresh canonical inference + canonical scoring"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 98
+    },
+    "SepACap_JC_JC": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "SepACap_JC",
+      "inference_provenance": [
+        "fresh canonical inference + canonical scoring"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 60
+    },
+    "SepACap_JC_SK": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "SepACap_JC",
+      "inference_provenance": [
+        "fresh canonical inference + canonical scoring"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 92
+    },
+    "SepACap_JC_AB": {
+      "source_kind": "archived_canonical_scores",
+      "source_artifact_sha256": "38cf3467c86997675d55e6ee6a44232a802017ce8052437d1df7a593a84b72a2",
+      "historical_model": "SepACap_JC",
+      "inference_provenance": [
+        "fresh canonical inference + canonical scoring"
+      ],
+      "note": "Archived inference/protocol retained; AB PC01 removed. Not a rerun or claim that every manuscript cell matches.",
+      "n_pairs": 23
+    }
+  },
+  "tables": {
+    "cross_corpus": [
+      {
+        "artifact": "Fixed_6stem_htdemucs_JC_JC",
+        "train": "JC",
+        "test": "JC",
+        "scope": "shared",
+        "unavailable_roles": []
+      },
+      {
+        "artifact": "Fixed_6stem_htdemucs_JC_SK",
+        "train": "JC",
+        "test": "SK",
+        "scope": "shared",
+        "unavailable_roles": [
+          "Bar"
+        ]
+      },
+      {
+        "artifact": "Fixed_6stem_htdemucs_JC_AB",
+        "train": "JC",
+        "test": "AB",
+        "scope": "shared",
+        "unavailable_roles": [
+          "Bar"
+        ]
+      },
+      {
+        "artifact": "Fixed_6stem_htdemucs_SK_JC",
+        "train": "SK",
+        "test": "JC",
+        "scope": "shared",
+        "unavailable_roles": [
+          "Lead"
+        ]
+      },
+      {
+        "artifact": "Fixed_6stem_htdemucs_SK_SK",
+        "train": "SK",
+        "test": "SK",
+        "scope": "shared",
+        "unavailable_roles": []
+      },
+      {
+        "artifact": "Fixed_6stem_htdemucs_SK_AB",
+        "train": "SK",
+        "test": "AB",
+        "scope": "shared",
+        "unavailable_roles": []
+      },
+      {
+        "artifact": "Fixed_6stem_htdemucs_SKnJC_JC",
+        "train": "JC+SK",
+        "test": "JC",
+        "scope": "shared",
+        "unavailable_roles": []
+      },
+      {
+        "artifact": "Fixed_6stem_htdemucs_SKnJC_SK",
+        "train": "JC+SK",
+        "test": "SK",
+        "scope": "shared",
+        "unavailable_roles": []
+      },
+      {
+        "artifact": "Fixed_6stem_htdemucs_SKnJC_AB",
+        "train": "JC+SK",
+        "test": "AB",
+        "scope": "shared",
+        "unavailable_roles": []
+      },
+      {
+        "artifact": "Part_specific_htdemucs_JC_bank_JC",
+        "train": "JC",
+        "test": "JC",
+        "scope": "shared",
+        "unavailable_roles": []
+      },
+      {
+        "artifact": "Part_specific_htdemucs_JC_bank_SK",
+        "train": "JC",
+        "test": "SK",
+        "scope": "shared",
+        "unavailable_roles": [
+          "Bar"
+        ]
+      },
+      {
+        "artifact": "Part_specific_htdemucs_SK_bank_JC",
+        "train": "SK",
+        "test": "JC",
+        "scope": "shared",
+        "unavailable_roles": [
+          "Lead"
+        ]
+      },
+      {
+        "artifact": "Part_specific_htdemucs_SK_bank_SK",
+        "train": "SK",
+        "test": "SK",
+        "scope": "shared",
+        "unavailable_roles": []
+      },
+      {
+        "artifact": "K1_198000_JC",
+        "train": "SK",
+        "test": "JC",
+        "scope": "shared",
+        "unavailable_roles": [
+          "Lead"
+        ]
+      },
+      {
+        "artifact": "K1_198000_SK",
+        "train": "SK",
+        "test": "SK",
+        "scope": "shared",
+        "unavailable_roles": []
+      },
+      {
+        "artifact": "L1_141000_JC",
+        "train": "JC",
+        "test": "JC",
+        "scope": "shared",
+        "unavailable_roles": []
+      },
+      {
+        "artifact": "L1_141000_SK",
+        "train": "JC",
+        "test": "SK",
+        "scope": "shared",
+        "unavailable_roles": [
+          "Bar"
+        ]
+      },
+      {
+        "artifact": "SepACap_JC_JC",
+        "train": "JC",
+        "test": "JC",
+        "scope": "shared",
+        "unavailable_roles": []
+      },
+      {
+        "artifact": "SepACap_JC_SK",
+        "train": "JC",
+        "test": "SK",
+        "scope": "shared",
+        "unavailable_roles": [
+          "Bar"
+        ]
+      },
+      {
+        "artifact": "SepACap_JC_AB",
+        "train": "JC",
+        "test": "AB",
+        "scope": "shared",
+        "unavailable_roles": [
+          "Bar"
+        ]
+      }
+    ],
+    "target_conditioning": [
+      {
+        "artifact": "K1_4000_JC",
+        "train": "SK",
+        "test": "JC",
+        "condition": "Part",
+        "scope": "shared",
+        "validation_selection": "jc_inclusive",
+        "unavailable_roles": [
+          "Lead"
+        ]
+      },
+      {
+        "artifact": "K5_12000_JC",
+        "train": "SK",
+        "test": "JC",
+        "condition": "Singer",
+        "scope": "shared",
+        "validation_selection": "jc_inclusive",
+        "unavailable_roles": []
+      },
+      {
+        "artifact": "K7_7000_JC",
+        "train": "SK",
+        "test": "JC",
+        "condition": "Dual",
+        "scope": "shared",
+        "validation_selection": "jc_inclusive",
+        "unavailable_roles": []
+      },
+      {
+        "artifact": "L1_119000_SK",
+        "train": "JC",
+        "test": "SK",
+        "condition": "Part",
+        "scope": "shared",
+        "validation_selection": "sk_inclusive",
+        "unavailable_roles": [
+          "Bar"
+        ]
+      },
+      {
+        "artifact": "L3_184000_SK",
+        "train": "JC",
+        "test": "SK",
+        "condition": "Singer",
+        "scope": "shared",
+        "validation_selection": "sk_inclusive",
+        "unavailable_roles": []
+      },
+      {
+        "artifact": "L4_188000_SK",
+        "train": "JC",
+        "test": "SK",
+        "condition": "Dual",
+        "scope": "shared",
+        "validation_selection": "sk_inclusive",
+        "unavailable_roles": []
+      }
+    ],
+    "development_a": [
+      {
+        "model": "K5",
+        "train": "SK",
+        "selection": "SK",
+        "step": 179000,
+        "scope": "shared",
+        "artifacts": {
+          "JC": "K5_179000_JC",
+          "SK": "K5_179000_SK"
+        }
+      },
+      {
+        "model": "K5",
+        "train": "SK",
+        "selection": "JC",
+        "step": 12000,
+        "scope": "shared",
+        "artifacts": {
+          "JC": "K5_12000_JC",
+          "SK": "K5_12000_SK"
+        }
+      },
+      {
+        "model": "K5",
+        "train": "SK",
+        "selection": "Pooled",
+        "step": 106000,
+        "scope": "shared",
+        "artifacts": {
+          "JC": "K5_106000_JC",
+          "SK": "K5_106000_SK"
+        }
+      },
+      {
+        "model": "M3",
+        "train": "JC+SK",
+        "selection": "JC",
+        "step": 195000,
+        "scope": "shared",
+        "artifacts": {
+          "JC": "M3_195000_JC",
+          "SK": "M3_195000_SK"
+        }
+      },
+      {
+        "model": "M3",
+        "train": "JC+SK",
+        "selection": "SK",
+        "step": 198000,
+        "scope": "shared",
+        "artifacts": {
+          "JC": "M3_198000_JC",
+          "SK": "M3_198000_SK"
+        }
+      },
+      {
+        "model": "M3",
+        "train": "JC+SK",
+        "selection": "Pooled",
+        "step": 195000,
+        "scope": "shared",
+        "artifacts": {
+          "JC": "M3_195000_JC",
+          "SK": "M3_195000_SK"
+        }
+      }
+    ],
+    "development_b": [
+      {
+        "model": "K5",
+        "train": "SK",
+        "step": 106000,
+        "scope": "inclusive",
+        "validation_selection": "combined_inclusive",
+        "artifacts": {
+          "SK": "K5_106000_SK",
+          "JC": "K5_106000_JC",
+          "AB": "K5_106000_AB"
+        }
+      },
+      {
+        "model": "K6",
+        "train": "SK+remix",
+        "step": 131000,
+        "scope": "inclusive",
+        "validation_selection": "combined_inclusive",
+        "artifacts": {
+          "SK": "K6_131000_SK",
+          "JC": "K6_131000_JC",
+          "AB": "K6_131000_AB"
+        }
+      },
+      {
+        "model": "K6_no_aug",
+        "train": "SK+single",
+        "step": 48000,
+        "scope": "inclusive",
+        "validation_selection": "combined_inclusive",
+        "artifacts": {
+          "SK": "K6_no_aug_48000_SK",
+          "JC": "K6_no_aug_48000_JC",
+          "AB": "K6_no_aug_48000_AB"
+        }
+      }
+    ]
+  },
+  "policy": {
+    "shared": [
+      "S",
+      "A",
+      "T",
+      "B",
+      "VP"
+    ],
+    "aggregation": "each retained recording/part pair has weight one",
+    "AB_target_exclusion": "PC01",
+    "development_a": "shared validation selection and shared test scores",
+    "development_b": "pooled-inclusive validation selection and inclusive test scores",
+    "AI_augmented_rows": "scores/provenance only; training data, recipes, and weights remain deferred"
+  },
+  "limitations": [
+    "Cross-corpus source artifacts retain their historical inference protocols; do not silently replace manuscript values.",
+    "K1 uses final-200k 198k selection; M3 uses final-200k shared 195k/198k.",
+    "SepACap JC train/test overlap cannot be excluded."
+  ]
+}

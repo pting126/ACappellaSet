@@ -21,3 +21,8 @@ integrity, PC01 target exclusion, and original specialist-filter membership.
 exports, and manifest validation. Real-data CUDA training, native initialization
 and sample parity, and exact deterministic resume are recorded in
 `docs/validation/training-runtime.json`.
+
+`test_reproduction.py` checks audited table values, checkpoint steps, shared and
+inclusive scopes, and artifact tamper rejection. `test_benchmark.py` checks target
+output routing, no Lead/Bar relabeling, and unavailable-query exclusion.
+`python scripts/check_release.py` verifies hashes and local documentation links.

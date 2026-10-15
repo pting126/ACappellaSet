@@ -19,7 +19,8 @@ Conditioned inference, portable training recipes, and exact historical split man
 | Fixed/specialist inference code | All 3 fixed models and 12 original specialists registered; unpublished weights must be supplied locally |
 | Fixed/specialist training | Pinned MSS patch and portable launcher; see validation limits in the training guide |
 | Specialist data preparation | Runnable; preserves the different JC and SK residual recipes |
-| Canonical scoring | Runnable on explicitly paired full-song WAVs |
+| Canonical scoring | Saved-WAV scoring and exact-cohort benchmark driver |
+| Table reproduction | Four tables from 3,293 archived per-pair scores with explicit selections and scope |
 | Shared conditioned inference | Seven recipes / 12 selections; CPU checkpoint and CUDA full-song parity passed; weights supplied locally |
 | Shared conditioned training | Seven recipes; clean CUDA environment, native initialization/data parity, and deterministic resume verified |
 | Exact historical splits | Ten manifest sets and original SK specialist filters; audio verified on research storage |
@@ -60,6 +61,8 @@ python evaluate.py --manifest /path/to/pairs.csv --output outputs/scores
 
 See [specialist preparation](docs/preparation.md), [evaluation](docs/evaluation.md),
 and [training](docs/training.md) for input formats and supported recipes.
+[Runnable examples](examples/README.md) cover fixed, part, singer and dual queries;
+[paper reproduction](docs/reproduction.md) covers archived tables and fresh benchmarks.
 For part-, singer-, and dual-conditioned queries, see [conditioned inference](docs/conditioned-inference.md).
 `train.py --dry-run` verifies the original fixed/specialist training setup before
 launching it. These scripts do not provide missing checkpoint downloads or dataset audio.
@@ -105,6 +108,9 @@ ACappellaSet/
 ├── prepare_data.py               # Exact historical manifests against local audio
 ├── prepare_specialists.py        # Corpus-specific two-stem preparation
 ├── evaluate.py                   # Canonical scoring of saved estimates
+├── benchmark.py                  # Frozen-checkpoint test cohorts
+├── reproduce.py                  # Tables from archived per-pair scores
+├── reproduction/                 # Scoped score artifacts and provenance
 ├── evaluation/                   # Metrics and pair-weighted reporting
 ├── models/                       # Architecture and inference adapter
 ├── configs/                      # Fixed, specialist, conditioned configs
@@ -116,7 +122,7 @@ ACappellaSet/
 ├── scripts/                      # Verified MSS patch installer
 ├── manifests/                    # Models, dataset, candidate checkpoints, splits
 ├── third_party/                  # Source provenance and retained licenses
-├── examples/                     # Public audio example: pending
+├── examples/                     # Runnable commands and synthetic smoke input
 ├── tests/                        # Inference behavioral tests
 └── docs/                         # Guides, checkpoint checklist, validation report
 ```

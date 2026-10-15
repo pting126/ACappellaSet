@@ -16,7 +16,8 @@ from models.conditioned import separate
 from models.query import ROLE_VOCAB
 
 
-def evaluate_model(model, config, spec, manifest, corpus, device, split='valid', allow_fallback=False):
+def evaluate_model(model, config, spec, manifest, corpus, device, split='valid', allow_fallback=False,
+                   allowed_roles=None):
     manifest = Path(manifest)
     with (manifest/f'eval_pairs_{split}_correct.csv').open(newline='') as stream:
         pairs = list(csv.DictReader(stream))
@@ -30,6 +31,9 @@ def evaluate_model(model, config, spec, manifest, corpus, device, split='valid',
         groups[row['track_id'],row['part']].append(row)
     scores, exclusions = [], []
     for (track, role), group in sorted(groups.items()):
+        if allowed_roles is not None and role not in allowed_roles:
+            exclusions.append({'track_id':track,'role':role,'reason':'unavailable_part_query'})
+            continue
         first = group[0]
         for field in ('song_id','mixture_path','target_path','singer_id'):
             if len({r[field] for r in group}) != 1:
