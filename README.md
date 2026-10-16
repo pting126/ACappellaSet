@@ -3,7 +3,7 @@
 Dataset resources, model weights, and code for a cappella source separation.
 
 **Fixed_6stem_htdemucs_SKnJC weights and Linux CPU inference are available.** Download the
-110 MB portable checkpoint from [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models)
+110 MB portable checkpoint from [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models)
 using the verified download command below. The dataset is being prepared for
 Zenodo. Original fixed/specialist scripts, data preparation, and canonical scoring are included.
 Conditioned inference, portable training recipes, and exact historical split manifests are included.
@@ -14,7 +14,7 @@ Conditioned inference, portable training recipes, and exact historical split man
 | --- | --- |
 | Fixed_6stem_htdemucs_SKnJC inference | Implemented; actual-checkpoint Linux CPU validation passed |
 | Checkpoint inventory | 27 active checkpoints, 2 deferred AI-augmented checkpoints; external baseline linked |
-| Public checkpoint downloads | Fixed_6stem_htdemucs_SKnJC available on [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models) |
+| Public checkpoint downloads | Fixed_6stem_htdemucs_SKnJC available on [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models) |
 | Dataset and annotations | Zenodo dataset record pending |
 | Fixed/specialist inference code | All 3 fixed models and 12 original specialists registered; unpublished weights must be supplied locally |
 | Fixed/specialist training | Pinned MSS patch and portable launcher; see validation limits in the training guide |
@@ -85,7 +85,7 @@ The AI-augmented K6 and K6_no_aug releases are deferred.
 The [inference registry](manifests/models.json) separately records models the
 public code can load. See [model documentation](docs/models.md).
 
-Weights are hosted in the [Hugging Face model repository](https://huggingface.co/pting126/ACappellaSet-models),
+Weights are hosted in the [Hugging Face model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models),
 with verified checksums and applicable licenses. Fixed_6stem_htdemucs_SKnJC is available;
 other checkpoints remain in preparation. A final paper snapshot may also
 be archived on Zenodo. Large checkpoints are not committed to this GitHub repository.
@@ -137,7 +137,7 @@ the included [K/L/M recipes](docs/conditioned-training.md) and vendored architec
 Original code and documentation use the [MIT license](LICENSE). Vendored and
 adapted code retains its upstream notices; see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-Fixed_6stem_htdemucs_SKnJC weights use Apache-2.0; see the [weight license](https://huggingface.co/pting126/ACappellaSet-models/blob/main/fixed/SKnJC/legacy/LICENSE).
+Fixed_6stem_htdemucs_SKnJC weights use Apache-2.0; see the [weight license](https://huggingface.co/AcappellaSet/ACappellaSet-Models/blob/main/fixed/SKnJC/legacy/LICENSE).
 The 13 natural SK-only weights are assigned Apache-2.0. JC-trained weight
 terms require clarification; the existing Combined release retains its published
 license. Dataset audio and third-party rights are separate from project licensing.

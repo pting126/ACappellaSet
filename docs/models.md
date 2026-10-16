@@ -3,7 +3,7 @@
 The release registry is [`manifests/models.json`](../manifests/models.json).
 It contains fixed and original specialist identities and inference settings.
 The [conditioned registry](../manifests/conditioned.json) adds seven recipes covering 12 active selections.
-Combined portable weights are available. The [Hugging Face model repository](https://huggingface.co/pting126/ACappellaSet-models)
+Combined portable weights are available. The [Hugging Face model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models)
 contains the Combined checkpoint and metadata for the remaining planned weights.
 The [checkpoint checklist](checkpoints.md) covers all candidates identified in
 the updated release plan.

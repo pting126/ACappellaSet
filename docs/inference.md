@@ -1,7 +1,7 @@
 # Fixed-output inference
 
 The Fixed_6stem_htdemucs_SKnJC model has a working inference entry point and a published
-110 MB portable checkpoint on [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models).
+110 MB portable checkpoint on [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models).
 The checkpoint is licensed under Apache-2.0. Training-data terms and third-party
 rights are separate from the rights granted by the project; see [checkpoints](checkpoints.md).
 

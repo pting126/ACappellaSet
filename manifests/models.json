@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "release_in_preparation",
   "hosting": "Hugging Face",
-  "record_url": "https://huggingface.co/pting126/ACappellaSet-models",
+  "record_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models",
   "models": [
     {
       "id": "Fixed_6stem_htdemucs_SKnJC",
@@ -47,7 +47,7 @@
         "bytes": 109822110,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/pting126/ACappellaSet-models/resolve/f1e747c20f8fe8df2271944f995f5fdcd0a10cce/fixed/SKnJC/legacy/Fixed_6stem_htdemucs_SKnJC.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/f1e747c20f8fe8df2271944f995f5fdcd0a10cce/fixed/SKnJC/legacy/Fixed_6stem_htdemucs_SKnJC.pt",
         "status": "published_linux_cpu_validated",
         "validation_report": "docs/validation/combined-ep333-portable-linux-cpu.json",
         "revision": "f1e747c20f8fe8df2271944f995f5fdcd0a10cce",
@@ -594,5 +594,5 @@
       "validation_report": "docs/validation/additional-models-linux-cpu.json"
     }
   ],
-  "repository_id": "pting126/ACappellaSet-models"
+  "repository_id": "AcappellaSet/ACappellaSet-Models"
 }

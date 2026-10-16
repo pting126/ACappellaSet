@@ -1,6 +1,6 @@
 # Checkpoints proposed for release
 
-This inventory covers the updated release plan: **29 project checkpoints (27 active, 2 deferred)**, plus one external baseline to link to. It is a proposed release set, not a claim that weights are already downloadable or that every final paper selection is frozen. The [Hugging Face repository](https://huggingface.co/pting126/ACappellaSet-models)
+This inventory covers the updated release plan: **29 project checkpoints (27 active, 2 deferred)**, plus one external baseline to link to. It is a proposed release set, not a claim that weights are already downloadable or that every final paper selection is frozen. The [Hugging Face repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models)
 is created, but Combined portable weights are published; other artifacts remain in preparation. On 2026-10-14, the
 three historical fixed models and 12 historical specialists were confirmed
 for release inclusion. The ICASSP release excludes newer fixed-six training
@@ -74,7 +74,7 @@ Singer-conditioned and dual models require their matching encoder state. The pub
 
 ## Distribution
 
-Host project weights on [Hugging Face](https://huggingface.co/pting126/ACappellaSet-models). An optional final paper model archive may be deposited on Zenodo. Keep configurations, model code, registry entries, and download utilities in GitHub. Before publishing each weight, freeze its intended use, verify loading and inference, and record applicable weight/data terms. Fixed_6stem_htdemucs_SKnJC is published under Apache-2.0. The 13 natural SK-only checkpoints
+Host project weights on [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models). An optional final paper model archive may be deposited on Zenodo. Keep configurations, model code, registry entries, and download utilities in GitHub. Before publishing each weight, freeze its intended use, verify loading and inference, and record applicable weight/data terms. Fixed_6stem_htdemucs_SKnJC is published under Apache-2.0. The 13 natural SK-only checkpoints
 are assigned Apache-2.0 following upstream review and project rights-holder
 authorization. JC-trained weight terms require clarification; this does not
 retroactively change the existing Combined license. K6 and K6_no_aug are
