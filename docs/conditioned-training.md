@@ -32,6 +32,9 @@ Provide the official PT6S initializer identified in
 [`initialization.json`](../third_party/initialization.json). Singer and dual
 recipes also require the original WeSpeaker ReDimNet2 B6-LM `avg_model.pt`,
 whose SHA-256 is `b9314cd0184d3823c70a2518d354397bf049832f90fb1d7584ff6c0b0d8b152a`.
+Its [pinned upstream download](https://huggingface.co/Wespeaker/wespeaker-voxceleb-redimnet2-B6-LM/resolve/e34354de2429a45894905bd58c24c22250485b9a/avg_model.pt)
+and verified upstream commit are recorded in
+[`encoder_initialization.json`](../third_party/encoder_initialization.json).
 The trainer verifies these identities before loading them; pretrained files are
 not distributed here. Part-only recipes do not load a singer encoder.
 

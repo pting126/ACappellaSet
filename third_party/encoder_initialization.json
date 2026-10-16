@@ -1,0 +1,11 @@
+{
+  "model": "WeSpeaker ReDimNet2 B6-LM",
+  "repository": "Wespeaker/wespeaker-voxceleb-redimnet2-B6-LM",
+  "revision": "e34354de2429a45894905bd58c24c22250485b9a",
+  "filename": "avg_model.pt",
+  "bytes": 55525357,
+  "sha256": "b9314cd0184d3823c70a2518d354397bf049832f90fb1d7584ff6c0b0d8b152a",
+  "download_url": "https://huggingface.co/Wespeaker/wespeaker-voxceleb-redimnet2-B6-LM/resolve/e34354de2429a45894905bd58c24c22250485b9a/avg_model.pt",
+  "verification_source": "https://huggingface.co/Wespeaker/wespeaker-voxceleb-redimnet2-B6-LM/commit/e34354de2429a45894905bd58c24c22250485b9a",
+  "note": "Upstream LFS identity matches the verified research initializer. This is an initialization dependency, not an ACappellaSet trained weight."
+}
