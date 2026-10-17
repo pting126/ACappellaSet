@@ -25,7 +25,6 @@
   "project_weight_license": null,
   "note": "Initializer identity is verified independently of the project model-weight license decision. The exported ACappellaSet model contains fine-tuned tensors, not this original initializer.",
   "project_weight_license_status": "TBD; upstream weight redistribution and licensing rights unresolved",
-  "historical_project_weight_license": "Apache-2.0 (Combined ep333 previously published only)",
   "upstream_weight_terms_reference": "https://github.com/facebookresearch/demucs/issues/327#issuecomment-1134828611",
   "upstream_weight_license_status": "Unresolved; repository MIT license must not be assumed to cover pretrained weights"
 }

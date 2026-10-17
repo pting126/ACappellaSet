@@ -38,7 +38,7 @@
       },
       "url": null,
       "weight_license": null,
-      "selection_note": "Historical combined checkpoint; portable weights published under Apache-2.0. Training-data terms require separate review.",
+      "selection_note": "Historical combined checkpoint; model-weight licensing is TBD.",
       "sixth_output_note": "other combines JC Lead and SK Baritone training semantics; not separate Lead and Baritone outputs.",
       "validation_report": "docs/validation/combined-ep333-linux-cpu.json",
       "portable_checkpoint": {
@@ -58,10 +58,7 @@
         "fixed-combined-ep333"
       ],
       "display_name": "Fixed_6stem_htdemucs_SKnJC",
-      "license_review_status": "TBD; upstream weight rights unresolved",
-      "historical_weight_license": "Apache-2.0",
-      "historical_license_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/blob/f1e747c20f8fe8df2271944f995f5fdcd0a10cce/fixed/SKnJC/legacy/LICENSE",
-      "historical_license_note": "Previously published under Apache-2.0; current TBD status does not revoke valid prior grants or establish upstream rights."
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "id": "Fixed_6stem_htdemucs_JC",

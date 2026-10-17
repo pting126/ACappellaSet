@@ -138,9 +138,7 @@ Original code and documentation use the [MIT license](LICENSE). Vendored and
 adapted code retains its upstream notices; see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 **Project model-weight license: TBD.** Further weight uploads are paused pending
-upstream rights clarification. Combined/SKnJC was previously published under
-Apache-2.0; this correction does not revoke valid prior grants or establish
-upstream rights. See the [weight licensing status and historical record](https://huggingface.co/AcappellaSet/ACappellaSet-Models/blob/main/WEIGHTS_NOTICE.md).
+upstream rights clarification. See the [weight licensing status](https://huggingface.co/AcappellaSet/ACappellaSet-Models/blob/main/WEIGHTS_NOTICE.md).
 Dataset audio and third-party rights remain separate.
 
 [CITATION.cff](CITATION.cff) currently describes this repository. Paper metadata

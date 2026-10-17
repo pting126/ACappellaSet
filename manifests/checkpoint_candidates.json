@@ -76,10 +76,7 @@
       "weight_license": null,
       "license_review_status": "TBD; upstream weight rights unresolved",
       "research_id": "Combined_ep333",
-      "public_name": "Fixed_6stem_htdemucs_SKnJC",
-      "historical_weight_license": "Apache-2.0",
-      "historical_license_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/blob/f1e747c20f8fe8df2271944f995f5fdcd0a10cce/fixed/SKnJC/legacy/LICENSE",
-      "historical_license_note": "Previously published under Apache-2.0; current TBD status does not revoke valid prior grants or establish upstream rights."
+      "public_name": "Fixed_6stem_htdemucs_SKnJC"
     },
     {
       "model": "JC historical specialists (MSS inference)",

@@ -75,8 +75,6 @@ Singer-conditioned and dual models require their matching encoder state. The pub
 ## Distribution
 
 Host project weights on [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models). An optional final paper model archive may be deposited on Zenodo. Keep configurations, model code, registry entries, and download utilities in GitHub. Before publishing each weight, freeze its intended use, verify loading and inference, and record applicable weight/data terms. **Project weight license: TBD.** Further uploads are paused pending upstream
-weight rights clarification. Combined/SKnJC was previously published under
-Apache-2.0; the [historical record](https://huggingface.co/AcappellaSet/ACappellaSet-Models/blob/main/WEIGHTS_NOTICE.md)
-remains, and valid prior grants are not revoked by this metadata correction.
+weight rights clarification.
 K6 and K6_no_aug remain deferred. Code licensing, technical validation,
 upstream weight rights, and training-data rights are separate.
