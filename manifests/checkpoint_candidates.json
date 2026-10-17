@@ -22,9 +22,9 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta. PC01 excluded here."
       ],
       "selection_horizon_updates": null,
-      "intended_weight_license": "Apache-2.0",
+      "intended_weight_license": null,
       "weight_license": null,
-      "license_review_status": "jc_training_clarification_needed",
+      "license_review_status": "TBD; upstream weight rights unresolved",
       "research_id": "JC_ep321",
       "public_name": "Fixed_6stem_htdemucs_JC"
     },
@@ -47,9 +47,9 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta. PC01 excluded here."
       ],
       "selection_horizon_updates": null,
-      "intended_weight_license": "Apache-2.0",
-      "weight_license": "Apache-2.0",
-      "license_review_status": "sk_natural_authorized",
+      "intended_weight_license": null,
+      "weight_license": null,
+      "license_review_status": "TBD; upstream weight rights unresolved",
       "research_id": "SK_ep279",
       "public_name": "Fixed_6stem_htdemucs_SK"
     },
@@ -72,11 +72,14 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta. PC01 excluded here."
       ],
       "selection_horizon_updates": null,
-      "intended_weight_license": "Apache-2.0",
-      "weight_license": "Apache-2.0",
-      "license_review_status": "jc_training_clarification_needed",
+      "intended_weight_license": null,
+      "weight_license": null,
+      "license_review_status": "TBD; upstream weight rights unresolved",
       "research_id": "Combined_ep333",
-      "public_name": "Fixed_6stem_htdemucs_SKnJC"
+      "public_name": "Fixed_6stem_htdemucs_SKnJC",
+      "historical_weight_license": "Apache-2.0",
+      "historical_license_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/blob/f1e747c20f8fe8df2271944f995f5fdcd0a10cce/fixed/SKnJC/legacy/LICENSE",
+      "historical_license_note": "Previously published under Apache-2.0; current TBD status does not revoke valid prior grants or establish upstream rights."
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -96,9 +99,9 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
       ],
       "selection_horizon_updates": null,
-      "intended_weight_license": "Apache-2.0",
+      "intended_weight_license": null,
       "weight_license": null,
-      "license_review_status": "jc_training_clarification_needed"
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -118,9 +121,9 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
       ],
       "selection_horizon_updates": null,
-      "intended_weight_license": "Apache-2.0",
+      "intended_weight_license": null,
       "weight_license": null,
-      "license_review_status": "jc_training_clarification_needed"
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -140,9 +143,9 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
       ],
       "selection_horizon_updates": null,
-      "intended_weight_license": "Apache-2.0",
+      "intended_weight_license": null,
       "weight_license": null,
-      "license_review_status": "jc_training_clarification_needed"
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -162,9 +165,9 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
       ],
       "selection_horizon_updates": null,
-      "intended_weight_license": "Apache-2.0",
+      "intended_weight_license": null,
       "weight_license": null,
-      "license_review_status": "jc_training_clarification_needed"
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -184,9 +187,9 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
       ],
       "selection_horizon_updates": null,
-      "intended_weight_license": "Apache-2.0",
+      "intended_weight_license": null,
       "weight_license": null,
-      "license_review_status": "jc_training_clarification_needed"
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -206,9 +209,9 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
       ],
       "selection_horizon_updates": null,
-      "intended_weight_license": "Apache-2.0",
+      "intended_weight_license": null,
       "weight_license": null,
-      "license_review_status": "jc_training_clarification_needed"
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -228,9 +231,9 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
       ],
       "selection_horizon_updates": null,
-      "intended_weight_license": "Apache-2.0",
-      "weight_license": "Apache-2.0",
-      "license_review_status": "sk_natural_authorized"
+      "intended_weight_license": null,
+      "weight_license": null,
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -250,9 +253,9 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
       ],
       "selection_horizon_updates": null,
-      "intended_weight_license": "Apache-2.0",
-      "weight_license": "Apache-2.0",
-      "license_review_status": "sk_natural_authorized"
+      "intended_weight_license": null,
+      "weight_license": null,
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -272,9 +275,9 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
       ],
       "selection_horizon_updates": null,
-      "intended_weight_license": "Apache-2.0",
-      "weight_license": "Apache-2.0",
-      "license_review_status": "sk_natural_authorized"
+      "intended_weight_license": null,
+      "weight_license": null,
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -294,9 +297,9 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
       ],
       "selection_horizon_updates": null,
-      "intended_weight_license": "Apache-2.0",
-      "weight_license": "Apache-2.0",
-      "license_review_status": "sk_natural_authorized"
+      "intended_weight_license": null,
+      "weight_license": null,
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -316,9 +319,9 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
       ],
       "selection_horizon_updates": null,
-      "intended_weight_license": "Apache-2.0",
-      "weight_license": "Apache-2.0",
-      "license_review_status": "sk_natural_authorized"
+      "intended_weight_license": null,
+      "weight_license": null,
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -338,9 +341,9 @@
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
       ],
       "selection_horizon_updates": null,
-      "intended_weight_license": "Apache-2.0",
-      "weight_license": "Apache-2.0",
-      "license_review_status": "sk_natural_authorized"
+      "intended_weight_license": null,
+      "weight_license": null,
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "K1",
@@ -367,9 +370,9 @@
         "sha256": "261daa7899501229143136c46a501097caba9ac903650bc9c475c3ee049407b0",
         "preserve_historical": true
       },
-      "intended_weight_license": "Apache-2.0",
-      "weight_license": "Apache-2.0",
-      "license_review_status": "sk_natural_authorized"
+      "intended_weight_license": null,
+      "weight_license": null,
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "L1",
@@ -391,9 +394,9 @@
         "Selection checked through 200,000 updates. Public adapter validation pending."
       ],
       "selection_horizon_updates": 200000,
-      "intended_weight_license": "Apache-2.0",
+      "intended_weight_license": null,
       "weight_license": null,
-      "license_review_status": "jc_training_clarification_needed"
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "K1",
@@ -415,9 +418,9 @@
         "Selection checked through 200,000 updates. Public adapter validation pending."
       ],
       "selection_horizon_updates": 200000,
-      "intended_weight_license": "Apache-2.0",
-      "weight_license": "Apache-2.0",
-      "license_review_status": "sk_natural_authorized"
+      "intended_weight_license": null,
+      "weight_license": null,
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "K5",
@@ -441,9 +444,9 @@
         "Selection checked through 200,000 updates. Public adapter validation pending."
       ],
       "selection_horizon_updates": 200000,
-      "intended_weight_license": "Apache-2.0",
-      "weight_license": "Apache-2.0",
-      "license_review_status": "sk_natural_authorized"
+      "intended_weight_license": null,
+      "weight_license": null,
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "K7",
@@ -465,9 +468,9 @@
         "Selection checked through 200,000 updates. Public adapter validation pending."
       ],
       "selection_horizon_updates": 200000,
-      "intended_weight_license": "Apache-2.0",
-      "weight_license": "Apache-2.0",
-      "license_review_status": "sk_natural_authorized"
+      "intended_weight_license": null,
+      "weight_license": null,
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "L1",
@@ -489,9 +492,9 @@
         "Selection checked through 200,000 updates. Public adapter validation pending."
       ],
       "selection_horizon_updates": 200000,
-      "intended_weight_license": "Apache-2.0",
+      "intended_weight_license": null,
       "weight_license": null,
-      "license_review_status": "jc_training_clarification_needed"
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "L3",
@@ -513,9 +516,9 @@
         "Selection checked through 200,000 updates. Public adapter validation pending."
       ],
       "selection_horizon_updates": 200000,
-      "intended_weight_license": "Apache-2.0",
+      "intended_weight_license": null,
       "weight_license": null,
-      "license_review_status": "jc_training_clarification_needed"
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "L4",
@@ -537,9 +540,9 @@
         "Selection checked through 200,000 updates. Public adapter validation pending."
       ],
       "selection_horizon_updates": 200000,
-      "intended_weight_license": "Apache-2.0",
+      "intended_weight_license": null,
       "weight_license": null,
-      "license_review_status": "jc_training_clarification_needed"
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "K5",
@@ -561,9 +564,9 @@
         "Selection checked through 200,000 updates. Public adapter validation pending."
       ],
       "selection_horizon_updates": 200000,
-      "intended_weight_license": "Apache-2.0",
-      "weight_license": "Apache-2.0",
-      "license_review_status": "sk_natural_authorized"
+      "intended_weight_license": null,
+      "weight_license": null,
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "K5",
@@ -587,9 +590,9 @@
         "Selection checked through 200,000 updates. Public adapter validation pending."
       ],
       "selection_horizon_updates": 200000,
-      "intended_weight_license": "Apache-2.0",
-      "weight_license": "Apache-2.0",
-      "license_review_status": "sk_natural_authorized"
+      "intended_weight_license": null,
+      "weight_license": null,
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "M3",
@@ -616,9 +619,9 @@
         "sha256": "03e74a6ae7f56d647c66e582f368f714b5504f8c657e78fb7f6c2142d0ae8ab1",
         "preserve_historical": true
       },
-      "intended_weight_license": "Apache-2.0",
+      "intended_weight_license": null,
       "weight_license": null,
-      "license_review_status": "jc_training_clarification_needed"
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "M3",
@@ -646,9 +649,9 @@
         "sha256": "f99b7ee04a026c2c628bcfaac3ddbe7a5ffabc95bb96e9d0889e3079e8db1b06",
         "preserve_historical": true
       },
-      "intended_weight_license": "Apache-2.0",
+      "intended_weight_license": null,
       "weight_license": null,
-      "license_review_status": "jc_training_clarification_needed"
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "model": "K6",
@@ -670,9 +673,9 @@
         "Selection checked through 200,000 updates. Public adapter validation pending."
       ],
       "selection_horizon_updates": 200000,
-      "intended_weight_license": "Apache-2.0",
+      "intended_weight_license": null,
       "weight_license": null,
-      "license_review_status": "ai_augmentation_deferred"
+      "license_review_status": "TBD; upstream weight rights unresolved; AI augmentation release deferred"
     },
     {
       "model": "K6_no_aug",
@@ -695,9 +698,9 @@
       ],
       "public_name": "SK single-clone singer-conditioned (waveform augmentation remains enabled)",
       "selection_horizon_updates": 200000,
-      "intended_weight_license": "Apache-2.0",
+      "intended_weight_license": null,
       "weight_license": null,
-      "license_review_status": "ai_augmentation_deferred"
+      "license_review_status": "TBD; upstream weight rights unresolved; AI augmentation release deferred"
     },
     {
       "model": "SepACap_JC",
@@ -723,5 +726,5 @@
   "confirmed_historical_release_count": 15,
   "active_release_checkpoint_count": 27,
   "deferred_checkpoint_count": 2,
-  "preferred_weight_license": "Apache-2.0"
+  "preferred_weight_license": null
 }

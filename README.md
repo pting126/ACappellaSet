@@ -137,10 +137,11 @@ the included [K/L/M recipes](docs/conditioned-training.md) and vendored architec
 Original code and documentation use the [MIT license](LICENSE). Vendored and
 adapted code retains its upstream notices; see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-Fixed_6stem_htdemucs_SKnJC weights use Apache-2.0; see the [weight license](https://huggingface.co/AcappellaSet/ACappellaSet-Models/blob/main/fixed/SKnJC/legacy/LICENSE).
-The 13 natural SK-only weights are assigned Apache-2.0. JC-trained weight
-terms require clarification; the existing Combined release retains its published
-license. Dataset audio and third-party rights are separate from project licensing.
+**Project model-weight license: TBD.** Further weight uploads are paused pending
+upstream rights clarification. Combined/SKnJC was previously published under
+Apache-2.0; this correction does not revoke valid prior grants or establish
+upstream rights. See the [weight licensing status and historical record](https://huggingface.co/AcappellaSet/ACappellaSet-Models/blob/main/WEIGHTS_NOTICE.md).
+Dataset audio and third-party rights remain separate.
 
 [CITATION.cff](CITATION.cff) currently describes this repository. Paper metadata
 and Zenodo DOIs will be added when available.

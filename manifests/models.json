@@ -37,7 +37,7 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": "Apache-2.0",
+      "weight_license": null,
       "selection_note": "Historical combined checkpoint; portable weights published under Apache-2.0. Training-data terms require separate review.",
       "sixth_output_note": "other combines JC Lead and SK Baritone training semantics; not separate Lead and Baritone outputs.",
       "validation_report": "docs/validation/combined-ep333-linux-cpu.json",
@@ -57,7 +57,11 @@
         "combined-ep333",
         "fixed-combined-ep333"
       ],
-      "display_name": "Fixed_6stem_htdemucs_SKnJC"
+      "display_name": "Fixed_6stem_htdemucs_SKnJC",
+      "license_review_status": "TBD; upstream weight rights unresolved",
+      "historical_weight_license": "Apache-2.0",
+      "historical_license_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/blob/f1e747c20f8fe8df2271944f995f5fdcd0a10cce/fixed/SKnJC/legacy/LICENSE",
+      "historical_license_note": "Previously published under Apache-2.0; current TBD status does not revoke valid prior grants or establish upstream rights."
     },
     {
       "id": "Fixed_6stem_htdemucs_JC",
@@ -96,7 +100,8 @@
       "aliases": [
         "fixed-jc-ep321"
       ],
-      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+      "validation_report": "docs/validation/additional-models-linux-cpu.json",
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "id": "Fixed_6stem_htdemucs_SK",
@@ -131,11 +136,12 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": "Apache-2.0",
+      "weight_license": null,
       "aliases": [
         "fixed-sk-ep279"
       ],
-      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+      "validation_report": "docs/validation/additional-models-linux-cpu.json",
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "id": "specialists-jc-alto-ep223",
@@ -173,7 +179,8 @@
         "residual_index": 0,
         "target_index": 1
       },
-      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+      "validation_report": "docs/validation/additional-models-linux-cpu.json",
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "id": "specialists-jc-bass-ep110",
@@ -211,7 +218,8 @@
         "residual_index": 0,
         "target_index": 1
       },
-      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+      "validation_report": "docs/validation/additional-models-linux-cpu.json",
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "id": "specialists-jc-lead-ep149",
@@ -249,7 +257,8 @@
         "residual_index": 0,
         "target_index": 1
       },
-      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+      "validation_report": "docs/validation/additional-models-linux-cpu.json",
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "id": "specialists-jc-soprano-ep162",
@@ -287,7 +296,8 @@
         "residual_index": 0,
         "target_index": 1
       },
-      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+      "validation_report": "docs/validation/additional-models-linux-cpu.json",
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "id": "specialists-jc-tenor-ep119",
@@ -325,7 +335,8 @@
         "residual_index": 0,
         "target_index": 1
       },
-      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+      "validation_report": "docs/validation/additional-models-linux-cpu.json",
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "id": "specialists-jc-vp-ep45",
@@ -363,7 +374,8 @@
         "residual_index": 0,
         "target_index": 1
       },
-      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+      "validation_report": "docs/validation/additional-models-linux-cpu.json",
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "id": "specialists-sk-alto-ep237",
@@ -394,14 +406,15 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": "Apache-2.0",
+      "weight_license": null,
       "aliases": [],
       "target_role": "alto",
       "output_contract": {
         "residual_index": 0,
         "target_index": 1
       },
-      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+      "validation_report": "docs/validation/additional-models-linux-cpu.json",
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "id": "specialists-sk-baritone-ep43",
@@ -432,14 +445,15 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": "Apache-2.0",
+      "weight_license": null,
       "aliases": [],
       "target_role": "baritone",
       "output_contract": {
         "residual_index": 0,
         "target_index": 1
       },
-      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+      "validation_report": "docs/validation/additional-models-linux-cpu.json",
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "id": "specialists-sk-bass-ep182",
@@ -470,14 +484,15 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": "Apache-2.0",
+      "weight_license": null,
       "aliases": [],
       "target_role": "bass",
       "output_contract": {
         "residual_index": 0,
         "target_index": 1
       },
-      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+      "validation_report": "docs/validation/additional-models-linux-cpu.json",
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "id": "specialists-sk-soprano-ep220",
@@ -508,14 +523,15 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": "Apache-2.0",
+      "weight_license": null,
       "aliases": [],
       "target_role": "soprano",
       "output_contract": {
         "residual_index": 0,
         "target_index": 1
       },
-      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+      "validation_report": "docs/validation/additional-models-linux-cpu.json",
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "id": "specialists-sk-tenor-ep214",
@@ -546,14 +562,15 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": "Apache-2.0",
+      "weight_license": null,
       "aliases": [],
       "target_role": "tenor",
       "output_contract": {
         "residual_index": 0,
         "target_index": 1
       },
-      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+      "validation_report": "docs/validation/additional-models-linux-cpu.json",
+      "license_review_status": "TBD; upstream weight rights unresolved"
     },
     {
       "id": "specialists-sk-vp-ep205",
@@ -584,14 +601,15 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": "Apache-2.0",
+      "weight_license": null,
       "aliases": [],
       "target_role": "vp",
       "output_contract": {
         "residual_index": 0,
         "target_index": 1
       },
-      "validation_report": "docs/validation/additional-models-linux-cpu.json"
+      "validation_report": "docs/validation/additional-models-linux-cpu.json",
+      "license_review_status": "TBD; upstream weight rights unresolved"
     }
   ],
   "repository_id": "AcappellaSet/ACappellaSet-Models"
