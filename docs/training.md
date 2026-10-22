@@ -34,6 +34,12 @@ listed by `python inference.py --list-models`, one directory per track. Preserve
 composition-level splits: every recording variant of a composition belongs to
 the same split. This launcher does not create or certify dataset splits.
 
+For a locally downloaded ACappellaSet release, first run the
+[release preparation command](preparation.md#from-a-downloaded-acappellaset-release).
+For `Fixed_6stem_htdemucs_SK`, use its `SK/train_flat` and `SK/valid_flat` directories
+as `--train-data` and `--valid-data`. No dataset authentication is performed by
+training scripts. JC inputs and initialization weights must be obtained separately.
+
 For specialists, see [data preparation](preparation.md). Historical SK Soprano
 and Baritone training used additional real-target filtering. The general
 preparation script supports those exact inventories with

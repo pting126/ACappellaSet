@@ -26,3 +26,9 @@ and sample parity, and exact deterministic resume are recorded in
 inclusive scopes, and artifact tamper rejection. `test_benchmark.py` checks target
 output routing, no Lead/Bar relabeling, and unavailable-query exclusion.
 `python scripts/check_release.py` verifies hashes and local documentation links.
+
+`test_release_inputs.py` exercises offline release conversion through the CLI,
+relative links, independent copies, explicit absent-role silence, source identity
+and split checks, corrupted/missing/non-finite audio, rollback, and downstream
+specialist inputs. The full real-release check is recorded separately in
+`docs/validation/release-inputs-2026-10-22.json`.

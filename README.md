@@ -104,9 +104,17 @@ distributed as primary and alternate audio ZIPs with standalone metadata,
 song-level reference splits, documentation, and checksums. See the
 [dataset guide](docs/dataset.md) for access, download, extraction, and format details.
 
-The preparation scripts currently require the historical pre-split six-stem
-layout. They do not yet convert the published archive layout to those inputs;
-this is a code integration limitation, not a pending dataset release.
+Prepare the downloaded and extracted release locally:
+
+```bash
+python prepare_data.py --release-root /path/to/AcappellaSet --output datasets/release-inputs
+```
+
+This verifies the release, preserves the recorded splits and mixtures, and
+creates the required SK/AB input layout using links plus absent-role silence.
+It does not download audio or require Hugging Face credentials. See
+[data preparation](docs/preparation.md) for the next training/evaluation commands;
+recipes requiring JaCappella still need that separate corpus.
 See the [training guide](docs/training.md) and [runtime validation report](docs/validation/training-runtime.json).
 
 ## Repository layout
@@ -116,7 +124,7 @@ ACappellaSet/
 ├── download.py                   # Revision-pinned download with SHA-256 verification
 ├── inference.py                  # Fixed, specialist, and conditioned inference
 ├── train.py                      # MSS and conditioned training recipes
-├── prepare_data.py               # Exact historical manifests against local audio
+├── prepare_data.py               # Local release conversion and historical manifests
 ├── prepare_specialists.py        # Corpus-specific two-stem preparation
 ├── evaluate.py                   # Canonical scoring of saved estimates
 ├── benchmark.py                  # Frozen-checkpoint test cohorts

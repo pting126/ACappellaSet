@@ -126,11 +126,26 @@ def materialize(name, roots, output, metadata_only=False):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--set',required=True,help='Registered historical set, e.g. train_sk, valid_jc, test_sk')
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument('--set', help='Registered historical set, e.g. train_sk, valid_jc, test_sk')
+    mode.add_argument('--release-root', type=Path, help='Locally downloaded and extracted ACappellaSet v1.0 root')
+    parser.add_argument('--link-mode', choices=('symlink', 'copy'), default=None,
+                        help='Release layout only: symlink (default) avoids audio copies; copy is self-contained')
     parser.add_argument('--root',action='append',default=[],help='Corpus root, e.g. SK=/path/to/6_stem')
     parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--metadata-only',action='store_true',help='Materialize paths without claiming audio readiness')
     args=parser.parse_args()
+    if args.release_root is not None:
+        if args.root or args.metadata_only:
+            parser.error('--release-root cannot be combined with --root or --metadata-only')
+        from data.release import prepare_release
+        result = prepare_release(args.release_root, args.output, args.link_mode or 'symlink')
+        print(json.dumps({'recordings': len(result['recordings']), 'roots': result['roots'],
+                          'verified_audio_files': sum(len(r['files']) for r in result['recordings']),
+                          'silent_padding_files': sum(len(r['missing_roles']) for r in result['recordings'])}))
+        return
+    if args.link_mode is not None:
+        parser.error('--link-mode requires --release-root')
     result=materialize(args.set,parse_roots(args.root),args.output,args.metadata_only)
     print(json.dumps({'set':result['set'],'verified_audio_files':len(result['audio']),
                       'metadata_only':result['metadata_only']}))

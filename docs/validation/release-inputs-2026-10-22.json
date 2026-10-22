@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "date": "2026-10-22",
+  "scope": "Offline conversion of the pinned extracted ACappellaSet v1.0 release to historical SK/AB inputs",
+  "dataset_revision": "21720788c29ae6c284f3b216b842d5327c940ca8",
+  "release_recordings": 107,
+  "audio_files_verified": 647,
+  "linked_audio_files": 647,
+  "silent_padding_files": {
+    "SK": 97,
+    "AB": 5
+  },
+  "historical_SK_split_counts": {
+    "train_flat": 69,
+    "valid_flat": 11,
+    "test_flat": 20
+  },
+  "historical_referenced_paths_mapped": 629,
+  "historical_source_hashes_matched": 343,
+  "checks": [
+    "All released audio verified against pinned file hashes, sizes, headers, alignment and finite samples",
+    "All 749 prepared files independently checked; all padding decoded as exact silence",
+    "Released mixtures and stem bytes preserved; no normalization or recomputation",
+    "PC01 retained in layout but excluded from the 25-pair historical AB target manifest",
+    "No original scientific manifest rows, enrollment rules, model code, or source audio changed",
+    "Actual local CLI executed against the complete release, without authentication or network downloads"
+  ],
+  "materialized_sets": [
+    {
+      "set": "train_sk",
+      "verified_audio_files": 412
+    },
+    {
+      "set": "valid_sk",
+      "verified_audio_files": 406
+    },
+    {
+      "set": "valid_m_sk",
+      "verified_audio_files": 406
+    },
+    {
+      "set": "test_sk",
+      "verified_audio_files": 127
+    },
+    {
+      "set": "test_ab",
+      "verified_audio_files": 32
+    }
+  ],
+  "training_loader_checks": [
+    {
+      "conditioning": "role",
+      "rows": 13357,
+      "sample_shape": [
+        2,
+        441000
+      ]
+    },
+    {
+      "conditioning": "enrollment",
+      "rows": 13357,
+      "sample_shape": [
+        2,
+        441000
+      ]
+    },
+    {
+      "conditioning": "dual",
+      "rows": 13357,
+      "sample_shape": [
+        2,
+        441000
+      ]
+    }
+  ],
+  "specialist_full_recording_checks": 3,
+  "automated_tests_passed": 52,
+  "release_integrity_checks": 69,
+  "limits": [
+    "JaCappella is separate and was not supplied or reconverted by this release adapter.",
+    "The loader smoke check reads one sample per conditioning mode from the full 13357-row training manifest; it is not a new training/convergence experiment.",
+    "Historical source hashes are checked where retained; generated silence matches absent-role samples, not historical WAV container bytes.",
+    "Relative symlinks require the source release to remain available at the same relative location; copy mode is self-contained.",
+    "Adapter requires the pinned release metadata and both extracted audio archives; custom metadata is not silently accepted."
+  ]
+}

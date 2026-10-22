@@ -99,12 +99,20 @@ and the code's [evaluation guide](evaluation.md) for the precise protocol.
 
 ## Training and evaluation inputs
 
-Dataset publication is complete. Connecting the archive layout directly to the
-historical training inputs is a separate code integration task.
-`prepare_data.py` currently resolves historical audio roots and verifies files;
-`prepare_specialists.py` expects an already split six-stem tree. Neither converts
-the published primary/alternate layout or generates absent-role padding.
-Keep the downloaded release separate from any derived training inputs.
+After downloading and extracting the approved dataset, create compatible local
+inputs without copying the real recordings:
+
+```bash
+python prepare_data.py --release-root /path/to/AcappellaSet --output datasets/release-inputs
+```
+
+This offline command verifies release hashes, maps recordings to historical
+SK/AB paths and splits, and generates silent padding for explicitly absent roles.
+It preserves released mixtures and leaves the source dataset untouched. The
+default output uses symlinks; `--link-mode copy` creates an independent copy.
+See [preparation](preparation.md#from-a-downloaded-acappellaset-release) for the
+resulting training paths and subsequent manifest commands. Dataset access and
+manual downloading remain the user's responsibility.
 
 Exact historical composition assignments, target rows, enrollment galleries,
 and specialist filters are preserved in

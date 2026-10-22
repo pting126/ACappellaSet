@@ -240,6 +240,6 @@
   },
   "notes": [
     "ARCHIVED_AUG_LINK values are unused historical prepared_link metadata, not active training/enrollment audio.",
-    "These are preserved historical experiment populations. ACappellaSet v1.0 is published on Hugging Face; conversion from its primary/alternate archive layout is not yet implemented by the preparation scripts."
+    "These are preserved historical experiment populations. ACappellaSet v1.0 is published on Hugging Face; prepare_data.py --release-root maps its locally extracted primary/alternate layout to the expected SK/AB inputs with explicit absent-role padding."
   ]
 }

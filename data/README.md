@@ -11,5 +11,5 @@ optional exact SK real-target filters. See [preparation](../docs/preparation.md)
 No audio is stored here. The official
 [ACappellaSet v1.0 dataset](https://huggingface.co/datasets/AcappellaSet/ACappellaSet)
 is published separately. The current manifests describe the historical experiment
-layout; conversion from the release's primary/alternate archive layout is not
-yet implemented. See the [dataset guide](../docs/dataset.md).
+layout. `prepare_data.py --release-root` uses `data/release.py` to convert the
+locally extracted release into verified SK/AB inputs with absent-role padding. See the [dataset guide](../docs/dataset.md).

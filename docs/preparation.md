@@ -1,4 +1,78 @@
-# Preparing original part-specific training data
+# Preparing local training and evaluation data
+
+## From a downloaded ACappellaSet release
+
+Obtain dataset approval and download/extract both audio archives yourself, as
+shown in the [dataset guide](dataset.md). All commands below operate on local
+files. They do not connect to Hugging Face, download audio, or require tokens.
+Use the Python environment described in the [inference guide](inference.md).
+
+Pass the extracted release root, containing `file_manifest.csv`, `metadata/`,
+and `audio/`, and a **new output directory outside the release root**:
+
+```bash
+python prepare_data.py --release-root /path/to/AcappellaSet --output datasets/release-inputs
+```
+
+This verifies the metadata against the dataset revision in
+[`manifests/dataset.json`](../manifests/dataset.json), verifies every audio file's
+SHA-256, size, header, alignment and finite samples, and creates:
+
+```text
+datasets/release-inputs/
+├── SK/train_flat/<recording_id>/{mixture,soprano,alto,tenor,baritone,bass,vp}.wav
+├── SK/valid_flat/<recording_id>/...
+├── SK/test_flat/<recording_id>/...
+├── AB/<recording_id>/...
+└── release_preparation.json
+```
+
+The SK split counts remain **69 / 11 / 20 recording versions**. All seven AB
+versions are retained, including PC01; existing benchmark manifests still
+exclude PC01 targets and choose their historical recording versions. Song-level
+split assignments are checked against the historical inventory, never regenerated.
+
+By default the 647 released audio files become relative symlinks. Their bytes,
+mixtures, gain, and role names remain unchanged. The command creates 102 aligned,
+16-bit PCM silent WAVs only for roles explicitly marked `0` in the release
+metadata: 97 SK and five AB padding files. This consumes additional disk space
+for silence, but does not duplicate the real recordings. Padding reproduces
+absent-role waveforms, not historical WAV container bytes. Historical target and
+enrollment hashes are checked wherever recorded. Missing or corrupted active
+stems cause an error; they are never silently replaced with zeros.
+
+Keep the source release available at the same relative location. To make a
+self-contained output, or when symlinks are unavailable, add `--link-mode copy`;
+this requires enough disk space for another audio copy. Both modes leave the
+source release untouched and refuse to overwrite existing output directories.
+The receipt records the source revision, mappings, hashes, and generated padding.
+
+For original fixed SK training, pass `datasets/release-inputs/SK/train_flat`
+and `datasets/release-inputs/SK/valid_flat` as `--train-data` and `--valid-data`
+to the [existing training command](training.md). For specialists, pass
+`datasets/release-inputs/SK` to `prepare_specialists.py` as shown below.
+
+For conditioned training or the benchmark CLI, prepare the existing manifests:
+
+```bash
+python prepare_data.py --set train_sk --root SK=datasets/release-inputs/SK --output datasets/manifests/train_sk
+python prepare_data.py --set valid_sk --root SK=datasets/release-inputs/SK --output datasets/manifests/valid_sk
+python prepare_data.py --set test_sk --root SK=datasets/release-inputs/SK --output datasets/manifests/test_sk
+python prepare_data.py --set test_ab --root AB=datasets/release-inputs/AB --output datasets/manifests/test_ab
+```
+
+These commands retain the original target rows, singer identities, enrollment
+rules, and exclusions. Updated descriptive release metadata does not silently
+rewrite historical experimental annotations. Training and benchmark invocations
+then use the resulting manifest directories, following the guides below.
+
+JaCappella (JC) is a separate dataset: obtain and prepare it separately for recipes
+that require it, including K-family JC validation. Supply its existing root with
+`--root JC=/path/to/JC`; the release conversion neither supplies nor changes JC.
+Custom datasets or modified metadata are not the pinned v1.0 release; use the
+existing input-layout workflow instead of disabling integrity checks.
+
+## Original part-specific inputs
 
 `prepare_specialists.py` consumes an **already prepared, already split** six-stem
 corpus. It does not download audio, resample files, decide splits, or create
@@ -17,8 +91,8 @@ python prepare_specialists.py --corpus SK --input /path/to/sk/6_stem --output da
 
 These counts describe the historical six-stem inputs. The published
 [ACappellaSet v1.0 archives](https://huggingface.co/datasets/AcappellaSet/ACappellaSet)
-use a different layout and omit absent-role padding WAVs; see the
-[dataset guide](dataset.md#training-and-evaluation-inputs). All inputs must be
+use a different layout and omit absent-role padding WAVs. Run the local release
+conversion above before invoking this specialist preparation command. All inputs must be
 aligned, finite, 44.1 kHz stereo.
 Summation order matches the original preparation scripts. There is no peak
 normalization or clipping; generated files are Float32 WAVs.
@@ -92,7 +166,10 @@ counts. Composition IDs are disjoint across train, validation, and test.
 
 These manifests describe the historical experiments. The official dataset is
 published; its version, revision, file URLs, and checksums are recorded in
-[`manifests/dataset.json`](../manifests/dataset.json). Conversion from its
-primary/alternate archive layout to these historical input paths and absent-role
-padding is not yet implemented by the preparation scripts. JaCappella (JC) is a
+[`manifests/dataset.json`](../manifests/dataset.json). The `--release-root` mode above converts its primary/alternate layout to these
+input paths and generates explicitly absent-role padding. JaCappella (JC) is a
 separate corpus and is not included in ACappellaSet.
+
+The [release-input validation report](validation/release-inputs-2026-10-22.json)
+records the complete 647-file conversion check, historical manifest preparation,
+actual training-loader reads, and regression tests.

@@ -10,6 +10,7 @@ See [preparation](../../docs/preparation.md) for layouts and enrollment policies
 The official [ACappellaSet v1.0 dataset](https://huggingface.co/datasets/AcappellaSet/ACappellaSet)
 is published, with one `song_id,split` assignment per song in `metadata/splits.csv`.
 These query/enrollment manifests preserve the historical experiment inputs;
-conversion from the published audio layout is not yet implemented. See the
+`prepare_data.py --release-root` maps the locally extracted release to their
+expected SK/AB paths without rewriting their scientific fields. See the
 [dataset registry](../dataset.json) for the release revision and checksums.
 Do not regenerate random splits or infer enrollment eligibility from filenames.
