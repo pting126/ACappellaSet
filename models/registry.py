@@ -1,4 +1,4 @@
-"""Dependency-free model discovery, including explicit publication status."""
+"""Dependency-free model discovery; URL registration does not imply access."""
 
 import json
 from pathlib import Path
@@ -20,13 +20,13 @@ def resolve(name):
 
 
 def print_models():
-    print("Model\tFamily\tOutputs\tCheckpoint download\tSelections")
+    print("Model\tFamily\tOutputs\tCheckpoint URL (access not checked)\tSelections")
     for entry in entries():
         artifacts = entry.get('selections', [entry])
         available = all(item.get('portable_checkpoint', {}).get('download_url')
                         for item in artifacts)
         print("\t".join([entry["id"], entry["family"], ",".join(entry["source_order"]),
-                         "available" if available else "pending; local checkpoint only",
+                         "registered" if available else "local checkpoint only",
                          ",".join(label for selection in entry.get('selections', [])
                                    for label in selection['selection_labels'])]))
 

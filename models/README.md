@@ -1,8 +1,9 @@
 # Model implementations
 
 `fixed.py` supports the original three fixed-output models and twelve mixture-only
-specialists. `conditioned.py` and `conditioned_core.py` support the seven shared
-part-, singer-, and dual-conditioned recipes. `conditioned_encoder.py` restores
+specialists. `conditioned.py` and `conditioned_core.py` support nine shared
+part-, singer-, and dual-conditioned inference recipes, including the two
+singer-augmentation models. `conditioned_encoder.py` restores
 the complete matching singer encoder from the separation checkpoint.
 
 `registry.py` defines public names, aliases, checkpoint selections, hashes and

@@ -2,17 +2,20 @@
 
 `models.json` registers the three original fixed models and 12 original
 specialists, including exact checkpoint/config hashes and output contracts.
-Only the SKnJC model has a registered `portable_checkpoint.download_url`;
-its repository is currently private, so that field does not promise public
-access. Other adapters accept the registered local original checkpoint. A null
-legacy `url` does not override a populated portable download URL.
+`conditioned.json` adds nine shared query-conditioned recipes with 14 checkpoint
+selections. Together, the registries provide all 29 inference exports, each with
+a revision-pinned `portable_checkpoint.download_url`, size, and SHA-256.
+The model repository is currently private, so a registered URL does not promise
+anonymous access. Adapters also accept exact registered original checkpoints.
+A null legacy `url` does not override a populated portable download URL.
 `dataset.json` records the published ACappellaSet v1.0 dataset on Hugging Face,
 including an immutable repository revision, file URLs, sizes, SHA-256 checksums,
 and the manual access-approval requirement.
 
-`checkpoint_candidates.json` lists the 29 deduplicated project candidates and
-one external baseline in the audited paper snapshot. It is a release-planning
-inventory, not a download registry or a finalized checkpoint selection.
+`checkpoint_candidates.json` records the 29 selected project checkpoint
+identities and one separately linked external baseline. It retains original
+research hashes alongside inference-export hashes, release paths, and revisions.
+Use `models.json` and `conditioned.json` for CLI IDs and download metadata.
 See [the readable checklist](../docs/checkpoints.md).
 
 Before a model entry is added, record a stable ID, model family, training

@@ -29,15 +29,16 @@ a target. AB singer results in panel (b) use the explicitly labeled historical
 fallback-inclusive protocol; they do not establish independent enrollment for
 all 25 pairs.
 
-K6 and K6_no_aug score rows are included only to reproduce the augmentation
-comparison. Their weights, training audio, and training recipes remain deferred.
+K6 and K6_no_aug score rows reproduce the augmentation comparison. Both have
+[inference adapters and registered exports](conditioned-inference.md#singer-augmentation-models).
+Their augmentation audio and training recipes are outside this code release.
 SepACap is an external baseline; its JC train/test overlap cannot be excluded.
 
 The cross-corpus artifacts retain their historical inference protocols, including
 metric-only rescoring of archived fixed-model predictions. These artifact-derived
-tables are **not certification that every cell in a manuscript matches**. The
-older draft contains scope/protocol differences. Reconcile those explicitly
-before claiming exact paper reproduction; no manuscript is modified here.
+tables describe the included artifact snapshot and its stated protocols; they
+are **not certification that every cell in a manuscript matches**. No manuscript
+is modified here.
 Optional `--draft-cells /path/to/cells.json` compares user-supplied cells (fields:
 `model`, `dataset`, `role`, `draft_value`) and writes a separate discrepancy CSV.
 The repository does not include private manuscript drafts.

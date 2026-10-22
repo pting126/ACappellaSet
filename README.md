@@ -17,7 +17,7 @@ Conditioned inference, portable training recipes, and exact historical split man
 | Resource | Status |
 | --- | --- |
 | Fixed_6stem_htdemucs_SKnJC inference | Implemented; actual-checkpoint Linux CPU validation passed |
-| Checkpoint inventory | 29 released inference checkpoints, including both singer-augmentation models; external baseline linked |
+| Checkpoint inventory | 29 validated inference exports, including both singer-augmentation models; external baseline linked |
 | Model weights | [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models) — public release coming soon |
 | Dataset and annotations | [ACappellaSet v1.0 published on Hugging Face](https://huggingface.co/datasets/AcappellaSet/ACappellaSet); manual access approval |
 | Fixed/specialist inference code | All 3 fixed models and 12 original specialists registered; safe inference exports available with repository access |
@@ -28,6 +28,27 @@ Conditioned inference, portable training recipes, and exact historical split man
 | Shared conditioned inference | Nine inference recipes / 14 selections, including full-remix and single-clone singer augmentation |
 | Shared conditioned training | Seven recipes; clean CUDA environment, native initialization/data parity, and deterministic resume verified |
 | Exact historical splits | Ten manifest sets and original SK specialist filters; audio verified on research storage |
+
+## Choose a workflow
+
+Start from a local clone of this repository and run commands from its root.
+Dataset preparation accepts files you already have; it does not request access
+or download restricted audio automatically.
+
+| Task | Guide | Required inputs |
+| --- | --- | --- |
+| Separate your own recording | [Fixed/specialist inference](docs/inference.md) or [conditioned inference](docs/conditioned-inference.md) | Mixture, registered checkpoint; role and/or singer enrollment for conditioned models |
+| Prepare the published dataset | [Local release preparation](docs/preparation.md#from-a-downloaded-acappellaset-release) | Extracted primary/alternate audio and release metadata |
+| Train an existing recipe | [Fixed/specialist training](docs/training.md) or [conditioned training](docs/conditioned-training.md) | Prepared training/validation data and verified initializers |
+| Score saved estimates | [Evaluation](docs/evaluation.md) | Aligned mixture, reference, and estimate WAVs in a pairs manifest |
+| Evaluate a registered checkpoint | [Benchmarking](docs/reproduction.md#run-a-frozen-checkpoint-on-the-historical-test-cohort) | Prepared historical test manifest and checkpoint |
+| Regenerate archived result tables | [Artifact reproduction](docs/reproduction.md#regenerate-the-archived-tables) | Python only; no audio or checkpoint downloads |
+
+Training covers the 15 original fixed/specialist and seven natural-data
+conditioned recipes. It starts from their documented initializers; adapting a
+released ACappellaSet checkpoint to a new dataset is not an exposed workflow.
+The two augmentation models support inference, but their training recipes and
+augmentation audio are not included.
 
 ## Run inference
 
