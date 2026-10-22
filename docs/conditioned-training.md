@@ -1,9 +1,7 @@
 # Conditioned training
 
-`train.py` supports the original natural-data K1/K5/K7, L1/L3/L4, and M3
-recipes. They train part-, singer-, or dual-conditioned target/residual
-extractors. The newer fixed-six and enrollment-specialist experiments and the
-AI-augmented recipes are outside this code release.
+`train.py` supports seven natural-data shared query-conditioned recipes: part, singer, and dual conditioning for SK and JC, plus singer conditioning for joint SK + JC training. They train target/residual extractors. The newer fixed-six and enrollment-specialist experiments and the
+AI-augmented training recipes are outside this code release; their two checkpoint selections and inference adapters are available in the [inference release](conditioned-inference.md#singer-augmentation-models).
 
 ## Environment
 
@@ -51,13 +49,13 @@ recipes; inference subsequently loads it from the separation checkpoint.
 ## Train and resume
 
 ```bash
-python train.py --model K5 \
+python train.py --model Singer_conditioned_htdemucs_SK \
   --initialization /weights/pt_6s.th \
   --speaker-initialization /weights/avg_model.pt \
   --manifest datasets/manifests/train_sk \
   --valid-jc datasets/manifests/valid_jc \
   --valid-sk datasets/manifests/valid_sk \
-  --output runs/K5
+  --output runs/singer-sk
 ```
 
 The recipe fixes 200,000 optimizer updates, batch size 2 with four accumulated
@@ -71,7 +69,7 @@ correct singer initializer even for a dry run. It does not execute a forward
 pass or optimizer update. `--workers` controls data-loading workers.
 
 To continue, repeat the same command and output directory with
-`--resume runs/K5/latest.pt`. Resume checks the checkpoint hash, recipe, manifests,
+`--resume runs/singer-sk/latest.pt`. Resume checks the checkpoint hash, recipe, manifests,
 code, and Torch version, then restores model, optimizer, random generators and
 the next data position. Checkpoints are saved at optimizer boundaries. Use
 `--deterministic` from the beginning of a run when exact replay on the same
@@ -101,8 +99,8 @@ The export contains tensor weights and step metadata, without optimizer state.
 It loads with PyTorch's restricted `weights_only=True` path.
 
 ```bash
-python inference.py --run-manifest runs/K5/inference.json \
-  --checkpoint runs/K5/inference.pt \
+python inference.py --run-manifest runs/singer-sk/inference.json \
+  --checkpoint runs/singer-sk/inference.pt \
   --input mixture.wav --enrollment singer.wav --output separated --device cuda
 ```
 

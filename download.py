@@ -1,4 +1,8 @@
-"""Download a registered portable model anonymously and verify its SHA-256."""
+"""Download a registered inference checkpoint and verify its SHA-256.
+
+Anonymous access works for public repositories. For private preparation, use
+the authenticated Hugging Face CLI and the file paths in the model card.
+"""
 
 import argparse
 import hashlib
@@ -6,6 +10,7 @@ import json
 import os
 from pathlib import Path
 import tempfile
+import urllib.error
 import urllib.request
 
 ROOT = Path(__file__).resolve().parent
@@ -49,9 +54,15 @@ def main():
         return
     # Publish only fully verified bytes; never replace a concurrently created file.
     with tempfile.NamedTemporaryFile(prefix=".download-", dir=args.output) as temporary:
-        with urllib.request.urlopen(url, timeout=60) as response:
-            for block in iter(lambda: response.read(8 * 1024 * 1024), b""):
-                temporary.write(block)
+        try:
+            with urllib.request.urlopen(url, timeout=60) as response:
+                for block in iter(lambda: response.read(8 * 1024 * 1024), b""):
+                    temporary.write(block)
+        except urllib.error.HTTPError as exc:
+            if exc.code in (401, 403, 404):
+                parser.error('Checkpoint is unavailable anonymously. If the model repository '
+                             'is private, use hf auth login and hf download with repository access.')
+            raise
         temporary.flush()
         path = Path(temporary.name)
         if path.stat().st_size != artifact["bytes"] or sha256(path) != artifact["sha256"]:

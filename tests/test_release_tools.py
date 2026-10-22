@@ -25,14 +25,14 @@ class RegistryTests(unittest.TestCase):
                 self.assertEqual(spec['output_contract'],{'residual_index':0,'target_index':1})
         self.assertEqual(resolve('combined-ep333')['id'],'Fixed_6stem_htdemucs_SKnJC')
 
-    def test_cli_discovery_and_unpublished_download(self):
+    def test_cli_discovery_and_unknown_download(self):
         for script in ['inference.py','download.py']:
             result=subprocess.run([sys.executable,str(ROOT/script),'--list-models'],capture_output=True,text=True)
             self.assertEqual(result.returncode,0,result.stderr)
             self.assertIn('specialists-sk-alto-ep237',result.stdout)
-        result=subprocess.run([sys.executable,str(ROOT/'download.py'),'--model','Fixed_6stem_htdemucs_SK'],capture_output=True,text=True)
+        result=subprocess.run([sys.executable,str(ROOT/'download.py'),'--model','unknown-model'],capture_output=True,text=True)
         self.assertNotEqual(result.returncode,0)
-        self.assertIn('no published portable checkpoint',result.stderr)
+        self.assertIn('Unknown model',result.stderr)
 
 class PreparationTests(unittest.TestCase):
     def fixture(self,root,corpus):

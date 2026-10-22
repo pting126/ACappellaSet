@@ -23,23 +23,22 @@ real enrollment recording of the target singer:
 
 ```bash
 # Singer query: no role label.
-python inference.py --model K5 --selection combined_shared \
-  --checkpoint /weights/K5_step106000.pt --input mixture.wav \
+python inference.py --model Singer_conditioned_htdemucs_SK --selection combined_shared \
+  --checkpoint /weights/singer-sk-step106000.pt --input mixture.wav \
   --enrollment target-singer.wav --output outputs/singer --device cuda
 
 # Part query: no enrollment recording.
-python inference.py --model K1 --selection sk_shared \
-  --checkpoint /weights/K1_step198000.pt --input mixture.wav \
+python inference.py --model Part_conditioned_htdemucs_SK --selection sk_shared \
+  --checkpoint /weights/part-sk-step198000.pt --input mixture.wav \
   --role S --output outputs/soprano --device cuda
 
 # Dual query: singer and role.
-python inference.py --model K7 --selection jc_inclusive \
-  --checkpoint /weights/K7_step7000.pt --input mixture.wav \
+python inference.py --model Dual_conditioned_htdemucs_SK --selection jc_inclusive \
+  --checkpoint /weights/dual-sk-step7000.pt --input mixture.wav \
   --enrollment target-singer.wav --role A --output outputs/dual --device cuda
 ```
 
-Conditioned weights are not downloaded automatically; their public release
-remains pending. `python inference.py --list-models` lists supported selections.
+All conditioned selections are uploaded privately. Download with the authenticated Hugging Face CLI while private; inference does not download weights automatically. `python inference.py --list-models` lists supported selections.
 See [training](../docs/conditioned-training.md) for your own model and
 [reproduction](../docs/reproduction.md) for frozen-checkpoint benchmark runs and
 archive-derived tables. The generated tone enrollment is useful only for CLI

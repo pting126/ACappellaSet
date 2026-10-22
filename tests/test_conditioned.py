@@ -15,8 +15,8 @@ from models.windowing import window_starts
 class ConditionedContracts(unittest.TestCase):
     def test_selection_is_explicit_and_deduplicated(self):
         conditioned = [s for s in entries() if s['family'] == 'conditioned-htdemucs']
-        self.assertEqual(len(conditioned), 7)
-        self.assertEqual(sum(len(s['selections']) for s in conditioned), 12)
+        self.assertEqual(len(conditioned), 9)
+        self.assertEqual(sum(len(s['selections']) for s in conditioned), 14)
         with self.assertRaises(ValueError):
             select_checkpoint(resolve('K1'))
         self.assertEqual(select_checkpoint(resolve('K1'), 'sk_shared')['step'], 198000)
@@ -29,6 +29,12 @@ class ConditionedContracts(unittest.TestCase):
     def test_query_requirements_and_roles(self):
         self.assertEqual(validate_query(resolve('K1'), 'alto')['role'], 'A')
         self.assertEqual(validate_query(resolve('K5'), enrollment='singer.wav')['role'], None)
+        for name in ('Singer_conditioned_htdemucs_SK_full_remix', 'Singer_conditioned_htdemucs_SK_single_clone'):
+            spec = resolve(name)
+            self.assertEqual(select_checkpoint(spec)['selection'], 'combined_inclusive')
+            self.assertEqual(validate_query(spec, enrollment='singer.wav')['role'], None)
+            with self.assertRaises(ValueError):
+                validate_query(spec)
         for model, kwargs in [('K1', {}), ('K1', {'role': 'banana'}),
                               ('K1', {'role': 'A', 'enrollment': 'x.wav'}),
                               ('K5', {}), ('K5', {'role': 'A', 'enrollment': 'x.wav'}),

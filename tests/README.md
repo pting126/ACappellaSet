@@ -32,3 +32,5 @@ relative links, independent copies, explicit absent-role silence, source identit
 and split checks, corrupted/missing/non-finite audio, rollback, and downstream
 specialist inputs. The full real-release check is recorded separately in
 `docs/validation/release-inputs-2026-10-22.json`.
+
+`test_checkpoint_exports.py` checks restricted inference-export loading, registered-byte verification before deserialization, step identity, rejection of training arguments in release exports, and compatibility with new training exports.

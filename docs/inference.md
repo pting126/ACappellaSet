@@ -3,9 +3,8 @@
 The Fixed_6stem_htdemucs_SKnJC model has a working inference entry point and an uploaded
 110 MB portable checkpoint on [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models).
 The model repository is currently private; downloads require repository access.
-Model-weight terms and upstream notices are maintained separately in the model
-repository; this repository's code license does not license weights.
-See [checkpoints](checkpoints.md).
+The project weight license is CC BY-NC 4.0. Training-data terms and third-party rights
+remain separate; see [checkpoints](checkpoints.md).
 
 ## Installation: tested Linux CPU environment
 
@@ -46,8 +45,7 @@ Size: 109822110 bytes
 ```
 
 It contains all 525 model tensors with their original dtype and values, and
-omits optimizer state. The loader uses `torch.load(weights_only=True)` for this
-format. The receipt records the hash of the actual file used and its original
+omits optimizer state. All released inference exports use `torch.load(weights_only=True)`; original registered research checkpoints remain accepted by exact hash for compatibility. The receipt records the hash of the actual file used and its original
 research-checkpoint identity separately.
 
 You may rename either local file; the loader checks its content hash and the
@@ -127,12 +125,11 @@ were bit-identical on both clips; six behavioral tests passed. See the
 
 ```bash
 python inference.py --list-models
-python inference.py --model Fixed_6stem_htdemucs_SK --checkpoint /path/to/original-sk.ckpt --input mixture.wav --output outputs/sk --device cpu
-python inference.py --model specialists-jc-alto-ep223 --checkpoint /path/to/original-alto.ckpt --input mixture.wav --output outputs/alto --device cpu
+python inference.py --model Fixed_6stem_htdemucs_SK --checkpoint /path/to/Fixed_6stem_htdemucs_SK.pt --input mixture.wav --output outputs/sk --device cpu
+python inference.py --model specialists-jc-alto-ep223 --checkpoint /path/to/alto-inference.pt --input mixture.wav --output outputs/alto --device cpu
 ```
 
-Each command requires the exact registered checkpoint hash. Downloading SK/JC
-or specialist weights is still pending. No custom or arbitrary pickle checkpoint
+Each command requires the exact registered checkpoint hash. All SK/JC fixed and original specialist weights are uploaded as tensor-only inference exports; use the file paths in the Hugging Face model card while the repository is private. No custom or arbitrary pickle checkpoint
 is accepted. The specialist command writes `nonalto.wav` and `alto.wav`;
 `nonalto` is the residual head, and `alto` is the extracted target. Neither
 requires an enrollment recording. The same rule applies to each bank member.

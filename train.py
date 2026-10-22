@@ -42,6 +42,9 @@ def main(argv=None):
     spec=resolve(args.model)
     if args.device<0 or args.workers<0:parser.error('Device and workers must be nonnegative')
     if spec['family']=='conditioned-htdemucs':
+        if not spec.get('training_recipe_available', True):
+            parser.error('This augmentation model has released inference weights; '
+                         'a portable training recipe for its synthetic dataset is not included.')
         if any(value is not None for value in (args.mss_root,args.train_data,args.valid_data)):
             parser.error('Use --manifest/--valid-jc/--valid-sk for conditioned training')
         from training.conditioned import run

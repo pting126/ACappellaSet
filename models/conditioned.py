@@ -27,7 +27,10 @@ def build_model(config, device):
 
 def load_model(checkpoint, config_path, spec, device):
     checkpoint = Path(checkpoint)
-    if sha256(checkpoint) != spec['checkpoint_sha256']:
+    checkpoint_hash = sha256(checkpoint)
+    portable = spec.get('portable_checkpoint', {})
+    is_portable = checkpoint_hash == portable.get('sha256')
+    if not is_portable and checkpoint_hash != spec['checkpoint_sha256']:
         raise ValueError('Checkpoint checksum mismatch; refusing unregistered pickle content')
     if sha256(config_path) != spec['config_sha256']:
         raise ValueError('Conditioned config checksum mismatch')
@@ -36,9 +39,15 @@ def load_model(checkpoint, config_path, spec, device):
         raise ValueError('Encoder configuration checksum mismatch')
     if config['source_mode'] != 'target_residual' or spec['source_order'] != ['target', 'residual']:
         raise ValueError('Unexpected conditioned output order')
-    # Only exact, registered research checkpoints reach this legacy loader.
+    if is_portable and portable.get('format') != 'acappellaset-conditioned-inference-v1':
+        raise ValueError('Unsupported conditioned inference export format')
+    # Reduced exports contain only model tensors and the selected step. Original
+    # research containers remain accepted only at their registered exact hash.
     payload = torch.load(checkpoint, map_location='cpu',
-                         weights_only=spec.get('safe_training_export', False))
+                         weights_only=is_portable or spec.get('safe_training_export', False))
+    if is_portable and (set(payload) != {'format', 'step', 'model_state'} or
+                        payload['format'] != portable['format']):
+        raise ValueError('Invalid conditioned inference export contents')
     if payload['step'] != spec['step']:
         raise ValueError('Checkpoint step does not match its registered selection')
     model = build_model(config, device)

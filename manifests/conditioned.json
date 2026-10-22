@@ -20,17 +20,41 @@
           "checkpoint_sha256": "fbd19ff91075877839bb76b022d1b5ad018a980a26603ea9cb4cca7aac0feb6a",
           "selection_labels": [
             "sk_shared"
-          ]
+          ],
+          "portable_checkpoint": {
+            "filename": "Part_conditioned_htdemucs_SK_step_0198000.pt",
+            "sha256": "9c59bfca391faf96e6d3f130d27dd75f4ed5f0eb1b950ed75361b343e926af14",
+            "bytes": 109889741,
+            "format": "acappellaset-conditioned-inference-v1",
+            "weights_only": true,
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0198000.pt",
+            "repository_id": "AcappellaSet/ACappellaSet-Models",
+            "path_in_repo": "conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0198000.pt",
+            "status": "private_inference_export_validated",
+            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+          }
         },
         {
           "step": 4000,
           "checkpoint_sha256": "979ba17521f398fb1b2a3e0ccad29615999b50e87d76347b2682212a61b49427",
           "selection_labels": [
             "jc_inclusive"
-          ]
+          ],
+          "portable_checkpoint": {
+            "filename": "Part_conditioned_htdemucs_SK_step_0004000.pt",
+            "sha256": "31821cfe956fc6a7527e718d6702bcd71b84a8881484c1339753bca7207b316b",
+            "bytes": 109889741,
+            "format": "acappellaset-conditioned-inference-v1",
+            "weights_only": true,
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0004000.pt",
+            "repository_id": "AcappellaSet/ACappellaSet-Models",
+            "path_in_repo": "conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0004000.pt",
+            "status": "private_inference_export_validated",
+            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+          }
         }
       ],
-      "status": "local_checkpoint_linux_cpu_and_cuda_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "conditioning": "role",
       "training_roles": [
         "A",
@@ -47,7 +71,9 @@
         "precision": "float32",
         "window_normalization": "peak",
         "overlap_add": "hann_clamped_0.001"
-      }
+      },
+      "weight_license": "cc-by-nc-4.0",
+      "license_review_status": "assigned; applicable upstream notices preserved"
     },
     {
       "id": "Singer_conditioned_htdemucs_SK",
@@ -70,14 +96,38 @@
           "selection_labels": [
             "jc_shared",
             "jc_inclusive"
-          ]
+          ],
+          "portable_checkpoint": {
+            "filename": "Singer_conditioned_htdemucs_SK_step_0012000.pt",
+            "sha256": "89c5a8829aca66cdbb0033338dc83d769e06f98300f68464a666b87f73e80abf",
+            "bytes": 161878741,
+            "format": "acappellaset-conditioned-inference-v1",
+            "weights_only": true,
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0012000.pt",
+            "repository_id": "AcappellaSet/ACappellaSet-Models",
+            "path_in_repo": "conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0012000.pt",
+            "status": "private_inference_export_validated",
+            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+          }
         },
         {
           "step": 179000,
           "checkpoint_sha256": "eeeac981bacdd063207a0258fb60625edd2b60e94bc544852a1c2459223a04d3",
           "selection_labels": [
             "sk_shared"
-          ]
+          ],
+          "portable_checkpoint": {
+            "filename": "Singer_conditioned_htdemucs_SK_step_0179000.pt",
+            "sha256": "537531081da4c7c1a7d5568f8847bfaab1df3d54658486381bdd7f3d2f7f8d7d",
+            "bytes": 161878741,
+            "format": "acappellaset-conditioned-inference-v1",
+            "weights_only": true,
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0179000.pt",
+            "repository_id": "AcappellaSet/ACappellaSet-Models",
+            "path_in_repo": "conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0179000.pt",
+            "status": "private_inference_export_validated",
+            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+          }
         },
         {
           "step": 106000,
@@ -85,10 +135,22 @@
           "selection_labels": [
             "combined_shared",
             "combined_inclusive"
-          ]
+          ],
+          "portable_checkpoint": {
+            "filename": "Singer_conditioned_htdemucs_SK_step_0106000.pt",
+            "sha256": "b28626e30a12ba43337b3cec3da2558685ddcc649fe34dd78e7e71590e922b29",
+            "bytes": 161878741,
+            "format": "acappellaset-conditioned-inference-v1",
+            "weights_only": true,
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0106000.pt",
+            "repository_id": "AcappellaSet/ACappellaSet-Models",
+            "path_in_repo": "conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0106000.pt",
+            "status": "private_inference_export_validated",
+            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+          }
         }
       ],
-      "status": "local_checkpoint_linux_cpu_and_cuda_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "conditioning": "enrollment",
       "training_roles": [
         "A",
@@ -105,7 +167,9 @@
         "precision": "float32",
         "window_normalization": "peak",
         "overlap_add": "hann_clamped_0.001"
-      }
+      },
+      "weight_license": "cc-by-nc-4.0",
+      "license_review_status": "assigned; applicable upstream notices preserved"
     },
     {
       "id": "Dual_conditioned_htdemucs_SK",
@@ -127,10 +191,22 @@
           "checkpoint_sha256": "0646527189b1221552c01c918cff01173e98077dc515a6fe9f795ffab00c24ee",
           "selection_labels": [
             "jc_inclusive"
-          ]
+          ],
+          "portable_checkpoint": {
+            "filename": "Dual_conditioned_htdemucs_SK_step_0007000.pt",
+            "sha256": "528d75380b58ef43e266a0c1f6f3cd86883710d2a95ff9c492724790193fa6ab",
+            "bytes": 161978465,
+            "format": "acappellaset-conditioned-inference-v1",
+            "weights_only": true,
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/dual/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0007000.pt",
+            "repository_id": "AcappellaSet/ACappellaSet-Models",
+            "path_in_repo": "conditioned/dual/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0007000.pt",
+            "status": "private_inference_export_validated",
+            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+          }
         }
       ],
-      "status": "local_checkpoint_linux_cpu_and_cuda_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "conditioning": "dual",
       "training_roles": [
         "A",
@@ -147,7 +223,9 @@
         "precision": "float32",
         "window_normalization": "peak",
         "overlap_add": "hann_clamped_0.001"
-      }
+      },
+      "weight_license": "cc-by-nc-4.0",
+      "license_review_status": "assigned; applicable upstream notices preserved"
     },
     {
       "id": "Part_conditioned_htdemucs_JC",
@@ -169,17 +247,41 @@
           "checkpoint_sha256": "92e19968bef2ce84d3800141afc50cc47141bd016adfcc07b70e705df7408004",
           "selection_labels": [
             "jc_shared"
-          ]
+          ],
+          "portable_checkpoint": {
+            "filename": "Part_conditioned_htdemucs_JC_step_0141000.pt",
+            "sha256": "f9fdca2de1f89b650b603d386f39128b4b06b0ebd4a59469f57ce256e8c26065",
+            "bytes": 109889741,
+            "format": "acappellaset-conditioned-inference-v1",
+            "weights_only": true,
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0141000.pt",
+            "repository_id": "AcappellaSet/ACappellaSet-Models",
+            "path_in_repo": "conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0141000.pt",
+            "status": "private_inference_export_validated",
+            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+          }
         },
         {
           "step": 119000,
           "checkpoint_sha256": "5de579abaf11546eab1fcfa29566cf4934ece6c5fe7b23df56b6af27c3be3723",
           "selection_labels": [
             "sk_inclusive"
-          ]
+          ],
+          "portable_checkpoint": {
+            "filename": "Part_conditioned_htdemucs_JC_step_0119000.pt",
+            "sha256": "6af03b62d8e5f419f72787b7909c3e82ad7d3194fa43c920a47a064374f63e8b",
+            "bytes": 109889741,
+            "format": "acappellaset-conditioned-inference-v1",
+            "weights_only": true,
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0119000.pt",
+            "repository_id": "AcappellaSet/ACappellaSet-Models",
+            "path_in_repo": "conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0119000.pt",
+            "status": "private_inference_export_validated",
+            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+          }
         }
       ],
-      "status": "local_checkpoint_linux_cpu_and_cuda_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "conditioning": "role",
       "training_roles": [
         "A",
@@ -196,7 +298,9 @@
         "precision": "float32",
         "window_normalization": "peak",
         "overlap_add": "hann_clamped_0.001"
-      }
+      },
+      "weight_license": "cc-by-nc-4.0",
+      "license_review_status": "assigned; applicable upstream notices preserved"
     },
     {
       "id": "Singer_conditioned_htdemucs_JC",
@@ -218,10 +322,22 @@
           "checkpoint_sha256": "9f49b7d59575658dcfb9667395d998e8fc34a935b3995b099593e99ee1de5226",
           "selection_labels": [
             "sk_inclusive"
-          ]
+          ],
+          "portable_checkpoint": {
+            "filename": "Singer_conditioned_htdemucs_JC_step_0184000.pt",
+            "sha256": "7021317a39953018ea31d9f07578bbe4da9e3646ca62e1e59891abba57edd94d",
+            "bytes": 161878741,
+            "format": "acappellaset-conditioned-inference-v1",
+            "weights_only": true,
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0184000.pt",
+            "repository_id": "AcappellaSet/ACappellaSet-Models",
+            "path_in_repo": "conditioned/enrollment/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0184000.pt",
+            "status": "private_inference_export_validated",
+            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+          }
         }
       ],
-      "status": "local_checkpoint_linux_cpu_and_cuda_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "conditioning": "enrollment",
       "training_roles": [
         "A",
@@ -238,7 +354,9 @@
         "precision": "float32",
         "window_normalization": "peak",
         "overlap_add": "hann_clamped_0.001"
-      }
+      },
+      "weight_license": "cc-by-nc-4.0",
+      "license_review_status": "assigned; applicable upstream notices preserved"
     },
     {
       "id": "Dual_conditioned_htdemucs_JC",
@@ -260,10 +378,22 @@
           "checkpoint_sha256": "724af8d2906fc08de54b7484df69143a3a7b2c62c412e6e473b979bc34cd74d0",
           "selection_labels": [
             "sk_inclusive"
-          ]
+          ],
+          "portable_checkpoint": {
+            "filename": "Dual_conditioned_htdemucs_JC_step_0188000.pt",
+            "sha256": "511dc6729da436c5fe72960e9a1de4968578fbb985fd00db5eb653e2d605dfb9",
+            "bytes": 161978465,
+            "format": "acappellaset-conditioned-inference-v1",
+            "weights_only": true,
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/dual/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0188000.pt",
+            "repository_id": "AcappellaSet/ACappellaSet-Models",
+            "path_in_repo": "conditioned/dual/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0188000.pt",
+            "status": "private_inference_export_validated",
+            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+          }
         }
       ],
-      "status": "local_checkpoint_linux_cpu_and_cuda_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "conditioning": "dual",
       "training_roles": [
         "A",
@@ -280,7 +410,9 @@
         "precision": "float32",
         "window_normalization": "peak",
         "overlap_add": "hann_clamped_0.001"
-      }
+      },
+      "weight_license": "cc-by-nc-4.0",
+      "license_review_status": "assigned; applicable upstream notices preserved"
     },
     {
       "id": "Singer_conditioned_htdemucs_SKnJC",
@@ -302,7 +434,19 @@
           "checkpoint_sha256": "6997e980ed2dded55ba1db2d5e88b71ad7024782125b2bd8dcf41df71189d6b4",
           "selection_labels": [
             "sk_shared"
-          ]
+          ],
+          "portable_checkpoint": {
+            "filename": "Singer_conditioned_htdemucs_SKnJC_step_0198000.pt",
+            "sha256": "67c68a7f12076db456166edab0120f94947806689eca50da546f7adac260d77b",
+            "bytes": 161878741,
+            "format": "acappellaset-conditioned-inference-v1",
+            "weights_only": true,
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0198000.pt",
+            "repository_id": "AcappellaSet/ACappellaSet-Models",
+            "path_in_repo": "conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0198000.pt",
+            "status": "private_inference_export_validated",
+            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+          }
         },
         {
           "step": 195000,
@@ -310,10 +454,22 @@
           "selection_labels": [
             "jc_shared",
             "combined_shared"
-          ]
+          ],
+          "portable_checkpoint": {
+            "filename": "Singer_conditioned_htdemucs_SKnJC_step_0195000.pt",
+            "sha256": "12a92b20a7b1fed9614c48b925eaeb2f563428201d5c270c11e3f7c3df7359e7",
+            "bytes": 161878741,
+            "format": "acappellaset-conditioned-inference-v1",
+            "weights_only": true,
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0195000.pt",
+            "repository_id": "AcappellaSet/ACappellaSet-Models",
+            "path_in_repo": "conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0195000.pt",
+            "status": "private_inference_export_validated",
+            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+          }
         }
       ],
-      "status": "local_checkpoint_linux_cpu_and_cuda_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "conditioning": "enrollment",
       "training_roles": [
         "A",
@@ -331,7 +487,121 @@
         "precision": "float32",
         "window_normalization": "peak",
         "overlap_add": "hann_clamped_0.001"
-      }
+      },
+      "weight_license": "cc-by-nc-4.0",
+      "license_review_status": "assigned; applicable upstream notices preserved"
+    },
+    {
+      "id": "Singer_conditioned_htdemucs_SK_full_remix",
+      "aliases": [],
+      "family": "conditioned-htdemucs",
+      "research_id": "K6",
+      "config": "configs/conditioned/Singer_conditioned_htdemucs_SK_full_remix.json",
+      "config_sha256": "fb94dcf47cd96b4ee07b0975996a300d9c0938e3a24b855cfbc273fe60f58c8a",
+      "sample_rate": 44100,
+      "source_order": [
+        "target",
+        "residual"
+      ],
+      "selections": [
+        {
+          "step": 131000,
+          "checkpoint_sha256": "ff74b497341edcfe6a6357749ed3e6bff795f1740ef022f4003f1241f198e517",
+          "selection_labels": [
+            "combined_inclusive"
+          ],
+          "portable_checkpoint": {
+            "filename": "Singer_conditioned_htdemucs_SK_full_remix_step_0131000.pt",
+            "sha256": "893326c96ac17b9cfed1cd5126176763f6a0a525115e3322c9a701ef232a9e69",
+            "bytes": 161878741,
+            "format": "acappellaset-conditioned-inference-v1",
+            "weights_only": true,
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-sk-full-remix/sisdr-v1/redimnet2-finetuned/step-0131000.pt",
+            "repository_id": "AcappellaSet/ACappellaSet-Models",
+            "path_in_repo": "conditioned/enrollment/train-sk-full-remix/sisdr-v1/redimnet2-finetuned/step-0131000.pt",
+            "status": "private_inference_export_validated",
+            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+          }
+        }
+      ],
+      "status": "private_inference_export_validated",
+      "conditioning": "enrollment",
+      "training_roles": [
+        "A",
+        "B",
+        "Bar",
+        "S",
+        "T",
+        "VP"
+      ],
+      "untrained_zero_role": "Lead",
+      "inference": {
+        "window_seconds": 10,
+        "hop_seconds": 4,
+        "precision": "float32",
+        "window_normalization": "peak",
+        "overlap_add": "hann_clamped_0.001"
+      },
+      "training_data": "sk-full-remix",
+      "weight_license": "cc-by-nc-4.0",
+      "training_recipe_available": false,
+      "license_review_status": "assigned; applicable upstream notices preserved"
+    },
+    {
+      "id": "Singer_conditioned_htdemucs_SK_single_clone",
+      "aliases": [],
+      "family": "conditioned-htdemucs",
+      "research_id": "K6_no_aug",
+      "config": "configs/conditioned/Singer_conditioned_htdemucs_SK_single_clone.json",
+      "config_sha256": "fb94dcf47cd96b4ee07b0975996a300d9c0938e3a24b855cfbc273fe60f58c8a",
+      "sample_rate": 44100,
+      "source_order": [
+        "target",
+        "residual"
+      ],
+      "selections": [
+        {
+          "step": 48000,
+          "checkpoint_sha256": "79ee3dd239925ea2c075641eadc0e13c001a81f9f367f8ee6881c5e8a3881901",
+          "selection_labels": [
+            "combined_inclusive"
+          ],
+          "portable_checkpoint": {
+            "filename": "Singer_conditioned_htdemucs_SK_single_clone_step_0048000.pt",
+            "sha256": "00fc378e77c7148f75e853ba8e84f246aba1557c30ec3e5f205e4227099c5c65",
+            "bytes": 161878741,
+            "format": "acappellaset-conditioned-inference-v1",
+            "weights_only": true,
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-sk-single-clone/sisdr-v1/redimnet2-finetuned/step-0048000.pt",
+            "repository_id": "AcappellaSet/ACappellaSet-Models",
+            "path_in_repo": "conditioned/enrollment/train-sk-single-clone/sisdr-v1/redimnet2-finetuned/step-0048000.pt",
+            "status": "private_inference_export_validated",
+            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+          }
+        }
+      ],
+      "status": "private_inference_export_validated",
+      "conditioning": "enrollment",
+      "training_roles": [
+        "A",
+        "B",
+        "Bar",
+        "S",
+        "T",
+        "VP"
+      ],
+      "untrained_zero_role": "Lead",
+      "inference": {
+        "window_seconds": 10,
+        "hop_seconds": 4,
+        "precision": "float32",
+        "window_normalization": "peak",
+        "overlap_add": "hann_clamped_0.001"
+      },
+      "training_data": "sk-single-clone",
+      "weight_license": "cc-by-nc-4.0",
+      "training_recipe_available": false,
+      "license_review_status": "assigned; applicable upstream notices preserved"
     }
   ]
 }

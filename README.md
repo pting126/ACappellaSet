@@ -7,8 +7,8 @@ The release includes audio, annotations, reference splits, documentation, and
 checksums. Access requires accepting the dataset Terms and manual approval.
 
 **Model weights:** [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models)
-— public release coming soon. Inference currently requires a registered local
-checkpoint. Original fixed/specialist scripts, data preparation, and canonical
+— public release coming soon. All 29 checkpoints are uploaded privately as inference-only exports; downloads
+require repository access until publication. Original fixed/specialist scripts, data preparation, and canonical
 scoring are included.
 Conditioned inference, portable training recipes, and exact historical split manifests are included.
 
@@ -17,15 +17,15 @@ Conditioned inference, portable training recipes, and exact historical split man
 | Resource | Status |
 | --- | --- |
 | Fixed_6stem_htdemucs_SKnJC inference | Implemented; actual-checkpoint Linux CPU validation passed |
-| Checkpoint inventory | 27 active checkpoints, 2 deferred AI-augmented checkpoints; external baseline linked |
+| Checkpoint inventory | 29 released inference checkpoints, including both singer-augmentation models; external baseline linked |
 | Model weights | [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models) — public release coming soon |
 | Dataset and annotations | [ACappellaSet v1.0 published on Hugging Face](https://huggingface.co/datasets/AcappellaSet/ACappellaSet); manual access approval |
-| Fixed/specialist inference code | All 3 fixed models and 12 original specialists registered; unpublished weights must be supplied locally |
+| Fixed/specialist inference code | All 3 fixed models and 12 original specialists registered; safe inference exports available with repository access |
 | Fixed/specialist training | Pinned MSS patch and portable launcher; see validation limits in the training guide |
 | Specialist data preparation | Runnable; preserves the different JC and SK residual recipes |
 | Canonical scoring | Saved-WAV scoring and exact-cohort benchmark driver |
 | Table reproduction | Four tables from 3,293 archived per-pair scores with explicit selections and scope |
-| Shared conditioned inference | Seven recipes / 12 selections; CPU checkpoint and CUDA full-song parity passed; weights supplied locally |
+| Shared conditioned inference | Nine inference recipes / 14 selections, including full-remix and single-clone singer augmentation |
 | Shared conditioned training | Seven recipes; clean CUDA environment, native initialization/data parity, and deterministic resume verified |
 | Exact historical splits | Ten manifest sets and original SK specialist filters; audio verified on research storage |
 
@@ -48,6 +48,7 @@ before strict loading, and existing output directories are not overwritten.
 On two validation inputs, all six outputs matched the research implementation
 **bit-for-bit** in a fresh Linux CPU environment. Six behavioral tests passed; the portable export also matches exactly.
 See the [validation report](docs/validation/combined-ep333-portable-linux-cpu.json).
+The [inference-export checks](docs/validation/inference-exports-2026-10-22.json) additionally cover all reduced exports and both singer-augmentation adapters.
 The [October 21 workflow audit](docs/validation/workflow-audit-2026-10-21.json)
 additionally covers macOS inference, fresh Linux CPU/CUDA environments, short
 training runs for all 22 recipes, WAV scoring, and conditioned resume. These
@@ -72,23 +73,23 @@ and [training](docs/training.md) for input formats and supported recipes.
 [paper reproduction](docs/reproduction.md) covers archived tables and fresh benchmarks.
 For part-, singer-, and dual-conditioned queries, see [conditioned inference](docs/conditioned-inference.md).
 `train.py --dry-run` verifies the original fixed/specialist training setup before
-launching it. These scripts do not provide missing checkpoint downloads or dataset audio.
+launching it. Model file paths are listed on Hugging Face. Dataset audio requires separate access approval.
 
 ## Models and weights
 
-The planned model families are fixed-output separation trained on JC, SK, and
+The released model families are fixed-output separation trained on JC, SK, and
 their combination; per-part specialist banks; and part-, singer-, and
 dual-conditioned extraction. Singer conditioning requires enrollment audio and
 the matching encoder parameters.
 
 The [checkpoint checklist](docs/checkpoints.md) lists 29 checkpoint identities
-(27 active, 2 deferred), including updated K1/M3 epoch/step choices. Exact hashes are
+(all included), with explicit epoch/step and validation selections. Exact hashes are
 in [the candidate manifest](manifests/checkpoint_candidates.json), which records
 the current release inventory. The three historical fixed models and 12 historical
 specialists are confirmed for release inclusion. Later singer-enrollment
 specialists and newer fixed-six training runs are excluded from the ICASSP
 release. Shared conditioned checkpoints are listed with their validation criteria.
-The AI-augmented K6 and K6_no_aug releases are deferred.
+Both full-remix and single-clone singer-augmentation checkpoints are included for inference.
 The [inference registry](manifests/models.json) separately records models the
 public code can load. See [model documentation](docs/models.md).
 

@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "date": "2026-10-22",
+  "scope": "Inference-only checkpoint exports and newly registered singer-augmentation inference adapters; no training or paper evaluation rerun.",
+  "exported_checkpoint_count": 28,
+  "existing_unchanged_combined_export": true,
+  "all_export_tensors_bit_identical": true,
+  "safe_weights_only_loading": true,
+  "optimizer_training_args_and_internal_paths_excluded": true,
+  "strict_load_checkpoint_count": 28,
+  "ai_short_input_native_comparisons": [
+    {
+      "model": "Singer_conditioned_htdemucs_SK_full_remix",
+      "step": 131000,
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_identical": true
+    },
+    {
+      "model": "Singer_conditioned_htdemucs_SK_single_clone",
+      "step": 48000,
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "bit_identical": true
+    }
+  ],
+  "ai_cli_checks": [
+    {
+      "model": "Singer_conditioned_htdemucs_SK_full_remix",
+      "step": 131000,
+      "frames": 13230,
+      "status": "PASS",
+      "max_abs": 9.313225746154785e-10,
+      "rms": 6.516458659892848e-11,
+      "bit_identical": false
+    },
+    {
+      "model": "Singer_conditioned_htdemucs_SK_single_clone",
+      "step": 48000,
+      "frames": 13230,
+      "status": "PASS",
+      "max_abs": 4.656612873077393e-10,
+      "rms": 1.8403389499439896e-11,
+      "bit_identical": false
+    }
+  ],
+  "ai_check_scope": "Synthetic 0.3-second stereo mixtures with ten-second synthetic enrollment; CLI uses native ten-second padded inference window. These checks do not measure separation quality or establish GPU/full-song parity for the two added models.",
+  "tolerances": {
+    "max_abs": 1e-05,
+    "rms": 1e-06
+  },
+  "test_suite": {
+    "run": 60,
+    "passed": 57,
+    "skipped": 3,
+    "skip_reason": "Optional MSS writer tests require the patched checkout; GitHub CI supplies it."
+  },
+  "runtime_sha256": {
+    "inference.py": "b2e15685b6e71e553a4e44e94a06daa50f57e578a6e6cdf0ec1c157951e1ea80",
+    "download.py": "99fbecd8011283025738dce3f87f2e26ddfdfed1dbac7151aba5ec63053d4153",
+    "models/conditioned.py": "3538eed3e03c72b618c70775e67691cf2041b15ff3b8fca69ee1c83c59db91ce",
+    "models/fixed.py": "35bf2db504c325f30b9d323c73ae086e25dac29fc1ee81b85c5964757424b3c6",
+    "models/registry.py": "857a1ca9839f0b8a6fcab134c24702d457499aaf48f0690a406d7efffe31d238",
+    "models/query.py": "59a6a19f91d21e872a709e33c371a1e464ccad47e838e3102b36903a3e0cba47",
+    "train.py": "2bb050d7e587f6b9004241a2332b63d708ae3e311a81de498ac510ac0c63f5e2"
+  }
+}

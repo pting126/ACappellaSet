@@ -22,7 +22,9 @@ def resolve(name):
 def print_models():
     print("Model\tFamily\tOutputs\tCheckpoint download\tSelections")
     for entry in entries():
-        available = bool(entry.get("portable_checkpoint", {}).get("download_url"))
+        artifacts = entry.get('selections', [entry])
+        available = all(item.get('portable_checkpoint', {}).get('download_url')
+                        for item in artifacts)
         print("\t".join([entry["id"], entry["family"], ",".join(entry["source_order"]),
                          "available" if available else "pending; local checkpoint only",
                          ",".join(label for selection in entry.get('selections', [])

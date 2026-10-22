@@ -1,4 +1,4 @@
-# Conditioned extraction
+# Shared query-conditioned extraction
 
 Part conditioning specifies a vocal role. Singer conditioning specifies a singer
 using enrollment audio. Dual conditioning uses both. Each returns `target.wav`
@@ -30,13 +30,30 @@ python inference.py --model Dual_conditioned_htdemucs_JC --selection sk_inclusiv
   --input mixture.wav --output outputs/alto-singer --device cuda
 ```
 
-The 12 active selections are listed in [the conditioned registry](../manifests/conditioned.json).
-K1/K5/K7 and L1/L3/L4/M3 remain accepted research aliases. `combined_*` means
+The 14 released selections from nine model recipes are listed in [the conditioned registry](../manifests/conditioned.json). `combined_*` means
 pooled JC+SK **validation**, while `SKnJC` in a model name means joint training.
 Selection is required when multiple checkpoint identities are registered.
 The loader accepts only the exact registered checkpoint hash and loads every
-separator and encoder tensor strictly. These weights are currently local-only;
-the download command reports their unpublished status without substituting a model.
+separator and encoder tensor strictly. All 14 weight files are uploaded to the currently private [model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models). Use `hf auth login` and `hf download` with repository access, then pass the downloaded path with `--checkpoint`. Released exports contain only `format`, `step`, and all `model_state` tensors, including the matching fine-tuned singer encoder. They load with `weights_only=True`; arbitrary or modified files are rejected.
+
+## Singer-augmentation models
+
+The augmentation models use the same singer-conditioned architecture and enrollment preprocessing. Both use pooled-inclusive validation selection; `combined_inclusive` is their CLI selection name.
+
+| Public model ID | Training data | Selected step |
+| --- | --- | ---: |
+| `Singer_conditioned_htdemucs_SK_full_remix` | SK full-remix singer augmentation | 131,000 |
+| `Singer_conditioned_htdemucs_SK_single_clone` | SK single-clone singer augmentation | 48,000 |
+
+```bash
+hf auth login
+hf download AcappellaSet/ACappellaSet-Models conditioned/enrollment/train-sk-full-remix/sisdr-v1/redimnet2-finetuned/step-0131000.pt --local-dir checkpoints
+python inference.py --model Singer_conditioned_htdemucs_SK_full_remix --selection combined_inclusive \
+  --checkpoint checkpoints/conditioned/enrollment/train-sk-full-remix/sisdr-v1/redimnet2-finetuned/step-0131000.pt \
+  --enrollment singer.wav --input mixture.wav --output outputs/full-remix --device cpu
+```
+
+Use the single-clone model ID and its corresponding checkpoint to run that selection. Synthetic augmentation audio is not included in the dataset release; the two augmentation models have inference adapters, while the portable training recipes cover the seven natural-data models.
 
 ## Enrollment and role behavior
 
@@ -71,3 +88,5 @@ The [validation report](validation/conditioned-inference.json) distinguishes
 short-input CPU checkpoint comparisons from full-song CUDA target comparisons.
 It establishes implementation parity for the tested inputs, not separation
 quality or cross-device bitwise equality. macOS/MPS remain unvalidated.
+
+The [inference-export checks](validation/inference-exports-2026-10-22.json) cover exact tensor preservation and strict loading of every new export, plus native CPU and actual CLI comparisons for both augmentation models. These additional checks use synthetic audio and do not measure separation quality.

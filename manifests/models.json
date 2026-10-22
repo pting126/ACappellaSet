@@ -9,7 +9,7 @@
       "family": "fixed-htdemucs",
       "training_corpus": "JC+SK",
       "epoch": 333,
-      "status": "published_linux_cpu_validated_data_terms_review_pending",
+      "status": "private_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_333_sdr_-1.2322_si_sdr_-0.3075_k_sdr_87.1730.ckpt",
       "checkpoint_sha256": "cbfa201798f7e7f4766bacd3aa8622b3ae40321729bd7f0b3555ac4348c57879",
       "checkpoint_bytes": 333986969,
@@ -37,8 +37,8 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
-      "selection_note": "Historical combined checkpoint; model-weight licensing is TBD.",
+      "weight_license": "cc-by-nc-4.0",
+      "selection_note": "Historical fixed-output checkpoint; inference tensors preserved in the CC BY-NC 4.0 export.",
       "sixth_output_note": "other combines JC Lead and SK Baritone training semantics; not separate Lead and Baritone outputs.",
       "validation_report": "docs/validation/combined-ep333-linux-cpu.json",
       "portable_checkpoint": {
@@ -47,25 +47,25 @@
         "bytes": 109822110,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/f1e747c20f8fe8df2271944f995f5fdcd0a10cce/fixed/SKnJC/legacy/Fixed_6stem_htdemucs_SKnJC.pt",
-        "status": "published_linux_cpu_validated",
-        "validation_report": "docs/validation/combined-ep333-portable-linux-cpu.json",
-        "revision": "f1e747c20f8fe8df2271944f995f5fdcd0a10cce",
-        "previous_filename": "epoch_0333.pt"
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/fixed/SKnJC/legacy/Fixed_6stem_htdemucs_SKnJC.pt",
+        "repository_id": "AcappellaSet/ACappellaSet-Models",
+        "path_in_repo": "fixed/SKnJC/legacy/Fixed_6stem_htdemucs_SKnJC.pt",
+        "status": "private_inference_export_validated",
+        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
       },
       "aliases": [
         "combined-ep333",
         "fixed-combined-ep333"
       ],
       "display_name": "Fixed_6stem_htdemucs_SKnJC",
-      "license_review_status": "TBD; upstream weight rights unresolved"
+      "license_review_status": "assigned; applicable upstream notices preserved"
     },
     {
       "id": "Fixed_6stem_htdemucs_JC",
       "family": "fixed-htdemucs",
       "training_corpus": "JC",
       "epoch": 321,
-      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_321_sdr_7.9284_si_sdr_6.9219_k_sdr_94.9111.ckpt",
       "checkpoint_sha256": "1d65d49aaa7fc52745e4c476d14d90d7bddb942765c169e92bf045ea33d4ab6b",
       "checkpoint_bytes": 331450277,
@@ -93,19 +93,31 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
+      "weight_license": "cc-by-nc-4.0",
       "aliases": [
         "fixed-jc-ep321"
       ],
       "validation_report": "docs/validation/additional-models-linux-cpu.json",
-      "license_review_status": "TBD; upstream weight rights unresolved"
+      "license_review_status": "assigned; applicable upstream notices preserved",
+      "portable_checkpoint": {
+        "filename": "Fixed_6stem_htdemucs_JC.pt",
+        "sha256": "432c3806e03474a8fe15e586b1083e977c22751a3099ff82625c16a26490907d",
+        "bytes": 109830677,
+        "format": "pytorch_state_dict",
+        "weights_only": true,
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/fixed/JC/legacy/Fixed_6stem_htdemucs_JC.pt",
+        "repository_id": "AcappellaSet/ACappellaSet-Models",
+        "path_in_repo": "fixed/JC/legacy/Fixed_6stem_htdemucs_JC.pt",
+        "status": "private_inference_export_validated",
+        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      }
     },
     {
       "id": "Fixed_6stem_htdemucs_SK",
       "family": "fixed-htdemucs",
       "training_corpus": "SK",
       "epoch": 279,
-      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_279_sdr_-7.7538_si_sdr_-5.3812_k_sdr_81.6959.ckpt",
       "checkpoint_sha256": "51c1a71b22d82c34e31f41e314fc9a84055d9f55f5d77c8c36b4280a59a19f0b",
       "checkpoint_bytes": 331613145,
@@ -133,19 +145,31 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
+      "weight_license": "cc-by-nc-4.0",
       "aliases": [
         "fixed-sk-ep279"
       ],
       "validation_report": "docs/validation/additional-models-linux-cpu.json",
-      "license_review_status": "TBD; upstream weight rights unresolved"
+      "license_review_status": "assigned; applicable upstream notices preserved",
+      "portable_checkpoint": {
+        "filename": "Fixed_6stem_htdemucs_SK.pt",
+        "sha256": "e82eced15d0466a3ada6584e28188975841930d21153749fe163ad07af19d38c",
+        "bytes": 109830677,
+        "format": "pytorch_state_dict",
+        "weights_only": true,
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/fixed/SK/legacy/Fixed_6stem_htdemucs_SK.pt",
+        "repository_id": "AcappellaSet/ACappellaSet-Models",
+        "path_in_repo": "fixed/SK/legacy/Fixed_6stem_htdemucs_SK.pt",
+        "status": "private_inference_export_validated",
+        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      }
     },
     {
       "id": "specialists-jc-alto-ep223",
       "family": "part-specific-htdemucs",
       "training_corpus": "JC",
       "epoch": 223,
-      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_223_si_sdr_6.0926.ckpt",
       "checkpoint_sha256": "5c8118424cbe5264b953f37d8336194b66089bac0aa18c1a32d1c41b386e7e1e",
       "checkpoint_bytes": 331733371,
@@ -169,7 +193,7 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
+      "weight_license": "cc-by-nc-4.0",
       "aliases": [],
       "target_role": "alto",
       "output_contract": {
@@ -177,14 +201,26 @@
         "target_index": 1
       },
       "validation_report": "docs/validation/additional-models-linux-cpu.json",
-      "license_review_status": "TBD; upstream weight rights unresolved"
+      "license_review_status": "assigned; applicable upstream notices preserved",
+      "portable_checkpoint": {
+        "filename": "specialists-jc-alto-ep223.pt",
+        "sha256": "9212124f4a3eab2b9a4a14669bc3e52c66de3b1b795e805a5b575e430f24072d",
+        "bytes": 109785182,
+        "format": "pytorch_state_dict",
+        "weights_only": true,
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/JC/legacy/alto/epoch_0223.pt",
+        "repository_id": "AcappellaSet/ACappellaSet-Models",
+        "path_in_repo": "specialists/JC/legacy/alto/epoch_0223.pt",
+        "status": "private_inference_export_validated",
+        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      }
     },
     {
       "id": "specialists-jc-bass-ep110",
       "family": "part-specific-htdemucs",
       "training_corpus": "JC",
       "epoch": 110,
-      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_110_si_sdr_16.6663.ckpt",
       "checkpoint_sha256": "23d152aa2ae0250fe852ac5e31ae68f2d70736acd4cb2a5f9515a9b10302a810",
       "checkpoint_bytes": 330638133,
@@ -208,7 +244,7 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
+      "weight_license": "cc-by-nc-4.0",
       "aliases": [],
       "target_role": "bass",
       "output_contract": {
@@ -216,14 +252,26 @@
         "target_index": 1
       },
       "validation_report": "docs/validation/additional-models-linux-cpu.json",
-      "license_review_status": "TBD; upstream weight rights unresolved"
+      "license_review_status": "assigned; applicable upstream notices preserved",
+      "portable_checkpoint": {
+        "filename": "specialists-jc-bass-ep110.pt",
+        "sha256": "7b4b70dd70fa921cfe7d5b79c8e31004c5ea9893a9de659b2f5592fcde4a213c",
+        "bytes": 109785182,
+        "format": "pytorch_state_dict",
+        "weights_only": true,
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/JC/legacy/bass/epoch_0110.pt",
+        "repository_id": "AcappellaSet/ACappellaSet-Models",
+        "path_in_repo": "specialists/JC/legacy/bass/epoch_0110.pt",
+        "status": "private_inference_export_validated",
+        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      }
     },
     {
       "id": "specialists-jc-lead-ep149",
       "family": "part-specific-htdemucs",
       "training_corpus": "JC",
       "epoch": 149,
-      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_149_si_sdr_9.6743.ckpt",
       "checkpoint_sha256": "0a37e456852527fd2d0c7d983ba086f1ebb15064a39633f99c06cbbb37914c28",
       "checkpoint_bytes": 331014779,
@@ -247,7 +295,7 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
+      "weight_license": "cc-by-nc-4.0",
       "aliases": [],
       "target_role": "lead_vocal",
       "output_contract": {
@@ -255,14 +303,26 @@
         "target_index": 1
       },
       "validation_report": "docs/validation/additional-models-linux-cpu.json",
-      "license_review_status": "TBD; upstream weight rights unresolved"
+      "license_review_status": "assigned; applicable upstream notices preserved",
+      "portable_checkpoint": {
+        "filename": "specialists-jc-lead-ep149.pt",
+        "sha256": "4825c5864e9297d2e1bc7977ea5879af522f182b56483581bf14b90b8c18f465",
+        "bytes": 109785182,
+        "format": "pytorch_state_dict",
+        "weights_only": true,
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/JC/legacy/lead/epoch_0149.pt",
+        "repository_id": "AcappellaSet/ACappellaSet-Models",
+        "path_in_repo": "specialists/JC/legacy/lead/epoch_0149.pt",
+        "status": "private_inference_export_validated",
+        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      }
     },
     {
       "id": "specialists-jc-soprano-ep162",
       "family": "part-specific-htdemucs",
       "training_corpus": "JC",
       "epoch": 162,
-      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_162_si_sdr_6.1072.ckpt",
       "checkpoint_sha256": "9346b2508aa4e9def57598c282d6063e70eac35e5061c6c7440e765c9455472e",
       "checkpoint_bytes": 331141051,
@@ -286,7 +346,7 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
+      "weight_license": "cc-by-nc-4.0",
       "aliases": [],
       "target_role": "soprano",
       "output_contract": {
@@ -294,14 +354,26 @@
         "target_index": 1
       },
       "validation_report": "docs/validation/additional-models-linux-cpu.json",
-      "license_review_status": "TBD; upstream weight rights unresolved"
+      "license_review_status": "assigned; applicable upstream notices preserved",
+      "portable_checkpoint": {
+        "filename": "specialists-jc-soprano-ep162.pt",
+        "sha256": "76f89c544c803ddec130ca0eed6fe3ec554ca264d5e6102964dc17e5f05ff72e",
+        "bytes": 109785182,
+        "format": "pytorch_state_dict",
+        "weights_only": true,
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/JC/legacy/soprano/epoch_0162.pt",
+        "repository_id": "AcappellaSet/ACappellaSet-Models",
+        "path_in_repo": "specialists/JC/legacy/soprano/epoch_0162.pt",
+        "status": "private_inference_export_validated",
+        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      }
     },
     {
       "id": "specialists-jc-tenor-ep119",
       "family": "part-specific-htdemucs",
       "training_corpus": "JC",
       "epoch": 119,
-      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_119_si_sdr_11.1179.ckpt",
       "checkpoint_sha256": "1c20f2a931c8def9e8622190984de3ed599c5913566441cea491c691e4a7f70a",
       "checkpoint_bytes": 330725557,
@@ -325,7 +397,7 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
+      "weight_license": "cc-by-nc-4.0",
       "aliases": [],
       "target_role": "tenor",
       "output_contract": {
@@ -333,14 +405,26 @@
         "target_index": 1
       },
       "validation_report": "docs/validation/additional-models-linux-cpu.json",
-      "license_review_status": "TBD; upstream weight rights unresolved"
+      "license_review_status": "assigned; applicable upstream notices preserved",
+      "portable_checkpoint": {
+        "filename": "specialists-jc-tenor-ep119.pt",
+        "sha256": "0c136befb105df1f6d89e70291981e0192e2f9a05d963febef2f0e58f36a243e",
+        "bytes": 109785182,
+        "format": "pytorch_state_dict",
+        "weights_only": true,
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/JC/legacy/tenor/epoch_0119.pt",
+        "repository_id": "AcappellaSet/ACappellaSet-Models",
+        "path_in_repo": "specialists/JC/legacy/tenor/epoch_0119.pt",
+        "status": "private_inference_export_validated",
+        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      }
     },
     {
       "id": "specialists-jc-vp-ep45",
       "family": "part-specific-htdemucs",
       "training_corpus": "JC",
       "epoch": 45,
-      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_45_si_sdr_15.9240.ckpt",
       "checkpoint_sha256": "931aae478a2aaceb0572dff59a7877987b67a58f78f07621e195cf696fff6dff",
       "checkpoint_bytes": 330004859,
@@ -364,7 +448,7 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
+      "weight_license": "cc-by-nc-4.0",
       "aliases": [],
       "target_role": "vp",
       "output_contract": {
@@ -372,14 +456,26 @@
         "target_index": 1
       },
       "validation_report": "docs/validation/additional-models-linux-cpu.json",
-      "license_review_status": "TBD; upstream weight rights unresolved"
+      "license_review_status": "assigned; applicable upstream notices preserved",
+      "portable_checkpoint": {
+        "filename": "specialists-jc-vp-ep45.pt",
+        "sha256": "1c90231919c3c9e2a1938007ea386b3c6e41c22389a777a285e724cd73f5bc4b",
+        "bytes": 109785182,
+        "format": "pytorch_state_dict",
+        "weights_only": true,
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/JC/legacy/vp/epoch_0045.pt",
+        "repository_id": "AcappellaSet/ACappellaSet-Models",
+        "path_in_repo": "specialists/JC/legacy/vp/epoch_0045.pt",
+        "status": "private_inference_export_validated",
+        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      }
     },
     {
       "id": "specialists-sk-alto-ep237",
       "family": "part-specific-htdemucs",
       "training_corpus": "SK",
       "epoch": 237,
-      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_237_si_sdr_12.8485.ckpt",
       "checkpoint_sha256": "133008dc46d3ebe3ef660c52c65e1252f9ff243a048f97a95d68b04a123ca6a4",
       "checkpoint_bytes": 331884213,
@@ -403,7 +499,7 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
+      "weight_license": "cc-by-nc-4.0",
       "aliases": [],
       "target_role": "alto",
       "output_contract": {
@@ -411,14 +507,26 @@
         "target_index": 1
       },
       "validation_report": "docs/validation/additional-models-linux-cpu.json",
-      "license_review_status": "TBD; upstream weight rights unresolved"
+      "license_review_status": "assigned; applicable upstream notices preserved",
+      "portable_checkpoint": {
+        "filename": "specialists-sk-alto-ep237.pt",
+        "sha256": "78a1673de410ec40b450a766c593f696796fc126259f324d62afe11ee62c6279",
+        "bytes": 109785182,
+        "format": "pytorch_state_dict",
+        "weights_only": true,
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/SK/legacy/alto/epoch_0237.pt",
+        "repository_id": "AcappellaSet/ACappellaSet-Models",
+        "path_in_repo": "specialists/SK/legacy/alto/epoch_0237.pt",
+        "status": "private_inference_export_validated",
+        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      }
     },
     {
       "id": "specialists-sk-baritone-ep43",
       "family": "part-specific-htdemucs",
       "training_corpus": "SK",
       "epoch": 43,
-      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_43_si_sdr_11.1058.ckpt",
       "checkpoint_sha256": "ffe9dafeff2c96595f479a406e327172c95355bed401d233410e9565c806d2ee",
       "checkpoint_bytes": 329966459,
@@ -442,7 +550,7 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
+      "weight_license": "cc-by-nc-4.0",
       "aliases": [],
       "target_role": "baritone",
       "output_contract": {
@@ -450,14 +558,26 @@
         "target_index": 1
       },
       "validation_report": "docs/validation/additional-models-linux-cpu.json",
-      "license_review_status": "TBD; upstream weight rights unresolved"
+      "license_review_status": "assigned; applicable upstream notices preserved",
+      "portable_checkpoint": {
+        "filename": "specialists-sk-baritone-ep43.pt",
+        "sha256": "f6affa1758e913c8ac5d9f2b8f6e7d505f6cda4efdc0aa76d5beea2a45319cd6",
+        "bytes": 109785182,
+        "format": "pytorch_state_dict",
+        "weights_only": true,
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/SK/legacy/baritone/epoch_0043.pt",
+        "repository_id": "AcappellaSet/ACappellaSet-Models",
+        "path_in_repo": "specialists/SK/legacy/baritone/epoch_0043.pt",
+        "status": "private_inference_export_validated",
+        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      }
     },
     {
       "id": "specialists-sk-bass-ep182",
       "family": "part-specific-htdemucs",
       "training_corpus": "SK",
       "epoch": 182,
-      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_182_si_sdr_13.8862.ckpt",
       "checkpoint_sha256": "9b24ac03c73f79810228f0dde23f430b5221f019c5dea7f30500708f4dfd5ac6",
       "checkpoint_bytes": 331347189,
@@ -481,7 +601,7 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
+      "weight_license": "cc-by-nc-4.0",
       "aliases": [],
       "target_role": "bass",
       "output_contract": {
@@ -489,14 +609,26 @@
         "target_index": 1
       },
       "validation_report": "docs/validation/additional-models-linux-cpu.json",
-      "license_review_status": "TBD; upstream weight rights unresolved"
+      "license_review_status": "assigned; applicable upstream notices preserved",
+      "portable_checkpoint": {
+        "filename": "specialists-sk-bass-ep182.pt",
+        "sha256": "07247e6587d36d4261be4fceda9d7bf1e401a3060935644222525abfe7b8ec34",
+        "bytes": 109785182,
+        "format": "pytorch_state_dict",
+        "weights_only": true,
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/SK/legacy/bass/epoch_0182.pt",
+        "repository_id": "AcappellaSet/ACappellaSet-Models",
+        "path_in_repo": "specialists/SK/legacy/bass/epoch_0182.pt",
+        "status": "private_inference_export_validated",
+        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      }
     },
     {
       "id": "specialists-sk-soprano-ep220",
       "family": "part-specific-htdemucs",
       "training_corpus": "SK",
       "epoch": 220,
-      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_220_si_sdr_12.3675.ckpt",
       "checkpoint_sha256": "b9e4c1f9476f13ce673ea007756aec990318ccb4d571c8060355e9f1eccfab60",
       "checkpoint_bytes": 331694389,
@@ -520,7 +652,7 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
+      "weight_license": "cc-by-nc-4.0",
       "aliases": [],
       "target_role": "soprano",
       "output_contract": {
@@ -528,14 +660,26 @@
         "target_index": 1
       },
       "validation_report": "docs/validation/additional-models-linux-cpu.json",
-      "license_review_status": "TBD; upstream weight rights unresolved"
+      "license_review_status": "assigned; applicable upstream notices preserved",
+      "portable_checkpoint": {
+        "filename": "specialists-sk-soprano-ep220.pt",
+        "sha256": "474bdacd5cbf3df65c2b3153688304372ed6fe352658735b3cfc677a52e5e7ff",
+        "bytes": 109785182,
+        "format": "pytorch_state_dict",
+        "weights_only": true,
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/SK/legacy/soprano/epoch_0220.pt",
+        "repository_id": "AcappellaSet/ACappellaSet-Models",
+        "path_in_repo": "specialists/SK/legacy/soprano/epoch_0220.pt",
+        "status": "private_inference_export_validated",
+        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      }
     },
     {
       "id": "specialists-sk-tenor-ep214",
       "family": "part-specific-htdemucs",
       "training_corpus": "SK",
       "epoch": 214,
-      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_214_si_sdr_12.0113.ckpt",
       "checkpoint_sha256": "2f3e5de523bb4bf8eb8fb77e25ce2d2962ac4b00e56b85b2e89614e049878005",
       "checkpoint_bytes": 331659637,
@@ -559,7 +703,7 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
+      "weight_license": "cc-by-nc-4.0",
       "aliases": [],
       "target_role": "tenor",
       "output_contract": {
@@ -567,14 +711,26 @@
         "target_index": 1
       },
       "validation_report": "docs/validation/additional-models-linux-cpu.json",
-      "license_review_status": "TBD; upstream weight rights unresolved"
+      "license_review_status": "assigned; applicable upstream notices preserved",
+      "portable_checkpoint": {
+        "filename": "specialists-sk-tenor-ep214.pt",
+        "sha256": "919f1808e8faa03c582accacc11913a0443dde4d32f02092ae302588aa7fbcca",
+        "bytes": 109785182,
+        "format": "pytorch_state_dict",
+        "weights_only": true,
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/SK/legacy/tenor/epoch_0214.pt",
+        "repository_id": "AcappellaSet/ACappellaSet-Models",
+        "path_in_repo": "specialists/SK/legacy/tenor/epoch_0214.pt",
+        "status": "private_inference_export_validated",
+        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      }
     },
     {
       "id": "specialists-sk-vp-ep205",
       "family": "part-specific-htdemucs",
       "training_corpus": "SK",
       "epoch": 205,
-      "status": "local_checkpoint_linux_cpu_validated_weights_unpublished",
+      "status": "private_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_205_si_sdr_13.7446.ckpt",
       "checkpoint_sha256": "924efa1dd19fc793c0c8ffb32d0bd736a9791f01bc77f18d2f1eeedf06b7411d",
       "checkpoint_bytes": 331571765,
@@ -598,7 +754,7 @@
         "right_padding": "zeros"
       },
       "url": null,
-      "weight_license": null,
+      "weight_license": "cc-by-nc-4.0",
       "aliases": [],
       "target_role": "vp",
       "output_contract": {
@@ -606,7 +762,19 @@
         "target_index": 1
       },
       "validation_report": "docs/validation/additional-models-linux-cpu.json",
-      "license_review_status": "TBD; upstream weight rights unresolved"
+      "license_review_status": "assigned; applicable upstream notices preserved",
+      "portable_checkpoint": {
+        "filename": "specialists-sk-vp-ep205.pt",
+        "sha256": "9f850e35bad3b83e8330e31b30f4a4f38460db9d02f3a3a798c3c4bc6294c77b",
+        "bytes": 109785182,
+        "format": "pytorch_state_dict",
+        "weights_only": true,
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/SK/legacy/vp/epoch_0205.pt",
+        "repository_id": "AcappellaSet/ACappellaSet-Models",
+        "path_in_repo": "specialists/SK/legacy/vp/epoch_0205.pt",
+        "status": "private_inference_export_validated",
+        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      }
     }
   ],
   "repository_id": "AcappellaSet/ACappellaSet-Models"
