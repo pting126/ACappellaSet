@@ -2,10 +2,15 @@
 
 Dataset resources, model weights, and code for a cappella source separation.
 
-**Fixed_6stem_htdemucs_SKnJC weights and Linux CPU inference are available.** Download the
-110 MB portable checkpoint from [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models)
-using the verified download command below. The dataset is being prepared for
-Zenodo. Original fixed/specialist scripts, data preparation, and canonical scoring are included.
+**ACappellaSet v1.0 is published on [Hugging Face](https://huggingface.co/datasets/AcappellaSet/ACappellaSet).**
+The release includes audio, annotations, reference splits, documentation, and
+checksums. Access requires accepting the dataset Terms and manual approval.
+
+**Inference code is available; public checkpoint downloads are pending.** The
+[model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models) is currently
+private. Inference requires an authorized local copy of a registered checkpoint;
+dataset access approval does not grant model access. Original fixed/specialist
+scripts, data preparation, and canonical scoring are included.
 Conditioned inference, portable training recipes, and exact historical split manifests are included.
 
 ## Availability
@@ -14,8 +19,8 @@ Conditioned inference, portable training recipes, and exact historical split man
 | --- | --- |
 | Fixed_6stem_htdemucs_SKnJC inference | Implemented; actual-checkpoint Linux CPU validation passed |
 | Checkpoint inventory | 27 active checkpoints, 2 deferred AI-augmented checkpoints; external baseline linked |
-| Public checkpoint downloads | Fixed_6stem_htdemucs_SKnJC available on [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models) |
-| Dataset and annotations | Zenodo dataset record pending |
+| Public checkpoint downloads | Pending; model repository is private; use an authorized local checkpoint |
+| Dataset and annotations | [ACappellaSet v1.0 published on Hugging Face](https://huggingface.co/datasets/AcappellaSet/ACappellaSet); manual access approval |
 | Fixed/specialist inference code | All 3 fixed models and 12 original specialists registered; unpublished weights must be supplied locally |
 | Fixed/specialist training | Pinned MSS patch and portable launcher; see validation limits in the training guide |
 | Specialist data preparation | Runnable; preserves the different JC and SK residual recipes |
@@ -28,11 +33,11 @@ Conditioned inference, portable training recipes, and exact historical split man
 ## Run inference
 
 Follow the [installation and inference guide](docs/inference.md) to create the
-tested Python 3.10 environment. Download and verify the registered checkpoint:
+tested Python 3.10 environment. Supply an authorized local copy of the registered
+checkpoint (the loader verifies its SHA-256):
 
 ```bash
-python download.py --model Fixed_6stem_htdemucs_SKnJC
-python inference.py --model Fixed_6stem_htdemucs_SKnJC --checkpoint checkpoints/Fixed_6stem_htdemucs_SKnJC.pt --input /path/to/mixture.wav --output outputs/my-mixture --device cpu
+python inference.py --model Fixed_6stem_htdemucs_SKnJC --checkpoint /path/to/Fixed_6stem_htdemucs_SKnJC.pt --input /path/to/mixture.wav --output outputs/my-mixture --device cpu
 ```
 
 The command writes stereo 44.1 kHz Float32 WAVs named `vp`, `bass`, `soprano`,
@@ -44,7 +49,10 @@ before strict loading, and existing output directories are not overwritten.
 On two validation inputs, all six outputs matched the research implementation
 **bit-for-bit** in a fresh Linux CPU environment. Six behavioral tests passed; the portable export also matches exactly.
 See the [validation report](docs/validation/combined-ep333-portable-linux-cpu.json).
-CUDA and macOS have not been validated, and these tests are not quality scores.
+The [October 21 workflow audit](docs/validation/workflow-audit-2026-10-21.json)
+additionally covers macOS inference, fresh Linux CPU/CUDA environments, short
+training runs for all 22 recipes, WAV scoring, and conditioned resume. These
+checks do not establish full-training convergence or reproduce paper scores.
 
 ## Other script workflows
 
@@ -85,17 +93,22 @@ The AI-augmented K6 and K6_no_aug releases are deferred.
 The [inference registry](manifests/models.json) separately records models the
 public code can load. See [model documentation](docs/models.md).
 
-Weights are hosted in the [Hugging Face model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models),
-with verified checksums and applicable licenses. Fixed_6stem_htdemucs_SKnJC is available;
-other checkpoints remain in preparation. A final paper snapshot may also
-be archived on Zenodo. Large checkpoints are not committed to this GitHub repository.
+The [Hugging Face model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models)
+is currently private. A portable Fixed_6stem_htdemucs_SKnJC checkpoint has been
+uploaded there, but it is not publicly downloadable. Further weight release work
+is in progress. Large checkpoints are not committed to this GitHub repository.
 
 ## Dataset and training
 
-Audio, annotations, splits, format documentation, and applicable terms will be
-published in a Zenodo dataset record linked from this repository. See the
-[dataset guide](docs/dataset.md). The current specialist preparation script consumes the historical pre-split
-six-stem layout; it does not create the forthcoming Zenodo release or its splits.
+Download the official [ACappellaSet v1.0 release](https://huggingface.co/datasets/AcappellaSet/ACappellaSet)
+after manual access approval. It contains 53 songs in 107 recording versions,
+distributed as primary and alternate audio ZIPs with standalone metadata,
+song-level reference splits, documentation, and checksums. See the
+[dataset guide](docs/dataset.md) for access, download, extraction, and format details.
+
+The preparation scripts currently require the historical pre-split six-stem
+layout. They do not yet convert the published archive layout to those inputs;
+this is a code integration limitation, not a pending dataset release.
 See the [training guide](docs/training.md) and [runtime validation report](docs/validation/training-runtime.json).
 
 ## Repository layout
@@ -137,9 +150,15 @@ the included [K/L/M recipes](docs/conditioned-training.md) and vendored architec
 Original code and documentation use the [MIT license](LICENSE). Vendored and
 adapted code retains its upstream notices; see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-**Project model-weight license: TBD.** Further weight uploads are paused pending
-upstream rights clarification. See the [weight licensing status](https://huggingface.co/AcappellaSet/ACappellaSet-Models/blob/main/WEIGHTS_NOTICE.md).
-Dataset audio and third-party rights remain separate.
+Model weights have separate release terms; the code license does not license
+them. Their public release is pending. Model terms and upstream notices are
+maintained in the currently private
+[model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models).
+Dataset audio is governed by the published
+[ACappellaSet Non-commercial Research Use Terms](https://huggingface.co/datasets/AcappellaSet/ACappellaSet#full-terms-of-use),
+separately from this repository's code license and any model-weight terms.
 
-[CITATION.cff](CITATION.cff) currently describes this repository. Paper metadata
-and Zenodo DOIs will be added when available.
+[CITATION.cff](CITATION.cff) currently describes this software repository. For the
+dataset, cite ACappellaSet, version 1.0, and its
+[official repository](https://huggingface.co/datasets/AcappellaSet/ACappellaSet).
+The accompanying paper citation will be added when available.

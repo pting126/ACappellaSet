@@ -1,7 +1,8 @@
 # Checkpoints proposed for release
 
 This inventory covers the updated release plan: **29 project checkpoints (27 active, 2 deferred)**, plus one external baseline to link to. It is a proposed release set, not a claim that weights are already downloadable or that every final paper selection is frozen. The [Hugging Face repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models)
-is created, but Combined portable weights are published; other artifacts remain in preparation. On 2026-10-14, the
+is currently private: SKnJC portable weights are uploaded there, but public
+checkpoint downloads remain pending. On 2026-10-14, the
 three historical fixed models and 12 historical specialists were confirmed
 for release inclusion. The ICASSP release excludes newer fixed-six training
 runs and later singer-enrollment specialists. The conditioned candidates below
@@ -74,7 +75,7 @@ Singer-conditioned and dual models require their matching encoder state. The pub
 
 ## Distribution
 
-Host project weights on [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models). An optional final paper model archive may be deposited on Zenodo. Keep configurations, model code, registry entries, and download utilities in GitHub. Before publishing each weight, freeze its intended use, verify loading and inference, and record applicable weight/data terms. **Project weight license: TBD.** Further uploads are paused pending upstream
-weight rights clarification.
+Host project weights on [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models). An optional final paper model archive may be deposited on Zenodo. Keep configurations, model code, registry entries, and download utilities in GitHub. Before publishing each weight, freeze its intended use, verify loading and inference, and record applicable weight/data terms. Weight terms and upstream notices are maintained separately in the model
+repository; this GitHub repository does not grant model-weight rights.
 K6 and K6_no_aug remain deferred. Code licensing, technical validation,
 upstream weight rights, and training-data rights are separate.

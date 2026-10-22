@@ -8,5 +8,8 @@ scientific helper functions retain source provenance in
 Use root-level `prepare_data.py` for exact historical conditioned manifests and
 `prepare_specialists.py` for original mixture-only two-stem inputs, including the
 optional exact SK real-target filters. See [preparation](../docs/preparation.md).
-No audio is stored here. The final Zenodo archive layout remains a separate
-release input; the current manifests describe the historical experiment layout.
+No audio is stored here. The official
+[ACappellaSet v1.0 dataset](https://huggingface.co/datasets/AcappellaSet/ACappellaSet)
+is published separately. The current manifests describe the historical experiment
+layout; conversion from the release's primary/alternate archive layout is not
+yet implemented. See the [dataset guide](../docs/dataset.md).

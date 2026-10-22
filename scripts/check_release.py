@@ -16,6 +16,10 @@ def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 
 def main():
     checks=0
+    patch=json.loads((ROOT/'third_party/patches/mss-training.json').read_text())
+    if digest(ROOT/'third_party/patches/mss-training.patch')!=patch['patch_sha256']:
+        raise ValueError('MSS training patch checksum mismatch')
+    checks+=1
     for spec in entries():
         if digest(ROOT/spec['config'])!=spec['config_sha256']:raise ValueError('Config changed: '+spec['id'])
         checks+=1

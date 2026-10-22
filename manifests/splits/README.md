@@ -7,5 +7,9 @@ records the original six-stem memberships and SK Soprano/Baritone real-target fi
 
 Use `prepare_data.py` to resolve local audio roots and verify the audio.
 See [preparation](../../docs/preparation.md) for layouts and enrollment policies.
-The final Zenodo version and archive mapping remain pending the dataset release.
+The official [ACappellaSet v1.0 dataset](https://huggingface.co/datasets/AcappellaSet/ACappellaSet)
+is published, with one `song_id,split` assignment per song in `metadata/splits.csv`.
+These query/enrollment manifests preserve the historical experiment inputs;
+conversion from the published audio layout is not yet implemented. See the
+[dataset registry](../dataset.json) for the release revision and checksums.
 Do not regenerate random splits or infer enrollment eligibility from filenames.

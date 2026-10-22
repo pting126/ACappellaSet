@@ -1,10 +1,109 @@
 {
   "schema_version": 1,
   "name": "ACappellaSet",
-  "status": "release_in_preparation",
-  "hosting": "Zenodo",
-  "record_url": null,
+  "version": "1.0",
+  "status": "published",
+  "hosting": "Hugging Face",
+  "repo_id": "AcappellaSet/ACappellaSet",
+  "record_url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet",
+  "revision": "21720788c29ae6c284f3b216b842d5327c940ca8",
   "doi": null,
-  "license": null,
-  "files": []
+  "license": "acappellaset-non-commercial-research-use-v1",
+  "license_url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet/blob/main/LICENSE",
+  "terms_url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet#full-terms-of-use",
+  "access": {
+    "gated": "manual",
+    "approval_required": true,
+    "instructions_url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet#license-and-access"
+  },
+  "distribution": "audio_archives_and_standalone_metadata",
+  "automatic_dataset_viewer": false,
+  "automatic_load_dataset_configured": false,
+  "metadata_file": "metadata/metadata.csv",
+  "split_file": "metadata/splits.csv",
+  "split_key": "song_id",
+  "audio_layout": {
+    "primary": "audio/primary/<song_id>/*.wav",
+    "alternates": "audio/alternates/<song_id>/<variant>/*.wav"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet/resolve/21720788c29ae6c284f3b216b842d5327c940ca8/LICENSE",
+      "bytes": 8207,
+      "sha256": "8166849543b1f66c18eb5ac259727a802b8b5e864e66613e9f6aa517bed83b6c"
+    },
+    {
+      "path": "METADATA_SCHEMA.md",
+      "url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet/resolve/21720788c29ae6c284f3b216b842d5327c940ca8/METADATA_SCHEMA.md",
+      "bytes": 8369,
+      "sha256": "ce98512a71a0dfa44bcd8e69a45a9f96c693ed892cb2760b67508efa11410d3a"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet/resolve/21720788c29ae6c284f3b216b842d5327c940ca8/PROVENANCE.md",
+      "bytes": 4284,
+      "sha256": "1e126ca368716684b1554b005a3cad5f1f11cd31c7a45b307c1bcdec4e3bc677"
+    },
+    {
+      "path": "README.md",
+      "url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet/resolve/21720788c29ae6c284f3b216b842d5327c940ca8/README.md",
+      "bytes": 24766,
+      "sha256": "6dc97585b8efe13dce4f9fdd16fa44e88a446dc5fb35cfcc3ca2c6d8c307bc2c"
+    },
+    {
+      "path": "SPLITS.md",
+      "url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet/resolve/21720788c29ae6c284f3b216b842d5327c940ca8/SPLITS.md",
+      "bytes": 2713,
+      "sha256": "06b02fc3a3439898d2e3c42f4f9bba9f2295d117c036708934d1486b4eac66fc"
+    },
+    {
+      "path": "checksums/audio_SHA256SUMS",
+      "url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet/resolve/21720788c29ae6c284f3b216b842d5327c940ca8/checksums/audio_SHA256SUMS",
+      "bytes": 64582,
+      "sha256": "30175044c6e7938f28764cb2e26696ea686be361d2b8cde915f95bd5a7646881"
+    },
+    {
+      "path": "checksums/metadata_SHA256SUMS",
+      "url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet/resolve/21720788c29ae6c284f3b216b842d5327c940ca8/checksums/metadata_SHA256SUMS",
+      "bytes": 742,
+      "sha256": "b66a95db9f1424007565cfdad6134349961afa420a38e4c746c9f523d571986d"
+    },
+    {
+      "path": "file_manifest.csv",
+      "url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet/resolve/21720788c29ae6c284f3b216b842d5327c940ca8/file_manifest.csv",
+      "bytes": 99336,
+      "sha256": "89fd0fc6d8e4654407a1f35da556b8ff511d275faba037d7810fc96bc5819b5b"
+    },
+    {
+      "path": "metadata/metadata.csv",
+      "url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet/resolve/21720788c29ae6c284f3b216b842d5327c940ca8/metadata/metadata.csv",
+      "bytes": 14657,
+      "sha256": "2546420594a4a461f97f5454aaf3ca4ec73911dfe0a87097db702dfce5c2ab0f"
+    },
+    {
+      "path": "metadata/splits.csv",
+      "url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet/resolve/21720788c29ae6c284f3b216b842d5327c940ca8/metadata/splits.csv",
+      "bytes": 638,
+      "sha256": "b7a332b9c5690ad3026889a1c6dacfdfb85c6af8883e3509aab27e90c6a2b105"
+    },
+    {
+      "path": "audio/AcappellaSet_v1.0_primary.zip",
+      "url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet/resolve/21720788c29ae6c284f3b216b842d5327c940ca8/audio/AcappellaSet_v1.0_primary.zip",
+      "bytes": 10655126684,
+      "sha256": "b7bcdbf5f5703f440346a4a545c633d03946ceddb8615e33bc9cc2f0e489deb8"
+    },
+    {
+      "path": "audio/AcappellaSet_v1.0_alternates.zip",
+      "url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet/resolve/21720788c29ae6c284f3b216b842d5327c940ca8/audio/AcappellaSet_v1.0_alternates.zip",
+      "bytes": 10195226758,
+      "sha256": "e68857bd83cacf30801505ed046402c95372dcc98ed2f5e20bb3c627d3fe44ca"
+    },
+    {
+      "path": "SHA256SUMS",
+      "url": "https://huggingface.co/datasets/AcappellaSet/ACappellaSet/resolve/21720788c29ae6c284f3b216b842d5327c940ca8/SHA256SUMS",
+      "bytes": 1045,
+      "sha256": "b37001a7fb7c1a1c2f879420f0cd00d76dfd2d9e04239cf5084375d37d1d66f7"
+    }
+  ]
 }

@@ -12,18 +12,21 @@ jobs:
           python-version: '3.10'
       - name: Install CPU inference environment
         run: |
+          python -m pip install pip==25.2
           python -m pip install torch==2.10.0 torchaudio==2.10.0 --index-url https://download.pytorch.org/whl/cpu
           python -m pip install -r requirements-linux-cpu-lock.txt
-      - name: Test portable tools and canonical scoring
+          python -m pip check
+      - name: Verify and prepare the pinned MSS patch
         run: |
-          python -m unittest discover -s tests -p test_release_tools.py -v
-          python -m unittest discover -s tests -p test_evaluate.py -v
-          python -m unittest discover -s tests -p test_conditioned.py -v
-          python -m unittest discover -s tests -p test_conditioned_runtime.py -v
-          python -m unittest discover -s tests -p test_data_protocol.py -v
-          python -m unittest discover -s tests -p test_training.py -v
-          python -m unittest discover -s tests -p test_reproduction.py -v
-          python -m unittest discover -s tests -p test_benchmark.py -v
+          git clone --filter=blob:none https://github.com/ZFTurbo/Music-Source-Separation-Training.git "$RUNNER_TEMP/mss"
+          git -C "$RUNNER_TEMP/mss" checkout c6a02267a2969b94dc2b261b6701a32ad9b7f118
+          python scripts/prepare_mss.py --checkout "$RUNNER_TEMP/mss" --check-only
+          python scripts/prepare_mss.py --checkout "$RUNNER_TEMP/mss"
+      - name: Test portable tools and canonical scoring
+        env:
+          ACAPPELLASET_MSS_CHECKOUT: ${{ runner.temp }}/mss
+        run: |
+          python -m unittest discover -s tests -v
       - name: Verify release metadata and examples
         run: |
           python scripts/check_release.py

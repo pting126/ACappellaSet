@@ -72,6 +72,30 @@ Logging is offline. Existing output directories are rejected; `launch.json`
 records the command and code/config/initializer hashes. Resume, DDP, and
 multi-corpus checkpoint selection are not exposed by this wrapper.
 
+This trains from the registered PT6S initializer. Fine-tuning an existing
+ACappellaSet checkpoint on a new corpus is not exposed by this launcher.
+The fixed/specialist outputs are native MSS checkpoints; the public
+`inference.py` registry accepts the historical registered weights, while its
+`--run-manifest` route supports newly trained conditioned models only.
+
+To validate a newly trained fixed/specialist checkpoint and export its estimates,
+use the patched MSS validation CLI with the same configuration and source names
+as the training run. For example, from this repository:
+
+```bash
+python /path/to/mss/valid.py --model_type htdemucs \
+  --config_path configs/fixed/JC.yaml \
+  --start_check_point runs/jc-fixed/last_htdemucs.ckpt \
+  --valid_path /path/to/jc/valid --device_ids 0 \
+  --metrics sdr si_sdr --store_dir outputs/jc-fixed --output_subtype FLOAT
+```
+
+This command requires reference stems as well as mixtures. `FLOAT` writes
+32-bit floating-point WAV estimates without integer quantization; the native
+`auto` setting may instead write 16-bit FLAC. To compute the canonical paper
+metric on exported estimates, create a paired manifest and use `evaluate.py`
+as described in [evaluation](evaluation.md).
+
 The included configurations are byte-identical research configs, including
 training duration and augmentation settings. A new run is not guaranteed to
 recover a historical checkpoint: exact splits, sample order, hardware, software,
@@ -79,6 +103,15 @@ and continuation history also matter. Native MSS validation is distinct from
 the canonical paper scorer in [evaluation.md](evaluation.md).
 
 ## Validation record
+
+The [October 21–22 workflow audit](validation/workflow-audit-2026-10-21.json)
+covers all 15 fixed/specialist recipes in fresh Linux environments: launcher
+preflight, short native training, checkpoint reload, FLOAT WAV export, and
+canonical scoring on synthetic fixtures. CPU checks used one optimizer update;
+A40 GPU checks retained mixed precision and ran 16 batches, producing 13–16
+optimizer updates after initial AMP skips. Only the diagnostic epoch/step
+budgets were reduced; batch size, architecture, loss, and augmentation settings
+were retained. These checks establish short workflow execution, not convergence.
 
 The [training smoke report](validation/mss-training-smoke.json) records exact-base
 patch application, a training-launcher dry run, verified specialist head mapping,

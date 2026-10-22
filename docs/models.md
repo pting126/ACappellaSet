@@ -3,8 +3,10 @@
 The release registry is [`manifests/models.json`](../manifests/models.json).
 It contains fixed and original specialist identities and inference settings.
 The [conditioned registry](../manifests/conditioned.json) adds seven recipes covering 12 active selections.
-Combined portable weights are available. The [Hugging Face model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models)
-contains the Combined checkpoint and metadata for the remaining planned weights.
+Public checkpoint downloads are pending. The currently private
+[Hugging Face model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models)
+contains the SKnJC portable checkpoint and release metadata. All inference
+examples require an authorized local checkpoint.
 The [checkpoint checklist](checkpoints.md) covers all candidates identified in
 the updated release plan.
 
@@ -41,17 +43,19 @@ identities remain recorded.
 ## Public inference support
 
 All three fixed models and the 12 original mixture-only specialists are registered.
-Use `python inference.py --list-models` to see IDs, ordered outputs, and download
-availability. The same strict loader verifies each model's checkpoint/config
+Use `python inference.py --list-models` to see IDs and ordered outputs. The
+`Checkpoint download` column reflects a registered URL, not a live access check;
+the registered portable URL currently requires private repository access. The same strict loader verifies each model's checkpoint/config
 hashes. Specialists additionally enforce residual index 0 and target index 1.
-Only the Combined portable checkpoint is published; the other adapters require
+The SKnJC portable checkpoint is uploaded privately; other adapters require
 the exact original local checkpoint. Their original filenames/hashes remain in
 the registry. Shared part-, singer-, and dual-conditioned adapters are also available
 with verified local checkpoints; see [conditioned inference](conditioned-inference.md).
 
 The active release plan has 27 checkpoints; K6 and K6_no_aug are deferred.
-Natural SK-only weight licensing is Apache-2.0; JC-trained weight terms need
-clarification. The existing Combined Apache release remains recorded.
+Weight terms and upstream notices are maintained separately in the model
+repository. This GitHub repository's MIT code license does not license weights;
+historical publication receipts retain their original terms and dates.
 
 Public fixed-model names are `Fixed_6stem_htdemucs_SK`,
 `Fixed_6stem_htdemucs_JC`, and `Fixed_6stem_htdemucs_SKnJC`.

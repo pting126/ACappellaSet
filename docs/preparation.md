@@ -15,8 +15,11 @@ python prepare_specialists.py --corpus SK --input /path/to/sk/6_stem --output da
 | JC | train / valid / test | 30 / 10 / 10 | Existing mixture, unchanged | Float32 sum of other five stems |
 | SK | train_flat / valid_flat / test_flat | 69 / 11 / 20 | Float32 sum of six stems | Additive mixture minus target |
 
-These counts describe the historical six-stem inputs, not a guarantee about the
-future Zenodo layout. All inputs must be aligned, finite, 44.1 kHz stereo.
+These counts describe the historical six-stem inputs. The published
+[ACappellaSet v1.0 archives](https://huggingface.co/datasets/AcappellaSet/ACappellaSet)
+use a different layout and omit absent-role padding WAVs; see the
+[dataset guide](dataset.md#training-and-evaluation-inputs). All inputs must be
+aligned, finite, 44.1 kHz stereo.
 Summation order matches the original preparation scripts. There is no peak
 normalization or clipping; generated files are Float32 WAVs.
 
@@ -87,6 +90,9 @@ across train/validation/test; other roles retain the full inventory.
 Without `--allow-subset`, preparation now checks exact membership as well as
 counts. Composition IDs are disjoint across train, validation, and test.
 
-These manifests describe the historical experiments. A final Zenodo archive
-identifier and mapping from its published layout remain pending the dataset
-release; the scripts do not assume that an unpublished archive is available.
+These manifests describe the historical experiments. The official dataset is
+published; its version, revision, file URLs, and checksums are recorded in
+[`manifests/dataset.json`](../manifests/dataset.json). Conversion from its
+primary/alternate archive layout to these historical input paths and absent-role
+padding is not yet implemented by the preparation scripts. JaCappella (JC) is a
+separate corpus and is not included in ACappellaSet.

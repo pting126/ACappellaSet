@@ -1,7 +1,7 @@
 {
   "upstream_repository": "https://github.com/ZFTurbo/Music-Source-Separation-Training",
   "base_commit": "c6a02267a2969b94dc2b261b6701a32ad9b7f118",
-  "patch_sha256": "76e3906b5df0ccbf8873548ffa79c7f61e3aad164920dd7af0cbb1409dd023d1",
+  "patch_sha256": "173e304386e84859e84e4bd08d964c80187ec1db8b2099d09d2dd872cafb81d5",
   "files": [
     {
       "path": "train.py",
@@ -19,7 +19,7 @@
       "path": "valid.py",
       "upstream_sha256": "4abd17bcb5f93af7d968f51dd23c163cead8eac2a0ab8060626710775b51b9c0",
       "audited_source_sha256": "6542aa63dc82f4c50eefc2f5b8ef5829c7e139fb3c2a1706f8b796576685bf08",
-      "patched_sha256": "6542aa63dc82f4c50eefc2f5b8ef5829c7e139fb3c2a1706f8b796576685bf08"
+      "patched_sha256": "50c6a44c30bbc5bbe83a98260b3b4099752031805b823d2908835270588c8b18"
     },
     {
       "path": "utils/losses.py",
@@ -42,8 +42,9 @@
   ],
   "curation": [
     "Removed private portal path injection and later opt-in multi-corpus validation bridge",
-    "Normalized line endings to LF; scientific loss and head initialization functions unchanged"
+    "Normalized line endings to LF; scientific loss and head initialization functions unchanged",
+    "October 21, 2026: honor explicit validation output_subtype FLOAT/PCM_16; retain peak-based auto behavior and unchanged model/scoring math."
   ],
   "scope": "Original MSS fixed and mixture-only specialist training; not conditioned K/L/M recipes",
-  "validation": "Exact-base patch application and synthetic fixed/specialist optimizer steps PASS; see docs/validation/mss-training-smoke.json"
+  "validation": "Exact-base patch application, 43-test suite, all 15 fixed/specialist CPU and A40 GPU short native training/reload/FLOAT export/scoring workflows PASS. See docs/validation/workflow-audit-2026-10-21.json; historical smoke report retained."
 }

@@ -1,9 +1,11 @@
 # Fixed-output inference
 
-The Fixed_6stem_htdemucs_SKnJC model has a working inference entry point and a published
+The Fixed_6stem_htdemucs_SKnJC model has a working inference entry point and an uploaded
 110 MB portable checkpoint on [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models).
-The checkpoint is licensed under Apache-2.0. Training-data terms and third-party
-rights are separate from the rights granted by the project; see [checkpoints](checkpoints.md).
+The model repository is currently private; downloads require repository access.
+Model-weight terms and upstream notices are maintained separately in the model
+repository; this repository's code license does not license weights.
+See [checkpoints](checkpoints.md).
 
 ## Installation: tested Linux CPU environment
 
@@ -35,7 +37,7 @@ SHA-256: cbfa201798f7e7f4766bacd3aa8622b3ae40321729bd7f0b3555ac4348c57879
 Size: 333986969 bytes
 ```
 
-The published model-only portable export is:
+The model-only portable export uploaded to the private repository is:
 
 ```text
 Fixed_6stem_htdemucs_SKnJC.pt
@@ -55,18 +57,23 @@ not accept arbitrary checkpoints or change output heads automatically.
 
 ## Download the checkpoint
 
+For an account with access to the private model repository, use the Hugging Face
+CLI (install `huggingface_hub` if needed):
+
 ```bash
-python download.py --model Fixed_6stem_htdemucs_SKnJC
+hf auth login
+hf download AcappellaSet/ACappellaSet-Models fixed/SKnJC/legacy/Fixed_6stem_htdemucs_SKnJC.pt --local-dir checkpoints
 ```
 
-No Hugging Face account or token is needed. The standard-library downloader uses
-an immutable release revision and verifies size and SHA-256 before publishing
-the local file. Existing files are reused only if their hash matches.
+This preserves the repository path under `checkpoints/`. Dataset access approval
+is separate from permission to download private model weights. The existing
+`download.py` helper makes anonymous requests and cannot download from the
+currently private repository. A verified local checkpoint can be used directly.
 
 ## Separate an audio file
 
 ```bash
-python inference.py --model Fixed_6stem_htdemucs_SKnJC --checkpoint checkpoints/Fixed_6stem_htdemucs_SKnJC.pt --input /path/to/mixture.wav --output outputs/my-mixture --device cpu
+python inference.py --model Fixed_6stem_htdemucs_SKnJC --checkpoint checkpoints/fixed/SKnJC/legacy/Fixed_6stem_htdemucs_SKnJC.pt --input /path/to/mixture.wav --output outputs/my-mixture --device cpu
 ```
 
 The output directory must not already exist. It contains:
@@ -104,7 +111,10 @@ input using the actual checkpoint. Five behavioral tests passed. See the
 
 This establishes the tested Linux CPU path, not separation quality or a replay
 of historical GPU paper results. The CLI retains a CUDA option and original
-CUDA AMP behavior, but CUDA, macOS, and MPS were not validated in this release.
+CUDA AMP behavior. This historical parity report does not validate CUDA or MPS.
+The [October 21 workflow audit](validation/workflow-audit-2026-10-21.json) adds
+macOS inference and short Linux CPU/A40 training, export, and scoring checks;
+it does not claim portable-checkpoint CUDA parity or full-training convergence.
 The CPU lock is not a CUDA installation guide. The additional original fixed/specialist adapters and training smoke checks
 have separate reports; see [conditioned inference](conditioned-inference.md) for the shared query adapters.
 

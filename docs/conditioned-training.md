@@ -20,6 +20,10 @@ python -m pip check
 ```
 
 For CPU diagnostics, substitute the PyTorch `/whl/cpu` index and pass `--cpu`.
+For the complete pinned Linux CUDA training environment (including the MSS
+dependencies), install `requirements-training-linux-cu128-lock.txt` after the
+CUDA wheels and run `python -m pip check` again. The smaller recipe requirement
+files pin direct dependencies; the complete lock also fixes their dependencies.
 Full training requires suitable GPU resources. Runtime verification is recorded
 in the training validation report; it does not establish convergence to the
 paper's scores on a different software/hardware stack.
@@ -60,8 +64,11 @@ The recipe fixes 200,000 optimizer updates, batch size 2 with four accumulated
 microbatches, seed 1337, ten-second mixture/enrollment windows, learning rates
 1e-5 (separator) and 1e-6 (encoder), and the original augmentation and loss.
 There is no learning-rate scheduler. `--max-updates 4` permits a short diagnostic
-run without changing the recorded 200k budget. `--dry-run` verifies inputs and
-prints the run identity. `--workers` controls data-loading workers.
+run without changing the recorded 200k budget. `--dry-run` checks initializer
+hashes, prepared-manifest hashes and recipe-specific training/validation set
+identities, then prints the run identity. Singer and dual recipes require the
+correct singer initializer even for a dry run. It does not execute a forward
+pass or optimizer update. `--workers` controls data-loading workers.
 
 To continue, repeat the same command and output directory with
 `--resume runs/K5/latest.pt`. Resume checks the checkpoint hash, recipe, manifests,
@@ -102,3 +109,12 @@ python inference.py --run-manifest runs/K5/inference.json \
 For part-only training use `--role S`; dual training requires both a role and
 enrollment. The manifest identifies the recipe automatically. The output is
 labeled a new training run, never a published paper checkpoint.
+
+## Validation record
+
+The [October 21–22 workflow audit](validation/workflow-audit-2026-10-21.json)
+checks all seven conditioned recipes through a short real-input training run,
+export, and public inference CLI on both CPU and an A40 GPU. A two-update K5 run
+also matched a stop-after-one/resume run exactly on each device, including model,
+optimizer, random state, data position, and loss history. This is a short
+execution and resume check, not evidence of convergence to paper scores.

@@ -2,13 +2,14 @@
 
 Install the [inference environment](../docs/inference.md) first. The following
 example uses generated tones, so no dataset download or recording permission is
-needed. It is an installation check, **not an a cappella quality demonstration**.
+needed for the generated audio. You still need an authorized local checkpoint;
+the model repository is private and public weight downloads are pending.
+This is an installation check, **not an a cappella quality demonstration**.
 
 ```bash
 python examples/make_demo_audio.py --output outputs/demo-input
-python download.py --model Fixed_6stem_htdemucs_SKnJC
 python inference.py --model Fixed_6stem_htdemucs_SKnJC \
-  --checkpoint checkpoints/Fixed_6stem_htdemucs_SKnJC.pt \
+  --checkpoint /path/to/Fixed_6stem_htdemucs_SKnJC.pt \
   --input outputs/demo-input/mixture.wav --output outputs/demo-separated --device cpu
 ```
 

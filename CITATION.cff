@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Repository citation only; paper metadata and dataset/model DOIs are pending."
+message: "Use this entry for the software. For the dataset, cite ACappellaSet v1.0 and https://huggingface.co/datasets/AcappellaSet/ACappellaSet. The accompanying paper citation is pending."
 title: "ACappellaSet"
 type: software
 license: MIT
@@ -7,4 +7,4 @@ authors:
   - name: "ACappellaSet contributors"
 repository-code: "https://github.com/pting126/ACappellaSet"
 url: "https://github.com/pting126/ACappellaSet"
-abstract: "Dataset resources, models, and code for a cappella source separation. Public release in preparation."
+abstract: "Code and research resources for a cappella source separation, accompanying the published ACappellaSet v1.0 dataset on Hugging Face."

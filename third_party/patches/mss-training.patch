@@ -203,7 +203,40 @@
  if __name__ == "__main__":
 --- a/valid.py
 +++ b/valid.py
-@@ -731,6 +731,12 @@
+@@ -26,6 +26,17 @@
+ warnings.filterwarnings("ignore")
+ 
+ 
++def write_estimate(base, estimates, sample_rate, output_subtype='auto'):
++    """Honor explicit sample formats; preserve legacy peak-based auto output."""
++    if output_subtype not in ('auto', 'FLOAT', 'PCM_16'):
++        raise ValueError('Unsupported output subtype: ' + str(output_subtype))
++    floating = output_subtype == 'FLOAT' or (output_subtype == 'auto' and float(np.abs(estimates).max()) > 1.0)
++    extension = '.flac' if output_subtype == 'auto' and not floating else '.wav'
++    path = str(base) + extension
++    sf.write(path, estimates.T, sample_rate, subtype='FLOAT' if floating else 'PCM_16')
++    return path
++
++
+ def get_mixture_paths(
+     args: argparse.Namespace,
+     verbose: bool,
+@@ -330,13 +341,7 @@
+             if store_dir:
+                 os.makedirs(store_dir, exist_ok=True)
+                 base = f"{store_dir}/{os.path.basename(folder)}_{instr}"
+-                peak = float(np.abs(estimates).max())
+-                if peak <= 1.0:
+-                    out_path = f"{base}.flac"
+-                    sf.write(out_path, estimates.T, sr, subtype='PCM_16')
+-                else:
+-                    out_path = f"{base}.wav"
+-                    sf.write(out_path, estimates.T, sr, subtype='FLOAT')
++                write_estimate(base, estimates, sr, getattr(args, 'output_subtype', 'auto'))
+ 
+                 draw_spec = getattr(args, 'draw_spectro', 0)
+                 if draw_spec and draw_spec > 0:
+@@ -731,6 +736,12 @@
  
      start_time = time.time()
  
@@ -216,7 +249,7 @@
      inference = getattr(config, "inference", None)
      if inference is None and isinstance(config, dict):
          inference = config.get("inference", {})
-@@ -756,7 +762,8 @@
+@@ -756,7 +767,8 @@
          num_tracks = len(all_mixtures_path)
          pad_needed = (-num_tracks) % world_size
          if pad_needed and num_tracks > 0:

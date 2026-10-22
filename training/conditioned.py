@@ -110,10 +110,21 @@ def run(options, spec):
     initial = json.loads((ROOT/'third_party/initialization.json').read_text())
     if sha256(options.initialization) not in (initial['official_sha256'],initial['research_initializer_sha256']):
         raise ValueError('PT6S initializer checksum mismatch')
-    for path in (options.manifest, options.valid_jc, options.valid_sk):
+    if config['conditioning'] != 'role':
+        encoder = options.speaker_initialization
+        if encoder is None or not encoder.is_file() or sha256(encoder) != recipe['encoder_initialization_sha256']:
+            raise ValueError('The registered original ReDimNet2 initializer is required')
+    expected_sets = {
+        'k': ('train_sk', 'valid_jc', 'valid_sk'),
+        'l': ('train_jc', 'valid_jc', 'valid_sk'),
+        'm': ('train_sknjc', 'valid_m_jc', 'valid_m_sk'),
+    }[recipe['dataset_policy']]
+    for path, expected_set in zip((options.manifest, options.valid_jc, options.valid_sk), expected_sets):
         if path is None or not path.is_dir():
             raise ValueError('--manifest, --valid-jc, and --valid-sk must be prepared directories')
         receipt = json.loads((path/'preparation.json').read_text())
+        if receipt.get('set') != expected_set:
+            raise ValueError(f'Expected prepared set {expected_set}, got {receipt.get("set")}: {path}')
         if receipt['metadata_only']:
             raise ValueError('Run preparation with audio verification before training')
         for name, digest in receipt['outputs'].items():

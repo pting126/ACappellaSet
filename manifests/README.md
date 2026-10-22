@@ -2,10 +2,13 @@
 
 `models.json` registers the three original fixed models and 12 original
 specialists, including exact checkpoint/config hashes and output contracts.
-Only the Combined model has a published `portable_checkpoint.download_url`;
-the other adapters accept the registered local original checkpoint. A null
+Only the SKnJC model has a registered `portable_checkpoint.download_url`;
+its repository is currently private, so that field does not promise public
+access. Other adapters accept the registered local original checkpoint. A null
 legacy `url` does not override a populated portable download URL.
-`dataset.json` remains a pending dataset registry.
+`dataset.json` records the published ACappellaSet v1.0 dataset on Hugging Face,
+including an immutable repository revision, file URLs, sizes, SHA-256 checksums,
+and the manual access-approval requirement.
 
 `checkpoint_candidates.json` lists the 29 deduplicated project candidates and
 one external baseline in the audited paper snapshot. It is a release-planning
@@ -18,6 +21,6 @@ checkpoint format, sample rate, input channels, exact source order, supported
 roles, and license. Include enrollment and encoder requirements when relevant.
 Record the training step or epoch and the validation selection criterion.
 
-Dataset entries will identify the exact Zenodo version, archive URLs and
-SHA-256 checksums, metadata version, split files, and applicable terms.
+Dataset entries identify the official release version, archive URLs and
+SHA-256 checksums, metadata paths, split files, and the published Terms.
 Do not store private machine paths or server credentials in public manifests.

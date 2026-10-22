@@ -1,0 +1,278 @@
+{
+  "status": "PASS_SHORT_WORKFLOWS",
+  "audit_dates": [
+    "2026-10-21",
+    "2026-10-22"
+  ],
+  "base_commit": "d6d4617354603be811454b4e27fb94d84b2d256d",
+  "publication": "At audit completion on October 21, these changes were local. No weights were uploaded and no dataset was mutated by this code audit. See GitHub Actions for CI on the published revision.",
+  "validated_source_snapshot_sha256": "1ac6a1a77e15f30a3618ed8c447cabf71c3da4d01b1764c76c6aa42eb290533d",
+  "validated_runtime_source_sha256": {
+    "training/conditioned.py": "f0fc8a99ffdb227387a42e7771fe9334cb494e6c6ba122576c9e937fa0d05228",
+    "third_party/patches/mss-training.patch": "173e304386e84859e84e4bd08d964c80187ec1db8b2099d09d2dd872cafb81d5",
+    "train.py": "7cefdb01d3faca08345255f959fc845693aa4b32a4306aa2ab65db2a688cca25",
+    "inference.py": "b2e15685b6e71e553a4e44e94a06daa50f57e578a6e6cdf0ec1c157951e1ea80",
+    "evaluate.py": "d5a0843eecd8a5462626b8bdd2929451ed4b2e9b682cf40347725a3d3b4e0634"
+  },
+  "environments": {
+    "macos_arm64_python310": {
+      "clean_inference_install": "PASS",
+      "clean_training_install": "PASS",
+      "pip_check": "PASS",
+      "tests_passed": 43
+    },
+    "linux_cpu_python310": {
+      "fresh_venv": true,
+      "pinned_packages_exact": 31,
+      "pip_check": "PASS",
+      "tests_passed": 43
+    },
+    "linux_training_python310": {
+      "fresh_venv": true,
+      "pinned_packages_exact": 90,
+      "torch": "2.10.0+cu128",
+      "pip_check": "PASS",
+      "tests_passed": 43,
+      "gpu": "NVIDIA A40"
+    }
+  },
+  "checks": {
+    "release_integrity": {
+      "status": "PASS",
+      "hash_checks": 69,
+      "registered_recipes": 22
+    },
+    "documented_command_examples": {
+      "python_examples": 35,
+      "initial_entrypoints": 10,
+      "additional_native_entrypoint": "MSS valid.py",
+      "flag_and_model_checks": "PASS",
+      "note": "User paths must be supplied; command-shape checks are distinct from runtime tests below."
+    },
+    "fixed_inference_cli": {
+      "status": "PASS",
+      "checkpoint": "Fixed_6stem_htdemucs_SKnJC",
+      "outputs": 6,
+      "frames_each": 44100
+    },
+    "benchmark_cli": {
+      "status": "PASS",
+      "fixture": "one synthetic pair; no quality claim"
+    },
+    "preparation_and_evaluation_clis": {
+      "status": "PASS",
+      "scope": "SK/JC specialist residual construction, analytic SI-SDRi case, overwrite rejection"
+    },
+    "conditioned_training_export_inference": {
+      "cpu_recipes": 7,
+      "gpu_recipes": 7,
+      "status": "PASS",
+      "aliases": [
+        "K1",
+        "K5",
+        "K7",
+        "L1",
+        "L3",
+        "L4",
+        "M3"
+      ],
+      "updates_per_smoke_run": 1
+    },
+    "conditioned_exact_resume": {
+      "status": "PASS",
+      "devices": [
+        "cpu",
+        "cuda"
+      ],
+      "uninterrupted_updates": 2,
+      "interrupted_after": 1,
+      "compared": [
+        "model",
+        "optimizer",
+        "RNG",
+        "data-loader cursor",
+        "loss history"
+      ]
+    },
+    "native_mss_cpu": {
+      "status": "PASS",
+      "recipes": 15,
+      "optimizer_updates_per_recipe": 1,
+      "batch_size": 8,
+      "checkpoint_reload": "PASS",
+      "float_wav_outputs": 42,
+      "canonical_source_pairs": 30
+    },
+    "native_mss_gpu": {
+      "status": "PASS",
+      "completed_recipes": 15,
+      "required_recipes": 15,
+      "diagnostic_batches_per_recipe": 16,
+      "batch_size": 8,
+      "amp_original_setting_preserved": true,
+      "results": [
+        {
+          "model": "Fixed_6stem_htdemucs_SKnJC",
+          "status": "PASS",
+          "optimizer_updates": 15,
+          "amp_skipped_updates": 1,
+          "checkpoint_sha256": "27ed148b4cff971cce749d70dab885a167da12890e63f293cfaa14533f821ca2",
+          "original_config_sha256": "55bd3b4080fb20bfe445647bef934c991e475b92b64401c339f9610f34eb2244",
+          "diagnostic_config_sha256": "f1f80581d6988dc366c9079e102bd03958e83c1759ea61e74ebbf0f5ce17cbac"
+        },
+        {
+          "model": "Fixed_6stem_htdemucs_JC",
+          "status": "PASS",
+          "optimizer_updates": 15,
+          "amp_skipped_updates": 1,
+          "checkpoint_sha256": "8a90a323fb16a2a7ff4b0212a93be5fd16fdc50ff22062d4d459b2a0181796ed",
+          "original_config_sha256": "b3e5ff56161510e5abd8236eabb0b020446b990bc013a311ef10e640c01bad1e",
+          "diagnostic_config_sha256": "0088451d6f80b0a47f426ce3e8750808478b4cd5970962fb6b1618e2688ac123"
+        },
+        {
+          "model": "Fixed_6stem_htdemucs_SK",
+          "status": "PASS",
+          "optimizer_updates": 15,
+          "amp_skipped_updates": 1,
+          "checkpoint_sha256": "faf4c667ce25f23aaa49e3d3352a6289296ada3c7d33deb4b5d16cef2d67d84b",
+          "original_config_sha256": "2210240362436d809e4f9a037cf1e40146206b906b8e95b9f28144d1da84e81d",
+          "diagnostic_config_sha256": "9c59eccbde5e64848d1a2e6c8fd4f6adee410272afa1621f25082da6b0f1f8aa"
+        },
+        {
+          "model": "specialists-jc-alto-ep223",
+          "status": "PASS",
+          "optimizer_updates": 16,
+          "amp_skipped_updates": 0,
+          "checkpoint_sha256": "1a5cc62dd95ba507e3867ab95c43b8251fefecddf0149eea75ae186a9a0d5ab8",
+          "original_config_sha256": "a0206c56e8078c7c3443eee4ba343f35baae36975ec403052bb99d0345c1e8b4",
+          "diagnostic_config_sha256": "2359a3db38144e8a92869713804c9dd106128e4c40c0461b1ad62a3bf6fc6696"
+        },
+        {
+          "model": "specialists-jc-bass-ep110",
+          "status": "PASS",
+          "optimizer_updates": 16,
+          "amp_skipped_updates": 0,
+          "checkpoint_sha256": "c5dd9a9a00de956380a7fc540ebab72eb136b8894e88d9057b481671fe3b883e",
+          "original_config_sha256": "4f0a1834931f5e2309e28b1d74059b1a77fff3d018037ddfdab7dcd09328c698",
+          "diagnostic_config_sha256": "63bde8fcdd6c6d818937c80f44c234728d1e3dc282eb81a8dd23704305f123a1"
+        },
+        {
+          "model": "specialists-jc-lead-ep149",
+          "status": "PASS",
+          "optimizer_updates": 14,
+          "amp_skipped_updates": 2,
+          "checkpoint_sha256": "3d82f47f9779086a52a406af1ee16a5964edf1a8cc1ec4142ab156ae6a205f8d",
+          "original_config_sha256": "dcb7bb687bad3a7f00d03491b3fba10fa12a2b5777025cc04c2a68fcfda311e0",
+          "diagnostic_config_sha256": "0e4af7f2b43020555c5be1cf9f9118fff3d8db0de5e79e9ddb6cc1b0e02e3763"
+        },
+        {
+          "model": "specialists-jc-soprano-ep162",
+          "status": "PASS",
+          "optimizer_updates": 13,
+          "amp_skipped_updates": 3,
+          "checkpoint_sha256": "815f611ecc9db9251d3c6e37a1b5d9dfb752cce9254760141a2cc07ec5172ea3",
+          "original_config_sha256": "be1905d757d50bfbdd0b2bea965c8b000c96e4995e1b5aafcd710a24f25048eb",
+          "diagnostic_config_sha256": "e10ddcc5224e3326c6725364f05cb9b0a733f14968a27edbcef2e054ef7112da"
+        },
+        {
+          "model": "specialists-jc-tenor-ep119",
+          "status": "PASS",
+          "optimizer_updates": 16,
+          "amp_skipped_updates": 0,
+          "checkpoint_sha256": "320ceb2b4307690d565b6402cdcdde7ac49dacc0883f9ee60fc4e422afe711b1",
+          "original_config_sha256": "762562c7e9d24d51e5816bf722edad5aa7bdb0cd45901419077a1c68347951f3",
+          "diagnostic_config_sha256": "1d2ef7ecfc2273a96398d155f9f5b9b5f10c83262cdae063d915e6a7d0b932d2"
+        },
+        {
+          "model": "specialists-jc-vp-ep45",
+          "status": "PASS",
+          "optimizer_updates": 15,
+          "amp_skipped_updates": 1,
+          "checkpoint_sha256": "3746f9e6b3468da5d9e7931af688f277f0361372b1ef42b112178947848d6409",
+          "original_config_sha256": "8a95fc90f7f87c354b3e3c2017c8631e088dd223ee15603697f1a3a85ae60ef4",
+          "diagnostic_config_sha256": "a55ec147d33908b4770705815733717e42ddaf72fc5ffa4b1eb5734140a7a2a0"
+        },
+        {
+          "model": "specialists-sk-alto-ep237",
+          "status": "PASS",
+          "optimizer_updates": 16,
+          "amp_skipped_updates": 0,
+          "checkpoint_sha256": "82c66e7469e8ea84b14bc3127a93523f7ba4ee6c6043bf901e1e13bada748573",
+          "original_config_sha256": "a0206c56e8078c7c3443eee4ba343f35baae36975ec403052bb99d0345c1e8b4",
+          "diagnostic_config_sha256": "2359a3db38144e8a92869713804c9dd106128e4c40c0461b1ad62a3bf6fc6696"
+        },
+        {
+          "model": "specialists-sk-baritone-ep43",
+          "status": "PASS",
+          "optimizer_updates": 14,
+          "amp_skipped_updates": 2,
+          "checkpoint_sha256": "4d83a433604d8e2932bad42e224d2c215adab8d84ff4f7c5b789fb49b13e0c01",
+          "original_config_sha256": "96464a49ea78eab9975e08392065b35e6da838a568d29c91dd15796bd39d03fe",
+          "diagnostic_config_sha256": "007d1d66c0f5814d615b9eb163e9940169493032234dbad4a00308ca7737cd9f"
+        },
+        {
+          "model": "specialists-sk-bass-ep182",
+          "status": "PASS",
+          "optimizer_updates": 16,
+          "amp_skipped_updates": 0,
+          "checkpoint_sha256": "77ad1d7ce30a26cd164eaf31b02c3020dd192389f5cc4a2167d803472cdd8706",
+          "original_config_sha256": "4f0a1834931f5e2309e28b1d74059b1a77fff3d018037ddfdab7dcd09328c698",
+          "diagnostic_config_sha256": "63bde8fcdd6c6d818937c80f44c234728d1e3dc282eb81a8dd23704305f123a1"
+        },
+        {
+          "model": "specialists-sk-soprano-ep220",
+          "status": "PASS",
+          "optimizer_updates": 13,
+          "amp_skipped_updates": 3,
+          "checkpoint_sha256": "a07e74c5360e23a2d260248ead054764c8a775fff69393bcb55682c2c05872fa",
+          "original_config_sha256": "be1905d757d50bfbdd0b2bea965c8b000c96e4995e1b5aafcd710a24f25048eb",
+          "diagnostic_config_sha256": "e10ddcc5224e3326c6725364f05cb9b0a733f14968a27edbcef2e054ef7112da"
+        },
+        {
+          "model": "specialists-sk-tenor-ep214",
+          "status": "PASS",
+          "optimizer_updates": 16,
+          "amp_skipped_updates": 0,
+          "checkpoint_sha256": "3067129a6a3742d54228463f30273bb12b0efad4d11692f69b2faabc9c47557b",
+          "original_config_sha256": "762562c7e9d24d51e5816bf722edad5aa7bdb0cd45901419077a1c68347951f3",
+          "diagnostic_config_sha256": "1d2ef7ecfc2273a96398d155f9f5b9b5f10c83262cdae063d915e6a7d0b932d2"
+        },
+        {
+          "model": "specialists-sk-vp-ep205",
+          "status": "PASS",
+          "optimizer_updates": 15,
+          "amp_skipped_updates": 1,
+          "checkpoint_sha256": "b33623be4062c033f57cc4618b49b065ddd8a9bde8ec337e89ec2a311cdb282c",
+          "original_config_sha256": "8a95fc90f7f87c354b3e3c2017c8631e088dd223ee15603697f1a3a85ae60ef4",
+          "diagnostic_config_sha256": "a55ec147d33908b4770705815733717e42ddaf72fc5ffa4b1eb5734140a7a2a0"
+        }
+      ]
+    },
+    "independent_artifact_verification": {
+      "cpu": "PASS",
+      "gpu": "PASS",
+      "scope": "Source/log/checkpoint hashes, exact output headers and output hashes; local score decomposition and scope means."
+    }
+  },
+  "diagnostic_recoveries": [
+    "Transferred checkout had unsupported executable mode bits on Turbo. All tracked contents were verified; a fresh native Git clone and the public patch restored a clean verified checkout. Production integrity checks were unchanged.",
+    "The first one-batch native GPU smoke had finite loss but no optimizer state because AMP skipped the initial update. The diagnostic duration was increased to 16 batches, retaining the original recipe, and now requires positive optimizer step counts. The failed diagnostic is retained."
+  ],
+  "fixes": [
+    "CI discovers every test module, including six previously omitted fixed-inference tests, and runs pip check.",
+    "Conditioned training dry runs reject missing or incorrect singer initializer weights before creating outputs.",
+    "Conditioned training rejects prepared manifests belonging to the wrong recipe or split.",
+    "The reviewed MSS validation patch honors explicit FLOAT/PCM_16 output; the default auto behavior and scientific model/scoring math remain unchanged.",
+    "Training docs distinguish original-initializer training, supported conditioned resume, and native validation of new fixed/specialist checkpoints."
+  ],
+  "limitations": [
+    "Only existing training recipes were requested. Fine-tuning a released ACappellaSet checkpoint on a new dataset is not exposed by the current launchers.",
+    "Short workflow tests do not establish convergence, equivalent final weights, or exact paper-score reproduction.",
+    "Fixed/specialist checks execute the public launcher preflight and then its emitted native command with only num_epochs/num_steps reduced in a private diagnostic configuration. The full-duration wrapper command is not run to completion.",
+    "Native fixed/specialist wrapper resume and DDP are not exposed. Native MSS checkpoints omit RNG/data-loader/AMP-scaler state; no exact stochastic-resume claim is made for them.",
+    "Conditioned checks used historical prepared real audio; fixed/specialist checks used clearly labeled synthetic tones. Synthetic scores are not quality measurements.",
+    "Public dataset layout conversion and public checkpoint availability are separate release concerns, outside this code audit.",
+    "At audit completion on October 21, the updated GitHub Actions workflow had not yet run on GitHub. Its full test suite, patch preparation, and release checks passed locally and on Linux; hosted CI is recorded separately in GitHub Actions.",
+    "No universal guarantee is made for untested platforms, accelerators, dependency versions, inputs, or long training runs."
+  ]
+}
