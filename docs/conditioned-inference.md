@@ -46,7 +46,6 @@ The augmentation models use the same singer-conditioned architecture and enrollm
 | `Singer_conditioned_htdemucs_SK_single_clone` | SK single-clone singer augmentation | 48,000 |
 
 ```bash
-hf auth login
 hf download AcappellaSet/ACappellaSet-Models conditioned/enrollment/train-sk-full-remix/sisdr-v1/redimnet2-finetuned/step-0131000.pt --local-dir checkpoints
 python inference.py --model Singer_conditioned_htdemucs_SK_full_remix --selection combined_inclusive \
   --checkpoint checkpoints/conditioned/enrollment/train-sk-full-remix/sisdr-v1/redimnet2-finetuned/step-0131000.pt \

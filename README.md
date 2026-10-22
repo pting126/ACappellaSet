@@ -178,7 +178,7 @@ Original code and documentation use the [MIT license](LICENSE). Vendored and
 adapted code retains its upstream notices; see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 Model weights have separate release terms; the code license does not license
-them. Model terms and upstream notices will accompany the
+them. Model terms and upstream notices accompany the
 [model weights](https://huggingface.co/AcappellaSet/ACappellaSet-Models).
 Dataset audio is governed by the published
 [ACappellaSet Non-commercial Research Use Terms](https://huggingface.co/datasets/AcappellaSet/ACappellaSet#full-terms-of-use),
