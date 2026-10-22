@@ -1,6 +1,6 @@
-# Checkpoints proposed for release
+# Released checkpoints
 
-This inventory covers **29 released project checkpoints**, plus one external baseline linked separately. All project weights are uploaded to the currently private [Hugging Face repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models) as inference-only exports under CC BY-NC 4.0. Downloading requires repository access until publication. All fixed, original part-specific, and shared query-conditioned selections have public inference adapters, including full-remix and single-clone singer augmentation.
+This inventory covers **29 released project checkpoints**, plus one external baseline linked separately. All project weights are publicly downloadable from the [Hugging Face repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models) as inference-only exports under CC BY-NC 4.0, without login or an access request. All fixed, original part-specific, and shared query-conditioned selections have public inference adapters, including full-remix and single-clone singer augmentation.
 
 Exact filenames, hashes, and recorded selection labels are in [`manifests/checkpoint_candidates.json`](../manifests/checkpoint_candidates.json). Repeated table uses of the same checkpoint are deduplicated by SHA-256. Epochs below are the stored checkpoint epoch numbers.
 
@@ -8,9 +8,9 @@ Exact filenames, hashes, and recorded selection labels are in [`manifests/checkp
 
 | Training corpus | Epoch | Status |
 | --- | ---: | --- |
-| Fixed_6stem_htdemucs_JC | 321 | Confirmed for release inclusion |
-| Fixed_6stem_htdemucs_SK | 279 | Confirmed for release inclusion |
-| Fixed_6stem_htdemucs_SKnJC | 333 | Confirmed for release inclusion |
+| Fixed_6stem_htdemucs_JC | 321 | Released |
+| Fixed_6stem_htdemucs_SK | 279 | Released |
+| Fixed_6stem_htdemucs_SKnJC | 333 | Released |
 
 ## Specialists (12)
 

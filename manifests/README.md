@@ -5,8 +5,7 @@ specialists, including exact checkpoint/config hashes and output contracts.
 `conditioned.json` adds nine shared query-conditioned recipes with 14 checkpoint
 selections. Together, the registries provide all 29 inference exports, each with
 a revision-pinned `portable_checkpoint.download_url`, size, and SHA-256.
-The model repository is currently private, so a registered URL does not promise
-anonymous access. Adapters also accept exact registered original checkpoints.
+All 29 exports are publicly downloadable without login or an access request. Adapters also accept exact registered original checkpoints.
 A null legacy `url` does not override a populated portable download URL.
 `dataset.json` records the published ACappellaSet v1.0 dataset on Hugging Face,
 including an immutable repository revision, file URLs, sizes, SHA-256 checksums,

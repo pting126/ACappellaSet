@@ -1,6 +1,6 @@
 # Models and checkpoints
 
-The [fixed/specialist registry](../manifests/models.json) and [shared query-conditioned registry](../manifests/conditioned.json) cover **29 released inference checkpoints**: 3 fixed-output, 12 original part-specific, and 14 shared query-conditioned selections from nine recipes. All are uploaded to the currently private [Hugging Face model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models); access requires repository permission until publication. See the [checkpoint inventory](checkpoints.md) for selections.
+The [fixed/specialist registry](../manifests/models.json) and [shared query-conditioned registry](../manifests/conditioned.json) cover **29 released inference checkpoints**: 3 fixed-output, 12 original part-specific, and 14 shared query-conditioned selections from nine recipes. All are publicly downloadable from the [Hugging Face model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models) without login or an access request. See the [checkpoint inventory](checkpoints.md) for selections.
 
 ## Architecture
 
@@ -31,7 +31,7 @@ does not reproduce the checkpoint.
 
 The model card records training data, selection criterion, source order, preprocessing, and applicable weight terms. All released files are inference-only exports. Fixed/specialist exports are tensor state dictionaries; shared query-conditioned exports contain only `format`, `step`, and `model_state`, including the matching fine-tuned encoder tensors. Safe loading uses `weights_only=True`; registered hashes are checked first and model loading is strict. Original research identities remain recorded separately from export hashes.
 
-Use `python inference.py --list-models` to see all 24 model recipes and their 29 selections. The checkpoint URL column reports registration, without making a network request or checking access. Use the authenticated Hugging Face CLI while the model repository is private. After public release, `download.py --model MODEL --selection CRITERION` can fetch a registered artifact anonymously and verify its size and hash. See [fixed/specialist inference](inference.md) and [shared query-conditioned inference](conditioned-inference.md).
+Use `python inference.py --list-models` to see all 24 model recipes and their 29 selections. The checkpoint URL column reports registration, without making a network request or checking access. Use `hf download` without login or `download.py --model MODEL --selection CRITERION` to fetch a registered artifact anonymously; the helper verifies its size and hash. See [fixed/specialist inference](inference.md) and [shared query-conditioned inference](conditioned-inference.md).
 
 Seven natural-data conditioned models have portable training recipes. Full-remix and single-clone augmentation models additionally have released inference weights and adapters; a portable training recipe for their synthetic datasets is not included.
 

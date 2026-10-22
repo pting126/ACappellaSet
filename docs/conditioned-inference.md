@@ -34,7 +34,7 @@ The 14 released selections from nine model recipes are listed in [the conditione
 pooled JC+SK **validation**, while `SKnJC` in a model name means joint training.
 Selection is required when multiple checkpoint identities are registered.
 The loader accepts only the exact registered checkpoint hash and loads every
-separator and encoder tensor strictly. All 14 weight files are uploaded to the currently private [model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models). Use `hf auth login` and `hf download` with repository access, then pass the downloaded path with `--checkpoint`. Released exports contain only `format`, `step`, and all `model_state` tensors, including the matching fine-tuned singer encoder. They load with `weights_only=True`; arbitrary or modified files are rejected.
+separator and encoder tensor strictly. All 14 weight files are publicly downloadable from the [model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models). Use `hf download` without login or `download.py --model MODEL --selection CRITERION`, then pass the downloaded path with `--checkpoint`. Released exports contain only `format`, `step`, and all `model_state` tensors, including the matching fine-tuned singer encoder. They load with `weights_only=True`; arbitrary or modified files are rejected.
 
 ## Singer-augmentation models
 

@@ -2,7 +2,7 @@
 
 The Fixed_6stem_htdemucs_SKnJC model has a working inference entry point and an uploaded
 110 MB portable checkpoint on [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models).
-The model repository is currently private; downloads require repository access.
+All 29 model checkpoints are publicly downloadable without an access request or login.
 The project weight license is CC BY-NC 4.0. Training-data terms and third-party rights
 remain separate; see [checkpoints](checkpoints.md).
 
@@ -36,7 +36,7 @@ SHA-256: cbfa201798f7e7f4766bacd3aa8622b3ae40321729bd7f0b3555ac4348c57879
 Size: 333986969 bytes
 ```
 
-The model-only portable export uploaded to the private repository is:
+The published model-only portable export is:
 
 ```text
 Fixed_6stem_htdemucs_SKnJC.pt
@@ -55,18 +55,17 @@ not accept arbitrary checkpoints or change output heads automatically.
 
 ## Download the checkpoint
 
-For an account with access to the private model repository, use the Hugging Face
-CLI (install `huggingface_hub` if needed):
+Use the Hugging Face CLI (install `huggingface_hub` if needed); login is not required:
 
 ```bash
-hf auth login
 hf download AcappellaSet/ACappellaSet-Models fixed/SKnJC/legacy/Fixed_6stem_htdemucs_SKnJC.pt --local-dir checkpoints
 ```
 
-This preserves the repository path under `checkpoints/`. Dataset access approval
-is separate from permission to download private model weights. The existing
-`download.py` helper makes anonymous requests and cannot download from the
-currently private repository. A verified local checkpoint can be used directly.
+This preserves the repository path under `checkpoints/`. Dataset audio remains
+subject to separate manual approval; model downloads do not require dataset access.
+Alternatively, `python download.py --model Fixed_6stem_htdemucs_SKnJC` downloads
+the registered checkpoint anonymously and verifies its size and SHA-256. The helper
+saves it directly under `checkpoints/`; pass that local path to inference.
 
 ## Separate an audio file
 
@@ -129,7 +128,7 @@ python inference.py --model Fixed_6stem_htdemucs_SK --checkpoint /path/to/Fixed_
 python inference.py --model specialists-jc-alto-ep223 --checkpoint /path/to/alto-inference.pt --input mixture.wav --output outputs/alto --device cpu
 ```
 
-Each command requires the exact registered checkpoint hash. All SK/JC fixed and original specialist weights are uploaded as tensor-only inference exports; use the file paths in the Hugging Face model card while the repository is private. No custom or arbitrary pickle checkpoint
+Each command requires the exact registered checkpoint hash. All SK/JC fixed and original specialist weights are uploaded as tensor-only inference exports; use the file paths in the Hugging Face model card or the registered `download.py` helper. No custom or arbitrary pickle checkpoint
 is accepted. The specialist command writes `nonalto.wav` and `alto.wav`;
 `nonalto` is the residual head, and `alto` is the extracted target. Neither
 requires an enrollment recording. The same rule applies to each bank member.

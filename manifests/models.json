@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "release_in_preparation",
+  "status": "released",
   "hosting": "Hugging Face",
   "record_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models",
   "models": [
@@ -9,7 +9,7 @@
       "family": "fixed-htdemucs",
       "training_corpus": "JC+SK",
       "epoch": 333,
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_333_sdr_-1.2322_si_sdr_-0.3075_k_sdr_87.1730.ckpt",
       "checkpoint_sha256": "cbfa201798f7e7f4766bacd3aa8622b3ae40321729bd7f0b3555ac4348c57879",
       "checkpoint_bytes": 333986969,
@@ -50,7 +50,7 @@
         "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/fixed/SKnJC/legacy/Fixed_6stem_htdemucs_SKnJC.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "fixed/SKnJC/legacy/Fixed_6stem_htdemucs_SKnJC.pt",
-        "status": "private_inference_export_validated",
+        "status": "public_inference_export_validated",
         "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       },
       "aliases": [
@@ -65,7 +65,7 @@
       "family": "fixed-htdemucs",
       "training_corpus": "JC",
       "epoch": 321,
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_321_sdr_7.9284_si_sdr_6.9219_k_sdr_94.9111.ckpt",
       "checkpoint_sha256": "1d65d49aaa7fc52745e4c476d14d90d7bddb942765c169e92bf045ea33d4ab6b",
       "checkpoint_bytes": 331450277,
@@ -108,7 +108,7 @@
         "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/fixed/JC/legacy/Fixed_6stem_htdemucs_JC.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "fixed/JC/legacy/Fixed_6stem_htdemucs_JC.pt",
-        "status": "private_inference_export_validated",
+        "status": "public_inference_export_validated",
         "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
@@ -117,7 +117,7 @@
       "family": "fixed-htdemucs",
       "training_corpus": "SK",
       "epoch": 279,
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_279_sdr_-7.7538_si_sdr_-5.3812_k_sdr_81.6959.ckpt",
       "checkpoint_sha256": "51c1a71b22d82c34e31f41e314fc9a84055d9f55f5d77c8c36b4280a59a19f0b",
       "checkpoint_bytes": 331613145,
@@ -160,7 +160,7 @@
         "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/fixed/SK/legacy/Fixed_6stem_htdemucs_SK.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "fixed/SK/legacy/Fixed_6stem_htdemucs_SK.pt",
-        "status": "private_inference_export_validated",
+        "status": "public_inference_export_validated",
         "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
@@ -169,7 +169,7 @@
       "family": "part-specific-htdemucs",
       "training_corpus": "JC",
       "epoch": 223,
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_223_si_sdr_6.0926.ckpt",
       "checkpoint_sha256": "5c8118424cbe5264b953f37d8336194b66089bac0aa18c1a32d1c41b386e7e1e",
       "checkpoint_bytes": 331733371,
@@ -211,7 +211,7 @@
         "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/JC/legacy/alto/epoch_0223.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/JC/legacy/alto/epoch_0223.pt",
-        "status": "private_inference_export_validated",
+        "status": "public_inference_export_validated",
         "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
@@ -220,7 +220,7 @@
       "family": "part-specific-htdemucs",
       "training_corpus": "JC",
       "epoch": 110,
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_110_si_sdr_16.6663.ckpt",
       "checkpoint_sha256": "23d152aa2ae0250fe852ac5e31ae68f2d70736acd4cb2a5f9515a9b10302a810",
       "checkpoint_bytes": 330638133,
@@ -262,7 +262,7 @@
         "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/JC/legacy/bass/epoch_0110.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/JC/legacy/bass/epoch_0110.pt",
-        "status": "private_inference_export_validated",
+        "status": "public_inference_export_validated",
         "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
@@ -271,7 +271,7 @@
       "family": "part-specific-htdemucs",
       "training_corpus": "JC",
       "epoch": 149,
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_149_si_sdr_9.6743.ckpt",
       "checkpoint_sha256": "0a37e456852527fd2d0c7d983ba086f1ebb15064a39633f99c06cbbb37914c28",
       "checkpoint_bytes": 331014779,
@@ -313,7 +313,7 @@
         "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/JC/legacy/lead/epoch_0149.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/JC/legacy/lead/epoch_0149.pt",
-        "status": "private_inference_export_validated",
+        "status": "public_inference_export_validated",
         "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
@@ -322,7 +322,7 @@
       "family": "part-specific-htdemucs",
       "training_corpus": "JC",
       "epoch": 162,
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_162_si_sdr_6.1072.ckpt",
       "checkpoint_sha256": "9346b2508aa4e9def57598c282d6063e70eac35e5061c6c7440e765c9455472e",
       "checkpoint_bytes": 331141051,
@@ -364,7 +364,7 @@
         "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/JC/legacy/soprano/epoch_0162.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/JC/legacy/soprano/epoch_0162.pt",
-        "status": "private_inference_export_validated",
+        "status": "public_inference_export_validated",
         "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
@@ -373,7 +373,7 @@
       "family": "part-specific-htdemucs",
       "training_corpus": "JC",
       "epoch": 119,
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_119_si_sdr_11.1179.ckpt",
       "checkpoint_sha256": "1c20f2a931c8def9e8622190984de3ed599c5913566441cea491c691e4a7f70a",
       "checkpoint_bytes": 330725557,
@@ -415,7 +415,7 @@
         "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/JC/legacy/tenor/epoch_0119.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/JC/legacy/tenor/epoch_0119.pt",
-        "status": "private_inference_export_validated",
+        "status": "public_inference_export_validated",
         "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
@@ -424,7 +424,7 @@
       "family": "part-specific-htdemucs",
       "training_corpus": "JC",
       "epoch": 45,
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_45_si_sdr_15.9240.ckpt",
       "checkpoint_sha256": "931aae478a2aaceb0572dff59a7877987b67a58f78f07621e195cf696fff6dff",
       "checkpoint_bytes": 330004859,
@@ -466,7 +466,7 @@
         "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/JC/legacy/vp/epoch_0045.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/JC/legacy/vp/epoch_0045.pt",
-        "status": "private_inference_export_validated",
+        "status": "public_inference_export_validated",
         "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
@@ -475,7 +475,7 @@
       "family": "part-specific-htdemucs",
       "training_corpus": "SK",
       "epoch": 237,
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_237_si_sdr_12.8485.ckpt",
       "checkpoint_sha256": "133008dc46d3ebe3ef660c52c65e1252f9ff243a048f97a95d68b04a123ca6a4",
       "checkpoint_bytes": 331884213,
@@ -517,7 +517,7 @@
         "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/SK/legacy/alto/epoch_0237.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/SK/legacy/alto/epoch_0237.pt",
-        "status": "private_inference_export_validated",
+        "status": "public_inference_export_validated",
         "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
@@ -526,7 +526,7 @@
       "family": "part-specific-htdemucs",
       "training_corpus": "SK",
       "epoch": 43,
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_43_si_sdr_11.1058.ckpt",
       "checkpoint_sha256": "ffe9dafeff2c96595f479a406e327172c95355bed401d233410e9565c806d2ee",
       "checkpoint_bytes": 329966459,
@@ -568,7 +568,7 @@
         "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/SK/legacy/baritone/epoch_0043.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/SK/legacy/baritone/epoch_0043.pt",
-        "status": "private_inference_export_validated",
+        "status": "public_inference_export_validated",
         "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
@@ -577,7 +577,7 @@
       "family": "part-specific-htdemucs",
       "training_corpus": "SK",
       "epoch": 182,
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_182_si_sdr_13.8862.ckpt",
       "checkpoint_sha256": "9b24ac03c73f79810228f0dde23f430b5221f019c5dea7f30500708f4dfd5ac6",
       "checkpoint_bytes": 331347189,
@@ -619,7 +619,7 @@
         "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/SK/legacy/bass/epoch_0182.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/SK/legacy/bass/epoch_0182.pt",
-        "status": "private_inference_export_validated",
+        "status": "public_inference_export_validated",
         "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
@@ -628,7 +628,7 @@
       "family": "part-specific-htdemucs",
       "training_corpus": "SK",
       "epoch": 220,
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_220_si_sdr_12.3675.ckpt",
       "checkpoint_sha256": "b9e4c1f9476f13ce673ea007756aec990318ccb4d571c8060355e9f1eccfab60",
       "checkpoint_bytes": 331694389,
@@ -670,7 +670,7 @@
         "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/SK/legacy/soprano/epoch_0220.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/SK/legacy/soprano/epoch_0220.pt",
-        "status": "private_inference_export_validated",
+        "status": "public_inference_export_validated",
         "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
@@ -679,7 +679,7 @@
       "family": "part-specific-htdemucs",
       "training_corpus": "SK",
       "epoch": 214,
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_214_si_sdr_12.0113.ckpt",
       "checkpoint_sha256": "2f3e5de523bb4bf8eb8fb77e25ce2d2962ac4b00e56b85b2e89614e049878005",
       "checkpoint_bytes": 331659637,
@@ -721,7 +721,7 @@
         "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/SK/legacy/tenor/epoch_0214.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/SK/legacy/tenor/epoch_0214.pt",
-        "status": "private_inference_export_validated",
+        "status": "public_inference_export_validated",
         "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
@@ -730,7 +730,7 @@
       "family": "part-specific-htdemucs",
       "training_corpus": "SK",
       "epoch": 205,
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "checkpoint_filename": "model_htdemucs_ep_205_si_sdr_13.7446.ckpt",
       "checkpoint_sha256": "924efa1dd19fc793c0c8ffb32d0bd736a9791f01bc77f18d2f1eeedf06b7411d",
       "checkpoint_bytes": 331571765,
@@ -772,7 +772,7 @@
         "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/SK/legacy/vp/epoch_0205.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/SK/legacy/vp/epoch_0205.pt",
-        "status": "private_inference_export_validated",
+        "status": "public_inference_export_validated",
         "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     }

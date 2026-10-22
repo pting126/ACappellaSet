@@ -15,7 +15,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta.",
@@ -43,7 +43,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta.",
@@ -71,7 +71,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta.",
@@ -99,7 +99,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -125,7 +125,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -151,7 +151,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -177,7 +177,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -203,7 +203,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -229,7 +229,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -255,7 +255,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -281,7 +281,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -307,7 +307,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -333,7 +333,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -359,7 +359,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -385,7 +385,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Canonical artifact comparison; paper checkpoint identity inferred, not explicitly specified. Historical inference may differ; not a pure metric delta."
@@ -413,7 +413,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Selection checked through 200,000 updates. Inference export and public adapter loading verified."
@@ -446,7 +446,7 @@
       "tables": [
         "cross_corpus"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Selection checked through 200,000 updates. Inference export and public adapter loading verified."
@@ -474,7 +474,7 @@
       "tables": [
         "target_conditioning"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Selection checked through 200,000 updates. Inference export and public adapter loading verified."
@@ -504,7 +504,7 @@
         "development_a",
         "target_conditioning"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Selection checked through 200,000 updates. Inference export and public adapter loading verified."
@@ -532,7 +532,7 @@
       "tables": [
         "target_conditioning"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Selection checked through 200,000 updates. Inference export and public adapter loading verified."
@@ -560,7 +560,7 @@
       "tables": [
         "target_conditioning"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Selection checked through 200,000 updates. Inference export and public adapter loading verified."
@@ -588,7 +588,7 @@
       "tables": [
         "target_conditioning"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Selection checked through 200,000 updates. Inference export and public adapter loading verified."
@@ -616,7 +616,7 @@
       "tables": [
         "target_conditioning"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Selection checked through 200,000 updates. Inference export and public adapter loading verified."
@@ -644,7 +644,7 @@
       "tables": [
         "development_a"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Selection checked through 200,000 updates. Inference export and public adapter loading verified."
@@ -674,7 +674,7 @@
         "development_a",
         "development_b"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Selection checked through 200,000 updates. Inference export and public adapter loading verified."
@@ -702,7 +702,7 @@
       "tables": [
         "development_a"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Selection checked through 200,000 updates. Inference export and public adapter loading verified."
@@ -736,7 +736,7 @@
       "tables": [
         "development_a"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Selection checked through 200,000 updates. Inference export and public adapter loading verified."
@@ -769,7 +769,7 @@
       "tables": [
         "development_b"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Selection checked through 200,000 updates. Inference export and public adapter loading verified."
@@ -797,7 +797,7 @@
       "tables": [
         "development_b"
       ],
-      "distribution": "private_validated_inference_export",
+      "distribution": "public_validated_inference_export",
       "verification": "Full-file SHA-256 verified on shared storage on 2026-10-14",
       "notes": [
         "Selection checked through 200,000 updates. Inference export and public adapter loading verified."

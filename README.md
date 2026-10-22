@@ -7,8 +7,7 @@ The release includes audio, annotations, reference splits, documentation, and
 checksums. Access requires accepting the dataset Terms and manual approval.
 
 **Model weights:** [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models)
-— public release coming soon. All 29 checkpoints are uploaded privately as inference-only exports; downloads
-require repository access until publication. Original fixed/specialist scripts, data preparation, and canonical
+— all 29 inference-only checkpoints are publicly downloadable under CC BY-NC 4.0. Original fixed/specialist scripts, data preparation, and canonical
 scoring are included.
 Conditioned inference, portable training recipes, and exact historical split manifests are included.
 
@@ -18,9 +17,9 @@ Conditioned inference, portable training recipes, and exact historical split man
 | --- | --- |
 | Fixed_6stem_htdemucs_SKnJC inference | Implemented; actual-checkpoint Linux CPU validation passed |
 | Checkpoint inventory | 29 validated inference exports, including both singer-augmentation models; external baseline linked |
-| Model weights | [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models) — public release coming soon |
+| Model weights | [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models) — 29 public inference-only checkpoints |
 | Dataset and annotations | [ACappellaSet v1.0 published on Hugging Face](https://huggingface.co/datasets/AcappellaSet/ACappellaSet); manual access approval |
-| Fixed/specialist inference code | All 3 fixed models and 12 original specialists registered; safe inference exports available with repository access |
+| Fixed/specialist inference code | All 3 fixed models and 12 original specialists registered; publicly downloadable inference exports |
 | Fixed/specialist training | Pinned MSS patch and portable launcher; see validation limits in the training guide |
 | Specialist data preparation | Runnable; preserves the different JC and SK residual recipes |
 | Canonical scoring | Saved-WAV scoring and exact-cohort benchmark driver |
@@ -53,8 +52,8 @@ augmentation audio are not included.
 ## Run inference
 
 Follow the [installation and inference guide](docs/inference.md) to create the
-tested Python 3.10 environment. Supply an authorized local copy of the registered
-checkpoint (the loader verifies its SHA-256):
+tested Python 3.10 environment. Download a registered checkpoint from Hugging Face
+without an access request and supply its local path. The loader verifies its SHA-256:
 
 ```bash
 python inference.py --model Fixed_6stem_htdemucs_SKnJC --checkpoint /path/to/Fixed_6stem_htdemucs_SKnJC.pt --input /path/to/mixture.wav --output outputs/my-mixture --device cpu
@@ -115,7 +114,7 @@ The [inference registry](manifests/models.json) separately records models the
 public code can load. See [model documentation](docs/models.md).
 
 **Model weights:** [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models)
-— public release coming soon. Large checkpoints are not committed to this GitHub
+— publicly downloadable under CC BY-NC 4.0. Large checkpoints are not committed to this GitHub
 repository.
 
 ## Dataset and training

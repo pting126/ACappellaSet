@@ -30,7 +30,7 @@
             "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0198000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0198000.pt",
-            "status": "private_inference_export_validated",
+            "status": "public_inference_export_validated",
             "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         },
@@ -49,12 +49,12 @@
             "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0004000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0004000.pt",
-            "status": "private_inference_export_validated",
+            "status": "public_inference_export_validated",
             "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "conditioning": "role",
       "training_roles": [
         "A",
@@ -106,7 +106,7 @@
             "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0012000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0012000.pt",
-            "status": "private_inference_export_validated",
+            "status": "public_inference_export_validated",
             "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         },
@@ -125,7 +125,7 @@
             "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0179000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0179000.pt",
-            "status": "private_inference_export_validated",
+            "status": "public_inference_export_validated",
             "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         },
@@ -145,12 +145,12 @@
             "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0106000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0106000.pt",
-            "status": "private_inference_export_validated",
+            "status": "public_inference_export_validated",
             "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "conditioning": "enrollment",
       "training_roles": [
         "A",
@@ -201,12 +201,12 @@
             "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/dual/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0007000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/dual/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0007000.pt",
-            "status": "private_inference_export_validated",
+            "status": "public_inference_export_validated",
             "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "conditioning": "dual",
       "training_roles": [
         "A",
@@ -257,7 +257,7 @@
             "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0141000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0141000.pt",
-            "status": "private_inference_export_validated",
+            "status": "public_inference_export_validated",
             "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         },
@@ -276,12 +276,12 @@
             "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0119000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0119000.pt",
-            "status": "private_inference_export_validated",
+            "status": "public_inference_export_validated",
             "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "conditioning": "role",
       "training_roles": [
         "A",
@@ -332,12 +332,12 @@
             "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0184000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0184000.pt",
-            "status": "private_inference_export_validated",
+            "status": "public_inference_export_validated",
             "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "conditioning": "enrollment",
       "training_roles": [
         "A",
@@ -388,12 +388,12 @@
             "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/dual/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0188000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/dual/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0188000.pt",
-            "status": "private_inference_export_validated",
+            "status": "public_inference_export_validated",
             "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "conditioning": "dual",
       "training_roles": [
         "A",
@@ -444,7 +444,7 @@
             "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0198000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0198000.pt",
-            "status": "private_inference_export_validated",
+            "status": "public_inference_export_validated",
             "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         },
@@ -464,12 +464,12 @@
             "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0195000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0195000.pt",
-            "status": "private_inference_export_validated",
+            "status": "public_inference_export_validated",
             "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "conditioning": "enrollment",
       "training_roles": [
         "A",
@@ -519,12 +519,12 @@
             "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-sk-full-remix/sisdr-v1/redimnet2-finetuned/step-0131000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-sk-full-remix/sisdr-v1/redimnet2-finetuned/step-0131000.pt",
-            "status": "private_inference_export_validated",
+            "status": "public_inference_export_validated",
             "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "conditioning": "enrollment",
       "training_roles": [
         "A",
@@ -575,12 +575,12 @@
             "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-sk-single-clone/sisdr-v1/redimnet2-finetuned/step-0048000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-sk-single-clone/sisdr-v1/redimnet2-finetuned/step-0048000.pt",
-            "status": "private_inference_export_validated",
+            "status": "public_inference_export_validated",
             "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
-      "status": "private_inference_export_validated",
+      "status": "public_inference_export_validated",
       "conditioning": "enrollment",
       "training_roles": [
         "A",

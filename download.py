@@ -1,7 +1,7 @@
 """Download a registered inference checkpoint and verify its SHA-256.
 
-Anonymous access works for public repositories. For private preparation, use
-the authenticated Hugging Face CLI and the file paths in the model card.
+All released ACappellaSet model checkpoints are publicly downloadable without
+login. Dataset audio has separate gated access requirements.
 """
 
 import argparse
