@@ -2,7 +2,7 @@
 
 Dataset resources, model weights, and code for a cappella source separation.
 
-**Audio demos:** [Listen to the ACappellaSet demos](https://phyllisju.github.io/acappella-demo/).
+[**Audio demos (earlier ACappellaSet version)**](https://phyllisju.github.io/acappella-demo/).
 
 **ACappellaSet v1.0 is published on [Hugging Face](https://huggingface.co/datasets/AcappellaSet/ACappellaSet).**
 The release includes audio, annotations, reference splits, documentation, and
@@ -12,6 +12,34 @@ checksums. Access requires accepting the dataset Terms and manual approval.
 — all 29 inference-only checkpoints are publicly downloadable under CC BY-NC 4.0. Original fixed/specialist scripts, data preparation, and canonical
 scoring are included.
 Conditioned inference, portable training recipes, and exact historical split manifests are included.
+
+## Quick Start
+
+Clone the repository:
+
+```bash
+git clone https://github.com/pting126/ACappellaSet.git
+cd ACappellaSet
+```
+
+Follow the [installation guide](docs/inference.md#installation-tested-linux-cpu-environment).
+The documented installation was tested on Linux CPU with Python 3.10.
+Then run these commands from the repository root in the activated environment:
+
+```bash
+python download.py --model Fixed_6stem_htdemucs_SKnJC
+python inference.py --model Fixed_6stem_htdemucs_SKnJC \
+  --checkpoint checkpoints/Fixed_6stem_htdemucs_SKnJC.pt \
+  --input /path/to/your/mixture.wav \
+  --output outputs/my-first-separation --device cpu
+```
+
+Replace the input path with your recording and choose an output directory that
+does not already exist. Model downloads require no login. The command writes
+six separated WAV files and an inference receipt.
+
+See the [inference guide](docs/inference.md) for details, or
+[conditioned inference](docs/conditioned-inference.md) to select a vocal part or singer.
 
 ## Availability
 
