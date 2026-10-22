@@ -47,11 +47,11 @@
         "bytes": 109822110,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/fixed/SKnJC/legacy/Fixed_6stem_htdemucs_SKnJC.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/fixed/SKnJC/legacy/Fixed_6stem_htdemucs_SKnJC.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "fixed/SKnJC/legacy/Fixed_6stem_htdemucs_SKnJC.pt",
         "status": "private_inference_export_validated",
-        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+        "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       },
       "aliases": [
         "combined-ep333",
@@ -105,11 +105,11 @@
         "bytes": 109830677,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/fixed/JC/legacy/Fixed_6stem_htdemucs_JC.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/fixed/JC/legacy/Fixed_6stem_htdemucs_JC.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "fixed/JC/legacy/Fixed_6stem_htdemucs_JC.pt",
         "status": "private_inference_export_validated",
-        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+        "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
     {
@@ -157,11 +157,11 @@
         "bytes": 109830677,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/fixed/SK/legacy/Fixed_6stem_htdemucs_SK.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/fixed/SK/legacy/Fixed_6stem_htdemucs_SK.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "fixed/SK/legacy/Fixed_6stem_htdemucs_SK.pt",
         "status": "private_inference_export_validated",
-        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+        "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
     {
@@ -208,11 +208,11 @@
         "bytes": 109785182,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/JC/legacy/alto/epoch_0223.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/JC/legacy/alto/epoch_0223.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/JC/legacy/alto/epoch_0223.pt",
         "status": "private_inference_export_validated",
-        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+        "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
     {
@@ -259,11 +259,11 @@
         "bytes": 109785182,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/JC/legacy/bass/epoch_0110.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/JC/legacy/bass/epoch_0110.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/JC/legacy/bass/epoch_0110.pt",
         "status": "private_inference_export_validated",
-        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+        "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
     {
@@ -310,11 +310,11 @@
         "bytes": 109785182,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/JC/legacy/lead/epoch_0149.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/JC/legacy/lead/epoch_0149.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/JC/legacy/lead/epoch_0149.pt",
         "status": "private_inference_export_validated",
-        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+        "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
     {
@@ -361,11 +361,11 @@
         "bytes": 109785182,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/JC/legacy/soprano/epoch_0162.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/JC/legacy/soprano/epoch_0162.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/JC/legacy/soprano/epoch_0162.pt",
         "status": "private_inference_export_validated",
-        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+        "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
     {
@@ -412,11 +412,11 @@
         "bytes": 109785182,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/JC/legacy/tenor/epoch_0119.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/JC/legacy/tenor/epoch_0119.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/JC/legacy/tenor/epoch_0119.pt",
         "status": "private_inference_export_validated",
-        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+        "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
     {
@@ -463,11 +463,11 @@
         "bytes": 109785182,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/JC/legacy/vp/epoch_0045.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/JC/legacy/vp/epoch_0045.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/JC/legacy/vp/epoch_0045.pt",
         "status": "private_inference_export_validated",
-        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+        "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
     {
@@ -514,11 +514,11 @@
         "bytes": 109785182,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/SK/legacy/alto/epoch_0237.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/SK/legacy/alto/epoch_0237.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/SK/legacy/alto/epoch_0237.pt",
         "status": "private_inference_export_validated",
-        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+        "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
     {
@@ -565,11 +565,11 @@
         "bytes": 109785182,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/SK/legacy/baritone/epoch_0043.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/SK/legacy/baritone/epoch_0043.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/SK/legacy/baritone/epoch_0043.pt",
         "status": "private_inference_export_validated",
-        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+        "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
     {
@@ -616,11 +616,11 @@
         "bytes": 109785182,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/SK/legacy/bass/epoch_0182.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/SK/legacy/bass/epoch_0182.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/SK/legacy/bass/epoch_0182.pt",
         "status": "private_inference_export_validated",
-        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+        "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
     {
@@ -667,11 +667,11 @@
         "bytes": 109785182,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/SK/legacy/soprano/epoch_0220.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/SK/legacy/soprano/epoch_0220.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/SK/legacy/soprano/epoch_0220.pt",
         "status": "private_inference_export_validated",
-        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+        "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
     {
@@ -718,11 +718,11 @@
         "bytes": 109785182,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/SK/legacy/tenor/epoch_0214.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/SK/legacy/tenor/epoch_0214.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/SK/legacy/tenor/epoch_0214.pt",
         "status": "private_inference_export_validated",
-        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+        "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     },
     {
@@ -769,11 +769,11 @@
         "bytes": 109785182,
         "format": "pytorch_state_dict",
         "weights_only": true,
-        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/specialists/SK/legacy/vp/epoch_0205.pt",
+        "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/specialists/SK/legacy/vp/epoch_0205.pt",
         "repository_id": "AcappellaSet/ACappellaSet-Models",
         "path_in_repo": "specialists/SK/legacy/vp/epoch_0205.pt",
         "status": "private_inference_export_validated",
-        "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+        "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
       }
     }
   ],

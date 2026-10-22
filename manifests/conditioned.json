@@ -27,11 +27,11 @@
             "bytes": 109889741,
             "format": "acappellaset-conditioned-inference-v1",
             "weights_only": true,
-            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0198000.pt",
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0198000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0198000.pt",
             "status": "private_inference_export_validated",
-            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+            "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         },
         {
@@ -46,11 +46,11 @@
             "bytes": 109889741,
             "format": "acappellaset-conditioned-inference-v1",
             "weights_only": true,
-            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0004000.pt",
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0004000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0004000.pt",
             "status": "private_inference_export_validated",
-            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+            "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
@@ -103,11 +103,11 @@
             "bytes": 161878741,
             "format": "acappellaset-conditioned-inference-v1",
             "weights_only": true,
-            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0012000.pt",
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0012000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0012000.pt",
             "status": "private_inference_export_validated",
-            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+            "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         },
         {
@@ -122,11 +122,11 @@
             "bytes": 161878741,
             "format": "acappellaset-conditioned-inference-v1",
             "weights_only": true,
-            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0179000.pt",
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0179000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0179000.pt",
             "status": "private_inference_export_validated",
-            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+            "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         },
         {
@@ -142,11 +142,11 @@
             "bytes": 161878741,
             "format": "acappellaset-conditioned-inference-v1",
             "weights_only": true,
-            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0106000.pt",
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0106000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0106000.pt",
             "status": "private_inference_export_validated",
-            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+            "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
@@ -198,11 +198,11 @@
             "bytes": 161978465,
             "format": "acappellaset-conditioned-inference-v1",
             "weights_only": true,
-            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/dual/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0007000.pt",
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/dual/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0007000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/dual/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0007000.pt",
             "status": "private_inference_export_validated",
-            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+            "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
@@ -254,11 +254,11 @@
             "bytes": 109889741,
             "format": "acappellaset-conditioned-inference-v1",
             "weights_only": true,
-            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0141000.pt",
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0141000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0141000.pt",
             "status": "private_inference_export_validated",
-            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+            "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         },
         {
@@ -273,11 +273,11 @@
             "bytes": 109889741,
             "format": "acappellaset-conditioned-inference-v1",
             "weights_only": true,
-            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0119000.pt",
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0119000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0119000.pt",
             "status": "private_inference_export_validated",
-            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+            "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
@@ -329,11 +329,11 @@
             "bytes": 161878741,
             "format": "acappellaset-conditioned-inference-v1",
             "weights_only": true,
-            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0184000.pt",
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0184000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0184000.pt",
             "status": "private_inference_export_validated",
-            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+            "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
@@ -385,11 +385,11 @@
             "bytes": 161978465,
             "format": "acappellaset-conditioned-inference-v1",
             "weights_only": true,
-            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/dual/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0188000.pt",
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/dual/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0188000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/dual/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0188000.pt",
             "status": "private_inference_export_validated",
-            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+            "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
@@ -441,11 +441,11 @@
             "bytes": 161878741,
             "format": "acappellaset-conditioned-inference-v1",
             "weights_only": true,
-            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0198000.pt",
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0198000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0198000.pt",
             "status": "private_inference_export_validated",
-            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+            "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         },
         {
@@ -461,11 +461,11 @@
             "bytes": 161878741,
             "format": "acappellaset-conditioned-inference-v1",
             "weights_only": true,
-            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0195000.pt",
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0195000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0195000.pt",
             "status": "private_inference_export_validated",
-            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+            "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
@@ -516,11 +516,11 @@
             "bytes": 161878741,
             "format": "acappellaset-conditioned-inference-v1",
             "weights_only": true,
-            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-sk-full-remix/sisdr-v1/redimnet2-finetuned/step-0131000.pt",
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-sk-full-remix/sisdr-v1/redimnet2-finetuned/step-0131000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-sk-full-remix/sisdr-v1/redimnet2-finetuned/step-0131000.pt",
             "status": "private_inference_export_validated",
-            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+            "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],
@@ -572,11 +572,11 @@
             "bytes": 161878741,
             "format": "acappellaset-conditioned-inference-v1",
             "weights_only": true,
-            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/6be27718cf932d7291cc1f5d65adff5b5369683e/conditioned/enrollment/train-sk-single-clone/sisdr-v1/redimnet2-finetuned/step-0048000.pt",
+            "download_url": "https://huggingface.co/AcappellaSet/ACappellaSet-Models/resolve/86178471adc963d91a6a0fa79cae03ba7cfbbb58/conditioned/enrollment/train-sk-single-clone/sisdr-v1/redimnet2-finetuned/step-0048000.pt",
             "repository_id": "AcappellaSet/ACappellaSet-Models",
             "path_in_repo": "conditioned/enrollment/train-sk-single-clone/sisdr-v1/redimnet2-finetuned/step-0048000.pt",
             "status": "private_inference_export_validated",
-            "revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+            "revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
           }
         }
       ],

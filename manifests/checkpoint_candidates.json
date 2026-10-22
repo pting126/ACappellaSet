@@ -29,7 +29,7 @@
       "public_name": "Fixed_6stem_htdemucs_JC",
       "released_checkpoint_sha256": "432c3806e03474a8fe15e586b1083e977c22751a3099ff82625c16a26490907d",
       "released_checkpoint_path": "fixed/JC/legacy/Fixed_6stem_htdemucs_JC.pt",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "Fixed_6stem_htdemucs_SK",
@@ -57,7 +57,7 @@
       "public_name": "Fixed_6stem_htdemucs_SK",
       "released_checkpoint_sha256": "e82eced15d0466a3ada6584e28188975841930d21153749fe163ad07af19d38c",
       "released_checkpoint_path": "fixed/SK/legacy/Fixed_6stem_htdemucs_SK.pt",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "Fixed_6stem_htdemucs_SKnJC",
@@ -85,7 +85,7 @@
       "public_name": "Fixed_6stem_htdemucs_SKnJC",
       "released_checkpoint_sha256": "8f87f3a1224de680085fea0c186600edc7cfbb91b8f56f8862da4772565e0cda",
       "released_checkpoint_path": "fixed/SKnJC/legacy/Fixed_6stem_htdemucs_SKnJC.pt",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -111,7 +111,7 @@
       "released_checkpoint_sha256": "9212124f4a3eab2b9a4a14669bc3e52c66de3b1b795e805a5b575e430f24072d",
       "released_checkpoint_path": "specialists/JC/legacy/alto/epoch_0223.pt",
       "public_name": "specialists-jc-alto-ep223",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -137,7 +137,7 @@
       "released_checkpoint_sha256": "7b4b70dd70fa921cfe7d5b79c8e31004c5ea9893a9de659b2f5592fcde4a213c",
       "released_checkpoint_path": "specialists/JC/legacy/bass/epoch_0110.pt",
       "public_name": "specialists-jc-bass-ep110",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -163,7 +163,7 @@
       "released_checkpoint_sha256": "4825c5864e9297d2e1bc7977ea5879af522f182b56483581bf14b90b8c18f465",
       "released_checkpoint_path": "specialists/JC/legacy/lead/epoch_0149.pt",
       "public_name": "specialists-jc-lead-ep149",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -189,7 +189,7 @@
       "released_checkpoint_sha256": "76f89c544c803ddec130ca0eed6fe3ec554ca264d5e6102964dc17e5f05ff72e",
       "released_checkpoint_path": "specialists/JC/legacy/soprano/epoch_0162.pt",
       "public_name": "specialists-jc-soprano-ep162",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -215,7 +215,7 @@
       "released_checkpoint_sha256": "0c136befb105df1f6d89e70291981e0192e2f9a05d963febef2f0e58f36a243e",
       "released_checkpoint_path": "specialists/JC/legacy/tenor/epoch_0119.pt",
       "public_name": "specialists-jc-tenor-ep119",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "JC historical specialists (MSS inference)",
@@ -241,7 +241,7 @@
       "released_checkpoint_sha256": "1c90231919c3c9e2a1938007ea386b3c6e41c22389a777a285e724cd73f5bc4b",
       "released_checkpoint_path": "specialists/JC/legacy/vp/epoch_0045.pt",
       "public_name": "specialists-jc-vp-ep45",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -267,7 +267,7 @@
       "released_checkpoint_sha256": "78a1673de410ec40b450a766c593f696796fc126259f324d62afe11ee62c6279",
       "released_checkpoint_path": "specialists/SK/legacy/alto/epoch_0237.pt",
       "public_name": "specialists-sk-alto-ep237",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -293,7 +293,7 @@
       "released_checkpoint_sha256": "07247e6587d36d4261be4fceda9d7bf1e401a3060935644222525abfe7b8ec34",
       "released_checkpoint_path": "specialists/SK/legacy/bass/epoch_0182.pt",
       "public_name": "specialists-sk-bass-ep182",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -319,7 +319,7 @@
       "released_checkpoint_sha256": "f6affa1758e913c8ac5d9f2b8f6e7d505f6cda4efdc0aa76d5beea2a45319cd6",
       "released_checkpoint_path": "specialists/SK/legacy/baritone/epoch_0043.pt",
       "public_name": "specialists-sk-baritone-ep43",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -345,7 +345,7 @@
       "released_checkpoint_sha256": "474bdacd5cbf3df65c2b3153688304372ed6fe352658735b3cfc677a52e5e7ff",
       "released_checkpoint_path": "specialists/SK/legacy/soprano/epoch_0220.pt",
       "public_name": "specialists-sk-soprano-ep220",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -371,7 +371,7 @@
       "released_checkpoint_sha256": "919f1808e8faa03c582accacc11913a0443dde4d32f02092ae302588aa7fbcca",
       "released_checkpoint_path": "specialists/SK/legacy/tenor/epoch_0214.pt",
       "public_name": "specialists-sk-tenor-ep214",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "SK historical specialists (MSS inference)",
@@ -397,7 +397,7 @@
       "released_checkpoint_sha256": "9f850e35bad3b83e8330e31b30f4a4f38460db9d02f3a3a798c3c4bc6294c77b",
       "released_checkpoint_path": "specialists/SK/legacy/vp/epoch_0205.pt",
       "public_name": "specialists-sk-vp-ep205",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "K1",
@@ -430,7 +430,7 @@
       "released_checkpoint_sha256": "9c59bfca391faf96e6d3f130d27dd75f4ed5f0eb1b950ed75361b343e926af14",
       "released_checkpoint_path": "conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0198000.pt",
       "public_name": "Part_conditioned_htdemucs_SK",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "L1",
@@ -458,7 +458,7 @@
       "released_checkpoint_sha256": "f9fdca2de1f89b650b603d386f39128b4b06b0ebd4a59469f57ce256e8c26065",
       "released_checkpoint_path": "conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0141000.pt",
       "public_name": "Part_conditioned_htdemucs_JC",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "K1",
@@ -486,7 +486,7 @@
       "released_checkpoint_sha256": "31821cfe956fc6a7527e718d6702bcd71b84a8881484c1339753bca7207b316b",
       "released_checkpoint_path": "conditioned/role/train-sk-natural/sisdr-v1/no-encoder/step-0004000.pt",
       "public_name": "Part_conditioned_htdemucs_SK",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "K5",
@@ -516,7 +516,7 @@
       "released_checkpoint_sha256": "89c5a8829aca66cdbb0033338dc83d769e06f98300f68464a666b87f73e80abf",
       "released_checkpoint_path": "conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0012000.pt",
       "public_name": "Singer_conditioned_htdemucs_SK",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "K7",
@@ -544,7 +544,7 @@
       "released_checkpoint_sha256": "528d75380b58ef43e266a0c1f6f3cd86883710d2a95ff9c492724790193fa6ab",
       "released_checkpoint_path": "conditioned/dual/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0007000.pt",
       "public_name": "Dual_conditioned_htdemucs_SK",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "L1",
@@ -572,7 +572,7 @@
       "released_checkpoint_sha256": "6af03b62d8e5f419f72787b7909c3e82ad7d3194fa43c920a47a064374f63e8b",
       "released_checkpoint_path": "conditioned/role/train-jc-natural/sisdr-v1/no-encoder/step-0119000.pt",
       "public_name": "Part_conditioned_htdemucs_JC",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "L3",
@@ -600,7 +600,7 @@
       "released_checkpoint_sha256": "7021317a39953018ea31d9f07578bbe4da9e3646ca62e1e59891abba57edd94d",
       "released_checkpoint_path": "conditioned/enrollment/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0184000.pt",
       "public_name": "Singer_conditioned_htdemucs_JC",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "L4",
@@ -628,7 +628,7 @@
       "released_checkpoint_sha256": "511dc6729da436c5fe72960e9a1de4968578fbb985fd00db5eb653e2d605dfb9",
       "released_checkpoint_path": "conditioned/dual/train-jc-natural/sisdr-v1/redimnet2-finetuned/step-0188000.pt",
       "public_name": "Dual_conditioned_htdemucs_JC",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "K5",
@@ -656,7 +656,7 @@
       "released_checkpoint_sha256": "537531081da4c7c1a7d5568f8847bfaab1df3d54658486381bdd7f3d2f7f8d7d",
       "released_checkpoint_path": "conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0179000.pt",
       "public_name": "Singer_conditioned_htdemucs_SK",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "K5",
@@ -686,7 +686,7 @@
       "released_checkpoint_sha256": "b28626e30a12ba43337b3cec3da2558685ddcc649fe34dd78e7e71590e922b29",
       "released_checkpoint_path": "conditioned/enrollment/train-sk-natural/sisdr-v1/redimnet2-finetuned/step-0106000.pt",
       "public_name": "Singer_conditioned_htdemucs_SK",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "M3",
@@ -719,7 +719,7 @@
       "released_checkpoint_sha256": "67c68a7f12076db456166edab0120f94947806689eca50da546f7adac260d77b",
       "released_checkpoint_path": "conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0198000.pt",
       "public_name": "Singer_conditioned_htdemucs_SKnJC",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "M3",
@@ -753,7 +753,7 @@
       "released_checkpoint_sha256": "12a92b20a7b1fed9614c48b925eaeb2f563428201d5c270c11e3f7c3df7359e7",
       "released_checkpoint_path": "conditioned/enrollment/train-jc-sk-natural/sisdr-v1/redimnet2-finetuned/step-0195000.pt",
       "public_name": "Singer_conditioned_htdemucs_SKnJC",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "K6",
@@ -781,7 +781,7 @@
       "released_checkpoint_sha256": "893326c96ac17b9cfed1cd5126176763f6a0a525115e3322c9a701ef232a9e69",
       "released_checkpoint_path": "conditioned/enrollment/train-sk-full-remix/sisdr-v1/redimnet2-finetuned/step-0131000.pt",
       "public_name": "Singer_conditioned_htdemucs_SK_full_remix",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "K6_no_aug",
@@ -809,7 +809,7 @@
       "license_review_status": "assigned; applicable upstream notices preserved",
       "released_checkpoint_sha256": "00fc378e77c7148f75e853ba8e84f246aba1557c30ec3e5f205e4227099c5c65",
       "released_checkpoint_path": "conditioned/enrollment/train-sk-single-clone/sisdr-v1/redimnet2-finetuned/step-0048000.pt",
-      "release_revision": "6be27718cf932d7291cc1f5d65adff5b5369683e"
+      "release_revision": "86178471adc963d91a6a0fa79cae03ba7cfbbb58"
     },
     {
       "model": "SepACap_JC",
