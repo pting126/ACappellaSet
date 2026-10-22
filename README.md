@@ -6,11 +6,10 @@ Dataset resources, model weights, and code for a cappella source separation.
 The release includes audio, annotations, reference splits, documentation, and
 checksums. Access requires accepting the dataset Terms and manual approval.
 
-**Inference code is available; public checkpoint downloads are pending.** The
-[model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models) is currently
-private. Inference requires an authorized local copy of a registered checkpoint;
-dataset access approval does not grant model access. Original fixed/specialist
-scripts, data preparation, and canonical scoring are included.
+**Model weights:** [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models)
+— public release coming soon. Inference currently requires a registered local
+checkpoint. Original fixed/specialist scripts, data preparation, and canonical
+scoring are included.
 Conditioned inference, portable training recipes, and exact historical split manifests are included.
 
 ## Availability
@@ -19,7 +18,7 @@ Conditioned inference, portable training recipes, and exact historical split man
 | --- | --- |
 | Fixed_6stem_htdemucs_SKnJC inference | Implemented; actual-checkpoint Linux CPU validation passed |
 | Checkpoint inventory | 27 active checkpoints, 2 deferred AI-augmented checkpoints; external baseline linked |
-| Public checkpoint downloads | Pending; model repository is private; use an authorized local checkpoint |
+| Model weights | [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models) — public release coming soon |
 | Dataset and annotations | [ACappellaSet v1.0 published on Hugging Face](https://huggingface.co/datasets/AcappellaSet/ACappellaSet); manual access approval |
 | Fixed/specialist inference code | All 3 fixed models and 12 original specialists registered; unpublished weights must be supplied locally |
 | Fixed/specialist training | Pinned MSS patch and portable launcher; see validation limits in the training guide |
@@ -93,10 +92,9 @@ The AI-augmented K6 and K6_no_aug releases are deferred.
 The [inference registry](manifests/models.json) separately records models the
 public code can load. See [model documentation](docs/models.md).
 
-The [Hugging Face model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models)
-is currently private. A portable Fixed_6stem_htdemucs_SKnJC checkpoint has been
-uploaded there, but it is not publicly downloadable. Further weight release work
-is in progress. Large checkpoints are not committed to this GitHub repository.
+**Model weights:** [Hugging Face](https://huggingface.co/AcappellaSet/ACappellaSet-Models)
+— public release coming soon. Large checkpoints are not committed to this GitHub
+repository.
 
 ## Dataset and training
 
@@ -151,9 +149,8 @@ Original code and documentation use the [MIT license](LICENSE). Vendored and
 adapted code retains its upstream notices; see
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 Model weights have separate release terms; the code license does not license
-them. Their public release is pending. Model terms and upstream notices are
-maintained in the currently private
-[model repository](https://huggingface.co/AcappellaSet/ACappellaSet-Models).
+them. Model terms and upstream notices will accompany the
+[model weights](https://huggingface.co/AcappellaSet/ACappellaSet-Models).
 Dataset audio is governed by the published
 [ACappellaSet Non-commercial Research Use Terms](https://huggingface.co/datasets/AcappellaSet/ACappellaSet#full-terms-of-use),
 separately from this repository's code license and any model-weight terms.
