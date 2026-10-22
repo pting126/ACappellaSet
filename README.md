@@ -2,6 +2,8 @@
 
 Dataset resources, model weights, and code for a cappella source separation.
 
+**Audio demos:** [Listen to the ACappellaSet demos](https://phyllisju.github.io/acappella-demo/).
+
 **ACappellaSet v1.0 is published on [Hugging Face](https://huggingface.co/datasets/AcappellaSet/ACappellaSet).**
 The release includes audio, annotations, reference splits, documentation, and
 checksums. Access requires accepting the dataset Terms and manual approval.
